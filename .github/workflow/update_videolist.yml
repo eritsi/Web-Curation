@@ -1,0 +1,44 @@
+name: Update YouTube Video List
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # 毎月1日 0:00 UTC
+  workflow_dispatch:       # 手動実行も可能
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scripts
+        run: |
+          python yt_yobinori.py > yobinori_grouped.txt
+          python yt_yuutera.py > yuutera_grouped.txt
+          python generate_html.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add yuutera_grouped.txt yobinori_grouped.txt index.html
+          git diff --staged --quiet || git commit -m "Update video list $(date +'%Y-%m')"
+          git push
+
+      
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add videos_grouped.txt videos_grouped2.txt
+          git diff --staged --quiet || git commit -m "Update video list $(date +'%Y-%m')"
+          git push
