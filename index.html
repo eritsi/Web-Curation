@@ -13,7 +13,7 @@
     padding: 40px 20px;
   }
   .container { max-width: 860px; margin: 0 auto; }
-  header { margin-bottom: 48px; }
+  header { margin-bottom: 32px; }
   h1 {
     font-size: 1.8em;
     font-weight: 700;
@@ -21,12 +21,35 @@
     letter-spacing: 0.03em;
     margin-bottom: 8px;
   }
-  .tagline {
-    color: #888;
-    font-size: 0.95em;
-    margin-bottom: 6px;
-  }
+  .tagline { color: #888; font-size: 0.95em; margin-bottom: 6px; }
   .updated { color: #555; font-size: 0.85em; }
+
+  /* ── Tabs ── */
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid #2a2a3a;
+    margin-bottom: 32px;
+  }
+  .tab-btn {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 0.95em;
+    font-weight: 600;
+    padding: 10px 22px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s;
+    letter-spacing: 0.03em;
+  }
+  .tab-btn.active { color: #f59e0b; border-bottom-color: #f59e0b; }
+  .tab-btn:hover:not(.active) { color: #aaa; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* ── Video tab ── */
   h2.channel-title {
     font-size: 1.2em;
     font-weight: 600;
@@ -58,17 +81,9 @@
     align-items: center;
     user-select: none;
   }
-  summary::after {
-    content: '▸';
-    color: #555;
-    transition: transform 0.2s;
-  }
+  summary::after { content: '▸'; color: #555; transition: transform 0.2s; }
   details[open] summary::after { transform: rotate(90deg); }
-  ul {
-    padding: 0 16px 12px 16px;
-    list-style: none;
-    border-top: 1px solid #2a2a3a;
-  }
+  ul { padding: 0 16px 12px 16px; list-style: none; border-top: 1px solid #2a2a3a; }
   li { margin: 0; }
   li a {
     display: block;
@@ -81,6 +96,198 @@
   }
   li:last-child a { border-bottom: none; }
   li a:hover { color: #e2e8f0; }
+
+  /* ── News tab ── */
+  .news-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  .news-updated { color: #555; font-size: 0.82em; }
+  .reset-all-btn {
+    background: none;
+    border: 1px solid #333;
+    color: #555;
+    font-size: 0.78em;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .reset-all-btn:hover { border-color: #555; color: #888; }
+  .news-site {
+    margin-bottom: 36px;
+  }
+  .news-site-header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .news-site-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #f59e0b;
+    text-decoration: none;
+  }
+  .news-site-name:hover { color: #fcd34d; }
+  .news-site-desc {
+    color: #555;
+    font-size: 0.82em;
+    width: 100%;
+  }
+  .badge-updated {
+    display: inline-block;
+    background: #f59e0b22;
+    color: #f59e0b;
+    border: 1px solid #f59e0b55;
+    border-radius: 4px;
+    font-size: 0.72em;
+    padding: 2px 7px;
+    font-weight: 600;
+  }
+  .badge-error {
+    display: inline-block;
+    background: #ef444422;
+    color: #ef4444;
+    border: 1px solid #ef444455;
+    border-radius: 4px;
+    font-size: 0.72em;
+    padding: 2px 7px;
+  }
+  .badge-new {
+    display: inline-block;
+    background: #3b82f622;
+    color: #60a5fa;
+    border: 1px solid #3b82f655;
+    border-radius: 3px;
+    font-size: 0.68em;
+    padding: 1px 5px;
+    margin-right: 6px;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+  .news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #16161e;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .news-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid #1e1e28;
+    gap: 10px;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-link {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9em;
+    flex: 1;
+  }
+  .news-link:hover { color: #e2e8f0; }
+  .news-text {
+    color: #94a3b8;
+    font-size: 0.88em;
+    flex: 1;
+  }
+  .dismiss-btn {
+    background: none;
+    border: 1px solid #2a2a3a;
+    color: #444;
+    font-size: 0.72em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .dismiss-btn:hover { border-color: #555; color: #888; }
+  .news-card {
+    margin: 6px 0;
+    background: #16161e;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .news-card summary {
+    padding: 11px 16px;
+    font-size: 0.92em;
+    color: #c4b5fd;
+  }
+  .news-card summary::after { color: #555; }
+  .news-card-body {
+    padding: 10px 16px 12px;
+    border-top: 1px solid #2a2a3a;
+  }
+  .news-card-body p {
+    color: #64748b;
+    font-size: 0.85em;
+    padding: 3px 0;
+    border-bottom: 1px solid #1e1e28;
+  }
+  .news-card-body p:last-child { border-bottom: none; }
+  .no-items { color: #444; font-size: 0.85em; padding: 8px 0; }
+  .error-msg { color: #ef4444; font-size: 0.82em; padding: 6px 0; }
+  .month-label {
+    font-size: 0.8em;
+    color: #555;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin: 16px 0 6px;
+    padding-left: 2px;
+  }
+  .ann-item { align-items: flex-start; padding: 10px 14px; }
+  .ann-content { flex: 1; min-width: 0; }
+  .ann-store { color: #94a3b8; font-size: 0.9em; margin-bottom: 3px; }
+  .ann-date { color: #4b5563; font-size: 0.8em; line-height: 1.5; margin-bottom: 4px; }
+  .ann-links { margin-top: 4px; }
+  .ann-link {
+    display: inline-block;
+    color: #60a5fa;
+    font-size: 0.78em;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 1px 0;
+  }
+  .ann-link::before { content: '📄 '; }
+  .ann-link:hover { color: #93c5fd; text-decoration: underline; }
+  .venue-label {
+    font-size: 0.8em;
+    color: #555;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin: 16px 0 6px;
+    padding-left: 2px;
+  }
+  .ticket-label { color: #60a5fa !important; }
+  .badge-ticket {
+    display: inline-block;
+    background: #3b82f622;
+    color: #60a5fa;
+    border: 1px solid #3b82f655;
+    border-radius: 3px;
+    font-size: 0.68em;
+    padding: 1px 6px;
+    margin-right: 6px;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+  .venue-link {
+    color: #94a3b8;
+    text-decoration: none;
+  }
+  .venue-link:hover { color: #e2e8f0; }
+
+  /* ── Request box ── */
   .request-box {
     margin-top: 60px;
     padding: 20px 24px;
@@ -110,9 +317,15 @@
 <header>
   <h1>勉強系YouTube キュレーション</h1>
   <p class="tagline">社会人でも勉強が楽しくなるおすすめYouTubeチャンネル</p>
-  <p class="updated">最終更新: 2026年03月01日</p>
+  <p class="updated">最終更新: 2026年06月20日</p>
 </header>
 
+<div class="tab-bar">
+  <button class="tab-btn" data-tab="videos">動画キュレーション</button>
+  <button class="tab-btn" data-tab="news">ニュース・お知らせ</button>
+</div>
+
+<div id="tab-videos" class="tab-content">
 <h2 class="channel-title">ユーテラ授業チャンネル</h2>
 <details>
 <summary>ゼロから世界史（講座シリーズ）（109本）</summary>
@@ -783,7 +996,6 @@
   <li><a href="https://www.youtube.com/watch?v=dJBjoy9mOU8" target="_blank">授業チャンネル始動！【やってほしい内容募集】</a></li>
 </ul>
 </details>
-
 <h2 class="channel-title">予備校のノリで学ぶ「大学の数学・物理」</h2>
 <details>
 <summary>大学物理（53本）</summary>
@@ -1786,12 +1998,1006 @@
 </ul>
 </details>
 
-
 <div class="request-box">
   <p>追加してほしいチャンネルがあればリクエストどうぞ</p>
   <a href="https://github.com/eritsi/youtube-curation/issues/new?template=request.md" target="_blank">チャンネルをリクエストする</a>
 </div>
+</div>
+
+<div id="tab-news" class="tab-content">
+<div class="news-meta"><span class="news-updated">最終チェック: 2026/06/20 16:20</span><button class="reset-all-btn" onclick="resetAll()">既読をリセット</button></div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/eventinfo/r8/premium.html" target="_blank" class="news-site-name">横浜市 プレミアム商品券</a><span class="badge-updated">更新あり</span><span class="news-site-desc">プレミアム商品券の新着案内</span></div>
+<p class="month-label">６月販売情報</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="n2d3c759475">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>鶴ヶ峰商店街協同組合（旭区）</div>
+      <div class="ann-date">6月28日(日曜日)9時～17時6月29日(月曜日)9時～17時※先着販売、完売次第販売終了</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2d3c759475')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n48baa5eb1a">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>協同組合元町エスエス会（中区）</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n48baa5eb1a')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n9a217558f0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>大口通商店街協同組合（神奈川区）</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n9a217558f0')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nabb762b475">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>横浜弘明寺商店街協同組合（南区）</div>
+      <div class="ann-date">6月19日(金曜日)13時～6月20日(土曜日)13時～※先着販売、完売次第販売終了</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nabb762b475')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="neb012437d2">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>戸塚宿ほのぼの商和会（戸塚区）</div>
+      <div class="ann-date">６月１日（月曜日）12時以降公開される専用サイトから、会員登録後に購入詳しくは、戸塚宿ほのぼの商和会ウェブサイト（外部サイト）へ。</div>
+      <div class="ann-links"><a href="http://honobonototsuka.jp/" target="_blank" class="ann-link">戸塚宿ほのぼの商和会ウェブサイト（外部サイト）</a></div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('neb012437d2')">既読</button>
+  </li>
+</ul>
+<p class="month-label">５月販売情報</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="n68cdc62179">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>上大岡駅東口商店会（港南区）</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n68cdc62179')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n9742eeb277">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>【完売】ビアレ横浜専門店会（金沢区）</div>
+      <div class="ann-date">５月31日（日曜日）９時～購入引換券配布※予定数に達し次第配布終了※５月31日（日）、６月１日（月）新館２階特設会場に購入引換券を持参のうえ購入　ビアレヨコハマ新館北口玄関前※購入引換券配布場所</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n9742eeb277')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nf1cf602e20">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span>大口１番街（神奈川区）</div>
+      <div class="ann-date">５月２日(土曜日)12時～15時５月３日(日曜日)12時～15時※先着販売、完売次第販売終了。上記販売期間以外は、ペンギンカメラ、山田時計店、まるぼし等の商店街店舗で販売。</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nf1cf602e20')">既読</button>
+  </li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://www.jica.go.jp/domestic/yokohama/office/restaurant/index.html" target="_blank" class="news-site-name">JICA横浜 ランチメニュー</a><span class="badge-updated">更新あり</span><span class="news-site-desc">今週のランチメニュー（PDF直リンク）</span></div>
+<ul class="news-list">
+  <li class="news-item" data-id="n514861cd36"><span class="badge-new">NEW</span><a href="https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/06/11/LUNCH20260615.pdf" target="_blank" class="news-link">日替わり・週替わりランチメニュー（6/15～6/21）</a><button class="dismiss-btn" onclick="dismiss('n514861cd36')">既読</button></li>
+  <li class="news-item" data-id="n8eb91e5d56"><span class="badge-new">NEW</span><a href="https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/06/18/LUNCH20260622.pdf" target="_blank" class="news-link">日替わり・週替わりランチメニュー（6/22～6/28）</a><button class="dismiss-btn" onclick="dismiss('n8eb91e5d56')">既読</button></li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://www.yokohama-jyubankan.co.jp/news/" target="_blank" class="news-site-name">馬車道十番館</a><span class="badge-updated">更新あり</span><span class="news-site-desc">新着お知らせ</span></div>
+<p class="venue-label">新着公演</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="naf2128ec56">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.yokohama-jyubankan.co.jp/news/%e7%ac%ac283%e5%9b%9e%e3%80%8e%e3%81%b6%e3%81%a9%e3%81%86%e3%81%ae%e9%a4%a8%e3%80%8f%e3%83%af%e3%82%a4%e3%83%b3%e3%81%a8%e7%be%8e%e9%a3%9f%e3%82%92%e6%a5%bd%e3%81%97%e3%82%80%e4%bc%9a%e3%81%ae/" target="_blank" class="venue-link">第283回『ぶどうの館』ワインと美食を楽しむ会のご案内      2026年6月19日(金)</a></div>
+      <div class="ann-date">2026.05.23 ／ 第283回『ぶどうの館』ワインと美食を楽しむ会のご案内      2026年6月19日(金)</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('naf2128ec56')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="naefd4ccfee">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.yokohama-jyubankan.co.jp/news/%e5%96%b6%e6%a5%ad%e6%99%82%e9%96%93%e5%a4%89%e6%9b%b4%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b-2026%e5%b9%b46%e6%9c%881%e6%97%a5%e6%9c%88%e3%80%9c/" target="_blank" class="venue-link">営業時間変更のお知らせ  2026年6月1日(月)〜</a></div>
+      <div class="ann-date">2026.05.16 ／ 営業時間変更のお知らせ  2026年6月1日(月)〜</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('naefd4ccfee')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nafc17abebf">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.yokohama-jyubankan.co.jp/news/%e4%be%a1%e6%a0%bc%e6%94%b9%e5%ae%9a%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%802023%e5%b9%b411%e6%9c%881%e6%97%a5%e3%80%9c/" target="_blank" class="venue-link">価格改定のお知らせ　2026年3月1日〜</a></div>
+      <div class="ann-date">2025.12.12 ／ 価格改定のお知らせ　2026年3月1日〜</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nafc17abebf')">既読</button>
+  </li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://www.billboard-live.com/yokohama/whats-new" target="_blank" class="news-site-name">Billboard Live Yokohama</a><span class="badge-updated">更新あり</span><span class="news-site-desc">新着公演・チケット情報（横浜）</span></div>
+<p class="venue-label">新着公演</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="n2c9e722081">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://x.com/billboardlive_t/status/2068166957212598329?s=20" target="_blank" class="venue-link">4ピース・ハイブリッドロックバンド MONKEY MAJIKより、7月から始まる3都市ツアーを前にビデオメッセージが到着</a></div>
+      <div class="ann-date">Special</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2c9e722081')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n336e3f3757">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21532" target="_blank" class="venue-link">気鋭のトラックメイカー＆シンガーソングライター、眉村ちあきが誕生日当日にビルボードライブ初登場</a></div>
+      <div class="ann-date">公演日: 2026.9.12(Sat) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n336e3f3757')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ne73b4a54d0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21529" target="_blank" class="venue-link">MALIYA 10th Anniversary & “pluto” tour final ～MALIYAがデビュー10周年ライブを開催、豪華</a></div>
+      <div class="ann-date">公演日: 2026.10.10(Sat) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ne73b4a54d0')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n17b72331c9">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21351" target="_blank" class="venue-link">7/11(土)に開催を控える『柳家睦&THE RATBONES』公演に、1stステージへ宮藤官九郎、2ndステージへCHIBOW(SKA-9</a></div>
+      <div class="ann-date">公演日: 2026.7.11(Sat) ／ ゲスト決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n17b72331c9')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n4bf8a3c3af">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21523" target="_blank" class="venue-link">CTA Danny Seraphine California Transit Authority plays Chicago ～シカゴの黄金</a></div>
+      <div class="ann-date">公演日: 2026.9.10(Thu) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n4bf8a3c3af')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n55087a0337">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21525" target="_blank" class="venue-link">Leola デビュー10周年記念2マンリレー企画「Chase The Stars」～デビュー10周年イヤーを迎えたシンガー・ソングライター、</a></div>
+      <div class="ann-date">公演日: 2026.8.18(Tue) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n55087a0337')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n45c350afa0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21526" target="_blank" class="venue-link">Leola デビュー10周年記念2マンリレー企画「Chase The Stars」～デビュー10周年イヤーを迎えたシンガー・ソングライター、</a></div>
+      <div class="ann-date">公演日: 2026.9.30(Wed) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n45c350afa0')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nd633539087">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21517" target="_blank" class="venue-link">TETSUYA Acoustic Live Tour 2026 at Billboard Live ～TETSUYA（L’Arc-en-Ci</a></div>
+      <div class="ann-date">公演日: 2026.9.3(Thu) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nd633539087')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n8f048fcc5b">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21509" target="_blank" class="venue-link">押尾コータロー LIVE TOUR「LOVE is All Around」 25th Anniversary Prologue Billbo</a></div>
+      <div class="ann-date">公演日: 2026.11.7(Sat) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n8f048fcc5b')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n7bef48c08c">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.billboard-live.com/yokohama/show?event_id=ev-21505" target="_blank" class="venue-link">Ms.OOJA ～唯一無二のシルキーボイスで魅了し続けるMs.OOJAが、メジャーデビュー15周年の節目を彩る夏のビルボードライブ・ツアーを</a></div>
+      <div class="ann-date">公演日: 2026.8.14(Fri) ／ 新規公演決定</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n7bef48c08c')">既読</button>
+  </li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://k-arena.com/schedule/" target="_blank" class="news-site-name">Kアリーナ横浜</a><span class="badge-updated">更新あり</span><span class="news-site-desc">新着公演情報（全月対応）</span></div>
+<p class="venue-label">新着公演</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="n681137f2e3">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261108-1/" target="_blank" class="venue-link">学園アイドルマスター LIVE TOUR -標- ファイナル公演</a></div>
+      <div class="ann-date">2026.11.08 ／ 学園アイドルマスター LIVE TOUR -標- ファイナル公演</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n681137f2e3')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="na09d0afa17">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261107-1/" target="_blank" class="venue-link">学園アイドルマスター LIVE TOUR -標- ファイナル公演</a></div>
+      <div class="ann-date">2026.11.07 ／ 学園アイドルマスター LIVE TOUR -標- ファイナル公演</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('na09d0afa17')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n0df0c03994">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260710-1/" target="_blank" class="venue-link">BEAT AX -SUMMER EDITION 2026-</a></div>
+      <div class="ann-date">2026.07.10 ／ BEAT AX -SUMMER EDITION 2026-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n0df0c03994')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n68193c4416">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260927-1/" target="_blank" class="venue-link">Supported by ローソンチケット AKB48 THREE CONCEPTS LIVE in K-Arena Yokohama<br>“推しが「好きish」コンサート”</a></div>
+      <div class="ann-date">2026.09.27 ／ Supported by ローソンチケット AKB48 THREE CONCEPTS LIVE in K-Arena Yokohama<br>“推しが「好きish」コンサート”</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n68193c4416')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n974667bbf6">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260926-2/" target="_blank" class="venue-link">Supported by ローソンチケット AKB48 THREE CONCEPTS LIVE in K-Arena Yokohama<br>“全員「好きish」コンサート”</a></div>
+      <div class="ann-date">2026.09.26 ／ Supported by ローソンチケット AKB48 THREE CONCEPTS LIVE in K-Arena Yokohama<br>“全員「好きish」コンサート”</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n974667bbf6')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nc585357e0d">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260926-1/" target="_blank" class="venue-link">Supported by ローソンチケット AKB48 THREE CONCEPTS LIVE in K-Arena Yokohama<br>“新曲「好きish」コンサート”</a></div>
+      <div class="ann-date">2026.09.26 ／ Supported by ローソンチケット AKB48 THREE CONCEPTS LIVE in K-Arena Yokohama<br>“新曲「好きish」コンサート”</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nc585357e0d')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nc63b2cdbec">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260628-1/" target="_blank" class="venue-link">B’z LIVE-GYM 2026 -FYOP naked-</a></div>
+      <div class="ann-date">2026.06.28 ／ B’z LIVE-GYM 2026 -FYOP naked-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nc63b2cdbec')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nd8a2cfe7d3">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260627-1/" target="_blank" class="venue-link">B’z LIVE-GYM 2026 -FYOP naked-</a></div>
+      <div class="ann-date">2026.06.27 ／ B’z LIVE-GYM 2026 -FYOP naked-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nd8a2cfe7d3')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nf00d6ad025">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261025-1/" target="_blank" class="venue-link">ゆず30周年開幕記念ライブ 心をとめないで</a></div>
+      <div class="ann-date">2026.10.25 ／ ゆず30周年開幕記念ライブ 心をとめないで</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nf00d6ad025')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n968820c6ab">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261024-1/" target="_blank" class="venue-link">ゆず30周年開幕記念ライブ 心をとめないで</a></div>
+      <div class="ann-date">2026.10.24 ／ ゆず30周年開幕記念ライブ 心をとめないで</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n968820c6ab')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n612b3f547d">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261023-1/" target="_blank" class="venue-link">ゆず30周年開幕記念ライブ 心をとめないで</a></div>
+      <div class="ann-date">2026.10.23 ／ ゆず30周年開幕記念ライブ 心をとめないで</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n612b3f547d')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n63151341b8">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260826-1/" target="_blank" class="venue-link">iLiFE!ワンマンLIVE「MEGALiFE!」</a></div>
+      <div class="ann-date">2026.08.26 ／ iLiFE!ワンマンLIVE「MEGALiFE!」</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n63151341b8')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n5d3bd2369a">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20270322-1/" target="_blank" class="venue-link">Tele / Kアリーナ公演（タイトル未定）</a></div>
+      <div class="ann-date">2027.03.22 ／ Tele / Kアリーナ公演（タイトル未定）</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n5d3bd2369a')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nff9c463dac">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260712-1/" target="_blank" class="venue-link">BEAT AX -SUMMER EDITION 2026-</a></div>
+      <div class="ann-date">2026.07.12 ／ BEAT AX -SUMMER EDITION 2026-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nff9c463dac')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n5d5bc56a93">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260711-1/" target="_blank" class="venue-link">≒JOY SPECIAL SUMMER LIVE presented by BEAT AX</a></div>
+      <div class="ann-date">2026.07.11 ／ ≒JOY SPECIAL SUMMER LIVE presented by BEAT AX</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n5d5bc56a93')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nef61647813">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261012-1/" target="_blank" class="venue-link">Kuzuha One-Man Live “Bloody Alexandrite”</a></div>
+      <div class="ann-date">2026.10.12 ／ Kuzuha One-Man Live “Bloody Alexandrite”</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nef61647813')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n81b4813ba7">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20270425-1/" target="_blank" class="venue-link">Suchmos BAY SIDE TOUR 2027</a></div>
+      <div class="ann-date">2027.04.25 ／ Suchmos BAY SIDE TOUR 2027</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n81b4813ba7')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n2183bedfe1">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20270424-1/" target="_blank" class="venue-link">Suchmos BAY SIDE TOUR 2027</a></div>
+      <div class="ann-date">2027.04.24 ／ Suchmos BAY SIDE TOUR 2027</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2183bedfe1')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n2989bd9626">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260821-1/" target="_blank" class="venue-link">BOYNEXTDOOR TOUR ‘KNOCK ON Vol.2’ IN JAPAN</a></div>
+      <div class="ann-date">2026.08.21 ／ BOYNEXTDOOR TOUR ‘KNOCK ON Vol.2’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2989bd9626')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nc44c175c1d">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260822-1/" target="_blank" class="venue-link">BOYNEXTDOOR TOUR ‘KNOCK ON Vol.2’ IN JAPAN</a></div>
+      <div class="ann-date">2026.08.22 ／ BOYNEXTDOOR TOUR ‘KNOCK ON Vol.2’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nc44c175c1d')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nb8d790fcd7">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260823-1/" target="_blank" class="venue-link">BOYNEXTDOOR TOUR ‘KNOCK ON Vol.2’ IN JAPAN</a></div>
+      <div class="ann-date">2026.08.23 ／ BOYNEXTDOOR TOUR ‘KNOCK ON Vol.2’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nb8d790fcd7')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n74d34874b7">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260816-1/" target="_blank" class="venue-link">THE ALFEE Summer Celebration 2026 Mr. Moonlight</a></div>
+      <div class="ann-date">2026.08.16 ／ THE ALFEE Summer Celebration 2026 Mr. Moonlight</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n74d34874b7')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n699382d3ce">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260815-1/" target="_blank" class="venue-link">THE ALFEE Summer Celebration 2026 Mr. Moonlight</a></div>
+      <div class="ann-date">2026.08.15 ／ THE ALFEE Summer Celebration 2026 Mr. Moonlight</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n699382d3ce')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ne7f6204262">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260630-1/" target="_blank" class="venue-link">2026 AND2BLE SHOW CONCERT : Welcome to Qurious In Japan</a></div>
+      <div class="ann-date">2026.06.30 ／ 2026 AND2BLE SHOW CONCERT : Welcome to Qurious In Japan</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ne7f6204262')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="na7fbc7c37e">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260701-1/" target="_blank" class="venue-link">2026 AND2BLE SHOW CONCERT : Welcome to Qurious In Japan</a></div>
+      <div class="ann-date">2026.07.01 ／ 2026 AND2BLE SHOW CONCERT : Welcome to Qurious In Japan</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('na7fbc7c37e')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n5eb1598930">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260702-1/" target="_blank" class="venue-link">2026 AND2BLE SHOW CONCERT : Welcome to Qurious In Japan</a></div>
+      <div class="ann-date">2026.07.02 ／ 2026 AND2BLE SHOW CONCERT : Welcome to Qurious In Japan</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n5eb1598930')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n615445af70">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260913-1/" target="_blank" class="venue-link">2026 TWS TOUR ’24/7:FOR:YOU’ IN JAPAN</a></div>
+      <div class="ann-date">2026.09.13 ／ 2026 TWS TOUR ’24/7:FOR:YOU’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n615445af70')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nac8edd397c">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260912-1/" target="_blank" class="venue-link">2026 TWS TOUR ’24/7:FOR:YOU’ IN JAPAN</a></div>
+      <div class="ann-date">2026.09.12 ／ 2026 TWS TOUR ’24/7:FOR:YOU’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nac8edd397c')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n94fe85a3ee">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261004-1/" target="_blank" class="venue-link">からぴちパラダイス ARENA TOUR 2026 ～シンフォニーエクスプレス～</a></div>
+      <div class="ann-date">2026.10.04 ／ からぴちパラダイス ARENA TOUR 2026 ～シンフォニーエクスプレス～</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n94fe85a3ee')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nd3c0f0efb0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260811-1/" target="_blank" class="venue-link">BATTLE SUMMIT Ⅲ</a></div>
+      <div class="ann-date">2026.08.11 ／ BATTLE SUMMIT Ⅲ</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nd3c0f0efb0')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="na853e3847d">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260804-1/" target="_blank" class="venue-link">2026 ATEEZ FANMEETING ATINYʼS VOYAGE : TINY MYSTERY IN JAPAN</a></div>
+      <div class="ann-date">2026.08.04 ／ 2026 ATEEZ FANMEETING ATINYʼS VOYAGE : TINY MYSTERY IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('na853e3847d')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nea780e2911">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260805-1/" target="_blank" class="venue-link">2026 ATEEZ FANMEETING ATINYʼS VOYAGE : TINY MYSTERY IN JAPAN</a></div>
+      <div class="ann-date">2026.08.05 ／ 2026 ATEEZ FANMEETING ATINYʼS VOYAGE : TINY MYSTERY IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nea780e2911')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n4644a6469f">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260806-1/" target="_blank" class="venue-link">2026 ATEEZ FANMEETING ATINYʼS VOYAGE : TINY MYSTERY IN JAPAN</a></div>
+      <div class="ann-date">2026.08.06 ／ 2026 ATEEZ FANMEETING ATINYʼS VOYAGE : TINY MYSTERY IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n4644a6469f')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nf38a1112a9">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260730-1/" target="_blank" class="venue-link">2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN JAPAN</a></div>
+      <div class="ann-date">2026.07.30 ／ 2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nf38a1112a9')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nd4d78a2f44">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260802-1/" target="_blank" class="venue-link">2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN JAPAN</a></div>
+      <div class="ann-date">2026.08.02 ／ 2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nd4d78a2f44')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nbd49d03e9c">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260801-1/" target="_blank" class="venue-link">2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN JAPAN</a></div>
+      <div class="ann-date">2026.08.01 ／ 2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nbd49d03e9c')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ne5c4e618ab">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260720-1/" target="_blank" class="venue-link">TREASURE THE STAGE 2026 IN JAPAN</a></div>
+      <div class="ann-date">2026.07.20 ／ TREASURE THE STAGE 2026 IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ne5c4e618ab')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n709644d874">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260719-1/" target="_blank" class="venue-link">TREASURE THE STAGE 2026 IN JAPAN</a></div>
+      <div class="ann-date">2026.07.19 ／ TREASURE THE STAGE 2026 IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n709644d874')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n7408ff19ba">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260718-1/" target="_blank" class="venue-link">TREASURE THE STAGE 2026 IN JAPAN</a></div>
+      <div class="ann-date">2026.07.18 ／ TREASURE THE STAGE 2026 IN JAPAN</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n7408ff19ba')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="na3dac36d9c">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260705-1/" target="_blank" class="venue-link">肉チョモランマ ワンマンライブ 2026『大決戦』 “DAY2：修羅場”</a></div>
+      <div class="ann-date">2026.07.05 ／ 肉チョモランマ ワンマンライブ 2026『大決戦』 “DAY2：修羅場”</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('na3dac36d9c')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nd4e8239fd4">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260704-1/" target="_blank" class="venue-link">肉チョモランマ ワンマンライブ 2026『大決戦』 “DAY1：大一番”</a></div>
+      <div class="ann-date">2026.07.04 ／ 肉チョモランマ ワンマンライブ 2026『大決戦』 “DAY1：大一番”</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nd4e8239fd4')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n5dfa483f3b">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261006-1/" target="_blank" class="venue-link">Post Malone Presents The BIG ASS Stadium World Tour</a></div>
+      <div class="ann-date">2026.10.06 ／ Post Malone Presents The BIG ASS Stadium World Tour</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n5dfa483f3b')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n1566099506">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260830-1/" target="_blank" class="venue-link">じゅじゅフェス 2026 -5th anniversary-</a></div>
+      <div class="ann-date">2026.08.30 ／ じゅじゅフェス 2026 -5th anniversary-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n1566099506')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nab5485e979">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260829-1/" target="_blank" class="venue-link">じゅじゅフェス 2026 -5th anniversary-</a></div>
+      <div class="ann-date">2026.08.29 ／ じゅじゅフェス 2026 -5th anniversary-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nab5485e979')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ne083067dd3">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260621-1/" target="_blank" class="venue-link">2026 i-dle WORLD TOUR [Syncopation] IN YOKOHAMA</a></div>
+      <div class="ann-date">2026.06.21 ／ 2026 i-dle WORLD TOUR [Syncopation] IN YOKOHAMA</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ne083067dd3')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ne60bd7d8f0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260620-1/" target="_blank" class="venue-link">2026 i-dle WORLD TOUR [Syncopation] IN YOKOHAMA</a></div>
+      <div class="ann-date">2026.06.20 ／ 2026 i-dle WORLD TOUR [Syncopation] IN YOKOHAMA</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ne60bd7d8f0')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nae38f82ee5">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260909-1/" target="_blank" class="venue-link">HOSHIMACHI SUISEI ARENA TOUR 2026 Once Upon a Stellar</a></div>
+      <div class="ann-date">2026.09.09 ／ HOSHIMACHI SUISEI ARENA TOUR 2026 Once Upon a Stellar</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nae38f82ee5')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nbbc8887281">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20260908-1/" target="_blank" class="venue-link">HOSHIMACHI SUISEI ARENA TOUR 2026 Once Upon a Stellar</a></div>
+      <div class="ann-date">2026.09.08 ／ HOSHIMACHI SUISEI ARENA TOUR 2026 Once Upon a Stellar</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nbbc8887281')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="na5c57e400e">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20270117-1/" target="_blank" class="venue-link">SUPER BEAVER 『都会のラクダ TOUR 2026-2027 〜 ラクダの人生、ゴーゴーゴー 〜』</a></div>
+      <div class="ann-date">2027.01.17 ／ SUPER BEAVER 『都会のラクダ TOUR 2026-2027 〜 ラクダの人生、ゴーゴーゴー 〜』</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('na5c57e400e')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n9de9a300d8">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20270116-1/" target="_blank" class="venue-link">SUPER BEAVER 『都会のラクダ TOUR 2026-2027 〜 ラクダの人生、ゴーゴーゴー 〜』</a></div>
+      <div class="ann-date">2027.01.16 ／ SUPER BEAVER 『都会のラクダ TOUR 2026-2027 〜 ラクダの人生、ゴーゴーゴー 〜』</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n9de9a300d8')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n321ac1f866">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261125-1/" target="_blank" class="venue-link">IRON MAIDEN<br>RUN FOR YOUR LIVES WORLD TOUR 2026 FROM IRON MAIDEN TO FEAR OF THE DARK</a></div>
+      <div class="ann-date">2026.11.25 ／ IRON MAIDEN<br>RUN FOR YOUR LIVES WORLD TOUR 2026 FROM IRON MAIDEN TO FEAR OF THE DARK</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n321ac1f866')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n79f2617eab">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://k-arena.com/schedule/20261124-1/" target="_blank" class="venue-link">IRON MAIDEN<br>RUN FOR YOUR LIVES WORLD TOUR 2026 FROM IRON MAIDEN TO FEAR OF THE DARK</a></div>
+      <div class="ann-date">2026.11.24 ／ IRON MAIDEN<br>RUN FOR YOUR LIVES WORLD TOUR 2026 FROM IRON MAIDEN TO FEAR OF THE DARK</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n79f2617eab')">既読</button>
+  </li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://www.zepp.co.jp/hall/yokohama/schedule/" target="_blank" class="news-site-name">KT Zepp Yokohama</a><span class="badge-updated">更新あり</span><span class="news-site-desc">新着公演情報</span></div>
+<p class="venue-label">新着公演</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="nd836262c98">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=152926" target="_blank" class="venue-link">リアルピース</a></div>
+      <div class="ann-date">2026.6.20 ／ 全国のZeppをリアルピースがジャック！『リアフェスin全Zepp』</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nd836262c98')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n46669edf29">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=157588" target="_blank" class="venue-link">筋肉少女帯</a></div>
+      <div class="ann-date">2026.6.21 ／ ｢#筋少の日｣</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n46669edf29')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n242cfb2a2b">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162163" target="_blank" class="venue-link">安本彩花</a></div>
+      <div class="ann-date">2026.6.22 ／ 安本彩花 生誕ソロライブ「安安2026〜♡Japanese idol♡〜」</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n242cfb2a2b')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="na848e67550">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=161162" target="_blank" class="venue-link">新しい学校のリーダーズ a.k.a. ATARASHII GAKKO!</a></div>
+      <div class="ann-date">2026.6.23 ／ 新しい学校の青春部ツアー2026</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('na848e67550')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ne99e26e317">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=165233" target="_blank" class="venue-link">M bit Live</a></div>
+      <div class="ann-date">2026.6.24 ／ M bit Live #7 Kroi × D.A.N.</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ne99e26e317')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n2b97e9f3c9">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=157618" target="_blank" class="venue-link">東京スカパラダイスオーケストラ Guest：奥田民生</a></div>
+      <div class="ann-date">2026.6.25 ／ 東京スカパラダイスオーケストラライブハウスTOUR　「VerSus Carnival」</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2b97e9f3c9')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n2e1a486c13">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=157619" target="_blank" class="venue-link">東京スカパラダイスオーケストラVS：10-FEET</a></div>
+      <div class="ann-date">2026.6.26 ／ 東京スカパラダイスオーケストラライブハウスTOUR　「VerSus Carnival」</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2e1a486c13')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ncadc78cd8e">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160611" target="_blank" class="venue-link">ユイカ</a></div>
+      <div class="ann-date">2026.6.27 ／ 『ユイカ』presents「時計草」 #2</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ncadc78cd8e')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nda9eb90343">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=164938" target="_blank" class="venue-link">SAY MY NAME</a></div>
+      <div class="ann-date">2026.6.28 ／ 2026 SAY MY NAME ”LOVvmE’s Note” June Diary</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nda9eb90343')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n6979f914f0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160822" target="_blank" class="venue-link">iLiFE!</a></div>
+      <div class="ann-date">2026.6.30 ／ iLiFE! Zeppツアー「TRAVELiFE! 2026」</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n6979f914f0')">既読</button>
+  </li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://pia-arena-mm.jp/event@p1=2026&p2=06.html" target="_blank" class="news-site-name">ぴあアリーナMM</a><span class="badge-updated">更新あり</span><span class="news-site-desc">新着公演情報</span></div>
+<p class="venue-label">新着公演</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="n7c18e5d917">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6340.html" target="_blank" class="venue-link">Mr.Children</a></div>
+      <div class="ann-date">2026.06.20 ／ Mr.Children</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n7c18e5d917')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n2b28779a64">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6343.html" target="_blank" class="venue-link">Mr.Children</a></div>
+      <div class="ann-date">2026.06.21 ／ Mr.Children</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2b28779a64')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ncc88a600f1">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6728.html" target="_blank" class="venue-link">ALPHA DRIVE ONE</a></div>
+      <div class="ann-date">2026.06.26 ／ ALPHA DRIVE ONE</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ncc88a600f1')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ndc3fa95eee">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6730.html" target="_blank" class="venue-link">ALPHA DRIVE ONE</a></div>
+      <div class="ann-date">2026.06.27 ／ ALPHA DRIVE ONE</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ndc3fa95eee')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nfc0b28c0b1">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6731.html" target="_blank" class="venue-link">ALPHA DRIVE ONE</a></div>
+      <div class="ann-date">2026.06.28 ／ ALPHA DRIVE ONE</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nfc0b28c0b1')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nc7658f6948">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6690.html" target="_blank" class="venue-link">スターダスト☆レビュー /杉⼭清貴＆オメガトライブ</a></div>
+      <div class="ann-date">2026.07.01 ／ スターダスト☆レビュー /杉⼭清貴＆オメガトライブ</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nc7658f6948')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n0f9f66cc97">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6591.html" target="_blank" class="venue-link">ラブライブ︕サンシャイン!! Guilty Kiss × Saint Snow TWO-MAN LIVE</a></div>
+      <div class="ann-date">2026.07.04 ／ ラブライブ︕サンシャイン!! Guilty Kiss × Saint Snow TWO-MAN LIVE</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n0f9f66cc97')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nbc46224f6f">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6594.html" target="_blank" class="venue-link">ラブライブ︕サンシャイン!! Guilty Kiss × Saint Snow TWO-MAN LIVE</a></div>
+      <div class="ann-date">2026.07.05 ／ ラブライブ︕サンシャイン!! Guilty Kiss × Saint Snow TWO-MAN LIVE</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nbc46224f6f')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nfbc117ca60">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6653.html" target="_blank" class="venue-link">FNC BAND KINGDOM 2026</a></div>
+      <div class="ann-date">2026.07.11 ／ FNC BAND KINGDOM 2026</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nfbc117ca60')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n71c7ee8ff9">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6655.html" target="_blank" class="venue-link">FNC BAND KINGDOM 2026</a></div>
+      <div class="ann-date">2026.07.12 ／ FNC BAND KINGDOM 2026</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n71c7ee8ff9')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n63a603579d">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6924.html" target="_blank" class="venue-link">日向坂46</a></div>
+      <div class="ann-date">2026.07.15 ／ 日向坂46</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n63a603579d')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n9dc1d18fd4">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6926.html" target="_blank" class="venue-link">日向坂46</a></div>
+      <div class="ann-date">2026.07.16 ／ 日向坂46</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n9dc1d18fd4')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n67c6c0b372">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6217.html" target="_blank" class="venue-link">MyGO!!!!!</a></div>
+      <div class="ann-date">2026.07.18 ／ MyGO!!!!!</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n67c6c0b372')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n205436f754">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6219.html" target="_blank" class="venue-link">MyGO!!!!!</a></div>
+      <div class="ann-date">2026.07.19 ／ MyGO!!!!!</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n205436f754')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n6ae7b1385f">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6809.html" target="_blank" class="venue-link">s**t kingz</a></div>
+      <div class="ann-date">2026.07.25 ／ s**t kingz</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n6ae7b1385f')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ndac55ee3a0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6811.html" target="_blank" class="venue-link">s**t kingz</a></div>
+      <div class="ann-date">2026.07.26 ／ s**t kingz</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ndac55ee3a0')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nc07051fa64">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6627.html" target="_blank" class="venue-link">BABYMONSTER</a></div>
+      <div class="ann-date">2026.08.01 ／ BABYMONSTER</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nc07051fa64')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n34b49b8bef">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6629.html" target="_blank" class="venue-link">BABYMONSTER</a></div>
+      <div class="ann-date">2026.08.02 ／ BABYMONSTER</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n34b49b8bef')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n747f65fd5e">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6863.html" target="_blank" class="venue-link">『あんさんぶるスターズ！THE STAGE』-10th Anniversary LIVE-</a></div>
+      <div class="ann-date">2026.08.07 ／ 『あんさんぶるスターズ！THE STAGE』-10th Anniversary LIVE-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n747f65fd5e')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n5d6054bdb9">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6867.html" target="_blank" class="venue-link">『あんさんぶるスターズ！THE STAGE』-10th Anniversary LIVE-</a></div>
+      <div class="ann-date">2026.08.08 ／ 『あんさんぶるスターズ！THE STAGE』-10th Anniversary LIVE-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n5d6054bdb9')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="neae0884844">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6868.html" target="_blank" class="venue-link">『あんさんぶるスターズ！THE STAGE』-10th Anniversary LIVE-</a></div>
+      <div class="ann-date">2026.08.09 ／ 『あんさんぶるスターズ！THE STAGE』-10th Anniversary LIVE-</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('neae0884844')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n6af5444921">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6940.html" target="_blank" class="venue-link">NAKAMA to MEETING Vol.5</a></div>
+      <div class="ann-date">2026.08.11 ／ NAKAMA to MEETING Vol.5</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n6af5444921')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n700be16d99">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6942.html" target="_blank" class="venue-link">NAKAMA to MEETING Vol.5</a></div>
+      <div class="ann-date">2026.08.12 ／ NAKAMA to MEETING Vol.5</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n700be16d99')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n9fbf81919e">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6660.html" target="_blank" class="venue-link">Augusta Camp</a></div>
+      <div class="ann-date">2026.08.14 ／ Augusta Camp</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n9fbf81919e')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n5627d93fc2">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6666.html" target="_blank" class="venue-link">Augusta Camp</a></div>
+      <div class="ann-date">2026.08.15 ／ Augusta Camp</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n5627d93fc2')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n1c8e5e47eb">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6916.html" target="_blank" class="venue-link">きゃりーぱみゅぱみゅ</a></div>
+      <div class="ann-date">2026.08.22 ／ きゃりーぱみゅぱみゅ</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n1c8e5e47eb')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n71901b5c3d">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6919.html" target="_blank" class="venue-link">SWEET STEADY</a></div>
+      <div class="ann-date">2026.08.23 ／ SWEET STEADY</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n71901b5c3d')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n0ff8882c11">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6721.html" target="_blank" class="venue-link">SKRYU</a></div>
+      <div class="ann-date">2026.08.29 ／ SKRYU</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n0ff8882c11')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n90792e8f67">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6724.html" target="_blank" class="venue-link">SKRYU</a></div>
+      <div class="ann-date">2026.08.30 ／ SKRYU</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n90792e8f67')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="ne5f0144c56">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6981.html" target="_blank" class="venue-link">ぴあ Presentsエンタメ業界研究フェス VOL.2</a></div>
+      <div class="ann-date">2026.08.31 ／ ぴあ Presentsエンタメ業界研究フェス VOL.2</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('ne5f0144c56')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n0a7f0cf072">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6955.html" target="_blank" class="venue-link">CORTIS</a></div>
+      <div class="ann-date">2026.09.04 ／ CORTIS</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n0a7f0cf072')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n8ddbd288a0">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6958.html" target="_blank" class="venue-link">CORTIS</a></div>
+      <div class="ann-date">2026.09.05 ／ CORTIS</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n8ddbd288a0')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nccac71dc92">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6960.html" target="_blank" class="venue-link">CORTIS</a></div>
+      <div class="ann-date">2026.09.06 ／ CORTIS</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nccac71dc92')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n2724c3461a">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6944.html" target="_blank" class="venue-link">シャインポスト</a></div>
+      <div class="ann-date">2026.09.12 ／ シャインポスト</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2724c3461a')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n21d7e3f6c6">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6946.html" target="_blank" class="venue-link">シャインポスト</a></div>
+      <div class="ann-date">2026.09.13 ／ シャインポスト</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n21d7e3f6c6')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n7f4ac63c4f">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://pia-arena-mm.jp/event/6971.html" target="_blank" class="venue-link">Hans Zimmer</a></div>
+      <div class="ann-date">2026.09.16 ／ Hans Zimmer</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n7f4ac63c4f')">既読</button>
+  </li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://landmarkhall.jp/schedule/" target="_blank" class="news-site-name">横浜ランドマークホール</a><span class="badge-updated">更新あり</span><span class="news-site-desc">新着公演情報</span></div>
+<p class="venue-label">新着公演</p>
+<ul class="news-list">
+  <li class="news-item ann-item" data-id="n2332fe5586">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://landmarkhall.jp/schedule/2026/06/10317/" target="_blank" class="venue-link">早乙女太一</a></div>
+      <div class="ann-date">2026.6.21</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n2332fe5586')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n28e4898ed1">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://landmarkhall.jp/schedule/2026/07/10432/" target="_blank" class="venue-link">SE7EN</a></div>
+      <div class="ann-date">2026.7.11</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n28e4898ed1')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n032efaa1c1">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://landmarkhall.jp/schedule/2026/07/10396/" target="_blank" class="venue-link">FMヨコハマエンタメジャム〜キイテルフェス〜</a></div>
+      <div class="ann-date">2026.7.16</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n032efaa1c1')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n49746975bd">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://landmarkhall.jp/schedule/2026/07/10299/" target="_blank" class="venue-link">自衛隊プレミアムボディ2026</a></div>
+      <div class="ann-date">2026.7.19</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n49746975bd')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="nf718d2bf75">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://landmarkhall.jp/schedule/2026/07/10360/" target="_blank" class="venue-link">MeseMoa.</a></div>
+      <div class="ann-date">2026.7.24</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('nf718d2bf75')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n0b5eb273f1">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://landmarkhall.jp/schedule/2026/08/10327/" target="_blank" class="venue-link">YU</a></div>
+      <div class="ann-date">2026.8.30</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n0b5eb273f1')">既読</button>
+  </li>
+  <li class="news-item ann-item" data-id="n99f46ef2a5">
+    <div class="ann-content">
+      <div class="ann-store"><span class="badge-new">NEW</span><a href="https://landmarkhall.jp/schedule/2026/12/10358/" target="_blank" class="venue-link">鈴木康博</a></div>
+      <div class="ann-date">2026.12.11</div>
+    </div>
+    <button class="dismiss-btn" onclick="dismiss('n99f46ef2a5')">既読</button>
+  </li>
+</ul>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://yokohama-minatomiraihall.jp/concert/calendar.html" target="_blank" class="news-site-name">横浜みなとみらいホール</a><span class="news-site-desc">コンサートカレンダー（JavaScript必須）</span></div>
+<p class="js-pending-msg">⚠ このサイトのカレンダーはJavaScript必須のため自動取得できません。<a href="https://yokohama-minatomiraihall.jp/concert/calendar.html" target="_blank" rel="noopener">公式サイトで確認</a></p>
+</div>
+<div class="news-site">
+<div class="news-site-header"><a href="https://www.pacifico.co.jp/event/" target="_blank" class="news-site-name">パシフィコ横浜 国立大ホール</a><span class="news-site-desc">公演スケジュール（JavaScript必須）</span></div>
+<p class="js-pending-msg">⚠ このサイトのカレンダーはJavaScript必須のため自動取得できません。<a href="https://www.pacifico.co.jp/event/" target="_blank" rel="noopener">公式サイトで確認</a></p>
+</div>
 
 </div>
+
+</div>
+
+<script>
+(function() {
+  // ── Tab switching ──
+  function switchTab(name) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    const content = document.getElementById('tab-' + name);
+    const btn = document.querySelector('[data-tab="' + name + '"]');
+    if (content) content.classList.add('active');
+    if (btn) btn.classList.add('active');
+    localStorage.setItem('activeTab', name);
+  }
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
+
+  // ── Dismiss (既読) ──
+  function getDismissed() {
+    return JSON.parse(localStorage.getItem('dismissed') || '[]');
+  }
+
+  window.dismiss = function(id) {
+    const list = getDismissed();
+    if (!list.includes(id)) list.push(id);
+    localStorage.setItem('dismissed', JSON.stringify(list));
+    document.querySelectorAll('[data-id="' + id + '"]').forEach(el => el.style.display = 'none');
+  };
+
+  window.resetAll = function() {
+    localStorage.removeItem('dismissed');
+    document.querySelectorAll('[data-id]').forEach(el => el.style.display = '');
+  };
+
+  function applyDismissed() {
+    getDismissed().forEach(id => {
+      document.querySelectorAll('[data-id="' + id + '"]').forEach(el => el.style.display = 'none');
+      // 同アーティストのチケット更新通知も連動で非表示
+      document.querySelectorAll('[data-artist-id="' + id + '"]').forEach(el => el.style.display = 'none');
+    });
+  }
+
+  // ── Init ──
+  const lastTab = localStorage.getItem('activeTab') || 'videos';
+  switchTab(lastTab);
+  applyDismissed();
+})();
+</script>
 </body>
 </html>

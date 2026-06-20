@@ -1,0 +1,98 @@
+sites:
+  - name: "横浜市 プレミアム商品券"
+    url: "https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/eventinfo/r8/premium.html"
+    selector: "article, main, .section-detail, .contents, #main-contents"
+    extract: "announcements"  # h2=月・h3=案内の2段構造で案内ごとに検知
+    watch_for: "additions"
+    keep_latest: 2            # 直近2ヶ月（今月・先月）を保持
+    description: "プレミアム商品券の新着案内"
+    javascript: false
+
+  - name: "JICA横浜 ランチメニュー"
+    url: "https://www.jica.go.jp/domestic/yokohama/office/restaurant/index.html"
+    extract: "links"
+    link_filter: "日替わり|週替わり"   # このパターンにマッチするリンクを抽出
+    watch_for: "link_update"
+    description: "今週のランチメニュー（PDF直リンク）"
+    javascript: false
+
+  - name: "馬車道十番館"
+    url: "https://www.yokohama-jyubankan.co.jp/news/"
+    extract: "show_schedule"
+    item_selector: ".archive-news > ul > li"
+    artist_selector: ".title a"
+    date_selector: ".date"
+    title_selector: ".title a"
+    keep_latest: 3
+    description: "新着お知らせ"
+
+  - name: "Billboard Live Yokohama"
+    url: "https://www.billboard-live.com/yokohama/whats-new"
+    extract: "venue_news"
+    new_event_tags: "新規公演決定"          # このタグ = 新着アーティスト
+    ticket_tags: "先行|発売|受付|チケット"  # このタグ = チケット情報更新
+    description: "新着公演・チケット情報（横浜）"
+    javascript: false
+    # ── 他の Billboard Live 会場を追加する場合は url だけ変えてコピペ ──
+    # item_selector / tag_selector / content_selector / id_attr は Billboard Live 共通なので省略可
+
+  - name: "Kアリーナ横浜"
+    url: "https://k-arena.com/schedule/"
+    api_url: "https://k-arena.com/wp-json/wp/v2/schedule"
+    extract: "wp_schedule_api"
+    per_page: 100                # 最新100件を取得（全426件から新着を検知）
+    description: "新着公演情報（全月対応）"
+
+  - name: "KT Zepp Yokohama"
+    url: "https://www.zepp.co.jp/hall/yokohama/schedule/"
+    extract: "show_schedule"
+    item_selector: "a.sch-content"         # 各 <a> 自体が1公演
+    artist_selector: ".sch-content-text__performer"
+    date_selector: ".sch-content-date__year"   # "2026"
+    date_selector2: ".sch-content-date__month" # "6.1" → 合わせて "2026.6.1"
+    title_selector: ".sch-content-text__ttl"
+    filter_past: true
+    description: "新着公演情報"
+    javascript: false
+
+  - name: "ぴあアリーナMM"
+    url: "https://pia-arena-mm.jp/event@p1=2026&p2=06.html"  # 月別URL（参照用）
+    url_pattern: "https://pia-arena-mm.jp/event@p1={year}&p2={month:02d}.html"
+    extract: "show_schedule"
+    months_ahead: 3                          # 今月含め4ヶ月分を取得
+    ssl_verify: false                        # 自己署名証明書のためスキップ
+    item_selector: "a.event-list"
+    artist_selector: ".event-list__detail .title h3"
+    date_selector: ".event-list__date p"
+    exclude_artist_pattern: "^PRIVATE$"     # 非公開公演を除外
+    filter_past: true
+    description: "新着公演情報"
+
+  - name: "横浜ランドマークホール"
+    url: "https://landmarkhall.jp/schedule/"
+    extract: "show_schedule"
+    item_selector: "article dl"
+    artist_selector: ".tt"
+    date_selector: ".month"
+    date_selector2: ".date"                 # 2026.6 + 21 → 2026.6.21
+    require_child_selector: ".cen"          # エンタメのみ（.cbus=ビジネス除外）
+    exclude_artist_pattern: "^Reserved$"   # 非公開予約を除外
+    filter_past: true
+    description: "新着公演情報"
+
+  - name: "横浜みなとみらいホール"
+    url: "https://yokohama-minatomiraihall.jp/concert/calendar.html"
+    extract: "js_pending"                   # カレンダーはJS依存→Playwright対応待ち
+    description: "コンサートカレンダー（JavaScript必須）"
+
+  - name: "パシフィコ横浜 国立大ホール"
+    url: "https://www.pacifico.co.jp/event/"
+    extract: "js_pending"                   # イベントカレンダーはJS依存→Playwright対応待ち
+    description: "公演スケジュール（JavaScript必須）"
+
+  # ── 以下にサイトを追加していく ─────────────────────────────────────
+  # - name: "サイト名"
+  #   url: "https://example.com/page"
+  #   extract: "show_schedule"    # show_schedule / venue_news / announcements / links / sections / text
+  #   description: "表示用説明文"
+  #   javascript: false           # true にすると将来の Playwright 対応フラグ
