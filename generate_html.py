@@ -337,22 +337,133 @@ def build_sections_block(site):
     return html
 
 
+# ── Real Estate helpers ────────────────────────────────────────────────
+
+def load_realestate():
+    if not os.path.exists("realestate/realestate.json"):
+        return None
+    with open("realestate/realestate.json", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def build_realestate_tab(data):
+    if not data:
+        return '<p class="no-items" style="margin-top:40px">不動産データがありません（スクレイパー未実行）</p>'
+
+    g = data.get("generated_at", "")
+    date_str = g[:10].replace("-", "/") + " " + g[11:16] if g else ""
+    html = f'<div class="news-meta"><span class="news-updated">最終チェック: {date_str}</span>'
+    html += '<button class="reset-all-btn" onclick="resetAll()">既読をリセット</button></div>\n'
+
+    for site in data.get("sites", []):
+        html += build_realestate_site_block(site)
+
+    return html
+
+
+def build_realestate_site_block(site):
+    name = site["name"]
+    url = site["url"]
+    desc = site.get("description", "")
+    status = site["status"]
+    extract = site.get("extract", "sections")
+
+    if status == "changed":
+        badge = '<span class="badge-updated">更新あり</span>'
+    elif status == "error":
+        badge = '<span class="badge-error">エラー</span>'
+    else:
+        badge = ''
+
+    html = '<div class="news-site">\n'
+    html += f'<div class="news-site-header">'
+    html += f'<a href="{url}" target="_blank" class="news-site-name">{name}</a>{badge}'
+    if desc:
+        html += f'<span class="news-site-desc">{desc}</span>'
+    html += '</div>\n'
+
+    if status == "error":
+        html += f'<p class="error-msg">{site.get("error", "取得に失敗しました")}</p>\n'
+    elif extract in ("globalbase", "suumo", "meiwa", "cowcamo", "rte"):
+        html += build_property_listing_block(site)
+    elif extract == "sections":
+        html += build_sections_block(site)
+
+    html += '</div>\n'
+    return html
+
+
+def build_property_listing_block(site):
+    new_listings = site.get("new_listings", [])
+    all_listings = site.get("all_listings", [])
+
+    if new_listings:
+        html = '<p class="venue-label">新着物件</p>\n'
+        html += _render_property_list(new_listings, mark_new=True)
+    elif all_listings:
+        html = '<p class="no-items" style="font-size:0.78em">本日の変更なし（直近掲載物件）</p>\n'
+        html += _render_property_list(all_listings[:5], mark_new=False)
+    else:
+        html = '<p class="no-items">物件情報が取得できませんでした</p>\n'
+
+    return html
+
+
+def _render_property_list(listings, mark_new):
+    html = '<ul class="news-list">\n'
+    for prop in listings:
+        lid = nid(prop["id"])
+        badge = '<span class="badge-new">NEW</span>' if mark_new else ''
+        name = prop.get("name", "（物件名なし）")
+        price = prop.get("price", "")
+        area = prop.get("area", "")
+        madori = prop.get("madori", "")
+        traffic = prop.get("traffic", "")
+        location = prop.get("location", "")
+        url = prop.get("url", "#")
+
+        specs = "・".join(p for p in [area, madori] if p)
+        meta = "　".join(p for p in [traffic, location] if p)
+
+        html += f'  <li class="news-item ann-item prop-item" data-id="{lid}">\n'
+        html += f'    <div class="ann-content">\n'
+        html += f'      <div class="ann-store">{badge}<span class="prop-name">{name}</span></div>\n'
+        if price:
+            html += f'      <div class="prop-price-row"><span class="prop-price">{price}</span>'
+            if specs:
+                html += f'<span class="prop-specs">{specs}</span>'
+            html += '</div>\n'
+        if meta:
+            html += f'      <div class="ann-date">{meta}</div>\n'
+        html += f'    </div>\n'
+        html += f'    <div class="prop-btns">\n'
+        html += f'      <a href="{url}" target="_blank" class="prop-link">詳細</a>\n'
+        html += f'      <button class="dismiss-btn" onclick="dismiss(\'{lid}\')">既読</button>\n'
+        html += f'    </div>\n'
+        html += f'  </li>\n'
+    html += '</ul>\n'
+    return html
+
+
 # ── Build ──────────────────────────────────────────────────────────────
 
 ch1 = parse_txt("video/yuutera_grouped.txt")
 ch2 = parse_txt("video/yobinori_grouped.txt")
 news = load_news()
 
+realestate = load_realestate()
+
 updated = date.today().strftime("%Y年%m月%d日")
 video_html = build_video_section("ユーテラ授業チャンネル", ch1) + build_video_section("予備校のノリで学ぶ「大学の数学・物理」", ch2)
 news_html = build_news_tab(news)
+realestate_html = build_realestate_tab(realestate)
 
 html = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>勉強系YouTube キュレーション</title>
+<title>Webキュレーション</title>
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{
@@ -636,6 +747,36 @@ html = f"""<!DOCTYPE html>
   }}
   .venue-link:hover {{ color: #e2e8f0; }}
 
+  /* ── Real Estate tab ── */
+  .prop-item {{ align-items: flex-start; }}
+  .prop-name {{ color: #c4b5fd; font-weight: 600; }}
+  .prop-price-row {{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 3px;
+  }}
+  .prop-price {{ color: #f59e0b; font-size: 1.02em; font-weight: 700; }}
+  .prop-specs {{ color: #6b7280; font-size: 0.82em; }}
+  .prop-btns {{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0;
+  }}
+  .prop-link {{
+    display: inline-block;
+    color: #60a5fa;
+    font-size: 0.72em;
+    text-decoration: none;
+    border: 1px solid #1e3a5f;
+    padding: 3px 9px;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap;
+  }}
+  .prop-link:hover {{ border-color: #3b82f6; color: #93c5fd; }}
+
   /* ── Request box ── */
   .request-box {{
     margin-top: 60px;
@@ -664,17 +805,18 @@ html = f"""<!DOCTYPE html>
 <body>
 <div class="container">
 <header>
-  <h1>勉強系YouTube キュレーション</h1>
-  <p class="tagline">社会人でも勉強が楽しくなるおすすめYouTubeチャンネル</p>
-  <p class="updated">最終更新: {updated}</p>
+  <h1>Webキュレーション</h1>
 </header>
 
 <div class="tab-bar">
   <button class="tab-btn" data-tab="videos">動画キュレーション</button>
   <button class="tab-btn" data-tab="news">ニュース・お知らせ</button>
+  <button class="tab-btn" data-tab="realestate">不動産情報</button>
 </div>
 
 <div id="tab-videos" class="tab-content">
+<p class="tagline">社会人でも勉強が楽しくなるおすすめYouTubeチャンネル</p>
+<p class="updated" style="margin-bottom:32px">最終更新: {updated}</p>
 {video_html}
 <div class="request-box">
   <p>追加してほしいチャンネルがあればリクエストどうぞ</p>
@@ -684,6 +826,10 @@ html = f"""<!DOCTYPE html>
 
 <div id="tab-news" class="tab-content">
 {news_html}
+</div>
+
+<div id="tab-realestate" class="tab-content">
+{realestate_html}
 </div>
 
 </div>

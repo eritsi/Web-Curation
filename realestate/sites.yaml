@@ -1,0 +1,56 @@
+sites:
+  - name: "Global Base (Renocolle)"
+    url: "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80"
+    extract: "globalbase"
+    base_url: "https://www.globalbase.jp/renocolle/obje/"
+    description: "リノベーション済み中古マンション（〜9000万・50〜80㎡）"
+
+  - name: "明和地所 tukurite リノベ済みマンション"
+    url: "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php"
+    extract: "meiwa"
+    base_url: "https://www.meiwajisyo.co.jp/chukai/buy/sch/"
+    pref_cds: [13, 14]
+    max_price_man: 9000
+    min_area_m2: 50
+    description: "自社リノベ済みマンション（東京・神奈川・〜9000万・50㎡以上）"
+
+  - name: "cowcamo 東京・神奈川 中古マンション"
+    url: "https://cowcamo.jp/update"
+    extract: "cowcamo"
+    base_url: "https://cowcamo.jp"
+    pages: 1
+    max_price_man: 9000
+    min_area_m2: 50
+    allowed_prefs:
+      - "東京都"
+      - "神奈川県"
+    description: "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）"
+
+  - name: "東京R不動産 売買物件"
+    url: "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50"
+    extract: "rte"
+    base_url: "https://www.realtokyoestate.co.jp"
+    max_price_man: 9000
+    min_area_m2: 50
+    description: "東京・神奈川 売買物件（〜9000万・50㎡以上）"
+
+  - name: "SUUMO みなとみらい線 中古マンション"
+    url: "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8"
+    extract: "suumo"
+    referer: "https://suumo.jp/ms/chuko/kanagawa/"
+    allowed_stations:
+      - "みなとみらい"
+      - "馬車道"
+      - "日本大通り"
+      - "元町・中華街"
+      - "元町中華街"
+    description: "みなとみらい線（みなとみらい/馬車道/日本大通り/元町・中華街・〜9000万・50㎡以上）"
+
+  - name: "SUUMO 鶴巻温泉 中古マンション"
+    url: "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8"
+    extract: "suumo"
+    referer: "https://suumo.jp/ms/chuko/kanagawa/"
+    allowed_stations:
+      - "鶴巻温泉"
+    max_walk_min: 5
+    description: "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）"
