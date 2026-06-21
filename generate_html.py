@@ -806,6 +806,7 @@ html = f"""<!DOCTYPE html>
 <div class="container">
 <header>
   <h1>Webキュレーション</h1>
+  <p style="margin-top:4px;margin-bottom:0;font-size:0.82em"><a href="yt-history/" style="color:#aaa;text-decoration:none;letter-spacing:0.03em">▶ 音楽プレイヤーへ</a></p>
 </header>
 
 <div class="tab-bar">
@@ -820,7 +821,7 @@ html = f"""<!DOCTYPE html>
 {video_html}
 <div class="request-box">
   <p>追加してほしいチャンネルがあればリクエストどうぞ</p>
-  <a href="https://github.com/eritsi/youtube-curation/issues/new?template=request.md" target="_blank">チャンネルをリクエストする</a>
+  <a href="https://github.com/eritsi/Web-Curation/issues/new?template=request.md" target="_blank">チャンネルをリクエストする</a>
 </div>
 </div>
 

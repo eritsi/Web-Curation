@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube 視聴履歴</title>
+<style>
+  :root {
+    --bg: #0f0f0f;
+    --surface: #1a1a1a;
+    --surface2: #242424;
+    --surface3: #2c2c2c;
+    --border: #2e2e2e;
+    --text: #e8e8e8;
+    --text-muted: #777;
+    --text-dim: #555;
+    --accent-recipe: #e8a045;
+    --accent-music: #5b9cf6;
+    --accent-other: #7ec88a;
+    --red: #e05555;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+
+  /* ── HEADER ── */
+  header { padding: 36px 40px 0; border-bottom: 1px solid var(--border); }
+  header h1 {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 22px;
+  }
+  .tabs { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    padding: 11px 22px;
+    font-size: 13px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    background: none;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active-recipe { color: var(--accent-recipe); border-bottom-color: var(--accent-recipe); }
+  .tab.active-music  { color: var(--accent-music);  border-bottom-color: var(--accent-music); }
+  .tab.active-other  { color: var(--accent-other);  border-bottom-color: var(--accent-other); }
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    background: var(--surface2);
+    padding: 1px 6px;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: var(--text-muted);
+  }
+
+  /* ── MAIN ── */
+  main { padding: 0 40px; max-width: 1100px; }
+  .status-bar {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 14px 0 10px;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── RECIPE TABLE ── */
+  .recipe-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+  thead th {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 8px 8px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  /* 列幅: plays=40px, date=46px, channel=残りの25%, title=残り */
+  th.th-plays  { width: 40px; text-align: right; }
+  th.th-title  { }
+  th.th-channel{ width: 25%; }
+  th.th-date   { width: 46px; }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+  tbody tr:hover { background: var(--surface); }
+  td { padding: 10px 8px; vertical-align: middle; overflow: hidden; }
+  .td-plays { font-family: var(--font-mono); font-size: 12px; text-align: right; width: 40px; }
+  .plays-1 { color: var(--text-muted); }
+  .plays-hi { color: var(--accent-recipe); font-weight: 600; }
+  .td-title { min-width: 0; }
+  .td-title a {
+    color: var(--text); text-decoration: none; line-height: 1.4; display: block;
+  }
+  .td-title a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+  .td-channel {
+    color: var(--text-muted); font-size: 12px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    width: 25%;
+  }
+  .td-date {
+    font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);
+    white-space: nowrap; width: 46px; text-align: right; padding-right: 4px;
+  }
+
+  /* ── OTHER TAB ── */
+  .other-toolbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 10px; flex-wrap: wrap; }
+  .show-hidden-btn {
+    font-family: var(--font-mono); font-size: 11px;
+    background: var(--surface2); border: 1px solid var(--border);
+    color: var(--text-muted); padding: 5px 12px; border-radius: 4px;
+    cursor: pointer; letter-spacing: 0.06em;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .show-hidden-btn:hover { color: var(--text); border-color: #555; }
+  .show-hidden-btn.active { color: var(--red); border-color: var(--red); }
+  .hidden-count { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); letter-spacing: 0.06em; }
+  .channel-block { border-bottom: 1px solid var(--border); }
+  .channel-block.is-hidden { opacity: 0.35; }
+  .channel-header { display: flex; align-items: center; cursor: pointer; padding: 0; user-select: none; }
+  .channel-header:hover .ch-name { color: var(--text); }
+  .ch-toggle { width: 36px; flex-shrink: 0; text-align: center; font-size: 10px; color: var(--text-dim); padding: 12px 0; font-family: var(--font-mono); transition: color 0.15s; }
+  .channel-header:hover .ch-toggle { color: var(--text-muted); }
+  .ch-name { flex: 1; font-size: 13px; color: var(--text-muted); padding: 12px 0; transition: color 0.15s; }
+  .ch-count { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); padding: 12px 16px 12px 12px; white-space: nowrap; }
+  .ch-hide-btn {
+    flex-shrink: 0; font-family: var(--font-mono); font-size: 10px;
+    padding: 4px 10px; margin-right: 12px; border-radius: 3px;
+    border: 1px solid var(--border); background: none; color: var(--text-dim);
+    cursor: pointer; letter-spacing: 0.05em;
+    transition: color 0.15s, border-color 0.15s; white-space: nowrap;
+  }
+  .ch-hide-btn:hover { color: var(--red); border-color: var(--red); }
+  .ch-hide-btn.unhide:hover { color: var(--accent-other); border-color: var(--accent-other); }
+  .channel-rows { display: none; }
+  .channel-rows.open { display: block; }
+  .channel-rows table { font-size: 12px; }
+  .channel-rows thead th { font-size: 10px; padding: 6px 10px 6px 36px; }
+  .channel-rows td { padding: 8px 10px 8px 36px; }
+  .channel-rows .td-plays { width: 48px; }
+
+  /* ── LOADING ── */
+  .loading { padding: 60px 0; font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); letter-spacing: 0.1em; }
+  .loading::after { content: ''; display: inline-block; width: 6px; height: 11px; background: var(--text-muted); margin-left: 7px; animation: blink 1s step-end infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* ── MUSIC PLAYER ── */
+  .music-wrap { display: flex; flex-direction: column; }
+  .player-area {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg); border-bottom: 1px solid var(--border); padding: 14px 0;
+  }
+  .player-embed { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 6px; overflow: hidden; }
+  .player-embed iframe { width: 100%; height: 100%; border: none; display: block; }
+  .player-embed-blocked {
+    width: 100%; aspect-ratio: 16/9; background: var(--surface); border-radius: 6px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 12px; border: 1px solid var(--border);
+  }
+  .player-embed-blocked span { font-size: 12px; color: var(--text-muted); font-family: var(--font-mono); }
+  .player-embed-blocked a {
+    font-family: var(--font-mono); font-size: 12px; color: var(--accent-music);
+    text-decoration: none; border: 1px solid var(--accent-music); padding: 6px 16px; border-radius: 4px;
+  }
+  .player-meta { padding: 10px 0 4px; }
+  .player-meta-title {
+    font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.4; margin-bottom: 3px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .player-meta-ch { font-size: 11px; color: var(--text-muted); font-family: var(--font-mono); }
+  .player-controls { display: flex; align-items: center; gap: 8px; padding: 10px 0 0; flex-wrap: wrap; }
+  .ctrl-btn {
+    font-family: var(--font-mono); font-size: 11px; padding: 6px 14px; border-radius: 4px;
+    border: 1px solid var(--border); background: var(--surface2); color: var(--text-muted);
+    cursor: pointer; letter-spacing: 0.05em; transition: color 0.15s, border-color 0.15s, background 0.15s;
+    white-space: nowrap;
+  }
+  .ctrl-btn:hover { color: var(--text); border-color: #555; }
+  .ctrl-btn.primary { border-color: var(--accent-music); color: var(--accent-music); }
+  .ctrl-btn.primary:hover { background: var(--accent-music); color: #000; }
+  .ctrl-pos { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); margin-left: auto; letter-spacing: 0.06em; }
+
+  /* ── PRESET TOOLBAR ── */
+  .pl-toolbar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 0 8px; flex-wrap: wrap;
+    border-bottom: 1px solid var(--border);
+  }
+  .pl-toolbar-label {
+    font-family: var(--font-mono); font-size: 10px;
+    color: var(--text-dim); letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .preset-btn {
+    font-family: var(--font-mono); font-size: 11px; padding: 4px 12px;
+    border-radius: 4px; border: 1px solid var(--border); background: none;
+    color: var(--text-muted); cursor: pointer; letter-spacing: 0.04em;
+    transition: color 0.15s, border-color 0.15s, background 0.15s; white-space: nowrap;
+  }
+  .preset-btn:hover { color: var(--text); border-color: #555; }
+  .preset-btn.active-preset { border-color: var(--accent-music); color: var(--accent-music); background: rgba(91,156,246,0.08); }
+  .preset-save { color: var(--text-dim); font-size: 10px; }
+  .preset-save:hover { color: var(--accent-music); border-color: var(--accent-music); }
+  .preset-clear { color: var(--text-dim); font-size: 10px; }
+  .preset-clear:hover { color: var(--red); border-color: var(--red); }
+  .pl-check-count { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-left: auto; }
+
+  /* ── PLAYLIST ── */
+  .playlist { padding-top: 2px; }
+  .pl-item {
+    display: flex; align-items: center;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.1s;
+  }
+  .pl-item:hover { background: var(--surface); }
+  .pl-item.active { background: var(--surface2); }
+  .pl-item.active .pl-title { color: var(--accent-music); }
+  .pl-item.unchecked { opacity: 0.32; }
+
+  .pl-check-wrap {
+    width: 38px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px 0; cursor: pointer;
+  }
+  .pl-check-wrap input[type=checkbox] {
+    width: 15px; height: 15px;
+    accent-color: var(--accent-music); cursor: pointer;
+  }
+  .pl-num {
+    width: 26px; flex-shrink: 0; text-align: center;
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--text-dim); padding: 12px 0; cursor: pointer;
+  }
+  .pl-item.active .pl-num { color: var(--accent-music); }
+  .pl-now-icon { display: none; font-size: 10px; }
+  .pl-item.active .pl-now-icon { display: inline; }
+  .pl-item.active .pl-num-text { display: none; }
+  .pl-info { flex: 1; padding: 10px 8px 10px 0; min-width: 0; cursor: pointer; }
+  .pl-title { font-size: 12px; color: var(--text); line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pl-ch { font-size: 11px; color: var(--text-dim); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pl-plays { flex-shrink: 0; font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); padding: 10px 12px; white-space: nowrap; cursor: pointer; }
+  .pl-item.active .pl-plays { color: var(--accent-music); }
+
+  @media (max-width: 640px) {
+    header, main { padding-left: 14px; padding-right: 14px; }
+    .ch-count { padding-right: 8px; }
+    /* スマホではchannelをやや狭く */
+    th.th-channel, .td-channel { width: 22%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>YouTube Watch History</h1>
+  <div class="tabs">
+    <button class="tab active-recipe" data-cat="レシピ" onclick="switchTab(this)">🍳 レシピ<span class="badge" id="cnt-レシピ">—</span></button>
+    <button class="tab" data-cat="音楽" onclick="switchTab(this)">🎵 音楽<span class="badge" id="cnt-音楽">—</span></button>
+    <button class="tab" data-cat="その他" onclick="switchTab(this)">📂 その他<span class="badge" id="cnt-その他">—</span></button>
+  </div>
+</header>
+
+<main>
+  <div id="pane-レシピ" class="pane"><div class="loading">loading</div></div>
+  <div id="pane-音楽"   class="pane" style="display:none"><div class="loading">loading</div></div>
+  <div id="pane-その他" class="pane" style="display:none"><div class="loading">loading</div></div>
+</main>
+
+<script>
+// ════════════════════════════════════════════
+//  STATE
+// ════════════════════════════════════════════
+const STORAGE_HIDDEN   = 'yt_hidden_channels';
+const STORAGE_PRESETS  = 'yt_music_presets';   // { name: [url, url, ...] }
+const STORAGE_CHECKS   = 'yt_music_checks';    // [url, url, ...] — current check state
+
+let allRows        = [];
+let hiddenChannels = new Set(JSON.parse(localStorage.getItem(STORAGE_HIDDEN) || '[]'));
+let showHiddenMode = false;
+let currentCat     = 'レシピ';
+const openChannels = new Set();
+
+// music player
+let musicRows    = [];   // all music rows (sorted)
+let checkedURLs  = new Set(JSON.parse(localStorage.getItem(STORAGE_CHECKS) || '[]'));
+let activePreset = null; // currently loaded preset name or null
+let queue        = [];   // indices into musicRows that are checked (or all if none checked)
+let queuePos     = 0;    // position in queue
+let ytPlayer     = null;
+let ytReady      = false;
+let isPlaying    = false;
+
+// ════════════════════════════════════════════
+//  CSV LOAD
+// ════════════════════════════════════════════
+async function loadCSV() {
+  const res  = await fetch('youtube_history.csv');
+  const text = await res.text();
+  const lines = text.trim().replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+  const headers = parseCSVLine(lines[0]);
+  allRows = [];
+  for (let i = 1; i < lines.length; i++) {
+    if (!lines[i].trim()) continue;
+    const cols = parseCSVLine(lines[i]);
+    const obj  = {};
+    headers.forEach((h, j) => obj[h] = (cols[j] || '').trim());
+    allRows.push(obj);
+  }
+  ['レシピ','音楽'].forEach(cat => {
+    const el = document.getElementById('cnt-' + cat);
+    if (el) el.textContent = allRows.filter(r => r['カテゴリ'] === cat).length;
+  });
+  const oe = document.getElementById('cnt-その他');
+  if (oe) oe.textContent = allRows.filter(r => !r['カテゴリ'].trim()).length;
+  renderPane('レシピ');
+}
+
+function parseCSVLine(line) {
+  const result = []; let cur = ''; let inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (c === '"') {
+      if (inQ && line[i+1] === '"') { cur += '"'; i++; } else inQ = !inQ;
+    } else if (c === ',' && !inQ) { result.push(cur); cur = ''; }
+    else cur += c;
+  }
+  result.push(cur);
+  return result;
+}
+
+// ════════════════════════════════════════════
+//  TAB
+// ════════════════════════════════════════════
+function switchTab(el) {
+  if (currentCat === '音楽' && el.dataset.cat !== '音楽') {
+    if (ytPlayer && typeof ytPlayer.pauseVideo === 'function') ytPlayer.pauseVideo();
+  }
+  document.querySelectorAll('.tab').forEach(t => t.className = 'tab');
+  const cat = el.dataset.cat;
+  el.className = 'tab ' + (cat==='音楽'?'active-music':cat==='その他'?'active-other':'active-recipe');
+  document.querySelectorAll('.pane').forEach(p => p.style.display = 'none');
+  document.getElementById('pane-' + cat).style.display = '';
+  currentCat = cat;
+  renderPane(cat);
+}
+
+function renderPane(cat) {
+  if (cat === '音楽')   renderMusicPlayer();
+  else if (cat === 'その他') renderOther();
+  else renderRecipeTable();
+}
+
+// ════════════════════════════════════════════
+//  RECIPE TABLE
+// ════════════════════════════════════════════
+function renderRecipeTable() {
+  const pane = document.getElementById('pane-レシピ');
+  const rows = allRows.filter(r => r['カテゴリ'] === 'レシピ')
+    .sort((a,b) => parseInt(b['視聴回数']) - parseInt(a['視聴回数']));
+  if (!rows.length) { pane.innerHTML = '<div class="loading">no data</div>'; return; }
+  const tbody = rows.map(r => {
+    const plays = parseInt(r['視聴回数']) || 1;
+    const raw   = r['視聴日時'] || '';
+    // "2024/03/15 ..." → "24/03"
+    const date  = raw.length >= 7 ? raw.slice(2,4) + '/' + raw.slice(5,7) : '';
+    return `<tr>
+      <td class="td-plays"><span class="${plays===1?'plays-1':'plays-hi'}">${plays}</span></td>
+      <td class="td-title"><a href="${esc(r['URL'])}" target="_blank" rel="noopener">${esc(r['タイトル']||r['URL'])}</a></td>
+      <td class="td-channel">${esc(r['チャンネル'])}</td>
+      <td class="td-date">${date}</td>
+    </tr>`;
+  }).join('');
+  pane.innerHTML = `
+    <div class="status-bar">${rows.length} items</div>
+    <div class="recipe-table-wrap">
+    <table>
+      <thead><tr>
+        <th class="th-plays" style="text-align:right">plays</th>
+        <th class="th-title">title</th>
+        <th class="th-channel">channel</th>
+        <th class="th-date">date</th>
+      </tr></thead>
+      <tbody>${tbody}</tbody>
+    </table>
+    </div>`;
+}
+
+// ════════════════════════════════════════════
+//  MUSIC PLAYER
+// ════════════════════════════════════════════
+window.onYouTubeIframeAPIReady = function() {
+  ytReady = true;
+  if (currentCat === '音楽' && queue.length) createPlayer();
+};
+
+function loadYTApi() {
+  if (document.getElementById('yt-api-script')) return;
+  const s = document.createElement('script');
+  s.id = 'yt-api-script';
+  s.src = 'https://www.youtube.com/iframe_api';
+  document.head.appendChild(s);
+}
+
+function getVideoId(url) {
+  const m = (url||'').match(/[?&]v=([a-zA-Z0-9_-]{11})/);
+  return m ? m[1] : null;
+}
+
+// queue = indices of checked rows (or all if none checked)
+function rebuildQueue() {
+  const checked = musicRows.map((r,i) => checkedURLs.has(r['URL']) ? i : -1).filter(i => i >= 0);
+  queue = checked.length ? checked : musicRows.map((_,i) => i);
+  // keep queuePos pointing to same row if possible
+  const currentGlobal = queue[queuePos] ?? 0;
+  queuePos = 0; // reset to top when queue changes
+  return queue;
+}
+
+function renderMusicPlayer() {
+  const pane = document.getElementById('pane-音楽');
+  musicRows = allRows.filter(r => r['カテゴリ'] === '音楽')
+    .sort((a,b) => parseInt(b['視聴回数']) - parseInt(a['視聴回数']));
+  if (!musicRows.length) { pane.innerHTML = '<div class="loading">no data</div>'; return; }
+
+  // clean up saved checks: remove URLs no longer in list
+  const validURLs = new Set(musicRows.map(r => r['URL']));
+  checkedURLs = new Set([...checkedURLs].filter(u => validURLs.has(u)));
+  saveChecks();
+
+  rebuildQueue();
+
+  pane.innerHTML = buildMusicHTML();
+  loadYTApi();
+  if (ytReady) createPlayer();
+}
+
+function buildMusicHTML() {
+  const presets = loadPresets();
+  const presetNames = Object.keys(presets);
+  const checkedCount = checkedURLs.size;
+
+  // preset toolbar
+  const presetBtns = presetNames.map(name =>
+    `<button class="preset-btn${activePreset===name?' active-preset':''}" onclick="loadPreset('${esc(name)}')">${esc(name)}</button>`
+  ).join('');
+
+  const toolbar = `
+    <div class="pl-toolbar">
+      <span class="pl-toolbar-label">Preset</span>
+      ${presetBtns}
+      <button class="preset-btn preset-save" onclick="savePresetDialog()">＋ 保存</button>
+      ${activePreset ? `<button class="preset-btn preset-clear" onclick="clearPreset('${esc(activePreset)}')">✕ ${esc(activePreset)}を削除</button>` : ''}
+      <span class="pl-check-count" id="check-count">${checkedCount ? checkedCount+'曲選択中' : 'すべて再生'}</span>
+    </div>`;
+
+  // playlist items
+  const currentGlobalIdx = queue[queuePos] ?? 0;
+  const plItems = musicRows.map((r, i) => {
+    const plays     = parseInt(r['視聴回数']) || 1;
+    const isChecked = checkedURLs.has(r['URL']);
+    const isActive  = i === currentGlobalIdx;
+    return `<div class="pl-item${isActive?' active':''}${!isChecked&&checkedURLs.size?' unchecked':''}" id="pl-item-${i}">
+      <div class="pl-check-wrap" onclick="toggleCheck(${i})">
+        <input type="checkbox" ${isChecked?'checked':''} onclick="event.stopPropagation();toggleCheck(${i})">
+      </div>
+      <div class="pl-num" onclick="playGlobal(${i})">
+        <span class="pl-now-icon">▶</span>
+        <span class="pl-num-text">${i+1}</span>
+      </div>
+      <div class="pl-info" onclick="playGlobal(${i})">
+        <div class="pl-title">${esc(r['タイトル']||r['URL'])}</div>
+        <div class="pl-ch">${esc(r['チャンネル'])}</div>
+      </div>
+      <div class="pl-plays" onclick="playGlobal(${i})">${plays>1?plays+'×':''}</div>
+    </div>`;
+  }).join('');
+
+  const currentRow = musicRows[currentGlobalIdx] || musicRows[0];
+  return `
+    <div class="music-wrap">
+      <div class="player-area">
+        <div id="player-embed-wrap">
+          <div class="player-embed"><div id="yt-player-div"></div></div>
+        </div>
+        <div class="player-meta">
+          <div class="player-meta-title" id="player-title">${esc(currentRow['タイトル'])}</div>
+          <div class="player-meta-ch" id="player-ch">${esc(currentRow['チャンネル'])}</div>
+        </div>
+        <div class="player-controls">
+          <button class="ctrl-btn" onclick="prevTrack()">◀ 前</button>
+          <button class="ctrl-btn primary" id="play-pause-btn" onclick="togglePlay()">▶ 再生</button>
+          <button class="ctrl-btn" onclick="nextTrack()">次 ▶</button>
+          <span class="ctrl-pos" id="pos-label">${queuePos+1} / ${queue.length}</span>
+        </div>
+      </div>
+      ${toolbar}
+      <div class="playlist" id="playlist">${plItems}</div>
+    </div>`;
+}
+
+// ── check / preset ops ──────────────────────────────────
+
+function toggleCheck(i) {
+  const url = musicRows[i]['URL'];
+  if (checkedURLs.has(url)) checkedURLs.delete(url);
+  else checkedURLs.add(url);
+  activePreset = null; // チェックを手動変更したらプリセット解除
+  saveChecks();
+  rebuildQueue();
+  refreshPlaylistUI();
+}
+
+function refreshPlaylistUI() {
+  // チェックボックス・uncheckedクラス・カウントだけ更新（再描画なし）
+  const checkedCount = checkedURLs.size;
+  const currentGlobalIdx = queue[queuePos] ?? 0;
+  musicRows.forEach((r, i) => {
+    const item = document.getElementById('pl-item-' + i);
+    if (!item) return;
+    const cb = item.querySelector('input[type=checkbox]');
+    const isChecked = checkedURLs.has(r['URL']);
+    if (cb) cb.checked = isChecked;
+    item.classList.toggle('unchecked', !isChecked && checkedURLs.size > 0);
+    item.classList.toggle('active', i === currentGlobalIdx);
+  });
+  const cc = document.getElementById('check-count');
+  if (cc) cc.textContent = checkedCount ? checkedCount+'曲選択中' : 'すべて再生';
+  const pl = document.getElementById('pos-label');
+  if (pl) pl.textContent = `${queuePos+1} / ${queue.length}`;
+  // preset buttons active state
+  document.querySelectorAll('.preset-btn').forEach(btn => {
+    btn.classList.toggle('active-preset', btn.textContent.trim() === activePreset);
+  });
+}
+
+function saveChecks() {
+  localStorage.setItem(STORAGE_CHECKS, JSON.stringify([...checkedURLs]));
+}
+
+// presets: { name: [url, ...] }
+function loadPresets() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_PRESETS) || '{}'); }
+  catch(e) { return {}; }
+}
+function savePresets(obj) {
+  localStorage.setItem(STORAGE_PRESETS, JSON.stringify(obj));
+}
+
+function savePresetDialog() {
+  const name = prompt('プリセット名を入力してください（例: サウナ）', activePreset || 'サウナ');
+  if (!name || !name.trim()) return;
+  const n = name.trim();
+  if (checkedURLs.size === 0) { alert('先にチェックボックスで曲を選択してください'); return; }
+  const presets = loadPresets();
+  presets[n] = [...checkedURLs];
+  savePresets(presets);
+  activePreset = n;
+  // ツールバーを再描画
+  const pane = document.getElementById('pane-音楽');
+  pane.innerHTML = buildMusicHTML();
+  if (ytReady) createPlayer();
+  loadYTApi();
+}
+
+function loadPreset(name) {
+  const presets = loadPresets();
+  if (!presets[name]) return;
+  checkedURLs = new Set(presets[name]);
+  activePreset = name;
+  saveChecks();
+  rebuildQueue();
+  queuePos = 0;
+  refreshPlaylistUI();
+  // posラベル更新
+  const pl = document.getElementById('pos-label');
+  if (pl) pl.textContent = `${queuePos+1} / ${queue.length}`;
+}
+
+function clearPreset(name) {
+  if (!confirm(`プリセット「${name}」を削除しますか？`)) return;
+  const presets = loadPresets();
+  delete presets[name];
+  savePresets(presets);
+  if (activePreset === name) activePreset = null;
+  const pane = document.getElementById('pane-音楽');
+  pane.innerHTML = buildMusicHTML();
+  loadYTApi();
+  if (ytReady) createPlayer();
+}
+
+// ── player ops ──────────────────────────────────────────
+
+function createPlayer() {
+  const globalIdx = queue[queuePos];
+  if (globalIdx === undefined) return;
+  const vid = getVideoId(musicRows[globalIdx]?.URL);
+  if (!vid) { nextTrack(); return; }
+
+  // iOSでの自動再生継続のため、プレイヤーは初回だけ生成しloadVideoByIdで曲を差し替える
+  if (ytPlayer && typeof ytPlayer.loadVideoById === 'function') {
+    // 既存プレイヤーがあれば曲だけ差し替え → iOSでも自動再生が継続する
+    ytPlayer.loadVideoById({ videoId: vid, suggestedQuality: 'default' });
+    isPlaying = true;
+    updatePlayBtn();
+    // embedエリアが差し替わっていた場合（blocked fallback後）は元に戻す
+    const wrap = document.getElementById('player-embed-wrap');
+    if (wrap && !wrap.querySelector('iframe')) {
+      ytPlayer.destroy(); ytPlayer = null;
+      _initPlayer(vid);
+    }
+    return;
+  }
+  _initPlayer(vid);
+}
+
+function _initPlayer(vid) {
+  const wrap = document.getElementById('player-embed-wrap');
+  if (!wrap) return;
+  wrap.innerHTML = '<div class="player-embed"><div id="yt-player-div"></div></div>';
+  ytPlayer = new YT.Player('yt-player-div', {
+    videoId: vid,
+    playerVars: { autoplay: 1, rel: 0, modestbranding: 1, playsinline: 1 },
+    events: {
+      onReady: e => { e.target.playVideo(); isPlaying = true; updatePlayBtn(); },
+      onStateChange: onPlayerStateChange,
+      onError: onPlayerError,
+    }
+  });
+}
+
+function onPlayerStateChange(e) {
+  const S = YT.PlayerState;
+  if      (e.data === S.PLAYING) { isPlaying = true;  updatePlayBtn(); }
+  else if (e.data === S.PAUSED)  { isPlaying = false; updatePlayBtn(); }
+  else if (e.data === S.ENDED)   { nextTrack(); }
+}
+
+function onPlayerError(e) {
+  showBlockedFallback([101,150].includes(e.data));
+  setTimeout(() => nextTrack(), 2000);
+}
+
+function showBlockedFallback(isEmbedBlocked) {
+  const wrap = document.getElementById('player-embed-wrap');
+  if (!wrap) return;
+  const r = musicRows[queue[queuePos]];
+  wrap.innerHTML = `<div class="player-embed-blocked">
+    <span>${isEmbedBlocked?'埋め込み不可 — 次の曲へスキップします':'再生エラー'}</span>
+    <a href="${esc(r.URL)}" target="_blank" rel="noopener">YouTubeで開く ↗</a>
+  </div>`;
+  // iframeが消えたのでプレイヤーオブジェクトも破棄しておく
+  if (ytPlayer) { try { ytPlayer.destroy(); } catch(e) {} ytPlayer = null; }
+}
+
+function playGlobal(globalIdx) {
+  // globalIdxがqueueに含まれていれば再生、なければチェックして追加
+  let qi = queue.indexOf(globalIdx);
+  if (qi === -1) {
+    // unchecked な曲をクリック → チェックして再生
+    checkedURLs.add(musicRows[globalIdx]['URL']);
+    activePreset = null;
+    saveChecks();
+    rebuildQueue();
+    refreshPlaylistUI();
+    qi = queue.indexOf(globalIdx);
+  }
+  queuePos = qi >= 0 ? qi : 0;
+  updatePlaylistHighlight();
+  createPlayer();
+}
+
+function prevTrack() {
+  queuePos = (queuePos - 1 + queue.length) % queue.length;
+  updatePlaylistHighlight();
+  createPlayer();
+}
+
+function nextTrack() {
+  queuePos = (queuePos + 1) % queue.length;
+  updatePlaylistHighlight();
+  createPlayer();
+}
+
+function togglePlay() {
+  if (!ytPlayer || typeof ytPlayer.getPlayerState !== 'function') return;
+  if (ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) ytPlayer.pauseVideo();
+  else ytPlayer.playVideo();
+}
+
+function updatePlayBtn() {
+  const btn = document.getElementById('play-pause-btn');
+  if (btn) btn.textContent = isPlaying ? '⏸ 一時停止' : '▶ 再生';
+}
+
+function updatePlaylistHighlight() {
+  const gi = queue[queuePos];
+  document.querySelectorAll('.pl-item').forEach((el, i) => {
+    el.classList.toggle('active', i === gi);
+    el.classList.toggle('unchecked', !checkedURLs.has(musicRows[i]['URL']) && checkedURLs.size > 0);
+  });
+  const active = document.getElementById('pl-item-' + gi);
+  if (active) active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  const r = musicRows[gi];
+  const t = document.getElementById('player-title');
+  const c = document.getElementById('player-ch');
+  const p = document.getElementById('pos-label');
+  if (t) t.textContent = r['タイトル'] || r['URL'];
+  if (c) c.textContent = r['チャンネル'];
+  if (p) p.textContent = `${queuePos+1} / ${queue.length}`;
+}
+
+// ════════════════════════════════════════════
+//  OTHER TAB
+// ════════════════════════════════════════════
+function renderOther() {
+  const pane = document.getElementById('pane-その他');
+  const rows = allRows.filter(r => !r['カテゴリ'].trim());
+  const channelMap = new Map();
+  for (const r of rows) {
+    const ch = r['チャンネル'] || '(タイトルなし)';
+    if (!channelMap.has(ch)) channelMap.set(ch, []);
+    channelMap.get(ch).push(r);
+  }
+  const sorted = [...channelMap.entries()].sort((a,b) => {
+    const aH = hiddenChannels.has(a[0]) ? 1 : 0;
+    const bH = hiddenChannels.has(b[0]) ? 1 : 0;
+    if (aH !== bH) return aH - bH;
+    return b[1].length - a[1].length;
+  });
+  const hiddenCount = [...channelMap.keys()].filter(ch => hiddenChannels.has(ch)).length;
+
+  let html = `<div class="other-toolbar">
+    <button class="show-hidden-btn${showHiddenMode?' active':''}" onclick="toggleShowHidden()">
+      ${showHiddenMode ? '▣ 非表示を隠す' : '□ 非表示も表示'}
+    </button>
+    <span class="hidden-count">${hiddenCount} channels hidden</span>
+  </div><div id="channel-list">`;
+
+  for (const [ch, chRows] of sorted) {
+    const isHidden = hiddenChannels.has(ch);
+    if (isHidden && !showHiddenMode) continue;
+    const sorted_rows = [...chRows].sort((a,b) => parseInt(b['視聴回数']) - parseInt(a['視聴回数']));
+    const isOpen = openChannels.has(ch);
+    const chId = 'ch-' + btoa(encodeURIComponent(ch)).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
+    const rows_html = sorted_rows.map(r => {
+      const plays = parseInt(r['視聴回数']) || 1;
+      const date  = (r['視聴日時']||'').slice(0,10);
+      return `<tr>
+        <td class="td-plays"><span class="${plays===1?'plays-1':'plays-hi'}">${plays}</span></td>
+        <td class="td-title"><a href="${esc(r['URL'])}" target="_blank" rel="noopener">${esc(r['タイトル']||r['URL'])}</a></td>
+        <td class="td-date">${date}</td>
+      </tr>`;
+    }).join('');
+    html += `<div class="channel-block${isHidden?' is-hidden':''}" id="${chId}">
+      <div class="channel-header" onclick="toggleChannel('${chId}','${esc(ch)}')">
+        <span class="ch-toggle">${isOpen?'▾':'▸'}</span>
+        <span class="ch-name">${esc(ch)}</span>
+        <span class="ch-count">${chRows.length} 件</span>
+      </div>
+      <button class="ch-hide-btn${isHidden?' unhide':''}" onclick="event.stopPropagation();toggleHide('${esc(ch)}')">
+        ${isHidden?'表示に戻す':'非表示'}
+      </button>
+      <div class="channel-rows${isOpen?' open':''}" id="rows-${chId}">
+        <table><thead><tr><th style="text-align:right">plays</th><th>title</th><th>date</th></tr></thead>
+        <tbody>${rows_html}</tbody></table>
+      </div>
+    </div>`;
+  }
+  html += '</div>';
+  pane.innerHTML = html;
+}
+
+function toggleChannel(chId, ch) {
+  if (openChannels.has(ch)) openChannels.delete(ch); else openChannels.add(ch);
+  const block  = document.getElementById(chId);
+  if (!block) return;
+  const rows   = document.getElementById('rows-' + chId);
+  const toggle = block.querySelector('.ch-toggle');
+  if (openChannels.has(ch)) { rows.classList.add('open'); toggle.textContent = '▾'; }
+  else { rows.classList.remove('open'); toggle.textContent = '▸'; }
+}
+
+function toggleHide(ch) {
+  if (hiddenChannels.has(ch)) hiddenChannels.delete(ch); else hiddenChannels.add(ch);
+  localStorage.setItem(STORAGE_HIDDEN, JSON.stringify([...hiddenChannels]));
+  renderOther();
+}
+
+function toggleShowHidden() {
+  showHiddenMode = !showHiddenMode;
+  renderOther();
+}
+
+// ════════════════════════════════════════════
+//  UTILS
+// ════════════════════════════════════════════
+function esc(s) {
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+loadCSV().catch(e => {
+  document.getElementById('pane-レシピ').innerHTML = `<div class="loading">error: ${e.message}</div>`;
+});
+</script>
+</body>
+</html>
