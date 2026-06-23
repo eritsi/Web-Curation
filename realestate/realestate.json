@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T11:51:37",
+  "generated_at": "2026-06-23T11:26:49",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,18 +7,28 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-06-22T11:51:37",
+      "checked_at": "2026-06-23T11:26:49",
       "new_listings": [],
       "all_listings": [
         {
           "id": "5388",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5388",
           "name": "ノーブル亀戸",
-          "price": "6,290万円",
+          "price": "5,990万円価格改定",
           "area": "54.32㎡",
           "madori": "3LDK",
           "traffic": "東京メトロ半蔵門線・都営新宿線『住吉』駅徒歩10分",
           "location": "東京都江東区大島2-6-1"
+        },
+        {
+          "id": "5408",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
+          "name": "エクセレント港北センター南",
+          "price": "7,990万円",
+          "area": "75.44㎡",
+          "madori": "3LDK",
+          "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
+          "location": "神奈川県横浜市都筑区荏田東4-1-14"
         },
         {
           "id": "5439",
@@ -31,14 +41,14 @@
           "location": "東京都世田谷区弦巻2-23-15"
         },
         {
-          "id": "5403",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5403",
-          "name": "プレシス府中リヴェスタ",
-          "price": "6,190万円",
-          "area": "68.31㎡",
-          "madori": "2SLDK+WIC・SIC",
-          "traffic": "京王線『東府中』駅徒歩6分",
-          "location": "東京都府中市八幡町3-2-1"
+          "id": "5400",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
+          "name": "ベルハイム西荻窪第3",
+          "price": "7,990万円価格改定",
+          "area": "67.51㎡",
+          "madori": "3LDK",
+          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
+          "location": "東京都杉並区西荻北4-8-2"
         },
         {
           "id": "5391",
@@ -51,16 +61,6 @@
           "location": "神奈川県横浜市西区御所山町15番地1"
         },
         {
-          "id": "5400",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
-          "name": "ベルハイム西荻窪第3",
-          "price": "8,190万円",
-          "area": "67.51㎡",
-          "madori": "3LDK",
-          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
-          "location": "東京都杉並区西荻北4-8-2"
-        },
-        {
           "id": "5252",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5252",
           "name": "クリオ横浜関内壱番館",
@@ -71,24 +71,24 @@
           "location": "神奈川県横浜市中区太田町3-36"
         },
         {
-          "id": "5408",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
-          "name": "エクセレント港北センター南",
-          "price": "7,990万円",
-          "area": "75.44㎡",
-          "madori": "3LDK",
-          "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
-          "location": "神奈川県横浜市都筑区荏田東4-1-14"
+          "id": "5403",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5403",
+          "name": "プレシス府中リヴェスタ",
+          "price": "6,190万円",
+          "area": "68.31㎡",
+          "madori": "2SLDK+WIC・SIC",
+          "traffic": "京王線『東府中』駅徒歩6分",
+          "location": "東京都府中市八幡町3-2-1"
         }
       ],
       "ids": [
         "5388",
+        "5408",
         "5439",
-        "5403",
-        "5391",
         "5400",
+        "5391",
         "5252",
-        "5408"
+        "5403"
       ]
     },
     {
@@ -97,7 +97,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-06-22T11:51:37",
+      "checked_at": "2026-06-23T11:26:49",
       "new_listings": [],
       "all_listings": [
         {
@@ -120,10 +120,31 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-06-22T11:51:37",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-06-23T11:26:49",
+      "new_listings": [
+        {
+          "id": "ZKoeEOqWXZM",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%8F%B0%E6%9D%B1%E5%8C%BA/%E6%95%A3%E6%AD%A9%E3%81%AE%E5%88%86%E5%B2%90%E7%82%B9",
+          "name": "散歩の分岐点",
+          "price": "5,680万円",
+          "area": "58.99㎡",
+          "madori": "2LDK",
+          "traffic": "根津駅徒歩9分",
+          "location": "台東区上野桜木"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "ZKoeEOqWXZM",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%8F%B0%E6%9D%B1%E5%8C%BA/%E6%95%A3%E6%AD%A9%E3%81%AE%E5%88%86%E5%B2%90%E7%82%B9",
+          "name": "散歩の分岐点",
+          "price": "5,680万円",
+          "area": "58.99㎡",
+          "madori": "2LDK",
+          "traffic": "根津駅徒歩9分",
+          "location": "台東区上野桜木"
+        },
         {
           "id": "QxFMjffDFrk",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E7%B7%91%E3%82%92%E7%9C%BA%E3%82%81%E3%82%8B%E3%83%AD%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%BC%E3%83%88",
@@ -206,6 +227,7 @@
         }
       ],
       "ids": [
+        "ZKoeEOqWXZM",
         "QxFMjffDFrk",
         "yfyZpnIvFWU",
         "ZkYt3vGSa90",
@@ -221,10 +243,31 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-06-22T11:51:37",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-06-23T11:26:49",
+      "new_listings": [
+        {
+          "id": "26713",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26713",
+          "name": "ルーフテラスと緑の日々",
+          "price": "6,180万円（税込）",
+          "area": "93.69㎡",
+          "madori": "",
+          "traffic": "東急田園都市線「あざみ野」駅 徒歩16分",
+          "location": "横浜市青葉区あざみ野"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "26713",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26713",
+          "name": "ルーフテラスと緑の日々",
+          "price": "6,180万円（税込）",
+          "area": "93.69㎡",
+          "madori": "",
+          "traffic": "東急田園都市線「あざみ野」駅 徒歩16分",
+          "location": "横浜市青葉区あざみ野"
+        },
         {
           "id": "26776",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=26776",
@@ -344,19 +387,10 @@
           "madori": "",
           "traffic": "横浜線・東急東横線「菊名」駅 徒歩11分",
           "location": "横浜市港北区富士塚"
-        },
-        {
-          "id": "26017",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26017",
-          "name": "プロダクトにこだわる",
-          "price": "5,830万円（税込）",
-          "area": "79.49㎡",
-          "madori": "",
-          "traffic": "西武池袋線「清瀬」駅 徒歩14分",
-          "location": "東久留米市小山"
         }
       ],
       "ids": [
+        "26713",
         "26776",
         "26310",
         "26277",
@@ -368,8 +402,7 @@
         "25096",
         "26511",
         "26265",
-        "26299",
-        "26017"
+        "26299"
       ]
     },
     {
@@ -378,7 +411,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-22T11:51:37",
+      "checked_at": "2026-06-23T11:26:49",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -389,7 +422,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-22T11:51:37",
+      "checked_at": "2026-06-23T11:26:49",
       "new_listings": [],
       "all_listings": [
         {
