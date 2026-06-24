@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T11:26:49",
+  "generated_at": "2026-06-24T11:28:13",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-06-23T11:26:49",
+      "checked_at": "2026-06-24T11:28:13",
       "new_listings": [],
       "all_listings": [
         {
@@ -97,7 +97,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-06-23T11:26:49",
+      "checked_at": "2026-06-24T11:28:13",
       "new_listings": [],
       "all_listings": [
         {
@@ -120,20 +120,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-06-23T11:26:49",
-      "new_listings": [
-        {
-          "id": "ZKoeEOqWXZM",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%8F%B0%E6%9D%B1%E5%8C%BA/%E6%95%A3%E6%AD%A9%E3%81%AE%E5%88%86%E5%B2%90%E7%82%B9",
-          "name": "散歩の分岐点",
-          "price": "5,680万円",
-          "area": "58.99㎡",
-          "madori": "2LDK",
-          "traffic": "根津駅徒歩9分",
-          "location": "台東区上野桜木"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-06-24T11:28:13",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "ZKoeEOqWXZM",
@@ -243,20 +232,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-06-23T11:26:49",
-      "new_listings": [
-        {
-          "id": "26713",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26713",
-          "name": "ルーフテラスと緑の日々",
-          "price": "6,180万円（税込）",
-          "area": "93.69㎡",
-          "madori": "",
-          "traffic": "東急田園都市線「あざみ野」駅 徒歩16分",
-          "location": "横浜市青葉区あざみ野"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-06-24T11:28:13",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26713",
@@ -411,7 +389,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-23T11:26:49",
+      "checked_at": "2026-06-24T11:28:13",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -422,7 +400,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-23T11:26:49",
+      "checked_at": "2026-06-24T11:28:13",
       "new_listings": [],
       "all_listings": [
         {
