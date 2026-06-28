@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T11:25:30",
+  "generated_at": "2026-06-28T11:37:44",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-06-27T11:25:30",
+      "checked_at": "2026-06-28T11:37:44",
       "new_listings": [],
       "all_listings": [
         {
@@ -97,7 +97,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-06-27T11:25:30",
+      "checked_at": "2026-06-28T11:37:44",
       "new_listings": [],
       "all_listings": [
         {
@@ -120,60 +120,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-06-27T11:25:30",
-      "new_listings": [
-        {
-          "id": "0sveZDkjn1E",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%82%B3%E3%83%9E%E3%83%80%E3%82%A4%E3%83%A9%E3%83%90%E3%83%BC%E3%82%BA",
-          "name": "コマダイ・ラバーズ",
-          "price": "4,299万円",
-          "area": "57.20㎡",
-          "madori": "2LDK",
-          "traffic": "駒沢大学駅徒歩10分",
-          "location": "世田谷区弦巻"
-        },
-        {
-          "id": "AfMarCeJnkM",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/11%E7%AA%93%E3%82%82%E3%81%82%E3%82%8B",
-          "name": "11窓もある！",
-          "price": "8,980万円",
-          "area": "74.12㎡",
-          "madori": "3LDK",
-          "traffic": "西永福駅徒歩7分",
-          "location": "杉並区浜田山"
-        },
-        {
-          "id": "yliMdZVNAsA",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%8E%9F%E5%8C%BA/%E5%B7%9D%E9%A2%A8%E3%81%AB%E8%AA%98%E3%82%8F%E3%82%8C%E3%81%A6",
-          "name": "川風に誘われて",
-          "price": "8,280万円",
-          "area": "71.13㎡",
-          "madori": "3LDK",
-          "traffic": "向河原駅徒歩9分",
-          "location": "川崎市中原区中丸子"
-        },
-        {
-          "id": "YGYk7gVmfjM",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E6%B0%97%E3%81%BE%E3%81%BE%E3%81%AA%E3%83%A1%E3%82%BE%E3%81%90%E3%82%89%E3%81%97",
-          "name": "気ままなメゾぐらし",
-          "price": "8,490万円",
-          "area": "87.71㎡",
-          "madori": "3LDK",
-          "traffic": "西永福駅徒歩15分",
-          "location": "杉並区成田東"
-        },
-        {
-          "id": "JAt5rxLaNxo",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B8%8B%E8%B0%B7%E5%8C%BA/%E3%81%93%E3%81%AE%E8%A1%97%E3%81%AE%E6%B8%A9%E5%BA%A6",
-          "name": "この街の温度",
-          "price": "7,790万円",
-          "area": "57.42㎡",
-          "madori": "2SLDK",
-          "traffic": "幡ヶ谷駅徒歩4分",
-          "location": "渋谷区幡ヶ谷"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-06-28T11:37:44",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "0sveZDkjn1E",
@@ -383,7 +332,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-06-27T11:25:30",
+      "checked_at": "2026-06-28T11:37:44",
       "new_listings": [],
       "all_listings": [
         {
@@ -539,7 +488,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-27T11:25:30",
+      "checked_at": "2026-06-28T11:37:44",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -550,7 +499,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-27T11:25:30",
+      "checked_at": "2026-06-28T11:37:44",
       "new_listings": [],
       "all_listings": [
         {
