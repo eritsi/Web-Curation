@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T11:37:56",
+  "generated_at": "2026-06-30T11:32:13",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,9 +7,19 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-06-29T11:37:56",
+      "checked_at": "2026-06-30T11:32:13",
       "new_listings": [],
       "all_listings": [
+        {
+          "id": "5252",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5252",
+          "name": "クリオ横浜関内壱番館",
+          "price": "5,990万円価格改定",
+          "area": "59.29㎡",
+          "madori": "2LDK+SIC",
+          "traffic": "みなとみらい線『馬車道』駅徒歩5分",
+          "location": "神奈川県横浜市中区太田町3-36"
+        },
         {
           "id": "5408",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
@@ -19,16 +29,6 @@
           "madori": "3LDK",
           "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
           "location": "神奈川県横浜市都筑区荏田東4-1-14"
-        },
-        {
-          "id": "5252",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5252",
-          "name": "クリオ横浜関内壱番館",
-          "price": "6,290万円",
-          "area": "59.29㎡",
-          "madori": "2LDK+SIC",
-          "traffic": "みなとみらい線『馬車道』駅徒歩5分",
-          "location": "神奈川県横浜市中区太田町3-36"
         },
         {
           "id": "5403",
@@ -82,8 +82,8 @@
         }
       ],
       "ids": [
-        "5408",
         "5252",
+        "5408",
         "5403",
         "5439",
         "5388",
@@ -97,7 +97,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-06-29T11:37:56",
+      "checked_at": "2026-06-30T11:32:13",
       "new_listings": [],
       "all_listings": [
         {
@@ -120,10 +120,51 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-06-29T11:37:56",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-06-30T11:32:13",
+      "new_listings": [
+        {
+          "id": "dEh9xAzA6fs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E7%AA%93%E9%9A%9B%E3%81%8C%E7%A7%81%E3%81%AE%E5%AE%9A%E4%BD%8D%E7%BD%AE",
+          "name": "窓際が私の定位置",
+          "price": "7,580万円",
+          "area": "83.62㎡",
+          "madori": "4LDK",
+          "traffic": "つつじヶ丘駅徒歩12分",
+          "location": "調布市西つつじケ丘"
+        },
+        {
+          "id": "A6E2skpCkgI",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%94%BA%E7%94%B0%E5%B8%82/%E5%AE%B6%E3%81%AF%E3%81%A4%E3%81%A5%E3%81%8F%E3%82%88%E3%81%A9%E3%81%93%E3%81%BE%E3%81%A7%E3%82%82",
+          "name": "家はつづくよ、どこまでも",
+          "price": "6,480万円",
+          "area": "108.61㎡",
+          "madori": "3LDK",
+          "traffic": "町田駅徒歩9分",
+          "location": "町田市原町田"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "dEh9xAzA6fs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E7%AA%93%E9%9A%9B%E3%81%8C%E7%A7%81%E3%81%AE%E5%AE%9A%E4%BD%8D%E7%BD%AE",
+          "name": "窓際が私の定位置",
+          "price": "7,580万円",
+          "area": "83.62㎡",
+          "madori": "4LDK",
+          "traffic": "つつじヶ丘駅徒歩12分",
+          "location": "調布市西つつじケ丘"
+        },
+        {
+          "id": "A6E2skpCkgI",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%94%BA%E7%94%B0%E5%B8%82/%E5%AE%B6%E3%81%AF%E3%81%A4%E3%81%A5%E3%81%8F%E3%82%88%E3%81%A9%E3%81%93%E3%81%BE%E3%81%A7%E3%82%82",
+          "name": "家はつづくよ、どこまでも",
+          "price": "6,480万円",
+          "area": "108.61㎡",
+          "madori": "3LDK",
+          "traffic": "町田駅徒歩9分",
+          "location": "町田市原町田"
+        },
         {
           "id": "0sveZDkjn1E",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%82%B3%E3%83%9E%E3%83%80%E3%82%A4%E3%83%A9%E3%83%90%E3%83%BC%E3%82%BA",
@@ -286,6 +327,8 @@
         }
       ],
       "ids": [
+        "dEh9xAzA6fs",
+        "A6E2skpCkgI",
         "0sveZDkjn1E",
         "AfMarCeJnkM",
         "yliMdZVNAsA",
@@ -309,20 +352,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-06-29T11:37:56",
-      "new_listings": [
-        {
-          "id": "26871",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26871",
-          "name": "端正な幾何学模様",
-          "price": "5,960万円",
-          "area": "61.63㎡",
-          "madori": "",
-          "traffic": "西武新宿線「下落合」駅 徒歩7分",
-          "location": "新宿区中落合"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-06-30T11:32:13",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26871",
@@ -488,7 +520,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-29T11:37:56",
+      "checked_at": "2026-06-30T11:32:13",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -499,7 +531,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-29T11:37:56",
+      "checked_at": "2026-06-30T11:32:13",
       "new_listings": [],
       "all_listings": [
         {
