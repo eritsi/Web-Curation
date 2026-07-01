@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T11:32:13",
+  "generated_at": "2026-07-01T11:38:28",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-06-30T11:32:13",
+      "checked_at": "2026-07-01T11:38:28",
       "new_listings": [],
       "all_listings": [
         {
@@ -97,7 +97,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-06-30T11:32:13",
+      "checked_at": "2026-07-01T11:38:28",
       "new_listings": [],
       "all_listings": [
         {
@@ -120,30 +120,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-06-30T11:32:13",
-      "new_listings": [
-        {
-          "id": "dEh9xAzA6fs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E7%AA%93%E9%9A%9B%E3%81%8C%E7%A7%81%E3%81%AE%E5%AE%9A%E4%BD%8D%E7%BD%AE",
-          "name": "窓際が私の定位置",
-          "price": "7,580万円",
-          "area": "83.62㎡",
-          "madori": "4LDK",
-          "traffic": "つつじヶ丘駅徒歩12分",
-          "location": "調布市西つつじケ丘"
-        },
-        {
-          "id": "A6E2skpCkgI",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%94%BA%E7%94%B0%E5%B8%82/%E5%AE%B6%E3%81%AF%E3%81%A4%E3%81%A5%E3%81%8F%E3%82%88%E3%81%A9%E3%81%93%E3%81%BE%E3%81%A7%E3%82%82",
-          "name": "家はつづくよ、どこまでも",
-          "price": "6,480万円",
-          "area": "108.61㎡",
-          "madori": "3LDK",
-          "traffic": "町田駅徒歩9分",
-          "location": "町田市原町田"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-01T11:38:28",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "dEh9xAzA6fs",
@@ -353,7 +332,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-06-30T11:32:13",
+      "checked_at": "2026-07-01T11:38:28",
       "new_listings": [],
       "all_listings": [
         {
@@ -477,16 +456,6 @@
           "location": "川崎市高津区下作延"
         },
         {
-          "id": "26265",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26265",
-          "name": "Reセキスイハイムの住宅",
-          "price": "4,500万円",
-          "area": "109.97㎡",
-          "madori": "",
-          "traffic": "横浜市営地下鉄ブルーライン・京急本線「上大岡」駅 徒歩18分",
-          "location": "横浜市港南区大久保3丁目"
-        },
-        {
           "id": "26299",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=26299",
           "name": "遊びの余白がある家",
@@ -510,7 +479,6 @@
         "26514",
         "25096",
         "26511",
-        "26265",
         "26299"
       ]
     },
@@ -520,7 +488,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-30T11:32:13",
+      "checked_at": "2026-07-01T11:38:28",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -531,7 +499,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-06-30T11:32:13",
+      "checked_at": "2026-07-01T11:38:28",
       "new_listings": [],
       "all_listings": [
         {
