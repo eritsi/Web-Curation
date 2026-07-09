@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-07-08T10:50:23",
+  "generated_at": "2026-07-09T11:03:06",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "unchanged",
-      "checked_at": "2026-07-08T10:50:23",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-07-09T11:03:06",
+      "new_listings": [
+        {
+          "id": "5507",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5507",
+          "name": "フローレンスパレス保土ヶ谷駅前",
+          "price": "5,380万円",
+          "area": "59.29㎡",
+          "madori": "2LDK",
+          "traffic": "JR横須賀線・JR湘南新宿線『保土ヶ谷』駅徒歩2分",
+          "location": "神奈川県横浜市保土ヶ谷区帷子町2-48-1"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "5507",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5507",
+          "name": "フローレンスパレス保土ヶ谷駅前",
+          "price": "5,380万円",
+          "area": "59.29㎡",
+          "madori": "2LDK",
+          "traffic": "JR横須賀線・JR湘南新宿線『保土ヶ谷』駅徒歩2分",
+          "location": "神奈川県横浜市保土ヶ谷区帷子町2-48-1"
+        },
         {
           "id": "5439",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
@@ -82,6 +103,7 @@
         }
       ],
       "ids": [
+        "5507",
         "5439",
         "5408",
         "5400",
@@ -97,7 +119,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-08T10:50:23",
+      "checked_at": "2026-07-09T11:03:06",
       "new_listings": [],
       "all_listings": [
         {
@@ -121,30 +143,50 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-07-08T10:50:23",
+      "checked_at": "2026-07-09T11:03:06",
       "new_listings": [
         {
-          "id": "AZLjZQAToV8",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E7%B7%91%E9%A2%A8%E6%97%A5%E5%92%8C",
-          "name": "緑風日和",
-          "price": "7,298万円",
-          "area": "77.43㎡",
-          "madori": "3LDK",
-          "traffic": "仙川駅徒歩13分",
-          "location": "調布市緑ケ丘"
+          "id": "W0vDPSdG6do",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%B0%8F%E5%B9%B3%E5%B8%82/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%8B%E3%82%89",
+          "name": "グリーンロードから",
+          "price": "4,280万円",
+          "area": "71.19㎡",
+          "madori": "1LDK",
+          "traffic": "花小金井駅徒歩15分",
+          "location": "小平市花小金井"
         },
         {
-          "id": "vn1jknBNNJc",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%A4%A7%E7%94%B0%E5%8C%BA/%E9%99%BD%E3%81%A0%E3%81%BE%E3%82%8A%E3%81%AE%E9%AD%94%E6%B3%95%E7%93%B6",
-          "name": "陽だまりの魔法瓶",
-          "price": "6,490万円",
-          "area": "82.40㎡",
+          "id": "Xwuan8prOpI",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%AD%E9%87%8E%E5%8C%BA/%E7%89%87%E4%BB%98%E3%81%8F%E5%AE%B6%E3%81%AB%E3%81%AF%E7%90%86%E7%94%B1%E3%81%8C%E3%81%82%E3%82%8B",
+          "name": "片付く家には理由がある",
+          "price": "8,990万円",
+          "area": "88.48㎡",
           "madori": "3LDK",
-          "traffic": "平和島駅徒歩13分",
-          "location": "大田区大森西"
+          "traffic": "鷺ノ宮駅徒歩9分",
+          "location": "中野区白鷺"
         }
       ],
       "all_listings": [
+        {
+          "id": "W0vDPSdG6do",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%B0%8F%E5%B9%B3%E5%B8%82/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%8B%E3%82%89",
+          "name": "グリーンロードから",
+          "price": "4,280万円",
+          "area": "71.19㎡",
+          "madori": "1LDK",
+          "traffic": "花小金井駅徒歩15分",
+          "location": "小平市花小金井"
+        },
+        {
+          "id": "Xwuan8prOpI",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%AD%E9%87%8E%E5%8C%BA/%E7%89%87%E4%BB%98%E3%81%8F%E5%AE%B6%E3%81%AB%E3%81%AF%E7%90%86%E7%94%B1%E3%81%8C%E3%81%82%E3%82%8B",
+          "name": "片付く家には理由がある",
+          "price": "8,990万円",
+          "area": "88.48㎡",
+          "madori": "3LDK",
+          "traffic": "鷺ノ宮駅徒歩9分",
+          "location": "中野区白鷺"
+        },
         {
           "id": "AZLjZQAToV8",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E7%B7%91%E9%A2%A8%E6%97%A5%E5%92%8C",
@@ -234,29 +276,11 @@
           "madori": "3LDK",
           "traffic": "上板橋駅徒歩14分",
           "location": "板橋区前野町"
-        },
-        {
-          "id": "dEh9xAzA6fs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E7%AA%93%E9%9A%9B%E3%81%8C%E7%A7%81%E3%81%AE%E5%AE%9A%E4%BD%8D%E7%BD%AE",
-          "name": "窓際が私の定位置",
-          "price": "7,580万円",
-          "area": "83.62㎡",
-          "madori": "4LDK",
-          "traffic": "つつじヶ丘駅徒歩12分",
-          "location": "調布市西つつじケ丘"
-        },
-        {
-          "id": "A6E2skpCkgI",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%94%BA%E7%94%B0%E5%B8%82/%E5%AE%B6%E3%81%AF%E3%81%A4%E3%81%A5%E3%81%8F%E3%82%88%E3%81%A9%E3%81%93%E3%81%BE%E3%81%A7%E3%82%82",
-          "name": "家はつづくよ、どこまでも",
-          "price": "6,480万円",
-          "area": "108.61㎡",
-          "madori": "3LDK",
-          "traffic": "町田駅徒歩9分",
-          "location": "町田市原町田"
         }
       ],
       "ids": [
+        "W0vDPSdG6do",
+        "Xwuan8prOpI",
         "AZLjZQAToV8",
         "vn1jknBNNJc",
         "fMUhQzHuy6k",
@@ -265,9 +289,7 @@
         "qU9jnbBQp44",
         "NMrOv5hgCj0",
         "aG3VGQ7Iwes",
-        "zsIzK3JLbfU",
-        "dEh9xAzA6fs",
-        "A6E2skpCkgI"
+        "zsIzK3JLbfU"
       ]
     },
     {
@@ -275,20 +297,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-07-08T10:50:23",
-      "new_listings": [
-        {
-          "id": "26299",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26299",
-          "name": "遊びの余白がある家",
-          "price": "4,780万円",
-          "area": "71.22㎡",
-          "madori": "",
-          "traffic": "横浜線・東急東横線「菊名」駅 徒歩11分",
-          "location": "横浜市港北区富士塚"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-09T11:03:06",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26928",
@@ -454,7 +465,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-08T10:50:23",
+      "checked_at": "2026-07-09T11:03:06",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -465,7 +476,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-08T10:50:23",
+      "checked_at": "2026-07-09T11:03:06",
       "new_listings": [],
       "all_listings": [
         {
