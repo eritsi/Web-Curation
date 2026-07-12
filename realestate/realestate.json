@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T10:49:09",
+  "generated_at": "2026-07-12T10:51:31",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,88 +7,68 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-11T10:49:09",
+      "checked_at": "2026-07-12T10:51:31",
       "new_listings": [],
       "all_listings": [
         {
           "id": "5507",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5507",
-          "name": "フローレンスパレス保土ヶ谷駅前",
-          "price": "5,380万円",
-          "area": "59.29㎡",
-          "madori": "2LDK",
-          "traffic": "JR横須賀線・JR湘南新宿線『保土ヶ谷』駅徒歩2分",
-          "location": "神奈川県横浜市保土ヶ谷区帷子町2-48-1"
+          "name": "",
+          "price": "дҫЎж ј/5,380дёҮеҶҶ",
+          "area": "",
+          "madori": "",
+          "traffic": "",
+          "location": ""
         },
         {
           "id": "5403",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5403",
-          "name": "プレシス府中リヴェスタ",
-          "price": "6,190万円",
-          "area": "68.31㎡",
-          "madori": "2SLDK+WIC・SIC",
-          "traffic": "京王線『東府中』駅徒歩6分",
-          "location": "東京都府中市八幡町3-2-1"
+          "name": "",
+          "price": "дҫЎж ј/6,190дёҮеҶҶ",
+          "area": "",
+          "madori": "",
+          "traffic": "",
+          "location": ""
         },
         {
           "id": "5439",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
-          "name": "パークハイム桜新町",
-          "price": "7,290万円",
-          "area": "54.08㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "東急田園都市線『桜新町』駅徒歩12分",
-          "location": "東京都世田谷区弦巻2-23-15"
+          "name": "",
+          "price": "дҫЎж ј/7,290дёҮеҶҶ",
+          "area": "",
+          "madori": "",
+          "traffic": "",
+          "location": ""
         },
         {
           "id": "5408",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
-          "name": "エクセレント港北センター南",
-          "price": "7,990万円",
-          "area": "75.44㎡",
-          "madori": "3LDK",
-          "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
-          "location": "神奈川県横浜市都筑区荏田東4-1-14"
+          "name": "",
+          "price": "дҫЎж ј/7,990дёҮеҶҶ",
+          "area": "",
+          "madori": "",
+          "traffic": "",
+          "location": ""
         },
         {
           "id": "5400",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
-          "name": "ベルハイム西荻窪第3",
-          "price": "7,990万円",
-          "area": "67.51㎡",
-          "madori": "3LDK",
-          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
-          "location": "東京都杉並区西荻北4-8-2"
+          "name": "",
+          "price": "дҫЎж ј/7,990дёҮеҶҶ",
+          "area": "",
+          "madori": "",
+          "traffic": "",
+          "location": ""
         },
         {
           "id": "5391",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5391",
-          "name": "トーク御所山",
-          "price": "4,590万円",
-          "area": "58.20㎡",
-          "madori": "1SLDK",
-          "traffic": "京急本線『戸部』駅徒歩6分",
-          "location": "神奈川県横浜市西区御所山町15番地1"
-        },
-        {
-          "id": "5252",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5252",
-          "name": "クリオ横浜関内壱番館",
-          "price": "5,990万円",
-          "area": "59.29㎡",
-          "madori": "2LDK+SIC",
-          "traffic": "みなとみらい線『馬車道』駅徒歩5分",
-          "location": "神奈川県横浜市中区太田町3-36"
-        },
-        {
-          "id": "5388",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5388",
-          "name": "ノーブル亀戸",
-          "price": "5,990万円",
-          "area": "54.32㎡",
-          "madori": "3LDK",
-          "traffic": "東京メトロ半蔵門線・都営新宿線『住吉』駅徒歩10分",
-          "location": "東京都江東区大島2-6-1"
+          "name": "",
+          "price": "дҫЎж ј/4,590дёҮеҶҶ",
+          "area": "",
+          "madori": "",
+          "traffic": "",
+          "location": ""
         }
       ],
       "ids": [
@@ -97,9 +77,7 @@
         "5439",
         "5408",
         "5400",
-        "5391",
-        "5252",
-        "5388"
+        "5391"
       ]
     },
     {
@@ -108,7 +86,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-11T10:49:09",
+      "checked_at": "2026-07-12T10:51:31",
       "new_listings": [],
       "all_listings": [
         {
@@ -131,50 +109,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-07-11T10:49:09",
-      "new_listings": [
-        {
-          "id": "srP8oTVjSYA",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E3%83%8A%E3%83%8A%E3%83%A1%E4%B8%8A45%E5%BA%A6%E3%81%AE%E6%97%A5%E3%80%85",
-          "name": "ナナメ上45度の日々",
-          "price": "8,480万円",
-          "area": "74.77㎡",
-          "madori": "2LDK",
-          "traffic": "荻窪駅徒歩6分",
-          "location": "杉並区南荻窪"
-        },
-        {
-          "id": "okOk9cL4fFg",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E5%AE%B6%E6%97%8F%E6%83%B3%E3%81%84%E3%81%AE%E3%83%A1%E3%82%BE%E3%83%8D%E3%83%83%E3%83%88",
-          "name": "家族想いのメゾネット",
-          "price": "5,280万円",
-          "area": "89.96㎡",
-          "madori": "3LDK",
-          "traffic": "志村三丁目駅徒歩7分",
-          "location": "板橋区志村"
-        },
-        {
-          "id": "86VUPseFmGk",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%8C%BA/%E3%83%A8%E3%82%B3%E3%83%8F%E3%83%9E%E3%82%B9%E3%83%86%E3%83%83%E3%83%97%E3%82%B9",
-          "name": "ヨコハマ・ステップス",
-          "price": "4,680万円",
-          "area": "62.10㎡",
-          "madori": "2SLDK",
-          "traffic": "神奈川駅徒歩1分",
-          "location": "横浜市神奈川区青木町"
-        },
-        {
-          "id": "5FRjLHEysK0",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%A4%A7%E7%94%B0%E5%8C%BA/%E4%BB%8A%E6%97%A5%E3%81%AF%E5%A4%96%E3%81%A7%E3%80%82",
-          "name": "今日は外で。",
-          "price": "5,998万円",
-          "area": "51.63㎡",
-          "madori": "2LDK",
-          "traffic": "御嶽山駅徒歩7分",
-          "location": "大田区田園調布本町"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-12T10:51:31",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "srP8oTVjSYA",
@@ -295,20 +232,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-07-11T10:49:09",
-      "new_listings": [
-        {
-          "id": "26998",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26998",
-          "name": "景色と彩りに目覚める",
-          "price": "5,780万円",
-          "area": "55.62㎡",
-          "madori": "",
-          "traffic": "東西線「落合」駅 徒歩9分",
-          "location": "新宿区北新宿"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-12T10:51:31",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26998",
@@ -474,7 +400,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-11T10:49:09",
+      "checked_at": "2026-07-12T10:51:31",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -485,7 +411,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-11T10:49:09",
+      "checked_at": "2026-07-12T10:51:31",
       "new_listings": [],
       "all_listings": [
         {
