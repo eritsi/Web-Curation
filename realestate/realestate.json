@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T10:51:31",
+  "generated_at": "2026-07-13T10:54:02",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-12T10:51:31",
+      "checked_at": "2026-07-13T10:54:02",
       "new_listings": [],
       "all_listings": [
         {
@@ -15,6 +15,16 @@
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5507",
           "name": "",
           "price": "дҫЎж ј/5,380дёҮеҶҶ",
+          "area": "",
+          "madori": "",
+          "traffic": "",
+          "location": ""
+        },
+        {
+          "id": "5400",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
+          "name": "",
+          "price": "дҫЎж ј/7,990дёҮеҶҶ",
           "area": "",
           "madori": "",
           "traffic": "",
@@ -51,16 +61,6 @@
           "location": ""
         },
         {
-          "id": "5400",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
-          "name": "",
-          "price": "дҫЎж ј/7,990дёҮеҶҶ",
-          "area": "",
-          "madori": "",
-          "traffic": "",
-          "location": ""
-        },
-        {
           "id": "5391",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5391",
           "name": "",
@@ -73,10 +73,10 @@
       ],
       "ids": [
         "5507",
+        "5400",
         "5403",
         "5439",
         "5408",
-        "5400",
         "5391"
       ]
     },
@@ -86,7 +86,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-12T10:51:31",
+      "checked_at": "2026-07-13T10:54:02",
       "new_listings": [],
       "all_listings": [
         {
@@ -110,7 +110,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-07-12T10:51:31",
+      "checked_at": "2026-07-13T10:54:02",
       "new_listings": [],
       "all_listings": [
         {
@@ -159,7 +159,7 @@
           "name": "条件、揃った！",
           "price": "6,980万円",
           "area": "68.58㎡",
-          "madori": "3LDK",
+          "madori": "2SLDK",
           "traffic": "大島駅徒歩3分",
           "location": "江東区大島"
         },
@@ -232,9 +232,20 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-07-12T10:51:31",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-07-13T10:54:02",
+      "new_listings": [
+        {
+          "id": "26299",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26299",
+          "name": "遊びの余白がある家",
+          "price": "4,780万円",
+          "area": "71.22㎡",
+          "madori": "",
+          "traffic": "横浜線・東急東横線「菊名」駅 徒歩11分",
+          "location": "横浜市港北区富士塚"
+        }
+      ],
       "all_listings": [
         {
           "id": "26998",
@@ -317,16 +328,6 @@
           "location": "世田谷区玉堤"
         },
         {
-          "id": "26659",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26659",
-          "name": "健やかな眺望",
-          "price": "1,990万円（税込）",
-          "area": "77㎡",
-          "madori": "",
-          "traffic": "東急田園都市線「宮前平」駅 徒歩9分",
-          "location": "川崎市宮前区土橋"
-        },
-        {
           "id": "25874",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=25874",
           "name": "四季の景色と青春とともに",
@@ -375,6 +376,16 @@
           "madori": "",
           "traffic": "東急田園都市線「梶が谷」駅 徒歩6分",
           "location": "川崎市高津区下作延"
+        },
+        {
+          "id": "26299",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26299",
+          "name": "遊びの余白がある家",
+          "price": "4,780万円",
+          "area": "71.22㎡",
+          "madori": "",
+          "traffic": "横浜線・東急東横線「菊名」駅 徒歩11分",
+          "location": "横浜市港北区富士塚"
         }
       ],
       "ids": [
@@ -386,12 +397,12 @@
         "26713",
         "26776",
         "26277",
-        "26659",
         "25874",
         "26556",
         "26514",
         "25096",
-        "26511"
+        "26511",
+        "26299"
       ]
     },
     {
@@ -400,7 +411,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-12T10:51:31",
+      "checked_at": "2026-07-13T10:54:02",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -411,7 +422,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-12T10:51:31",
+      "checked_at": "2026-07-13T10:54:02",
       "new_listings": [],
       "all_listings": [
         {
