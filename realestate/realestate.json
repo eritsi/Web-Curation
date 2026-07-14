@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T10:54:02",
+  "generated_at": "2026-07-14T10:41:16",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-13T10:54:02",
+      "checked_at": "2026-07-14T10:41:16",
       "new_listings": [],
       "all_listings": [
         {
@@ -86,7 +86,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-13T10:54:02",
+      "checked_at": "2026-07-14T10:41:16",
       "new_listings": [],
       "all_listings": [
         {
@@ -110,7 +110,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-07-13T10:54:02",
+      "checked_at": "2026-07-14T10:41:16",
       "new_listings": [],
       "all_listings": [
         {
@@ -232,20 +232,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-07-13T10:54:02",
-      "new_listings": [
-        {
-          "id": "26299",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26299",
-          "name": "遊びの余白がある家",
-          "price": "4,780万円",
-          "area": "71.22㎡",
-          "madori": "",
-          "traffic": "横浜線・東急東横線「菊名」駅 徒歩11分",
-          "location": "横浜市港北区富士塚"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-14T10:41:16",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26998",
@@ -376,16 +365,6 @@
           "madori": "",
           "traffic": "東急田園都市線「梶が谷」駅 徒歩6分",
           "location": "川崎市高津区下作延"
-        },
-        {
-          "id": "26299",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26299",
-          "name": "遊びの余白がある家",
-          "price": "4,780万円",
-          "area": "71.22㎡",
-          "madori": "",
-          "traffic": "横浜線・東急東横線「菊名」駅 徒歩11分",
-          "location": "横浜市港北区富士塚"
         }
       ],
       "ids": [
@@ -401,8 +380,7 @@
         "26556",
         "26514",
         "25096",
-        "26511",
-        "26299"
+        "26511"
       ]
     },
     {
@@ -411,7 +389,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-13T10:54:02",
+      "checked_at": "2026-07-14T10:41:16",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -421,9 +399,20 @@
       "description": "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）",
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
-      "status": "unchanged",
-      "checked_at": "2026-07-13T10:54:02",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-07-14T10:41:16",
+      "new_listings": [
+        {
+          "id": "21279975",
+          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21279975/",
+          "name": "ベルヴィル鶴巻",
+          "price": "1880万円",
+          "area": "73.17m2",
+          "madori": "3LDK",
+          "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
+          "location": "神奈川県秦野市鶴巻北２"
+        }
+      ],
       "all_listings": [
         {
           "id": "20727433",
@@ -446,6 +435,16 @@
           "location": "神奈川県秦野市鶴巻北１"
         },
         {
+          "id": "21279975",
+          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21279975/",
+          "name": "ベルヴィル鶴巻",
+          "price": "1880万円",
+          "area": "73.17m2",
+          "madori": "3LDK",
+          "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
+          "location": "神奈川県秦野市鶴巻北２"
+        },
+        {
           "id": "79234945",
           "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_79234945/",
           "name": "プランヴェール鶴巻",
@@ -459,6 +458,7 @@
       "ids": [
         "20727433",
         "78630086",
+        "21279975",
         "79234945"
       ]
     }
