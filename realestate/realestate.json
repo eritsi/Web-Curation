@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T10:41:11",
+  "generated_at": "2026-07-19T10:49:05",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-18T10:41:11",
+      "checked_at": "2026-07-19T10:49:05",
       "new_listings": [],
       "all_listings": [
         {
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-18T10:41:11",
+      "checked_at": "2026-07-19T10:49:05",
       "new_listings": [],
       "all_listings": [
         {
@@ -131,50 +131,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-07-18T10:41:11",
-      "new_listings": [
-        {
-          "id": "93NL1rKUNCA",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%89%E9%B7%B9%E5%B8%82/%E3%82%86%E3%82%8B%E3%82%84%E3%81%8B%E3%81%AA%E5%A2%83%E7%95%8C",
-          "name": "ゆるやかな境界",
-          "price": "5,980万円",
-          "area": "64.62㎡",
-          "madori": "3LDK",
-          "traffic": "三鷹駅徒歩10分",
-          "location": "三鷹市下連雀"
-        },
-        {
-          "id": "mQEfri7AEck",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E6%9C%AA%E6%94%B9%E8%A3%85%E8%B2%A9%E5%A3%B2in%E8%97%A4%E3%81%8C%E4%B8%98pt2",
-          "name": "未改装販売 in 藤が丘 pt.2",
-          "price": "3,900万円(改装前価格)",
-          "area": "127.95㎡",
-          "madori": "5LDK＋ルーフバルコニー",
-          "traffic": "藤が丘駅徒歩12分",
-          "location": "横浜市青葉区藤が丘"
-        },
-        {
-          "id": "x9EL1EGDr3U",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E5%95%86%E5%BA%97%E8%A1%97%E3%81%A84%E3%81%A4%E3%81%AE%E5%B1%85%E5%A0%B4%E6%89%80",
-          "name": "商店街と4つの居場所",
-          "price": "5,590万円",
-          "area": "69.00㎡",
-          "madori": "4LDK",
-          "traffic": "大山駅徒歩9分",
-          "location": "板橋区大山金井町"
-        },
-        {
-          "id": "ONVyalsG48c",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%96%87%E4%BA%AC%E5%8C%BA/%E3%81%94%E5%8A%A0%E8%AD%B7%E3%81%AE%E3%82%82%E3%81%A8%E3%81%A7",
-          "name": "ご加護のもとで",
-          "price": "8,790万円",
-          "area": "65.21㎡",
-          "madori": "3LDK",
-          "traffic": "護国寺駅徒歩5分",
-          "location": "文京区音羽"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-19T10:49:05",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "CNJbiiYDl9M",
@@ -317,20 +276,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-07-18T10:41:11",
-      "new_listings": [
-        {
-          "id": "27029",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27029",
-          "name": "運河デイズ",
-          "price": "5,680万円（税込）",
-          "area": "62.18㎡",
-          "madori": "",
-          "traffic": "京急本線「鮫洲」駅 徒歩7分",
-          "location": "品川区東大井"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-19T10:49:05",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "27029",
@@ -485,7 +433,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-18T10:41:11",
+      "checked_at": "2026-07-19T10:49:05",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -496,7 +444,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-18T10:41:11",
+      "checked_at": "2026-07-19T10:49:05",
       "new_listings": [],
       "all_listings": [
         {
