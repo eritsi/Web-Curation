@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T11:06:24",
+  "generated_at": "2026-07-21T10:49:08",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-20T11:06:24",
+      "checked_at": "2026-07-21T10:49:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-20T11:06:24",
+      "checked_at": "2026-07-21T10:49:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -132,7 +132,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-07-20T11:06:24",
+      "checked_at": "2026-07-21T10:49:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -186,16 +186,6 @@
           "location": "文京区音羽"
         },
         {
-          "id": "D6CUc1YlSoI",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E5%A4%A7%E3%81%8D%E3%81%8F%E7%BE%BD%E3%81%B0%E3%81%9F%E3%81%84%E3%81%A6",
-          "name": "大きく羽ばたいて",
-          "price": "3,898万円",
-          "area": "66.95㎡",
-          "madori": "3LDK",
-          "traffic": "藤が丘駅徒歩7分",
-          "location": "横浜市青葉区藤が丘"
-        },
-        {
           "id": "0X1gw0by69U",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99",
           "name": "気になります！",
@@ -204,6 +194,16 @@
           "madori": "3LDK",
           "traffic": "地下鉄成増駅徒歩9分",
           "location": "板橋区成増"
+        },
+        {
+          "id": "D6CUc1YlSoI",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E5%A4%A7%E3%81%8D%E3%81%8F%E7%BE%BD%E3%81%B0%E3%81%9F%E3%81%84%E3%81%A6",
+          "name": "大きく羽ばたいて",
+          "price": "3,898万円",
+          "area": "66.95㎡",
+          "madori": "3LDK",
+          "traffic": "藤が丘駅徒歩7分",
+          "location": "横浜市青葉区藤が丘"
         },
         {
           "id": "Fqo1DO3UbKw",
@@ -244,16 +244,6 @@
           "madori": "1SLDK",
           "traffic": "上野毛駅徒歩5分",
           "location": "世田谷区上野毛"
-        },
-        {
-          "id": "srP8oTVjSYA",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E3%83%8A%E3%83%8A%E3%83%A1%E4%B8%8A45%E5%BA%A6%E3%81%AE%E6%97%A5%E3%80%85",
-          "name": "ナナメ上45度の日々",
-          "price": "8,480万円",
-          "area": "74.77㎡",
-          "madori": "2LDK",
-          "traffic": "荻窪駅徒歩6分",
-          "location": "杉並区南荻窪"
         }
       ],
       "ids": [
@@ -262,13 +252,12 @@
         "mQEfri7AEck",
         "x9EL1EGDr3U",
         "ONVyalsG48c",
-        "D6CUc1YlSoI",
         "0X1gw0by69U",
+        "D6CUc1YlSoI",
         "Fqo1DO3UbKw",
         "Tuy7rr00EfU",
         "PWdv8o1yqpg",
-        "dmuN93Qw2RA",
-        "srP8oTVjSYA"
+        "dmuN93Qw2RA"
       ]
     },
     {
@@ -276,20 +265,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-07-20T11:06:24",
-      "new_listings": [
-        {
-          "id": "26933",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26933",
-          "name": "順応する住まい",
-          "price": "4,480万円（税込）",
-          "area": "52.23㎡",
-          "madori": "",
-          "traffic": "京浜東北線「桜木町」駅 徒歩7分",
-          "location": "横浜市中区野毛町"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-21T10:49:08",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26933",
@@ -455,7 +433,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-20T11:06:24",
+      "checked_at": "2026-07-21T10:49:08",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -465,20 +443,9 @@
       "description": "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）",
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
-      "status": "changed",
-      "checked_at": "2026-07-20T11:06:24",
-      "new_listings": [
-        {
-          "id": "21298949",
-          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21298949/",
-          "name": "鶴巻温泉サマリヤマンション",
-          "price": "1380万円",
-          "area": "85.48m2",
-          "madori": "3LDK",
-          "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
-          "location": "神奈川県秦野市鶴巻北１"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-21T10:49:08",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "21286141",
@@ -498,16 +465,6 @@
           "area": "74.74m2",
           "madori": "2LDK+S（納戸）",
           "traffic": "小田急小田原線「鶴巻温泉」徒歩4分",
-          "location": "神奈川県秦野市鶴巻北２"
-        },
-        {
-          "id": "20727433",
-          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_20727433/",
-          "name": "ライオンズマンション鶴巻温泉",
-          "price": "1180万円",
-          "area": "55.08m2",
-          "madori": "2DK",
-          "traffic": "小田急小田原線「鶴巻温泉」徒歩1分",
           "location": "神奈川県秦野市鶴巻北２"
         },
         {
@@ -544,7 +501,6 @@
       "ids": [
         "21286141",
         "21287477",
-        "20727433",
         "21298949",
         "78630086",
         "21279975"
