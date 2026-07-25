@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T10:51:28",
+  "generated_at": "2026-07-25T10:51:07",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-24T10:51:28",
+      "checked_at": "2026-07-25T10:51:07",
       "new_listings": [],
       "all_listings": [
         {
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-24T10:51:28",
+      "checked_at": "2026-07-25T10:51:07",
       "new_listings": [],
       "all_listings": [
         {
@@ -132,20 +132,90 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-07-24T10:51:28",
+      "checked_at": "2026-07-25T10:51:07",
       "new_listings": [
         {
-          "id": "Edrt263FLxI",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%BA%BB%E7%94%9F%E5%8C%BA/1%E9%9A%8E%E3%81%AE%E3%81%86%E3%82%8C%E3%81%97%E3%81%84%E8%AA%A4%E7%AE%97",
-          "name": "1階のうれしい誤算",
-          "price": "6,780万円",
-          "area": "113.04㎡",
-          "madori": "4LDK",
-          "traffic": "新百合ヶ丘駅徒歩15分",
-          "location": "川崎市麻生区上麻生"
+          "id": "lbUnff1oZzA",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E5%A5%BD%E3%81%8D%E3%82%92%E8%82%B2%E3%82%80%E6%9A%AE%E3%82%89%E3%81%97",
+          "name": "好きを育む暮らし",
+          "price": "7,180万円",
+          "area": "56.22㎡",
+          "madori": "2SLDK",
+          "traffic": "都立大学駅徒歩10分",
+          "location": "目黒区八雲"
+        },
+        {
+          "id": "QNqCiQAGxhg",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/%E3%81%AF%E3%81%BE%E3%81%8B%E3%81%9C%E3%83%B4%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B8",
+          "name": "はまかぜ・ヴィンテージ",
+          "price": "5,290万円",
+          "area": "85.55㎡",
+          "madori": "2LDK",
+          "traffic": "元町・中華街駅徒歩17分",
+          "location": "横浜市中区山手町"
+        },
+        {
+          "id": "CtZnABB1YRU",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%9B%BD%E7%AB%8B%E5%B8%82/%E5%AE%B6%E6%97%8F%E3%81%A8%E3%81%AE1%E3%83%9A%E3%83%BC%E3%82%B8",
+          "name": "家族との1ページ",
+          "price": "5,680万円",
+          "area": "69.62㎡",
+          "madori": "3LDK",
+          "traffic": "国立駅徒歩5分",
+          "location": "国立市東"
+        },
+        {
+          "id": "fPnq56PCGDk",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E8%A5%BF%E5%8C%BA/%E4%B8%80%E6%8B%8D%E3%81%8A%E3%81%84%E3%81%A6",
+          "name": "一拍おいて",
+          "price": "3,780万円",
+          "area": "67.50㎡",
+          "madori": "3LDK",
+          "traffic": "横浜駅徒歩19分",
+          "location": "横浜市西区宮ケ谷"
         }
       ],
       "all_listings": [
+        {
+          "id": "lbUnff1oZzA",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E5%A5%BD%E3%81%8D%E3%82%92%E8%82%B2%E3%82%80%E6%9A%AE%E3%82%89%E3%81%97",
+          "name": "好きを育む暮らし",
+          "price": "7,180万円",
+          "area": "56.22㎡",
+          "madori": "2SLDK",
+          "traffic": "都立大学駅徒歩10分",
+          "location": "目黒区八雲"
+        },
+        {
+          "id": "QNqCiQAGxhg",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/%E3%81%AF%E3%81%BE%E3%81%8B%E3%81%9C%E3%83%B4%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B8",
+          "name": "はまかぜ・ヴィンテージ",
+          "price": "5,290万円",
+          "area": "85.55㎡",
+          "madori": "2LDK",
+          "traffic": "元町・中華街駅徒歩17分",
+          "location": "横浜市中区山手町"
+        },
+        {
+          "id": "CtZnABB1YRU",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%9B%BD%E7%AB%8B%E5%B8%82/%E5%AE%B6%E6%97%8F%E3%81%A8%E3%81%AE1%E3%83%9A%E3%83%BC%E3%82%B8",
+          "name": "家族との1ページ",
+          "price": "5,680万円",
+          "area": "69.62㎡",
+          "madori": "3LDK",
+          "traffic": "国立駅徒歩5分",
+          "location": "国立市東"
+        },
+        {
+          "id": "fPnq56PCGDk",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E8%A5%BF%E5%8C%BA/%E4%B8%80%E6%8B%8D%E3%81%8A%E3%81%84%E3%81%A6",
+          "name": "一拍おいて",
+          "price": "3,780万円",
+          "area": "67.50㎡",
+          "madori": "3LDK",
+          "traffic": "横浜駅徒歩19分",
+          "location": "横浜市西区宮ケ谷"
+        },
         {
           "id": "Edrt263FLxI",
           "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%BA%BB%E7%94%9F%E5%8C%BA/1%E9%9A%8E%E3%81%AE%E3%81%86%E3%82%8C%E3%81%97%E3%81%84%E8%AA%A4%E7%AE%97",
@@ -265,39 +335,13 @@
           "madori": "3LDK",
           "traffic": "護国寺駅徒歩5分",
           "location": "文京区音羽"
-        },
-        {
-          "id": "0X1gw0by69U",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99",
-          "name": "気になります！",
-          "price": "5,780万円",
-          "area": "70.84㎡",
-          "madori": "3LDK",
-          "traffic": "地下鉄成増駅徒歩9分",
-          "location": "板橋区成増"
-        },
-        {
-          "id": "D6CUc1YlSoI",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E5%A4%A7%E3%81%8D%E3%81%8F%E7%BE%BD%E3%81%B0%E3%81%9F%E3%81%84%E3%81%A6",
-          "name": "大きく羽ばたいて",
-          "price": "3,898万円",
-          "area": "66.95㎡",
-          "madori": "3LDK",
-          "traffic": "藤が丘駅徒歩7分",
-          "location": "横浜市青葉区藤が丘"
-        },
-        {
-          "id": "Fqo1DO3UbKw",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E8%A6%8B%E4%B8%8A%E3%81%92%E3%82%8B%E7%90%86%E7%94%B1%E3%81%AF4m",
-          "name": "見上げる理由は4m",
-          "price": "7,190万円",
-          "area": "63.22㎡",
-          "madori": "2LDK",
-          "traffic": "芦花公園駅徒歩5分",
-          "location": "世田谷区南烏山"
         }
       ],
       "ids": [
+        "lbUnff1oZzA",
+        "QNqCiQAGxhg",
+        "CtZnABB1YRU",
+        "fPnq56PCGDk",
         "Edrt263FLxI",
         "eUkkc7Woo7U",
         "52J9H94oaWk",
@@ -309,10 +353,7 @@
         "93NL1rKUNCA",
         "mQEfri7AEck",
         "x9EL1EGDr3U",
-        "ONVyalsG48c",
-        "0X1gw0by69U",
-        "D6CUc1YlSoI",
-        "Fqo1DO3UbKw"
+        "ONVyalsG48c"
       ]
     },
     {
@@ -320,9 +361,20 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-07-24T10:51:28",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-07-25T10:51:07",
+      "new_listings": [
+        {
+          "id": "25874",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=25874",
+          "name": "四季の景色と青春とともに",
+          "price": "8,536万円",
+          "area": "68.92㎡",
+          "madori": "",
+          "traffic": "中央線「高円寺」駅 徒歩10分",
+          "location": "杉並区高円寺北"
+        }
+      ],
       "all_listings": [
         {
           "id": "26866",
@@ -353,16 +405,6 @@
           "madori": "",
           "traffic": "京浜東北線「桜木町」駅 徒歩7分",
           "location": "横浜市中区野毛町"
-        },
-        {
-          "id": "27029",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27029",
-          "name": "運河デイズ",
-          "price": "5,680万円（税込）",
-          "area": "62.18㎡",
-          "madori": "",
-          "traffic": "京急本線「鮫洲」駅 徒歩7分",
-          "location": "品川区東大井"
         },
         {
           "id": "26514",
@@ -443,13 +485,22 @@
           "madori": "",
           "traffic": "東急東横線「田園調布」駅 徒歩19分",
           "location": "世田谷区玉堤"
+        },
+        {
+          "id": "25874",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=25874",
+          "name": "四季の景色と青春とともに",
+          "price": "8,536万円",
+          "area": "68.92㎡",
+          "madori": "",
+          "traffic": "中央線「高円寺」駅 徒歩10分",
+          "location": "杉並区高円寺北"
         }
       ],
       "ids": [
         "26866",
         "26511",
         "26933",
-        "27029",
         "26514",
         "26998",
         "26938",
@@ -457,7 +508,8 @@
         "26871",
         "26713",
         "26776",
-        "26277"
+        "26277",
+        "25874"
       ]
     },
     {
@@ -466,7 +518,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-24T10:51:28",
+      "checked_at": "2026-07-25T10:51:07",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -476,20 +528,9 @@
       "description": "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）",
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
-      "status": "changed",
-      "checked_at": "2026-07-24T10:51:28",
-      "new_listings": [
-        {
-          "id": "21321790",
-          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21321790/",
-          "name": "ベルヴィル鶴巻",
-          "price": "1780万円",
-          "area": "81.46m2",
-          "madori": "3LDK",
-          "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
-          "location": "神奈川県秦野市鶴巻北２"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-25T10:51:07",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "21286141",
@@ -532,16 +573,6 @@
           "location": "神奈川県秦野市鶴巻北１"
         },
         {
-          "id": "21321790",
-          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21321790/",
-          "name": "ベルヴィル鶴巻",
-          "price": "1780万円",
-          "area": "81.46m2",
-          "madori": "3LDK",
-          "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
-          "location": "神奈川県秦野市鶴巻北２"
-        },
-        {
           "id": "21279975",
           "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21279975/",
           "name": "ベルヴィル鶴巻",
@@ -557,7 +588,6 @@
         "21287477",
         "21298949",
         "78630086",
-        "21321790",
         "21279975"
       ]
     }
