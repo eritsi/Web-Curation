@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T11:02:19",
+  "generated_at": "2026-07-28T10:44:18",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,18 +7,18 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-27T11:02:19",
+      "checked_at": "2026-07-28T10:44:18",
       "new_listings": [],
       "all_listings": [
         {
-          "id": "5426",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
-          "name": "シャンノール金町",
-          "price": "5,980万円",
-          "area": "60.37㎡",
-          "madori": "2SLDK",
-          "traffic": "JR常磐緩行線『金町』駅徒歩4分",
-          "location": "東京都葛飾区金町5丁目26-11"
+          "id": "5400",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
+          "name": "ベルハイム西荻窪第3",
+          "price": "7,990万円",
+          "area": "67.51㎡",
+          "madori": "3LDK",
+          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
+          "location": "東京都杉並区西荻北4-8-2"
         },
         {
           "id": "5465",
@@ -31,34 +31,14 @@
           "location": "東京都練馬区中村北3-11-14"
         },
         {
-          "id": "5439",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
-          "name": "パークハイム桜新町",
-          "price": "7,290万円",
-          "area": "54.08㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "東急田園都市線『桜新町』駅徒歩12分",
-          "location": "東京都世田谷区弦巻2-23-15"
-        },
-        {
-          "id": "5391",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5391",
-          "name": "トーク御所山",
-          "price": "4,590万円",
-          "area": "58.20㎡",
-          "madori": "1SLDK",
-          "traffic": "京急本線『戸部』駅徒歩6分",
-          "location": "神奈川県横浜市西区御所山町15番地1"
-        },
-        {
-          "id": "5400",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
-          "name": "ベルハイム西荻窪第3",
-          "price": "7,990万円",
-          "area": "67.51㎡",
-          "madori": "3LDK",
-          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
-          "location": "東京都杉並区西荻北4-8-2"
+          "id": "5426",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
+          "name": "シャンノール金町",
+          "price": "5,980万円",
+          "area": "60.37㎡",
+          "madori": "2SLDK",
+          "traffic": "JR常磐緩行線『金町』駅徒歩4分",
+          "location": "東京都葛飾区金町5丁目26-11"
         },
         {
           "id": "5403",
@@ -81,6 +61,26 @@
           "location": "神奈川県横浜市都筑区荏田東4-1-14"
         },
         {
+          "id": "5439",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
+          "name": "パークハイム桜新町",
+          "price": "7,290万円",
+          "area": "54.08㎡",
+          "madori": "2LDK+WIC",
+          "traffic": "東急田園都市線『桜新町』駅徒歩12分",
+          "location": "東京都世田谷区弦巻2-23-15"
+        },
+        {
+          "id": "5391",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5391",
+          "name": "トーク御所山",
+          "price": "4,590万円",
+          "area": "58.20㎡",
+          "madori": "1SLDK",
+          "traffic": "京急本線『戸部』駅徒歩6分",
+          "location": "神奈川県横浜市西区御所山町15番地1"
+        },
+        {
           "id": "5507",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5507",
           "name": "フローレンスパレス保土ヶ谷駅前",
@@ -92,13 +92,13 @@
         }
       ],
       "ids": [
-        "5426",
-        "5465",
-        "5439",
-        "5391",
         "5400",
+        "5465",
+        "5426",
         "5403",
         "5408",
+        "5439",
+        "5391",
         "5507"
       ]
     },
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-27T11:02:19",
+      "checked_at": "2026-07-28T10:44:18",
       "new_listings": [],
       "all_listings": [
         {
@@ -131,10 +131,31 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-07-27T11:02:19",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-07-28T10:44:18",
+      "new_listings": [
+        {
+          "id": "7G9YZPEF2T4",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E7%B7%91%E5%81%B4%E3%81%AE%E3%83%8B%E3%82%B3%E3%82%BF%E3%83%9E",
+          "name": "緑側のニコタマ",
+          "price": "6,999万円",
+          "area": "80.61㎡",
+          "madori": "2LDK＋WTC",
+          "traffic": "二子玉川駅徒歩15分",
+          "location": "世田谷区瀬田"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "7G9YZPEF2T4",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E7%B7%91%E5%81%B4%E3%81%AE%E3%83%8B%E3%82%B3%E3%82%BF%E3%83%9E",
+          "name": "緑側のニコタマ",
+          "price": "6,999万円",
+          "area": "80.61㎡",
+          "madori": "2LDK＋WTC",
+          "traffic": "二子玉川駅徒歩15分",
+          "location": "世田谷区瀬田"
+        },
         {
           "id": "lbUnff1oZzA",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E5%A5%BD%E3%81%8D%E3%82%92%E8%82%B2%E3%82%80%E6%9A%AE%E3%82%89%E3%81%97",
@@ -247,6 +268,7 @@
         }
       ],
       "ids": [
+        "7G9YZPEF2T4",
         "lbUnff1oZzA",
         "QNqCiQAGxhg",
         "CtZnABB1YRU",
@@ -266,7 +288,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-07-27T11:02:19",
+      "checked_at": "2026-07-28T10:44:18",
       "new_listings": [],
       "all_listings": [
         {
@@ -400,7 +422,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-27T11:02:19",
+      "checked_at": "2026-07-28T10:44:18",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -410,20 +432,9 @@
       "description": "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）",
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
-      "status": "changed",
-      "checked_at": "2026-07-27T11:02:19",
-      "new_listings": [
-        {
-          "id": "21321790",
-          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21321790/",
-          "name": "ベルヴィル鶴巻",
-          "price": "1780万円",
-          "area": "85.66m2",
-          "madori": "3LDK",
-          "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
-          "location": "神奈川県秦野市鶴巻北２"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-28T10:44:18",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "21286141",
