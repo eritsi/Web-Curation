@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T10:44:18",
+  "generated_at": "2026-07-29T10:46:08",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-07-28T10:44:18",
+      "checked_at": "2026-07-29T10:46:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-28T10:44:18",
+      "checked_at": "2026-07-29T10:46:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -131,20 +131,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-07-28T10:44:18",
-      "new_listings": [
-        {
-          "id": "7G9YZPEF2T4",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E7%B7%91%E5%81%B4%E3%81%AE%E3%83%8B%E3%82%B3%E3%82%BF%E3%83%9E",
-          "name": "緑側のニコタマ",
-          "price": "6,999万円",
-          "area": "80.61㎡",
-          "madori": "2LDK＋WTC",
-          "traffic": "二子玉川駅徒歩15分",
-          "location": "世田谷区瀬田"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-29T10:46:08",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "7G9YZPEF2T4",
@@ -288,7 +277,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-07-28T10:44:18",
+      "checked_at": "2026-07-29T10:46:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -355,7 +344,7 @@
           "id": "26871",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=26871",
           "name": "端正な幾何学模様",
-          "price": "5,960万円",
+          "price": "5,760万円",
           "area": "61.63㎡",
           "madori": "",
           "traffic": "西武新宿線「下落合」駅 徒歩7分",
@@ -422,7 +411,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-28T10:44:18",
+      "checked_at": "2026-07-29T10:46:08",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -432,20 +421,21 @@
       "description": "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）",
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
-      "status": "unchanged",
-      "checked_at": "2026-07-28T10:44:18",
-      "new_listings": [],
-      "all_listings": [
+      "status": "changed",
+      "checked_at": "2026-07-29T10:46:08",
+      "new_listings": [
         {
-          "id": "21286141",
-          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21286141/",
-          "name": "コーポ鶴巻A棟",
-          "price": "1000万円",
-          "area": "74.74m2",
-          "madori": "2LDK",
-          "traffic": "小田急小田原線「鶴巻温泉」徒歩4分",
-          "location": "神奈川県秦野市鶴巻北２-5-37"
-        },
+          "id": "20727433",
+          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_20727433/",
+          "name": "ライオンズマンション鶴巻温泉",
+          "price": "1180万円",
+          "area": "55.08m2",
+          "madori": "2DK",
+          "traffic": "小田急小田原線「鶴巻温泉」徒歩1分",
+          "location": "神奈川県秦野市鶴巻北２"
+        }
+      ],
+      "all_listings": [
         {
           "id": "21321790",
           "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21321790/",
@@ -464,6 +454,16 @@
           "area": "74.74m2",
           "madori": "2LDK+S（納戸）",
           "traffic": "小田急小田原線「鶴巻温泉」徒歩4分",
+          "location": "神奈川県秦野市鶴巻北２"
+        },
+        {
+          "id": "20727433",
+          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_20727433/",
+          "name": "ライオンズマンション鶴巻温泉",
+          "price": "1180万円",
+          "area": "55.08m2",
+          "madori": "2DK",
+          "traffic": "小田急小田原線「鶴巻温泉」徒歩1分",
           "location": "神奈川県秦野市鶴巻北２"
         },
         {
@@ -498,9 +498,9 @@
         }
       ],
       "ids": [
-        "21286141",
         "21321790",
         "21287477",
+        "20727433",
         "21298949",
         "78630086",
         "21279975"
