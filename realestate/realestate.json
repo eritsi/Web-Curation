@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-07-30T10:29:09",
+  "generated_at": "2026-07-31T10:56:23",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-07-30T10:29:09",
-      "new_listings": [
-        {
-          "id": "5514",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5514",
-          "name": "石神井台ガーデニア弐番館",
-          "price": "5,180万円",
-          "area": "55.04㎡",
-          "madori": "2LDK",
-          "traffic": "西武池袋線『大泉学園』駅徒歩12分",
-          "location": "東京都練馬区石神井台3-37-5"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-31T10:56:23",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5514",
@@ -130,7 +119,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-07-30T10:29:09",
+      "checked_at": "2026-07-31T10:56:23",
       "new_listings": [],
       "all_listings": [
         {
@@ -154,59 +143,49 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-07-30T10:29:09",
+      "checked_at": "2026-07-31T10:56:23",
       "new_listings": [
         {
-          "id": "F1rORbk5zy4",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/%E7%AA%93%E8%BE%BA%E3%81%A7%E5%90%9B%E3%82%92%E5%BE%85%E3%81%A4",
-          "name": "窓辺で君を待つ",
-          "price": "8,990万円",
-          "area": "90.81㎡",
-          "madori": "4LDK",
-          "traffic": "たまプラーザ駅徒歩15分",
-          "location": "川崎市宮前区犬蔵"
+          "id": "tKAPBD6VE14",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%BA%BB%E7%94%9F%E5%8C%BA/%E3%81%B2%E3%82%89%E3%81%84%E3%81%A6%E3%80%81%E4%BB%95%E5%88%87%E3%81%A3%E3%81%A6",
+          "name": "ひらいて、仕切って",
+          "price": "3,780万円",
+          "area": "64.80㎡",
+          "madori": "1LDK",
+          "traffic": "百合ヶ丘駅徒歩7分",
+          "location": "川崎市麻生区高石"
         },
         {
-          "id": "CogrnCDotKA",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E8%A5%BF%E5%8C%BA/%E3%81%8A%E3%81%8A%E3%82%89%E3%81%8B%E3%81%AA%E3%83%8F%E3%83%9E%E3%83%A9%E3%82%A4%E3%83%95",
-          "name": "おおらかなハマライフ",
-          "price": "2,890万円",
-          "area": "56.44㎡",
+          "id": "uegd74uVPuU",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%9B%BD%E5%88%86%E5%AF%BA%E5%B8%82/%E7%AA%93%E3%81%8C%E6%8F%8F%E3%81%8F%E6%9C%AA%E6%9D%A5%E3%81%AE%E3%81%8B%E3%81%9F%E3%81%A1",
+          "name": "窓が描く未来のかたち",
+          "price": "4,190万円",
+          "area": "63.61㎡",
           "madori": "2LDK",
-          "traffic": "横浜駅徒歩24分",
-          "location": "横浜市西区宮ケ谷"
-        },
-        {
-          "id": "5nfGhua3Yx0",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E6%88%B8%E5%BB%BA%E3%81%A6%E3%81%AB%E5%8C%B9%E6%95%B5",
-          "name": "戸建てに匹敵",
-          "price": "6,998万円",
-          "area": "105.52㎡",
-          "madori": "4LDK",
-          "traffic": "青葉台駅バス9分徒歩1分",
-          "location": "横浜市青葉区たちばな台"
-        },
-        {
-          "id": "CfVhhD5fnzo",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/%E9%AB%98%E5%8F%B0%E3%81%A7%E7%A9%BA%E3%82%92%E6%8A%B1%E3%81%8F",
-          "name": "高台で空を抱く",
-          "price": "5,990万円",
-          "area": "89.90㎡",
-          "madori": "2SLDK",
-          "traffic": "山手駅徒歩8分",
-          "location": "横浜市中区西之谷町"
+          "traffic": "国立駅バス6分徒歩2分",
+          "location": "国分寺市内藤"
         }
       ],
       "all_listings": [
         {
-          "id": "F1rORbk5zy4",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/%E7%AA%93%E8%BE%BA%E3%81%A7%E5%90%9B%E3%82%92%E5%BE%85%E3%81%A4",
-          "name": "窓辺で君を待つ",
-          "price": "8,990万円",
-          "area": "90.81㎡",
-          "madori": "4LDK",
-          "traffic": "たまプラーザ駅徒歩15分",
-          "location": "川崎市宮前区犬蔵"
+          "id": "tKAPBD6VE14",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%BA%BB%E7%94%9F%E5%8C%BA/%E3%81%B2%E3%82%89%E3%81%84%E3%81%A6%E3%80%81%E4%BB%95%E5%88%87%E3%81%A3%E3%81%A6",
+          "name": "ひらいて、仕切って",
+          "price": "3,780万円",
+          "area": "64.80㎡",
+          "madori": "1LDK",
+          "traffic": "百合ヶ丘駅徒歩7分",
+          "location": "川崎市麻生区高石"
+        },
+        {
+          "id": "uegd74uVPuU",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%9B%BD%E5%88%86%E5%AF%BA%E5%B8%82/%E7%AA%93%E3%81%8C%E6%8F%8F%E3%81%8F%E6%9C%AA%E6%9D%A5%E3%81%AE%E3%81%8B%E3%81%9F%E3%81%A1",
+          "name": "窓が描く未来のかたち",
+          "price": "4,190万円",
+          "area": "63.61㎡",
+          "madori": "2LDK",
+          "traffic": "国立駅バス6分徒歩2分",
+          "location": "国分寺市内藤"
         },
         {
           "id": "CogrnCDotKA",
@@ -347,20 +326,11 @@
           "madori": "3LDK",
           "traffic": "光が丘駅徒歩9分",
           "location": "練馬区光が丘"
-        },
-        {
-          "id": "W5Hw2S3wXI4",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%A4%A7%E7%94%B0%E5%8C%BA/%E5%B9%85%E3%81%8C%E5%A4%A7%E4%BA%8B",
-          "name": "「幅」が大事",
-          "price": "7,980万円",
-          "area": "94.86㎡",
-          "madori": "2LDK",
-          "traffic": "石川台駅徒歩9分",
-          "location": "大田区東雪谷"
         }
       ],
       "ids": [
-        "F1rORbk5zy4",
+        "tKAPBD6VE14",
+        "uegd74uVPuU",
         "CogrnCDotKA",
         "5nfGhua3Yx0",
         "CfVhhD5fnzo",
@@ -374,8 +344,7 @@
         "52J9H94oaWk",
         "Ar00diJ62n0",
         "sgT41WANGaA",
-        "r3jhn73Omtk",
-        "W5Hw2S3wXI4"
+        "r3jhn73Omtk"
       ]
     },
     {
@@ -383,20 +352,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-07-30T10:29:09",
-      "new_listings": [
-        {
-          "id": "27128",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27128",
-          "name": "清々しい乾杯を",
-          "price": "7,490万円",
-          "area": "54.72㎡",
-          "madori": "",
-          "traffic": "小田急線「参宮橋」駅 徒歩5分",
-          "location": "渋谷区代々木"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-07-31T10:56:23",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "27128",
@@ -497,16 +455,6 @@
           "madori": "",
           "traffic": "東急東横線・東急大井町線「自由が丘」駅 徒歩10分",
           "location": "世田谷区奥沢"
-        },
-        {
-          "id": "26277",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26277",
-          "name": "のんびりエブリデイ",
-          "price": "6,050万円",
-          "area": "78.73㎡",
-          "madori": "",
-          "traffic": "東急東横線「田園調布」駅 徒歩19分",
-          "location": "世田谷区玉堤"
         }
       ],
       "ids": [
@@ -519,8 +467,7 @@
         "26853",
         "26871",
         "26713",
-        "26776",
-        "26277"
+        "26776"
       ]
     },
     {
@@ -529,7 +476,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-30T10:29:09",
+      "checked_at": "2026-07-31T10:56:23",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -540,7 +487,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-07-30T10:29:09",
+      "checked_at": "2026-07-31T10:56:23",
       "new_listings": [],
       "all_listings": [
         {
