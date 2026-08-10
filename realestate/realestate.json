@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T10:00:01",
+  "generated_at": "2026-08-10T10:02:01",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-08-09T10:00:01",
+      "checked_at": "2026-08-10T10:02:01",
       "new_listings": [],
       "all_listings": [
         {
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-08-09T10:00:01",
+      "checked_at": "2026-08-10T10:02:01",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -118,20 +118,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-08-09T10:00:01",
-      "new_listings": [
-        {
-          "id": "GCKkGgn2Ppo",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E8%82%B2%E3%82%80%E8%B7%9D%E9%9B%A2%E6%84%9F",
-          "name": "育む距離感",
-          "price": "6,080万円",
-          "area": "58.90㎡",
-          "madori": "2LDK",
-          "traffic": "東陽町駅徒歩5分",
-          "location": "江東区東陽"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-08-10T10:02:01",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "JccPeqqcsHE",
@@ -308,7 +297,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-08-09T10:00:01",
+      "checked_at": "2026-08-10T10:02:01",
       "new_listings": [],
       "all_listings": [
         {
@@ -420,7 +409,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-09T10:00:01",
+      "checked_at": "2026-08-10T10:02:01",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -431,7 +420,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-09T10:00:01",
+      "checked_at": "2026-08-10T10:02:01",
       "new_listings": [],
       "all_listings": [
         {
