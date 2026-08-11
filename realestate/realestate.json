@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T10:02:01",
+  "generated_at": "2026-08-11T10:01:10",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-08-10T10:02:01",
+      "checked_at": "2026-08-11T10:01:10",
       "new_listings": [],
       "all_listings": [
         {
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-08-10T10:02:01",
+      "checked_at": "2026-08-11T10:01:10",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -119,7 +119,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-08-10T10:02:01",
+      "checked_at": "2026-08-11T10:01:10",
       "new_listings": [],
       "all_listings": [
         {
@@ -231,46 +231,6 @@
           "madori": "2LDK",
           "traffic": "ときわ台駅徒歩7分",
           "location": "板橋区常盤台"
-        },
-        {
-          "id": "F1rORbk5zy4",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/%E7%AA%93%E8%BE%BA%E3%81%A7%E5%90%9B%E3%82%92%E5%BE%85%E3%81%A4",
-          "name": "窓辺で君を待つ",
-          "price": "8,990万円",
-          "area": "90.81㎡",
-          "madori": "4LDK",
-          "traffic": "たまプラーザ駅徒歩15分",
-          "location": "川崎市宮前区犬蔵"
-        },
-        {
-          "id": "8CrH6SDQfCc",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E6%AD%A9%E3%81%8F%E6%A5%BD%E3%81%97%E3%81%BF%E7%84%A1%E9%99%90%E5%A4%A7",
-          "name": "歩く楽しみ、無限大",
-          "price": "6,299万円",
-          "area": "54.20㎡",
-          "madori": "1LDK+S",
-          "traffic": "目黒駅徒歩10分",
-          "location": "目黒区三田"
-        },
-        {
-          "id": "kHsm6Es26mw",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%8B%9B%E6%B1%9F%E5%B8%82/%E5%8D%97%E5%90%91%E3%81%8D%E3%81%8C%E3%81%8F%E3%82%8C%E3%82%8B%E5%AE%89%E5%BF%83",
-          "name": "南向きがくれる安心",
-          "price": "3,990万円",
-          "area": "67.30㎡",
-          "madori": "3LDK",
-          "traffic": "国領駅徒歩14分",
-          "location": "狛江市西野川"
-        },
-        {
-          "id": "lpVMn16oeU4",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E7%B7%91%E3%81%AB%E6%83%B9%E3%81%8D%E5%AF%84%E3%81%9B%E3%82%89%E3%82%8C%E3%81%A6",
-          "name": "緑に惹き寄せられて",
-          "price": "6,380万円",
-          "area": "57.63㎡",
-          "madori": "1R",
-          "traffic": "大岡山駅徒歩7分",
-          "location": "目黒区大岡山"
         }
       ],
       "ids": [
@@ -284,11 +244,7 @@
         "oErpezFJe2k",
         "AfQGuxSokJI",
         "rEsXQ8eFMAA",
-        "7ZKwFj21Tfc",
-        "F1rORbk5zy4",
-        "8CrH6SDQfCc",
-        "kHsm6Es26mw",
-        "lpVMn16oeU4"
+        "7ZKwFj21Tfc"
       ]
     },
     {
@@ -297,7 +253,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-08-10T10:02:01",
+      "checked_at": "2026-08-11T10:01:10",
       "new_listings": [],
       "all_listings": [
         {
@@ -409,7 +365,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-10T10:02:01",
+      "checked_at": "2026-08-11T10:01:10",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -420,7 +376,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-10T10:02:01",
+      "checked_at": "2026-08-11T10:01:10",
       "new_listings": [],
       "all_listings": [
         {
