@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T10:09:54",
+  "generated_at": "2026-08-14T10:08:30",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-08-13T10:09:54",
+      "checked_at": "2026-08-14T10:08:30",
       "new_listings": [],
       "all_listings": [
         {
@@ -108,7 +108,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-08-13T10:09:54",
+      "checked_at": "2026-08-14T10:08:30",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -118,10 +118,51 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-08-13T10:09:54",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-08-14T10:08:30",
+      "new_listings": [
+        {
+          "id": "kFtG3FZAYpQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E3%83%99%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%91%E3%82%BA%E3%83%AB",
+          "name": "ベスポジパズル",
+          "price": "3,880万円",
+          "area": "53.76㎡",
+          "madori": "SLDK",
+          "traffic": "蓮根駅徒歩7分",
+          "location": "板橋区坂下"
+        },
+        {
+          "id": "ZI4gEJ4jl40",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%8C%BA/%E9%A7%85%E8%BF%91%E8%A7%92%E4%BD%8F%E6%88%B8%E3%82%92%E7%99%BA%E8%A6%8B",
+          "name": "駅近角住戸を発見",
+          "price": "4,599万円",
+          "area": "70.91㎡",
+          "madori": "3LDK",
+          "traffic": "大口駅徒歩4分",
+          "location": "横浜市神奈川区大口通"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "kFtG3FZAYpQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E3%83%99%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%91%E3%82%BA%E3%83%AB",
+          "name": "ベスポジパズル",
+          "price": "3,880万円",
+          "area": "53.76㎡",
+          "madori": "SLDK",
+          "traffic": "蓮根駅徒歩7分",
+          "location": "板橋区坂下"
+        },
+        {
+          "id": "ZI4gEJ4jl40",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%8C%BA/%E9%A7%85%E8%BF%91%E8%A7%92%E4%BD%8F%E6%88%B8%E3%82%92%E7%99%BA%E8%A6%8B",
+          "name": "駅近角住戸を発見",
+          "price": "4,599万円",
+          "area": "70.91㎡",
+          "madori": "3LDK",
+          "traffic": "大口駅徒歩4分",
+          "location": "横浜市神奈川区大口通"
+        },
         {
           "id": "JccPeqqcsHE",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%A4%A7%E7%94%B0%E5%8C%BA/%E6%9C%A8%E8%82%8C%E3%81%AE%E3%81%AC%E3%81%8F%E3%82%82%E3%82%8A",
@@ -234,6 +275,8 @@
         }
       ],
       "ids": [
+        "kFtG3FZAYpQ",
+        "ZI4gEJ4jl40",
         "JccPeqqcsHE",
         "CPQ1sWa6JJM",
         "GCKkGgn2Ppo",
@@ -253,7 +296,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-08-13T10:09:54",
+      "checked_at": "2026-08-14T10:08:30",
       "new_listings": [],
       "all_listings": [
         {
@@ -365,7 +408,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-13T10:09:54",
+      "checked_at": "2026-08-14T10:08:30",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -376,7 +419,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-13T10:09:54",
+      "checked_at": "2026-08-14T10:08:30",
       "new_listings": [],
       "all_listings": [
         {
