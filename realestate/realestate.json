@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T09:41:27",
+  "generated_at": "2026-08-23T09:44:44",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-08-22T09:41:27",
+      "checked_at": "2026-08-23T09:44:44",
       "new_listings": [],
       "all_listings": [
         {
@@ -41,16 +41,6 @@
           "location": "神奈川県横浜市西区戸部町7-225"
         },
         {
-          "id": "5426",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
-          "name": "シャンノール金町",
-          "price": "5,790万円価格改定",
-          "area": "60.37㎡",
-          "madori": "2SLDK",
-          "traffic": "JR常磐緩行線『金町』駅徒歩4分",
-          "location": "東京都葛飾区金町5丁目26-11"
-        },
-        {
           "id": "5582",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5582",
           "name": "朝日クレス・パリオ南阿佐谷",
@@ -59,6 +49,16 @@
           "madori": "2LDK",
           "traffic": "東京メトロ丸ノ内線『南阿佐ヶ谷』駅徒歩14分",
           "location": "東京都杉並区成田東2-37-13"
+        },
+        {
+          "id": "5426",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
+          "name": "シャンノール金町",
+          "price": "5,790万円価格改定",
+          "area": "60.37㎡",
+          "madori": "2SLDK",
+          "traffic": "JR常磐緩行線『金町』駅徒歩4分",
+          "location": "東京都葛飾区金町5丁目26-11"
         },
         {
           "id": "5439",
@@ -115,8 +115,8 @@
         "5517",
         "5553",
         "5407",
-        "5426",
         "5582",
+        "5426",
         "5439",
         "5400",
         "5403",
@@ -130,7 +130,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-08-22T09:41:27",
+      "checked_at": "2026-08-23T09:44:44",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -140,50 +140,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-08-22T09:41:27",
-      "new_listings": [
-        {
-          "id": "OH31LSRLcNI",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%81%84%E3%81%84%E3%81%93%E3%81%A8%E3%80%81%E8%B6%B3%E3%81%97%E7%AE%97%E4%B8%AD",
-          "name": "いいこと、足し算中",
-          "price": "8,480万円",
-          "area": "74.79㎡",
-          "madori": "2LDK+Terrace",
-          "traffic": "目黒駅徒歩7分",
-          "location": "目黒区目黒"
-        },
-        {
-          "id": "baoWiZvDYOo",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E3%81%8A%E6%B0%97%E3%81%AB%E5%8F%AC%E3%81%99%E3%81%BE%E3%81%BE%E3%81%AB",
-          "name": "お気に召すままに",
-          "price": "6,770万円",
-          "area": "124.01㎡",
-          "madori": "4LDK",
-          "traffic": "ときわ台駅徒歩7分",
-          "location": "板橋区南常盤台"
-        },
-        {
-          "id": "czqmpwIvJWo",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E5%BA%AD%E3%81%A7%E9%81%8A%E3%81%BC%E3%81%86%E3%80%81%E5%AE%B6%E6%97%8F%E6%99%82%E9%96%93",
-          "name": "庭で遊ぼう、家族時間",
-          "price": "4,890万円",
-          "area": "64.49㎡",
-          "madori": "3LDK",
-          "traffic": "南砂町駅徒歩14分",
-          "location": "江東区南砂"
-        },
-        {
-          "id": "xFA0cpXrosk",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/365%E6%97%A5%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3",
-          "name": "365日チェックイン",
-          "price": "7,498万円",
-          "area": "76.55㎡",
-          "madori": "3LDK",
-          "traffic": "たまプラーザ駅徒歩13分",
-          "location": "川崎市宮前区犬蔵"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-08-23T09:44:44",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "OH31LSRLcNI",
@@ -338,30 +297,30 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "changed",
-      "checked_at": "2026-08-22T09:41:27",
+      "checked_at": "2026-08-23T09:44:44",
       "new_listings": [
         {
-          "id": "26017",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26017",
-          "name": "プロダクトにこだわる",
-          "price": "5,830万円（税込）",
-          "area": "79.49㎡",
+          "id": "27308",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27308",
+          "name": "居心地の良さは細部に宿る",
+          "price": "5,980万円",
+          "area": "70.4㎡",
           "madori": "",
-          "traffic": "西武池袋線「清瀬」駅 徒歩14分",
-          "location": "東久留米市小山"
-        },
-        {
-          "id": "27186",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27186",
-          "name": "豊かさを知る",
-          "price": "4,880万円",
-          "area": "70.32㎡",
-          "madori": "",
-          "traffic": "西武池袋線「大泉学園」駅 徒歩15分",
-          "location": "練馬区石神井台"
+          "traffic": "東西線「葛西」駅 徒歩12分",
+          "location": "江戸川区東葛西"
         }
       ],
       "all_listings": [
+        {
+          "id": "27308",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27308",
+          "name": "居心地の良さは細部に宿る",
+          "price": "5,980万円",
+          "area": "70.4㎡",
+          "madori": "",
+          "traffic": "東西線「葛西」駅 徒歩12分",
+          "location": "江戸川区東葛西"
+        },
         {
           "id": "26017",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=26017",
@@ -474,6 +433,7 @@
         }
       ],
       "ids": [
+        "27308",
         "26017",
         "27186",
         "25732",
@@ -493,7 +453,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-22T09:41:27",
+      "checked_at": "2026-08-23T09:44:44",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -504,7 +464,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-22T09:41:27",
+      "checked_at": "2026-08-23T09:44:44",
       "new_listings": [],
       "all_listings": [
         {
