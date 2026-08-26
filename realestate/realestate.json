@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T09:42:45",
+  "generated_at": "2026-08-26T09:43:40",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-08-25T09:42:45",
+      "checked_at": "2026-08-26T09:43:40",
       "new_listings": [],
       "all_listings": [
         {
@@ -118,20 +118,9 @@
       "description": "自社リノベ済みマンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
-      "status": "changed",
-      "checked_at": "2026-08-25T09:42:45",
-      "new_listings": [
-        {
-          "id": "FU260105-02",
-          "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_detail.php?division=014&k_number=FU260105-02",
-          "name": "グランドメゾン大濠ブルクレール",
-          "price": "8,980万円",
-          "area": "85.42㎡",
-          "madori": "3LDK++WIC",
-          "traffic": "福岡市七隈線「六本松」駅徒歩9分",
-          "location": ""
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-08-26T09:43:40",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "FU260105-02",
@@ -154,30 +143,30 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-08-25T09:42:45",
+      "checked_at": "2026-08-26T09:43:40",
       "new_listings": [
         {
-          "id": "uGJxirt4h50",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%83%AC%E3%83%88%E3%83%AD%E3%81%A8%E3%83%A2%E3%83%80%E3%83%B3%E3%81%AE%E8%AA%BF%E5%BE%8B",
-          "name": "レトロとモダンの調律",
-          "price": "7,980万円",
-          "area": "64.95㎡",
-          "madori": "3LDK",
-          "traffic": "祐天寺駅徒歩6分",
-          "location": "目黒区中町"
-        },
-        {
-          "id": "jguuiHD6JKg",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E6%88%91%E3%81%8C%E5%AE%B6%E3%81%AE%E7%AD%94%E3%81%88",
-          "name": "我が家の答え",
-          "price": "6,780万円",
-          "area": "68.58㎡",
-          "madori": "2SLDK",
-          "traffic": "大島駅徒歩3分",
-          "location": "江東区大島"
+          "id": "vpeEd3jrbro",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E4%BC%B8%E3%81%B3%E3%82%86%E3%81%8F%E8%83%8C%E4%B8%AD%E3%82%92%E8%A6%8B%E3%81%A4%E3%82%81%E3%81%A6",
+          "name": "伸びゆく背中を見つめて",
+          "price": "8,380万円",
+          "area": "94.30㎡",
+          "madori": "3SLDK+ファミリークローゼット",
+          "traffic": "大島駅徒歩13分",
+          "location": "江東区東砂"
         }
       ],
       "all_listings": [
+        {
+          "id": "vpeEd3jrbro",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E4%BC%B8%E3%81%B3%E3%82%86%E3%81%8F%E8%83%8C%E4%B8%AD%E3%82%92%E8%A6%8B%E3%81%A4%E3%82%81%E3%81%A6",
+          "name": "伸びゆく背中を見つめて",
+          "price": "8,380万円",
+          "area": "94.30㎡",
+          "madori": "3SLDK+ファミリークローゼット",
+          "traffic": "大島駅徒歩13分",
+          "location": "江東区東砂"
+        },
         {
           "id": "uGJxirt4h50",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%83%AC%E3%83%88%E3%83%AD%E3%81%A8%E3%83%A2%E3%83%80%E3%83%B3%E3%81%AE%E8%AA%BF%E5%BE%8B",
@@ -310,6 +299,7 @@
         }
       ],
       "ids": [
+        "vpeEd3jrbro",
         "uGJxirt4h50",
         "jguuiHD6JKg",
         "OH31LSRLcNI",
@@ -331,7 +321,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-08-25T09:42:45",
+      "checked_at": "2026-08-26T09:43:40",
       "new_listings": [],
       "all_listings": [
         {
@@ -476,7 +466,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-25T09:42:45",
+      "checked_at": "2026-08-26T09:43:40",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -487,7 +477,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-25T09:42:45",
+      "checked_at": "2026-08-26T09:43:40",
       "new_listings": [],
       "all_listings": [
         {
