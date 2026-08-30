@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T13:51:47",
+  "generated_at": "2026-08-30T11:38:16",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-08-29T13:51:47",
+      "checked_at": "2026-08-30T11:38:16",
       "new_listings": [],
       "all_listings": [
         {
@@ -119,7 +119,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-08-29T13:51:47",
+      "checked_at": "2026-08-30T11:38:16",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -129,20 +129,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-08-29T13:51:47",
-      "new_listings": [
-        {
-          "id": "8FOuqsGuiJc",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%8B%9B%E6%B1%9F%E5%B8%82/%E5%AE%B6%E6%97%8F%E3%81%AE%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A7",
-          "name": "家族のリズムで",
-          "price": "4,790万円",
-          "area": "87.40㎡",
-          "madori": "3LDK+納戸",
-          "traffic": "喜多見駅徒歩8分",
-          "location": "狛江市岩戸南"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-08-30T11:38:16",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "uRXxMT09i9o",
@@ -341,7 +330,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-08-29T13:51:47",
+      "checked_at": "2026-08-30T11:38:16",
       "new_listings": [],
       "all_listings": [
         {
@@ -486,7 +475,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-29T13:51:47",
+      "checked_at": "2026-08-30T11:38:16",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -497,7 +486,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-29T13:51:47",
+      "checked_at": "2026-08-30T11:38:16",
       "new_listings": [],
       "all_listings": [
         {
