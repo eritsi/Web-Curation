@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-30T11:38:16",
+  "generated_at": "2026-08-31T11:27:52",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "unchanged",
-      "checked_at": "2026-08-30T11:38:16",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-08-31T11:27:52",
+      "new_listings": [
+        {
+          "id": "5502",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
+          "name": "プラウド海老名",
+          "price": "6,990万円",
+          "area": "71.80㎡",
+          "madori": "3LDK+2WIC",
+          "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
+          "location": "神奈川県海老名市中央1-19-13"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "5502",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
+          "name": "プラウド海老名",
+          "price": "6,990万円",
+          "area": "71.80㎡",
+          "madori": "3LDK+2WIC",
+          "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
+          "location": "神奈川県海老名市中央1-19-13"
+        },
         {
           "id": "5553",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5553",
@@ -102,6 +123,7 @@
         }
       ],
       "ids": [
+        "5502",
         "5553",
         "5517",
         "5407",
@@ -119,7 +141,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-08-30T11:38:16",
+      "checked_at": "2026-08-31T11:27:52",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -130,9 +152,19 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-08-30T11:38:16",
+      "checked_at": "2026-08-31T11:27:52",
       "new_listings": [],
       "all_listings": [
+        {
+          "id": "uGJxirt4h50",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%83%AC%E3%83%88%E3%83%AD%E3%81%A8%E3%83%A2%E3%83%80%E3%83%B3%E3%81%AE%E8%AA%BF%E5%BE%8B",
+          "name": "レトロとモダンの調律",
+          "price": "7,980万円",
+          "area": "64.95㎡",
+          "madori": "3LDK",
+          "traffic": "祐天寺駅徒歩6分",
+          "location": "目黒区中町"
+        },
         {
           "id": "uRXxMT09i9o",
           "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E5%8D%97%E5%8C%BA/%E6%83%B9%E3%81%8B%E3%82%8C%E3%82%8B%E7%90%86%E7%94%B1%E3%81%AF%E3%80%81%E7%AB%AF%E3%80%85%E3%81%AB%E3%80%82",
@@ -274,16 +306,6 @@
           "location": "江東区東砂"
         },
         {
-          "id": "uGJxirt4h50",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%83%AC%E3%83%88%E3%83%AD%E3%81%A8%E3%83%A2%E3%83%80%E3%83%B3%E3%81%AE%E8%AA%BF%E5%BE%8B",
-          "name": "レトロとモダンの調律",
-          "price": "7,980万円",
-          "area": "64.95㎡",
-          "madori": "3LDK",
-          "traffic": "祐天寺駅徒歩6分",
-          "location": "目黒区中町"
-        },
-        {
           "id": "jguuiHD6JKg",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E6%88%91%E3%81%8C%E5%AE%B6%E3%81%AE%E7%AD%94%E3%81%88",
           "name": "我が家の答え",
@@ -292,19 +314,10 @@
           "madori": "2SLDK",
           "traffic": "大島駅徒歩3分",
           "location": "江東区大島"
-        },
-        {
-          "id": "OH31LSRLcNI",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%81%84%E3%81%84%E3%81%93%E3%81%A8%E3%80%81%E8%B6%B3%E3%81%97%E7%AE%97%E4%B8%AD",
-          "name": "いいこと、足し算中",
-          "price": "8,480万円",
-          "area": "74.79㎡",
-          "madori": "2LDK+Terrace",
-          "traffic": "目黒駅徒歩7分",
-          "location": "目黒区目黒"
         }
       ],
       "ids": [
+        "uGJxirt4h50",
         "uRXxMT09i9o",
         "HEMf8LsoE6k",
         "8FOuqsGuiJc",
@@ -319,9 +332,7 @@
         "GHlgcUGNwME",
         "ACUKkcfOimA",
         "vpeEd3jrbro",
-        "uGJxirt4h50",
-        "jguuiHD6JKg",
-        "OH31LSRLcNI"
+        "jguuiHD6JKg"
       ]
     },
     {
@@ -330,7 +341,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-08-30T11:38:16",
+      "checked_at": "2026-08-31T11:27:52",
       "new_listings": [],
       "all_listings": [
         {
@@ -475,7 +486,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-30T11:38:16",
+      "checked_at": "2026-08-31T11:27:52",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -486,7 +497,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-30T11:38:16",
+      "checked_at": "2026-08-31T11:27:52",
       "new_listings": [],
       "all_listings": [
         {
