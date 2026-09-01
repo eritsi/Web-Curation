@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T11:27:52",
+  "generated_at": "2026-09-01T11:43:05",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,20 +7,40 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "changed",
-      "checked_at": "2026-08-31T11:27:52",
+      "checked_at": "2026-09-01T11:43:05",
       "new_listings": [
         {
-          "id": "5502",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
-          "name": "プラウド海老名",
-          "price": "6,990万円",
-          "area": "71.80㎡",
+          "id": "5474",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5474",
+          "name": "ダイアパレス前野台",
+          "price": "6,380万円",
+          "area": "75.01㎡",
           "madori": "3LDK+2WIC",
-          "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
-          "location": "神奈川県海老名市中央1-19-13"
+          "traffic": "都営三田線『志村三丁目』駅徒歩10分",
+          "location": "東京都板橋区前野町5-24-7"
         }
       ],
       "all_listings": [
+        {
+          "id": "5474",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5474",
+          "name": "ダイアパレス前野台",
+          "price": "6,380万円",
+          "area": "75.01㎡",
+          "madori": "3LDK+2WIC",
+          "traffic": "都営三田線『志村三丁目』駅徒歩10分",
+          "location": "東京都板橋区前野町5-24-7"
+        },
+        {
+          "id": "5407",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5407",
+          "name": "日神パレステージ横浜ベイウエスト",
+          "price": "7,680万円",
+          "area": "64.93㎡",
+          "madori": "3LDK",
+          "traffic": "横浜市営地下鉄ブルーライン『高島町』駅徒歩2分",
+          "location": "神奈川県横浜市西区戸部町7-225"
+        },
         {
           "id": "5502",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
@@ -52,24 +72,14 @@
           "location": "東京都葛飾区東立石3-25-5"
         },
         {
-          "id": "5407",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5407",
-          "name": "日神パレステージ横浜ベイウエスト",
-          "price": "7,680万円",
-          "area": "64.93㎡",
-          "madori": "3LDK",
-          "traffic": "横浜市営地下鉄ブルーライン『高島町』駅徒歩2分",
-          "location": "神奈川県横浜市西区戸部町7-225"
-        },
-        {
-          "id": "5400",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
-          "name": "ベルハイム西荻窪第3",
-          "price": "7,990万円",
-          "area": "67.51㎡",
-          "madori": "3LDK",
-          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
-          "location": "東京都杉並区西荻北4-8-2"
+          "id": "5465",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5465",
+          "name": "クリオ中村橋壱番館",
+          "price": "8,290万円価格改定",
+          "area": "69.13㎡",
+          "madori": "2SLDK+SIC",
+          "traffic": " 西武池袋線『中村橋』駅徒歩3分",
+          "location": "東京都練馬区中村北3-11-14"
         },
         {
           "id": "5582",
@@ -85,7 +95,7 @@
           "id": "5439",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
           "name": "パークハイム桜新町",
-          "price": "7,290万円",
+          "price": "6,990万円価格改定",
           "area": "54.08㎡",
           "madori": "2LDK+WIC",
           "traffic": "東急田園都市線『桜新町』駅徒歩12分",
@@ -102,6 +112,16 @@
           "location": "東京都葛飾区金町5丁目26-11"
         },
         {
+          "id": "5400",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
+          "name": "ベルハイム西荻窪第3",
+          "price": "7,990万円",
+          "area": "67.51㎡",
+          "madori": "3LDK",
+          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
+          "location": "東京都杉並区西荻北4-8-2"
+        },
+        {
           "id": "5408",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
           "name": "エクセレント港北センター南",
@@ -110,29 +130,20 @@
           "madori": "3LDK",
           "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
           "location": "神奈川県横浜市都筑区荏田東4-1-14"
-        },
-        {
-          "id": "5465",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5465",
-          "name": "クリオ中村橋壱番館",
-          "price": "8,480万円",
-          "area": "69.13㎡",
-          "madori": "2SLDK+SIC",
-          "traffic": " 西武池袋線『中村橋』駅徒歩3分",
-          "location": "東京都練馬区中村北3-11-14"
         }
       ],
       "ids": [
+        "5474",
+        "5407",
         "5502",
         "5553",
         "5517",
-        "5407",
-        "5400",
+        "5465",
         "5582",
         "5439",
         "5426",
-        "5408",
-        "5465"
+        "5400",
+        "5408"
       ]
     },
     {
@@ -141,7 +152,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-08-31T11:27:52",
+      "checked_at": "2026-09-01T11:43:05",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -152,7 +163,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-08-31T11:27:52",
+      "checked_at": "2026-09-01T11:43:05",
       "new_listings": [],
       "all_listings": [
         {
@@ -279,7 +290,7 @@
           "id": "GHlgcUGNwME",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%A2%A8%E7%94%B0%E5%8C%BA/%E6%98%A5%E8%89%B2%E3%81%AE%E6%95%A3%E6%AD%A9%E9%81%93",
           "name": "春色の散歩道",
-          "price": "8,998万円",
+          "price": "8,698万円",
           "area": "61.07㎡",
           "madori": "3LDK",
           "traffic": "菊川駅徒歩5分",
@@ -341,7 +352,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-08-31T11:27:52",
+      "checked_at": "2026-09-01T11:43:05",
       "new_listings": [],
       "all_listings": [
         {
@@ -486,7 +497,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-31T11:27:52",
+      "checked_at": "2026-09-01T11:43:05",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -497,7 +508,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-08-31T11:27:52",
+      "checked_at": "2026-09-01T11:43:05",
       "new_listings": [],
       "all_listings": [
         {
