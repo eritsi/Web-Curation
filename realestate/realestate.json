@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-09-01T11:43:05",
+  "generated_at": "2026-09-02T11:03:53",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-09-01T11:43:05",
-      "new_listings": [
-        {
-          "id": "5474",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5474",
-          "name": "ダイアパレス前野台",
-          "price": "6,380万円",
-          "area": "75.01㎡",
-          "madori": "3LDK+2WIC",
-          "traffic": "都営三田線『志村三丁目』駅徒歩10分",
-          "location": "東京都板橋区前野町5-24-7"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-09-02T11:03:53",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5474",
@@ -152,7 +141,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-09-01T11:43:05",
+      "checked_at": "2026-09-02T11:03:53",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -163,7 +152,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-09-01T11:43:05",
+      "checked_at": "2026-09-02T11:03:53",
       "new_listings": [],
       "all_listings": [
         {
@@ -351,10 +340,31 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-09-01T11:43:05",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-09-02T11:03:53",
+      "new_listings": [
+        {
+          "id": "25096",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=25096",
+          "name": "大切にしたいもの",
+          "price": "1,680万円",
+          "area": "50.1㎡",
+          "madori": "",
+          "traffic": "東急東横線・横浜市営地下鉄グリーンライン「日吉」駅 バス11分 「さくらが丘」バス停 徒歩4分",
+          "location": "川崎市高津区蟹ケ谷"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "25096",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=25096",
+          "name": "大切にしたいもの",
+          "price": "1,680万円",
+          "area": "50.1㎡",
+          "madori": "",
+          "traffic": "東急東横線・横浜市営地下鉄グリーンライン「日吉」駅 バス11分 「さくらが丘」バス停 徒歩4分",
+          "location": "川崎市高津区蟹ケ谷"
+        },
         {
           "id": "27308",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=27308",
@@ -464,19 +474,10 @@
           "madori": "",
           "traffic": "西武新宿線「上石神井」駅 徒歩20分",
           "location": "練馬区石神井台"
-        },
-        {
-          "id": "26511",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26511",
-          "name": "小庭とつながる世界",
-          "price": "4,980万円",
-          "area": "65.63㎡",
-          "madori": "",
-          "traffic": "東急田園都市線「梶が谷」駅 徒歩6分",
-          "location": "川崎市高津区下作延"
         }
       ],
       "ids": [
+        "25096",
         "27308",
         "26017",
         "27186",
@@ -487,8 +488,7 @@
         "27153",
         "27107",
         "27128",
-        "26866",
-        "26511"
+        "26866"
       ]
     },
     {
@@ -497,7 +497,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-01T11:43:05",
+      "checked_at": "2026-09-02T11:03:53",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -508,7 +508,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-01T11:43:05",
+      "checked_at": "2026-09-02T11:03:53",
       "new_listings": [],
       "all_listings": [
         {
