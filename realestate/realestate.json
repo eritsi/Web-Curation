@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T11:05:52",
+  "generated_at": "2026-09-06T11:00:59",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-05T11:05:52",
+      "checked_at": "2026-09-06T11:00:59",
       "new_listings": [],
       "all_listings": [
         {
@@ -31,16 +31,6 @@
           "location": "東京都板橋区前野町5-24-7"
         },
         {
-          "id": "5407",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5407",
-          "name": "日神パレステージ横浜ベイウエスト",
-          "price": "7,680万円",
-          "area": "64.93㎡",
-          "madori": "3LDK",
-          "traffic": "横浜市営地下鉄ブルーライン『高島町』駅徒歩2分",
-          "location": "神奈川県横浜市西区戸部町7-225"
-        },
-        {
           "id": "5502",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
           "name": "プラウド海老名",
@@ -49,6 +39,16 @@
           "madori": "3LDK+2WIC",
           "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
           "location": "神奈川県海老名市中央1-19-13"
+        },
+        {
+          "id": "5407",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5407",
+          "name": "日神パレステージ横浜ベイウエスト",
+          "price": "7,680万円",
+          "area": "64.93㎡",
+          "madori": "3LDK",
+          "traffic": "横浜市営地下鉄ブルーライン『高島町』駅徒歩2分",
+          "location": "神奈川県横浜市西区戸部町7-225"
         },
         {
           "id": "5553",
@@ -124,8 +124,8 @@
       "ids": [
         "5497",
         "5474",
-        "5407",
         "5502",
+        "5407",
         "5553",
         "5465",
         "5582",
@@ -142,67 +142,16 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-05T11:05:52"
+      "checked_at": "2026-09-06T11:00:59"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-09-05T11:05:52",
-      "new_listings": [
-        {
-          "id": "qfwhCpXdOko",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E6%9C%AA%E6%94%B9%E8%A3%85%E8%B2%A9%E5%A3%B2_in_%E8%A5%BF%E8%8D%BB%E7%AA%AA",
-          "name": "未改装販売 in 西荻窪",
-          "price": "8,980万円(改装前価格)",
-          "area": "91.60㎡",
-          "madori": "3LDK",
-          "traffic": "西荻窪駅徒歩13分",
-          "location": "杉並区宮前"
-        },
-        {
-          "id": "vJLgSnh604w",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E5%AE%B6%E6%97%8F%E3%81%AE%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89",
-          "name": "家族のこれから",
-          "price": "7,980万円",
-          "area": "63.60㎡",
-          "madori": "3LDK",
-          "traffic": "東陽町駅徒歩14分",
-          "location": "江東区千石"
-        },
-        {
-          "id": "XeSw2DUxy88",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA/%E7%9F%B3%E3%81%AE%E8%A8%98%E6%86%B6%E3%81%AB%E8%82%B2%E3%81%BE%E3%82%8C",
-          "name": "石の記憶に育まれ",
-          "price": "4,780万円",
-          "area": "60.50㎡",
-          "madori": "LDK＋S",
-          "traffic": "西葛西駅徒歩7分",
-          "location": "江戸川区西葛西"
-        },
-        {
-          "id": "uKQ9hE2DvxE",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%AB%98%E6%B4%A5%E5%8C%BA/%E7%84%A1%E9%AA%A8%E3%81%AA%E3%81%AE%E3%81%AB%E3%80%81%E3%82%84%E3%81%95%E3%81%97%E3%81%84",
-          "name": "無骨なのに、やさしい",
-          "price": "4,980万円",
-          "area": "65.63㎡",
-          "madori": "2LDK",
-          "traffic": "梶が谷駅徒歩6分",
-          "location": "川崎市高津区下作延"
-        },
-        {
-          "id": "nyBXCZd6lm0",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%83%96%E3%83%AB%E3%83%BC%E3%83%AA%E3%83%90%E3%83%BC%E3%81%AB%E3%81%8A%E3%81%AF%E3%82%88%E3%81%86",
-          "name": "ブルーリバーにおはよう",
-          "price": "5,500万円",
-          "area": "58.80㎡",
-          "madori": "2LDK",
-          "traffic": "豊洲駅徒歩17分",
-          "location": "江東区枝川"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-09-06T11:00:59",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "XXukGMlo99M",
@@ -368,17 +317,17 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "changed",
-      "checked_at": "2026-09-05T11:05:52",
+      "checked_at": "2026-09-06T11:00:59",
       "new_listings": [
         {
-          "id": "26776",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26776",
-          "name": "たゆたう暮らし",
-          "price": "5,280万円（税込）",
-          "area": "53.87㎡",
+          "id": "26866",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26866",
+          "name": "木々と育つ家",
+          "price": "4,850万円",
+          "area": "82.79㎡",
           "madori": "",
-          "traffic": "東急東横線・東急大井町線「自由が丘」駅 徒歩10分",
-          "location": "世田谷区奥沢"
+          "traffic": "西武新宿線「上石神井」駅 徒歩20分",
+          "location": "練馬区石神井台"
         }
       ],
       "all_listings": [
@@ -481,6 +430,16 @@
           "madori": "",
           "traffic": "小田急線「参宮橋」駅 徒歩5分",
           "location": "渋谷区代々木"
+        },
+        {
+          "id": "26866",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26866",
+          "name": "木々と育つ家",
+          "price": "4,850万円",
+          "area": "82.79㎡",
+          "madori": "",
+          "traffic": "西武新宿線「上石神井」駅 徒歩20分",
+          "location": "練馬区石神井台"
         }
       ],
       "ids": [
@@ -493,7 +452,8 @@
         "26998",
         "27256",
         "26277",
-        "27128"
+        "27128",
+        "26866"
       ]
     },
     {
@@ -502,7 +462,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-05T11:05:52",
+      "checked_at": "2026-09-06T11:00:59",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -513,7 +473,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-05T11:05:52",
+      "checked_at": "2026-09-06T11:00:59",
       "new_listings": [],
       "all_listings": [
         {
