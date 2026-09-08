@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-09-07T10:58:33",
+  "generated_at": "2026-09-08T11:09:46",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "unchanged",
-      "checked_at": "2026-09-07T10:58:33",
-      "new_listings": [],
-      "all_listings": [
+      "status": "changed",
+      "checked_at": "2026-09-08T11:09:46",
+      "new_listings": [
         {
-          "id": "5497",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5497",
-          "name": "ウィスティリアヒルズ戸塚",
-          "price": "5,680万円",
-          "area": "68.79㎡",
-          "madori": "3LDK",
-          "traffic": "JR東海道本線・JR湘南新宿ライン",
-          "location": "神奈川県横浜市戸塚区吉田町1380‐1"
-        },
+          "id": "5371",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5371",
+          "name": "オーベル目白アヴァンタージュ",
+          "price": "8,990万円価格改定",
+          "area": "54.73㎡",
+          "madori": "2LDK",
+          "traffic": "JR山手線『目白』駅徒歩8分",
+          "location": "東京都豊島区目白4-19-23"
+        }
+      ],
+      "all_listings": [
         {
           "id": "5474",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5474",
@@ -29,6 +30,16 @@
           "madori": "3LDK+2WIC",
           "traffic": "都営三田線『志村三丁目』駅徒歩10分",
           "location": "東京都板橋区前野町5-24-7"
+        },
+        {
+          "id": "5497",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5497",
+          "name": "ウィスティリアヒルズ戸塚",
+          "price": "5,680万円",
+          "area": "68.79㎡",
+          "madori": "3LDK",
+          "traffic": "JR東海道本線・JR湘南新宿ライン",
+          "location": "神奈川県横浜市戸塚区吉田町1380‐1"
         },
         {
           "id": "5502",
@@ -51,26 +62,6 @@
           "location": "東京都杉並区成田東2-37-13"
         },
         {
-          "id": "5407",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5407",
-          "name": "日神パレステージ横浜ベイウエスト",
-          "price": "7,680万円",
-          "area": "64.93㎡",
-          "madori": "3LDK",
-          "traffic": "横浜市営地下鉄ブルーライン『高島町』駅徒歩2分",
-          "location": "神奈川県横浜市西区戸部町7-225"
-        },
-        {
-          "id": "5553",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5553",
-          "name": "パルミナード大倉山",
-          "price": "6,980万円",
-          "area": "75.49㎡",
-          "madori": "3LDK",
-          "traffic": "東急東横線『大倉山』駅徒歩7分",
-          "location": "神奈川県横浜市港北区大豆戸町86-1"
-        },
-        {
           "id": "5465",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5465",
           "name": "クリオ中村橋壱番館",
@@ -91,6 +82,46 @@
           "location": "東京都世田谷区弦巻2-23-15"
         },
         {
+          "id": "5371",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5371",
+          "name": "オーベル目白アヴァンタージュ",
+          "price": "8,990万円価格改定",
+          "area": "54.73㎡",
+          "madori": "2LDK",
+          "traffic": "JR山手線『目白』駅徒歩8分",
+          "location": "東京都豊島区目白4-19-23"
+        },
+        {
+          "id": "5407",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5407",
+          "name": "日神パレステージ横浜ベイウエスト",
+          "price": "7,680万円",
+          "area": "64.93㎡",
+          "madori": "3LDK",
+          "traffic": "横浜市営地下鉄ブルーライン『高島町』駅徒歩2分",
+          "location": "神奈川県横浜市西区戸部町7-225"
+        },
+        {
+          "id": "5408",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
+          "name": "エクセレント港北センター南",
+          "price": "7,690万円価格改定",
+          "area": "75.44㎡",
+          "madori": "3LDK",
+          "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
+          "location": "神奈川県横浜市都筑区荏田東4-1-14"
+        },
+        {
+          "id": "5553",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5553",
+          "name": "パルミナード大倉山",
+          "price": "6,980万円",
+          "area": "75.49㎡",
+          "madori": "3LDK",
+          "traffic": "東急東横線『大倉山』駅徒歩7分",
+          "location": "神奈川県横浜市港北区大豆戸町86-1"
+        },
+        {
           "id": "5426",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
           "name": "シャンノール金町",
@@ -109,30 +140,21 @@
           "madori": "3LDK",
           "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
           "location": "東京都杉並区西荻北4-8-2"
-        },
-        {
-          "id": "5408",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
-          "name": "エクセレント港北センター南",
-          "price": "7,890万円",
-          "area": "75.44㎡",
-          "madori": "3LDK",
-          "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
-          "location": "神奈川県横浜市都筑区荏田東4-1-14"
         }
       ],
       "ids": [
-        "5497",
         "5474",
+        "5497",
         "5502",
         "5582",
-        "5407",
-        "5553",
         "5465",
         "5439",
+        "5371",
+        "5407",
+        "5408",
+        "5553",
         "5426",
-        "5400",
-        "5408"
+        "5400"
       ]
     },
     {
@@ -142,17 +164,58 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-07T10:58:33"
+      "checked_at": "2026-09-08T11:09:46"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-09-07T10:58:33",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-09-08T11:09:46",
+      "new_listings": [
+        {
+          "id": "DKTQ4Hd6zpc",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E6%84%9B%E3%81%8A%E3%81%97%E3%81%84%E7%90%86%E7%94%B1",
+          "name": "愛おしい理由",
+          "price": "6,380万円",
+          "area": "53.20㎡",
+          "madori": "1LDK+S",
+          "traffic": "東陽町駅徒歩4分",
+          "location": "江東区東陽"
+        },
+        {
+          "id": "wwlE7WuQ6hs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82/1LDK%E3%81%A3%E3%81%A6%E3%81%93%E3%82%93%E3%81%AA%E3%81%AB%E8%87%AA%E7%94%B1",
+          "name": "1LDKってこんなに自由",
+          "price": "3,980万円",
+          "area": "80.15㎡",
+          "madori": "1LDK",
+          "traffic": "京王八王子駅徒歩15分",
+          "location": "八王子市大和田町"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "DKTQ4Hd6zpc",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E6%84%9B%E3%81%8A%E3%81%97%E3%81%84%E7%90%86%E7%94%B1",
+          "name": "愛おしい理由",
+          "price": "6,380万円",
+          "area": "53.20㎡",
+          "madori": "1LDK+S",
+          "traffic": "東陽町駅徒歩4分",
+          "location": "江東区東陽"
+        },
+        {
+          "id": "wwlE7WuQ6hs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82/1LDK%E3%81%A3%E3%81%A6%E3%81%93%E3%82%93%E3%81%AA%E3%81%AB%E8%87%AA%E7%94%B1",
+          "name": "1LDKってこんなに自由",
+          "price": "3,980万円",
+          "area": "80.15㎡",
+          "madori": "1LDK",
+          "traffic": "京王八王子駅徒歩15分",
+          "location": "八王子市大和田町"
+        },
         {
           "id": "XXukGMlo99M",
           "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%B6%B4%E8%A6%8B%E5%8C%BA/%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%88%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BCpt3",
@@ -245,6 +308,8 @@
         }
       ],
       "ids": [
+        "DKTQ4Hd6zpc",
+        "wwlE7WuQ6hs",
         "XXukGMlo99M",
         "qfwhCpXdOko",
         "vJLgSnh604w",
@@ -262,7 +327,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-09-07T10:58:33",
+      "checked_at": "2026-09-08T11:09:46",
       "new_listings": [],
       "all_listings": [
         {
@@ -396,7 +461,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-07T10:58:33",
+      "checked_at": "2026-09-08T11:09:46",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -407,7 +472,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-07T10:58:33",
+      "checked_at": "2026-09-08T11:09:46",
       "new_listings": [],
       "all_listings": [
         {
