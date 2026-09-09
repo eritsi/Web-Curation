@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-09-08T11:09:46",
+  "generated_at": "2026-09-09T11:14:02",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-09-08T11:09:46",
-      "new_listings": [
-        {
-          "id": "5371",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5371",
-          "name": "オーベル目白アヴァンタージュ",
-          "price": "8,990万円価格改定",
-          "area": "54.73㎡",
-          "madori": "2LDK",
-          "traffic": "JR山手線『目白』駅徒歩8分",
-          "location": "東京都豊島区目白4-19-23"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-09-09T11:14:02",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5474",
@@ -164,7 +153,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-08T11:09:46"
+      "checked_at": "2026-09-09T11:14:02"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -172,30 +161,50 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-09-08T11:09:46",
+      "checked_at": "2026-09-09T11:14:02",
       "new_listings": [
         {
-          "id": "DKTQ4Hd6zpc",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E6%84%9B%E3%81%8A%E3%81%97%E3%81%84%E7%90%86%E7%94%B1",
-          "name": "愛おしい理由",
-          "price": "6,380万円",
-          "area": "53.20㎡",
-          "madori": "1LDK+S",
-          "traffic": "東陽町駅徒歩4分",
-          "location": "江東区東陽"
+          "id": "kpDNQL3j8KQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93%E3%80%81%E3%81%AB%E3%81%93%E3%81%9F%E3%81%BE",
+          "name": "にこにこ、にこたま",
+          "price": "7,780万円",
+          "area": "71.82㎡",
+          "madori": "3LDK",
+          "traffic": "二子玉川駅徒歩8分",
+          "location": "世田谷区瀬田"
         },
         {
-          "id": "wwlE7WuQ6hs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82/1LDK%E3%81%A3%E3%81%A6%E3%81%93%E3%82%93%E3%81%AA%E3%81%AB%E8%87%AA%E7%94%B1",
-          "name": "1LDKってこんなに自由",
-          "price": "3,980万円",
-          "area": "80.15㎡",
-          "madori": "1LDK",
-          "traffic": "京王八王子駅徒歩15分",
-          "location": "八王子市大和田町"
+          "id": "A5JAArwDOvs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E9%AB%98%E5%A4%A9%E4%BA%95%E3%81%8C%E5%BA%83%E3%81%92%E3%82%8B%E6%9A%AE%E3%82%89%E3%81%97",
+          "name": "高天井が広げる暮らし",
+          "price": "8,980万円",
+          "area": "77.84㎡",
+          "madori": "1LDK＋WIC",
+          "traffic": "荻窪駅徒歩15分",
+          "location": "杉並区清水"
         }
       ],
       "all_listings": [
+        {
+          "id": "kpDNQL3j8KQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93%E3%80%81%E3%81%AB%E3%81%93%E3%81%9F%E3%81%BE",
+          "name": "にこにこ、にこたま",
+          "price": "7,780万円",
+          "area": "71.82㎡",
+          "madori": "3LDK",
+          "traffic": "二子玉川駅徒歩8分",
+          "location": "世田谷区瀬田"
+        },
+        {
+          "id": "A5JAArwDOvs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E9%AB%98%E5%A4%A9%E4%BA%95%E3%81%8C%E5%BA%83%E3%81%92%E3%82%8B%E6%9A%AE%E3%82%89%E3%81%97",
+          "name": "高天井が広げる暮らし",
+          "price": "8,980万円",
+          "area": "77.84㎡",
+          "madori": "1LDK＋WIC",
+          "traffic": "荻窪駅徒歩15分",
+          "location": "杉並区清水"
+        },
         {
           "id": "DKTQ4Hd6zpc",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E6%84%9B%E3%81%8A%E3%81%97%E3%81%84%E7%90%86%E7%94%B1",
@@ -308,6 +317,8 @@
         }
       ],
       "ids": [
+        "kpDNQL3j8KQ",
+        "A5JAArwDOvs",
         "DKTQ4Hd6zpc",
         "wwlE7WuQ6hs",
         "XXukGMlo99M",
@@ -327,7 +338,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-09-08T11:09:46",
+      "checked_at": "2026-09-09T11:14:02",
       "new_listings": [],
       "all_listings": [
         {
@@ -461,7 +472,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-08T11:09:46",
+      "checked_at": "2026-09-09T11:14:02",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -472,7 +483,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-08T11:09:46",
+      "checked_at": "2026-09-09T11:14:02",
       "new_listings": [],
       "all_listings": [
         {
