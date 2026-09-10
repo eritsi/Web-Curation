@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T11:14:02",
+  "generated_at": "2026-09-10T11:12:03",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-09T11:14:02",
+      "checked_at": "2026-09-10T11:12:03",
       "new_listings": [],
       "all_listings": [
         {
@@ -153,7 +153,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-09T11:14:02"
+      "checked_at": "2026-09-10T11:12:03"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -161,39 +161,49 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-09-09T11:14:02",
+      "checked_at": "2026-09-10T11:12:03",
       "new_listings": [
         {
-          "id": "kpDNQL3j8KQ",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93%E3%80%81%E3%81%AB%E3%81%93%E3%81%9F%E3%81%BE",
-          "name": "にこにこ、にこたま",
-          "price": "7,780万円",
-          "area": "71.82㎡",
+          "id": "Olosfj7Gtzw",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E7%B5%B5%E3%81%AB%E3%81%AA%E3%82%8B%E6%97%A5%E5%B8%B8",
+          "name": "絵になる日常",
+          "price": "5,980万円",
+          "area": "60.98㎡",
           "madori": "3LDK",
-          "traffic": "二子玉川駅徒歩8分",
-          "location": "世田谷区瀬田"
+          "traffic": "大森駅徒歩3分",
+          "location": "品川区南大井"
         },
         {
-          "id": "A5JAArwDOvs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E9%AB%98%E5%A4%A9%E4%BA%95%E3%81%8C%E5%BA%83%E3%81%92%E3%82%8B%E6%9A%AE%E3%82%89%E3%81%97",
-          "name": "高天井が広げる暮らし",
-          "price": "8,980万円",
-          "area": "77.84㎡",
-          "madori": "1LDK＋WIC",
-          "traffic": "荻窪駅徒歩15分",
-          "location": "杉並区清水"
+          "id": "aR0ggiiu4UY",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%97%AD%E5%8C%BA/%E3%81%9B%E3%81%9B%E3%82%89%E3%81%8E%E3%81%A82%E5%8C%B9%E3%81%AE%E8%B6%B3%E9%9F%B3",
+          "name": "せせらぎと2匹の足音",
+          "price": "4,180万円",
+          "area": "65.22㎡",
+          "madori": "1LDK",
+          "traffic": "鶴ヶ峰駅徒歩5分",
+          "location": "横浜市旭区鶴ケ峰"
+        },
+        {
+          "id": "bJ3syM2PBkw",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%96%87%E4%BA%AC%E5%8C%BA/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%82%92%E3%80%81%E3%81%82%E3%81%A8%E4%B8%80%E5%8F%A3",
+          "name": "コーヒーを、あと一口",
+          "price": "7,880万円",
+          "area": "69.05㎡",
+          "madori": "2LDK",
+          "traffic": "護国寺駅徒歩1分",
+          "location": "文京区音羽"
         }
       ],
       "all_listings": [
         {
-          "id": "kpDNQL3j8KQ",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93%E3%80%81%E3%81%AB%E3%81%93%E3%81%9F%E3%81%BE",
-          "name": "にこにこ、にこたま",
-          "price": "7,780万円",
-          "area": "71.82㎡",
+          "id": "Olosfj7Gtzw",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E7%B5%B5%E3%81%AB%E3%81%AA%E3%82%8B%E6%97%A5%E5%B8%B8",
+          "name": "絵になる日常",
+          "price": "5,980万円",
+          "area": "60.98㎡",
           "madori": "3LDK",
-          "traffic": "二子玉川駅徒歩8分",
-          "location": "世田谷区瀬田"
+          "traffic": "大森駅徒歩3分",
+          "location": "品川区南大井"
         },
         {
           "id": "A5JAArwDOvs",
@@ -204,6 +214,36 @@
           "madori": "1LDK＋WIC",
           "traffic": "荻窪駅徒歩15分",
           "location": "杉並区清水"
+        },
+        {
+          "id": "aR0ggiiu4UY",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%97%AD%E5%8C%BA/%E3%81%9B%E3%81%9B%E3%82%89%E3%81%8E%E3%81%A82%E5%8C%B9%E3%81%AE%E8%B6%B3%E9%9F%B3",
+          "name": "せせらぎと2匹の足音",
+          "price": "4,180万円",
+          "area": "65.22㎡",
+          "madori": "1LDK",
+          "traffic": "鶴ヶ峰駅徒歩5分",
+          "location": "横浜市旭区鶴ケ峰"
+        },
+        {
+          "id": "bJ3syM2PBkw",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%96%87%E4%BA%AC%E5%8C%BA/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%82%92%E3%80%81%E3%81%82%E3%81%A8%E4%B8%80%E5%8F%A3",
+          "name": "コーヒーを、あと一口",
+          "price": "7,880万円",
+          "area": "69.05㎡",
+          "madori": "2LDK",
+          "traffic": "護国寺駅徒歩1分",
+          "location": "文京区音羽"
+        },
+        {
+          "id": "kpDNQL3j8KQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93%E3%80%81%E3%81%AB%E3%81%93%E3%81%9F%E3%81%BE",
+          "name": "にこにこ、にこたま",
+          "price": "7,780万円",
+          "area": "71.82㎡",
+          "madori": "3LDK",
+          "traffic": "二子玉川駅徒歩8分",
+          "location": "世田谷区瀬田"
         },
         {
           "id": "DKTQ4Hd6zpc",
@@ -284,41 +324,14 @@
           "madori": "2LDK",
           "traffic": "豊洲駅徒歩17分",
           "location": "江東区枝川"
-        },
-        {
-          "id": "lUw1ZTBt7cs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E9%9D%92%E7%88%BD%E7%89%B9%E7%AD%89%E5%B8%AD",
-          "name": "青爽特等席",
-          "price": "5,740万円",
-          "area": "78.73㎡",
-          "madori": "1LDK",
-          "traffic": "田園調布駅徒歩19分",
-          "location": "世田谷区玉堤"
-        },
-        {
-          "id": "DBKGfvwKWXI",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82/%E3%81%93%E3%81%93%E3%81%A7%E8%AA%9E%E3%82%8A%E5%90%88%E3%81%8A%E3%81%86%E3%82%88",
-          "name": "ここで語り合おうよ",
-          "price": "2,780万円",
-          "area": "58.73㎡",
-          "madori": "1LDK",
-          "traffic": "南大沢駅徒歩14分",
-          "location": "八王子市松木"
-        },
-        {
-          "id": "FJMU7EYeONw",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%A4%9A%E6%91%A9%E5%8C%BA/%E3%83%88%E3%82%AD%E3%83%A1%E3%82%AD%E3%83%91%E3%83%AC%E3%83%BC%E3%83%89",
-          "name": "トキメキ・パレード",
-          "price": "3,050万円",
-          "area": "75.90㎡",
-          "madori": "1LDK",
-          "traffic": "読売ランド前駅徒歩10分",
-          "location": "川崎市多摩区西生田"
         }
       ],
       "ids": [
-        "kpDNQL3j8KQ",
+        "Olosfj7Gtzw",
         "A5JAArwDOvs",
+        "aR0ggiiu4UY",
+        "bJ3syM2PBkw",
+        "kpDNQL3j8KQ",
         "DKTQ4Hd6zpc",
         "wwlE7WuQ6hs",
         "XXukGMlo99M",
@@ -326,10 +339,7 @@
         "vJLgSnh604w",
         "XeSw2DUxy88",
         "uKQ9hE2DvxE",
-        "nyBXCZd6lm0",
-        "lUw1ZTBt7cs",
-        "DBKGfvwKWXI",
-        "FJMU7EYeONw"
+        "nyBXCZd6lm0"
       ]
     },
     {
@@ -337,10 +347,31 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-09-09T11:14:02",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-09-10T11:12:03",
+      "new_listings": [
+        {
+          "id": "27325",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27325",
+          "name": "空の広い暮らしへ",
+          "price": "3,180万円",
+          "area": "51.48㎡",
+          "madori": "",
+          "traffic": "小田急線「狛江」駅 徒歩8分",
+          "location": "狛江市岩戸北"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "27325",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27325",
+          "name": "空の広い暮らしへ",
+          "price": "3,180万円",
+          "area": "51.48㎡",
+          "madori": "",
+          "traffic": "小田急線「狛江」駅 徒歩8分",
+          "location": "狛江市岩戸北"
+        },
         {
           "id": "26776",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=26776",
@@ -440,19 +471,10 @@
           "madori": "",
           "traffic": "小田急線「参宮橋」駅 徒歩5分",
           "location": "渋谷区代々木"
-        },
-        {
-          "id": "26866",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26866",
-          "name": "木々と育つ家",
-          "price": "4,850万円",
-          "area": "82.79㎡",
-          "madori": "",
-          "traffic": "西武新宿線「上石神井」駅 徒歩20分",
-          "location": "練馬区石神井台"
         }
       ],
       "ids": [
+        "27325",
         "26776",
         "25096",
         "27308",
@@ -462,8 +484,7 @@
         "26998",
         "27256",
         "26277",
-        "27128",
-        "26866"
+        "27128"
       ]
     },
     {
@@ -472,7 +493,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-09T11:14:02",
+      "checked_at": "2026-09-10T11:12:03",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -483,7 +504,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-09T11:14:02",
+      "checked_at": "2026-09-10T11:12:03",
       "new_listings": [],
       "all_listings": [
         {
