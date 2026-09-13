@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T11:13:57",
+  "generated_at": "2026-09-13T11:11:21",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,9 +7,29 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-12T11:13:57",
+      "checked_at": "2026-09-13T11:11:21",
       "new_listings": [],
       "all_listings": [
+        {
+          "id": "5553",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5553",
+          "name": "パルミナード大倉山",
+          "price": "6,980万円",
+          "area": "75.49㎡",
+          "madori": "3LDK",
+          "traffic": "東急東横線『大倉山』駅徒歩7分",
+          "location": "神奈川県横浜市港北区大豆戸町86-1"
+        },
+        {
+          "id": "5502",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
+          "name": "プラウド海老名",
+          "price": "6,990万円",
+          "area": "71.80㎡",
+          "madori": "3LDK+2WIC",
+          "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
+          "location": "神奈川県海老名市中央1-19-13"
+        },
         {
           "id": "5474",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5474",
@@ -31,14 +51,14 @@
           "location": "神奈川県横浜市戸塚区吉田町1380‐1"
         },
         {
-          "id": "5502",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
-          "name": "プラウド海老名",
-          "price": "6,990万円",
-          "area": "71.80㎡",
-          "madori": "3LDK+2WIC",
-          "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
-          "location": "神奈川県海老名市中央1-19-13"
+          "id": "5582",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5582",
+          "name": "朝日クレス・パリオ南阿佐谷",
+          "price": "5,980万円",
+          "area": "52.55㎡",
+          "madori": "2LDK",
+          "traffic": "東京メトロ丸ノ内線『南阿佐ヶ谷』駅徒歩14分",
+          "location": "東京都杉並区成田東2-37-13"
         },
         {
           "id": "5426",
@@ -49,16 +69,6 @@
           "madori": "2SLDK",
           "traffic": "JR常磐緩行線『金町』駅徒歩4分",
           "location": "東京都葛飾区金町5丁目26-11"
-        },
-        {
-          "id": "5582",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5582",
-          "name": "朝日クレス・パリオ南阿佐谷",
-          "price": "5,980万円",
-          "area": "52.55㎡",
-          "madori": "2LDK",
-          "traffic": "東京メトロ丸ノ内線『南阿佐ヶ谷』駅徒歩14分",
-          "location": "東京都杉並区成田東2-37-13"
         },
         {
           "id": "5465",
@@ -111,16 +121,6 @@
           "location": "神奈川県横浜市都筑区荏田東4-1-14"
         },
         {
-          "id": "5553",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5553",
-          "name": "パルミナード大倉山",
-          "price": "6,980万円",
-          "area": "75.49㎡",
-          "madori": "3LDK",
-          "traffic": "東急東横線『大倉山』駅徒歩7分",
-          "location": "神奈川県横浜市港北区大豆戸町86-1"
-        },
-        {
           "id": "5400",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
           "name": "ベルハイム西荻窪第3",
@@ -132,17 +132,17 @@
         }
       ],
       "ids": [
+        "5553",
+        "5502",
         "5474",
         "5497",
-        "5502",
-        "5426",
         "5582",
+        "5426",
         "5465",
         "5439",
         "5371",
         "5407",
         "5408",
-        "5553",
         "5400"
       ]
     },
@@ -153,27 +153,16 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-12T11:13:57"
+      "checked_at": "2026-09-13T11:11:21"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-09-12T11:13:57",
-      "new_listings": [
-        {
-          "id": "hRT1pmtFNpo",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E6%96%B0%E3%81%97%E3%81%84%E6%9C%9D%E3%81%8C%E6%9D%A5%E3%81%9F",
-          "name": "新しい朝が来た",
-          "price": "8,880万円",
-          "area": "102.33㎡",
-          "madori": "3LDK",
-          "traffic": "上町駅徒歩3分",
-          "location": "世田谷区世田谷"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-09-13T11:11:21",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "hRT1pmtFNpo",
@@ -350,7 +339,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-09-12T11:13:57",
+      "checked_at": "2026-09-13T11:11:21",
       "new_listings": [],
       "all_listings": [
         {
@@ -484,7 +473,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-12T11:13:57",
+      "checked_at": "2026-09-13T11:11:21",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -495,7 +484,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-12T11:13:57",
+      "checked_at": "2026-09-13T11:11:21",
       "new_listings": [],
       "all_listings": [
         {
