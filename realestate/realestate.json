@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T11:33:21",
+  "generated_at": "2026-09-16T11:27:40",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-15T11:33:21",
+      "checked_at": "2026-09-16T11:27:40",
       "new_listings": [],
       "all_listings": [
         {
@@ -142,17 +142,38 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-15T11:33:21"
+      "checked_at": "2026-09-16T11:27:40"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-09-15T11:33:21",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-09-16T11:27:40",
+      "new_listings": [
+        {
+          "id": "F9n1YHF3NhY",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%A5%BF%E6%9D%B1%E4%BA%AC%E5%B8%82/%E3%83%AB%E3%83%BC%E3%83%95%E3%83%86%E3%83%A9%E3%82%B9%E3%81%A8%E5%A4%8F%E8%8A%B1%E7%81%AB",
+          "name": "ルーフテラスと夏花火",
+          "price": "5,080万円",
+          "area": "73.42㎡",
+          "madori": "2LDK",
+          "traffic": "保谷駅徒歩9分",
+          "location": "西東京市東町"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "F9n1YHF3NhY",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%A5%BF%E6%9D%B1%E4%BA%AC%E5%B8%82/%E3%83%AB%E3%83%BC%E3%83%95%E3%83%86%E3%83%A9%E3%82%B9%E3%81%A8%E5%A4%8F%E8%8A%B1%E7%81%AB",
+          "name": "ルーフテラスと夏花火",
+          "price": "5,080万円",
+          "area": "73.42㎡",
+          "madori": "2LDK",
+          "traffic": "保谷駅徒歩9分",
+          "location": "西東京市東町"
+        },
         {
           "id": "hRT1pmtFNpo",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E6%96%B0%E3%81%97%E3%81%84%E6%9C%9D%E3%81%8C%E6%9D%A5%E3%81%9F",
@@ -255,6 +276,7 @@
         }
       ],
       "ids": [
+        "F9n1YHF3NhY",
         "hRT1pmtFNpo",
         "GLsNMSXV0Sk",
         "Olosfj7Gtzw",
@@ -273,17 +295,17 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "changed",
-      "checked_at": "2026-09-15T11:33:21",
+      "checked_at": "2026-09-16T11:27:40",
       "new_listings": [
         {
-          "id": "27128",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27128",
-          "name": "清々しい乾杯を",
-          "price": "7,490万円",
-          "area": "54.72㎡",
+          "id": "26866",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26866",
+          "name": "木々と育つ家",
+          "price": "4,850万円",
+          "area": "82.79㎡",
           "madori": "",
-          "traffic": "小田急線「参宮橋」駅 徒歩5分",
-          "location": "渋谷区代々木"
+          "traffic": "西武新宿線「上石神井」駅 徒歩20分",
+          "location": "練馬区石神井台"
         }
       ],
       "all_listings": [
@@ -296,16 +318,6 @@
           "madori": "",
           "traffic": "山手線・南北線・都営三田線「目黒」駅 徒歩4分",
           "location": "品川区上大崎"
-        },
-        {
-          "id": "27325",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27325",
-          "name": "空の広い暮らしへ",
-          "price": "3,180万円",
-          "area": "51.48㎡",
-          "madori": "",
-          "traffic": "小田急線「狛江」駅 徒歩8分",
-          "location": "狛江市岩戸北"
         },
         {
           "id": "26776",
@@ -406,11 +418,20 @@
           "madori": "",
           "traffic": "小田急線「参宮橋」駅 徒歩5分",
           "location": "渋谷区代々木"
+        },
+        {
+          "id": "26866",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26866",
+          "name": "木々と育つ家",
+          "price": "4,850万円",
+          "area": "82.79㎡",
+          "madori": "",
+          "traffic": "西武新宿線「上石神井」駅 徒歩20分",
+          "location": "練馬区石神井台"
         }
       ],
       "ids": [
         "27537",
-        "27325",
         "26776",
         "25096",
         "27308",
@@ -420,7 +441,8 @@
         "26998",
         "27256",
         "26277",
-        "27128"
+        "27128",
+        "26866"
       ]
     },
     {
@@ -429,7 +451,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-15T11:33:21",
+      "checked_at": "2026-09-16T11:27:40",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -440,7 +462,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-15T11:33:21",
+      "checked_at": "2026-09-16T11:27:40",
       "new_listings": [],
       "all_listings": [
         {
