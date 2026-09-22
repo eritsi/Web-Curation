@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T11:27:12",
+  "generated_at": "2026-09-22T11:30:24",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-21T11:27:12",
+      "checked_at": "2026-09-22T11:30:24",
       "new_listings": [],
       "all_listings": [
         {
@@ -142,7 +142,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-21T11:27:12"
+      "checked_at": "2026-09-22T11:30:24"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -150,7 +150,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-09-21T11:27:12",
+      "checked_at": "2026-09-22T11:30:24",
       "new_listings": [],
       "all_listings": [
         {
@@ -294,20 +294,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-09-21T11:27:12",
-      "new_listings": [
-        {
-          "id": "26866",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26866",
-          "name": "木々と育つ家",
-          "price": "4,850万円",
-          "area": "82.79㎡",
-          "madori": "",
-          "traffic": "西武新宿線「上石神井」駅 徒歩20分",
-          "location": "練馬区石神井台"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-09-22T11:30:24",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "27537",
@@ -440,7 +429,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-21T11:27:12",
+      "checked_at": "2026-09-22T11:30:24",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -451,7 +440,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-21T11:27:12",
+      "checked_at": "2026-09-22T11:30:24",
       "new_listings": [],
       "all_listings": [
         {
