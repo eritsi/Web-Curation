@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T11:30:09",
+  "generated_at": "2026-09-24T11:19:34",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-23T11:30:09",
+      "checked_at": "2026-09-24T11:19:34",
       "new_listings": [],
       "all_listings": [
         {
@@ -142,7 +142,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-23T11:30:09"
+      "checked_at": "2026-09-24T11:19:34"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -150,7 +150,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-09-23T11:30:09",
+      "checked_at": "2026-09-24T11:19:34",
       "new_listings": [],
       "all_listings": [
         {
@@ -252,26 +252,6 @@
           "madori": "2LDK",
           "traffic": "保谷駅徒歩9分",
           "location": "西東京市東町"
-        },
-        {
-          "id": "A5JAArwDOvs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E9%AB%98%E5%A4%A9%E4%BA%95%E3%81%8C%E5%BA%83%E3%81%92%E3%82%8B%E6%9A%AE%E3%82%89%E3%81%97",
-          "name": "高天井が広げる暮らし",
-          "price": "8,980万円",
-          "area": "77.84㎡",
-          "madori": "1LDK＋WIC",
-          "traffic": "荻窪駅徒歩15分",
-          "location": "杉並区清水"
-        },
-        {
-          "id": "2JqA2E22foU",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E3%81%B2%E3%82%89%E3%81%91%E8%A5%BF%E8%8D%BB",
-          "name": "ひらけ、西荻！",
-          "price": "8,399万円",
-          "area": "97.07㎡",
-          "madori": "3LDK",
-          "traffic": "上井草駅徒歩15分",
-          "location": "杉並区今川"
         }
       ],
       "ids": [
@@ -284,9 +264,7 @@
         "dMhoeSUUB8w",
         "JJaJ1wcLMrk",
         "Jx54A5VDHkk",
-        "F9n1YHF3NhY",
-        "A5JAArwDOvs",
-        "2JqA2E22foU"
+        "F9n1YHF3NhY"
       ]
     },
     {
@@ -295,7 +273,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-09-23T11:30:09",
+      "checked_at": "2026-09-24T11:19:34",
       "new_listings": [],
       "all_listings": [
         {
@@ -429,7 +407,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-23T11:30:09",
+      "checked_at": "2026-09-24T11:19:34",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -440,7 +418,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-23T11:30:09",
+      "checked_at": "2026-09-24T11:19:34",
       "new_listings": [],
       "all_listings": [
         {
