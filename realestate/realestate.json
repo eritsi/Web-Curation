@@ -1,15 +1,56 @@
 {
-  "generated_at": "2026-09-24T11:19:34",
+  "generated_at": "2026-09-25T11:35:52",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "unchanged",
-      "checked_at": "2026-09-24T11:19:34",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-09-25T11:35:52",
+      "new_listings": [
+        {
+          "id": "5566",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5566",
+          "name": "東大島ファミールハイツ2号館",
+          "price": "6,480万円",
+          "area": "64.83㎡",
+          "madori": "3LDK",
+          "traffic": "都営新宿線『東大島』駅徒歩3分",
+          "location": "東京都江東区大島9-4-2"
+        },
+        {
+          "id": "5576",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5576",
+          "name": "セントレー亀戸",
+          "price": "8,980万円",
+          "area": "60.02㎡",
+          "madori": "2SLDK",
+          "traffic": "JR総武線『亀戸』駅徒歩7分",
+          "location": "東京都江東区亀戸3-47-17"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "5566",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5566",
+          "name": "東大島ファミールハイツ2号館",
+          "price": "6,480万円",
+          "area": "64.83㎡",
+          "madori": "3LDK",
+          "traffic": "都営新宿線『東大島』駅徒歩3分",
+          "location": "東京都江東区大島9-4-2"
+        },
+        {
+          "id": "5576",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5576",
+          "name": "セントレー亀戸",
+          "price": "8,980万円",
+          "area": "60.02㎡",
+          "madori": "2SLDK",
+          "traffic": "JR総武線『亀戸』駅徒歩7分",
+          "location": "東京都江東区亀戸3-47-17"
+        },
         {
           "id": "5574",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5574",
@@ -122,6 +163,8 @@
         }
       ],
       "ids": [
+        "5566",
+        "5576",
         "5574",
         "5407",
         "5553",
@@ -142,17 +185,38 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-24T11:19:34"
+      "checked_at": "2026-09-25T11:35:52"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-09-24T11:19:34",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-09-25T11:35:52",
+      "new_listings": [
+        {
+          "id": "bEfHd5jymP8",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/%E3%81%B5%E3%82%8F%E3%82%8A%E9%A3%9B%E3%81%B9",
+          "name": "ふわり飛べ",
+          "price": "2,490万円",
+          "area": "102.53㎡",
+          "madori": "3LDK",
+          "traffic": "宮前平駅徒歩15分",
+          "location": "川崎市宮前区けやき平"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "bEfHd5jymP8",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/%E3%81%B5%E3%82%8F%E3%82%8A%E9%A3%9B%E3%81%B9",
+          "name": "ふわり飛べ",
+          "price": "2,490万円",
+          "area": "102.53㎡",
+          "madori": "3LDK",
+          "traffic": "宮前平駅徒歩15分",
+          "location": "川崎市宮前区けやき平"
+        },
         {
           "id": "7NeNilQsf3I",
           "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E6%88%91%E3%81%8C%E5%AE%B6%E3%81%AB%E3%81%84%E3%82%89%E3%81%A3%E3%81%97%E3%82%83%E3%81%84",
@@ -255,6 +319,7 @@
         }
       ],
       "ids": [
+        "bEfHd5jymP8",
         "7NeNilQsf3I",
         "3rj1zA54pdU",
         "HlggI9YqnW4",
@@ -272,10 +337,31 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-09-24T11:19:34",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-09-25T11:35:52",
+      "new_listings": [
+        {
+          "id": "27218",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27218",
+          "name": "僕のキッチンと君の庭",
+          "price": "8,980万円（税込）",
+          "area": "75.24㎡",
+          "madori": "",
+          "traffic": "東急目黒線「武蔵小山」駅 徒歩14分",
+          "location": "目黒区目黒本町"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "27218",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27218",
+          "name": "僕のキッチンと君の庭",
+          "price": "8,980万円（税込）",
+          "area": "75.24㎡",
+          "madori": "",
+          "traffic": "東急目黒線「武蔵小山」駅 徒歩14分",
+          "location": "目黒区目黒本町"
+        },
         {
           "id": "27537",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=27537",
@@ -388,6 +474,7 @@
         }
       ],
       "ids": [
+        "27218",
         "27537",
         "26776",
         "25096",
@@ -407,7 +494,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-24T11:19:34",
+      "checked_at": "2026-09-25T11:35:52",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -418,7 +505,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-24T11:19:34",
+      "checked_at": "2026-09-25T11:35:52",
       "new_listings": [],
       "all_listings": [
         {
