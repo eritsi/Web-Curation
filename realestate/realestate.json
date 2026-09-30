@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T12:22:53",
+  "generated_at": "2026-09-30T12:05:30",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-29T12:22:53",
+      "checked_at": "2026-09-30T12:05:30",
       "new_listings": [],
       "all_listings": [
         {
@@ -153,7 +153,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-29T12:22:53"
+      "checked_at": "2026-09-30T12:05:30"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -161,7 +161,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-09-29T12:22:53",
+      "checked_at": "2026-09-30T12:05:30",
       "new_listings": [],
       "all_listings": [
         {
@@ -195,20 +195,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-09-29T12:22:53",
-      "new_listings": [
-        {
-          "id": "27674",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27674",
-          "name": "あの街最前線",
-          "price": "4,280万円（税込）",
-          "area": "55.81㎡",
-          "madori": "",
-          "traffic": "小田急線「経堂」駅 徒歩2分",
-          "location": "世田谷区宮坂"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-09-30T12:05:30",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26866",
@@ -352,7 +341,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-29T12:22:53",
+      "checked_at": "2026-09-30T12:05:30",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -363,7 +352,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-29T12:22:53",
+      "checked_at": "2026-09-30T12:05:30",
       "new_listings": [],
       "all_listings": [
         {
