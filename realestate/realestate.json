@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T12:05:30",
+  "generated_at": "2026-10-01T12:12:01",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-09-30T12:05:30",
+      "checked_at": "2026-10-01T12:12:01",
       "new_listings": [],
       "all_listings": [
         {
@@ -153,17 +153,78 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-09-30T12:05:30"
+      "checked_at": "2026-10-01T12:12:01"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-09-30T12:05:30",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-10-01T12:12:01",
+      "new_listings": [
+        {
+          "id": "veDupJHoLjY",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%B6%B4%E8%A6%8B%E5%8C%BA/%E5%86%85%E3%82%82%E5%A4%96%E3%82%82%E3%80%81%E3%81%AC%E3%81%8B%E3%82%8A%E3%81%AA%E3%81%8F",
+          "name": "内も外も、ぬかりなく",
+          "price": "5,680万円",
+          "area": "56.54㎡",
+          "madori": "1R",
+          "traffic": "鶴見市場駅徒歩8分",
+          "location": "横浜市鶴見区市場下町"
+        },
+        {
+          "id": "rqLRoIrv3Qc",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%96%B0%E5%AE%BF%E5%8C%BA/%E8%A5%BF%E6%96%B0%E5%AE%BF%E3%81%AE%E3%83%96%E3%83%AB%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3",
+          "name": "西新宿のブルックリン",
+          "price": "6,980万円",
+          "area": "56.70㎡",
+          "madori": "1LDK",
+          "traffic": "西新宿五丁目駅徒歩7分",
+          "location": "新宿区西新宿"
+        },
+        {
+          "id": "m8jZuK8HEEQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B8%8B%E8%B0%B7%E5%8C%BA/%E3%83%9C%E3%83%B3_%E3%83%8F%E3%83%93%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
+          "name": "ボン・ハビテーション",
+          "price": "6,980万円",
+          "area": "61.92㎡",
+          "madori": "2LDK",
+          "traffic": "代々木上原駅徒歩10分",
+          "location": "渋谷区元代々木町"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "veDupJHoLjY",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%B6%B4%E8%A6%8B%E5%8C%BA/%E5%86%85%E3%82%82%E5%A4%96%E3%82%82%E3%80%81%E3%81%AC%E3%81%8B%E3%82%8A%E3%81%AA%E3%81%8F",
+          "name": "内も外も、ぬかりなく",
+          "price": "5,680万円",
+          "area": "56.54㎡",
+          "madori": "1R",
+          "traffic": "鶴見市場駅徒歩8分",
+          "location": "横浜市鶴見区市場下町"
+        },
+        {
+          "id": "rqLRoIrv3Qc",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%96%B0%E5%AE%BF%E5%8C%BA/%E8%A5%BF%E6%96%B0%E5%AE%BF%E3%81%AE%E3%83%96%E3%83%AB%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3",
+          "name": "西新宿のブルックリン",
+          "price": "6,980万円",
+          "area": "56.70㎡",
+          "madori": "1LDK",
+          "traffic": "西新宿五丁目駅徒歩7分",
+          "location": "新宿区西新宿"
+        },
+        {
+          "id": "m8jZuK8HEEQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B8%8B%E8%B0%B7%E5%8C%BA/%E3%83%9C%E3%83%B3_%E3%83%8F%E3%83%93%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
+          "name": "ボン・ハビテーション",
+          "price": "6,980万円",
+          "area": "61.92㎡",
+          "madori": "2LDK",
+          "traffic": "代々木上原駅徒歩10分",
+          "location": "渋谷区元代々木町"
+        },
         {
           "id": "Rr3fQ59VBCQ",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%91%9B%E9%A3%BE%E5%8C%BA/%E7%AD%89%E8%BA%AB%E5%A4%A7%E3%82%92%E6%84%9B%E3%81%97%E3%81%A62",
@@ -186,6 +247,9 @@
         }
       ],
       "ids": [
+        "veDupJHoLjY",
+        "rqLRoIrv3Qc",
+        "m8jZuK8HEEQ",
         "Rr3fQ59VBCQ",
         "bEfHd5jymP8"
       ]
@@ -196,7 +260,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-09-30T12:05:30",
+      "checked_at": "2026-10-01T12:12:01",
       "new_listings": [],
       "all_listings": [
         {
@@ -308,16 +372,6 @@
           "madori": "",
           "traffic": "東急東横線「田園調布」駅 徒歩19分",
           "location": "世田谷区玉堤"
-        },
-        {
-          "id": "27128",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27128",
-          "name": "清々しい乾杯を",
-          "price": "7,490万円",
-          "area": "54.72㎡",
-          "madori": "",
-          "traffic": "小田急線「参宮橋」駅 徒歩5分",
-          "location": "渋谷区代々木"
         }
       ],
       "ids": [
@@ -331,8 +385,7 @@
         "26017",
         "26998",
         "27256",
-        "26277",
-        "27128"
+        "26277"
       ]
     },
     {
@@ -341,7 +394,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-30T12:05:30",
+      "checked_at": "2026-10-01T12:12:01",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -352,7 +405,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-09-30T12:05:30",
+      "checked_at": "2026-10-01T12:12:01",
       "new_listings": [],
       "all_listings": [
         {
