@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-10-05T12:07:31",
+  "generated_at": "2026-10-06T12:56:46",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-10-05T12:07:31",
-      "new_listings": [
-        {
-          "id": "5518",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5518",
-          "name": "クリオ吉祥寺弐番館",
-          "price": "7,980万円",
-          "area": "66.27㎡",
-          "madori": "3LDK+WIC",
-          "traffic": "JR中央線・JR中央総武線・京王井の頭『吉祥寺』駅徒歩19分",
-          "location": "東京都練馬区立野町7-12"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-06T12:56:46",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5518",
@@ -30,6 +19,36 @@
           "madori": "3LDK+WIC",
           "traffic": "JR中央線・JR中央総武線・京王井の頭『吉祥寺』駅徒歩19分",
           "location": "東京都練馬区立野町7-12"
+        },
+        {
+          "id": "5465",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5465",
+          "name": "クリオ中村橋壱番館",
+          "price": "7,990万円価格改定",
+          "area": "69.13㎡",
+          "madori": "2SLDK+SIC",
+          "traffic": " 西武池袋線『中村橋』駅徒歩3分",
+          "location": "東京都練馬区中村北3-11-14"
+        },
+        {
+          "id": "5566",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5566",
+          "name": "東大島ファミールハイツ2号館",
+          "price": "6,480万円",
+          "area": "64.83㎡",
+          "madori": "3LDK",
+          "traffic": "都営新宿線『東大島』駅徒歩3分",
+          "location": "東京都江東区大島9-4-2"
+        },
+        {
+          "id": "5553",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5553",
+          "name": "パルミナード大倉山",
+          "price": "6,980万円",
+          "area": "75.49㎡",
+          "madori": "3LDK",
+          "traffic": "東急東横線『大倉山』駅徒歩7分",
+          "location": "神奈川県横浜市港北区大豆戸町86-1"
         },
         {
           "id": "5574",
@@ -52,24 +71,14 @@
           "location": "東京都江東区亀戸3-47-17"
         },
         {
-          "id": "5566",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5566",
-          "name": "東大島ファミールハイツ2号館",
-          "price": "6,480万円",
-          "area": "64.83㎡",
+          "id": "5497",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5497",
+          "name": "ウィスティリアヒルズ戸塚",
+          "price": "5,490万円",
+          "area": "68.79㎡",
           "madori": "3LDK",
-          "traffic": "都営新宿線『東大島』駅徒歩3分",
-          "location": "東京都江東区大島9-4-2"
-        },
-        {
-          "id": "5465",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5465",
-          "name": "クリオ中村橋壱番館",
-          "price": "8,290万円",
-          "area": "69.13㎡",
-          "madori": "2SLDK+SIC",
-          "traffic": " 西武池袋線『中村橋』駅徒歩3分",
-          "location": "東京都練馬区中村北3-11-14"
+          "traffic": "JR東海道本線・JR湘南新宿ライン",
+          "location": "神奈川県横浜市戸塚区吉田町1380‐1"
         },
         {
           "id": "5408",
@@ -82,24 +91,24 @@
           "location": "神奈川県横浜市都筑区荏田東4-1-14"
         },
         {
-          "id": "5497",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5497",
-          "name": "ウィスティリアヒルズ戸塚",
-          "price": "5,490万円",
-          "area": "68.79㎡",
-          "madori": "3LDK",
-          "traffic": "JR東海道本線・JR湘南新宿ライン",
-          "location": "神奈川県横浜市戸塚区吉田町1380‐1"
+          "id": "5439",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
+          "name": "パークハイム桜新町",
+          "price": "6,790万円価格改定",
+          "area": "54.08㎡",
+          "madori": "2LDK+WIC",
+          "traffic": "東急田園都市線『桜新町』駅徒歩12分",
+          "location": "東京都世田谷区弦巻2-23-15"
         },
         {
-          "id": "5553",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5553",
-          "name": "パルミナード大倉山",
-          "price": "6,980万円",
-          "area": "75.49㎡",
+          "id": "5400",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
+          "name": "ベルハイム西荻窪第3",
+          "price": "7,990万円",
+          "area": "67.51㎡",
           "madori": "3LDK",
-          "traffic": "東急東横線『大倉山』駅徒歩7分",
-          "location": "神奈川県横浜市港北区大豆戸町86-1"
+          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
+          "location": "東京都杉並区西荻北4-8-2"
         },
         {
           "id": "5582",
@@ -110,16 +119,6 @@
           "madori": "2LDK",
           "traffic": "東京メトロ丸ノ内線『南阿佐ヶ谷』駅徒歩14分",
           "location": "東京都杉並区成田東2-37-13"
-        },
-        {
-          "id": "5439",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
-          "name": "パークハイム桜新町",
-          "price": "6,990万円",
-          "area": "54.08㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "東急田園都市線『桜新町』駅徒歩12分",
-          "location": "東京都世田谷区弦巻2-23-15"
         },
         {
           "id": "5426",
@@ -140,32 +139,22 @@
           "madori": "3LDK+2WIC",
           "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
           "location": "神奈川県海老名市中央1-19-13"
-        },
-        {
-          "id": "5400",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
-          "name": "ベルハイム西荻窪第3",
-          "price": "7,990万円",
-          "area": "67.51㎡",
-          "madori": "3LDK",
-          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
-          "location": "東京都杉並区西荻北4-8-2"
         }
       ],
       "ids": [
         "5518",
+        "5465",
+        "5566",
+        "5553",
         "5574",
         "5576",
-        "5566",
-        "5465",
-        "5408",
         "5497",
-        "5553",
-        "5582",
+        "5408",
         "5439",
+        "5400",
+        "5582",
         "5426",
-        "5502",
-        "5400"
+        "5502"
       ]
     },
     {
@@ -175,7 +164,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-10-05T12:07:31"
+      "checked_at": "2026-10-06T12:56:46"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -183,7 +172,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-10-05T12:07:31",
+      "checked_at": "2026-10-06T12:56:46",
       "new_listings": [],
       "all_listings": [
         {
@@ -339,7 +328,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-10-05T12:07:31",
+      "checked_at": "2026-10-06T12:56:46",
       "new_listings": [],
       "all_listings": [
         {
@@ -473,7 +462,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-05T12:07:31",
+      "checked_at": "2026-10-06T12:56:46",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -484,7 +473,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-05T12:07:31",
+      "checked_at": "2026-10-06T12:56:46",
       "new_listings": [],
       "all_listings": [
         {
