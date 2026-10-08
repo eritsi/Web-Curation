@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T01:52:04",
+  "generated_at": "2026-10-08T02:35:32",
   "sites": [
     {
       "name": "横浜市 プレミアム商品券",
@@ -7,23 +7,24 @@
       "url": "https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/eventinfo/r8/premium.html",
       "extract": "announcements",
       "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
+      "checked_at": "2026-10-08T02:35:32",
       "new_keys": [
-        "９月販売::馬車道商店街協同組合",
+        "10月販売::【完売】藤棚商店会",
+        "９月販売::【完売】馬車道商店街協同組合",
         "９月販売::【完売】大倉山エルム通り商店会、大倉山レモンロード商店会",
-        "９月販売::長津田商店街協同組合",
+        "９月販売::【完売】長津田商店街協同組合",
         "９月販売::南川商店会",
         "９月販売::鴨居商栄会",
         "９月販売::【完売】戸塚区商店街連合会",
-        "９月販売::協同組合伊勢佐木町商店街、伊勢佐木町１・２丁目地区商店街振興組合",
+        "９月販売::【完売】協同組合伊勢佐木町商店街、伊勢佐木町１・２丁目地区商店街振興組合",
         "９月販売::本郷町商栄会、本牧リボンファンストリート商店会",
         "９月販売::【完売】わかば会",
-        "９月販売::洪福寺松原商店街振興組合",
-        "９月販売::藤棚一番街協同組合、西前中央商店会",
-        "９月販売::菊名東口商栄会",
+        "９月販売::【完売】洪福寺松原商店街振興組合",
+        "９月販売::【完売】藤棚一番街協同組合、西前中央商店会",
+        "９月販売::【完売】菊名東口商栄会",
         "９月販売::横浜駅西口商店会連合会",
         "８月販売::【完売】桜木町ぴおシティ商店会",
-        "８月販売::中山商店街協同組合 ※要事前申し込み",
+        "８月販売::【申込終了】中山商店街協同組合 ※要事前申し込み",
         "８月販売::山元町二丁目商栄会・山元町一丁目誠商会",
         "７月販売::【完売】横浜中華街発展会協同組合",
         "７月販売::希望が丘商店会（旭区）",
@@ -90,7 +91,7 @@
               "links": []
             },
             {
-              "store": "藤棚商店会",
+              "store": "【完売】藤棚商店会",
               "details": [
                 "10月1日(木曜日) 10時～12時、15時～16時30分10月2日(金曜日) 10時～12時、15時～16時30分10月3日(土曜日) 10時～13時※先着販売、完売次第販売終了"
               ],
@@ -106,25 +107,21 @@
       "url": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/index.html",
       "extract": "links",
       "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
+      "checked_at": "2026-10-08T02:35:32",
       "new_links": [
         {
-          "text": "日替わり・週替わりランチメニュー（9/28～10/4）",
-          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/09/24/LUNCH20260928.pdf"
-        },
-        {
-          "text": "日替わり・週替わりランチメニュー（10/5～10/11）",
-          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/09/29/LUNCH2026105.pdf"
+          "text": "日替わり・週替わりランチメニュー（10/12～10/18）",
+          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/10/07/LUNCH20261012.pdf"
         }
       ],
       "links": [
         {
-          "text": "日替わり・週替わりランチメニュー（9/28～10/4）",
-          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/09/24/LUNCH20260928.pdf"
-        },
-        {
           "text": "日替わり・週替わりランチメニュー（10/5～10/11）",
           "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/09/29/LUNCH2026105.pdf"
+        },
+        {
+          "text": "日替わり・週替わりランチメニュー（10/12～10/18）",
+          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/10/07/LUNCH20261012.pdf"
         }
       ]
     },
@@ -133,22 +130,9 @@
       "description": "新着お知らせ",
       "url": "https://www.yokohama-jyubankan.co.jp/news/",
       "extract": "show_schedule",
-      "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
-      "new_shows": [
-        {
-          "url": "https://www.yokohama-jyubankan.co.jp/news/%e7%ac%ac284%e5%9b%9e%e3%80%8e%e3%81%b6%e3%81%a9%e3%81%86%e3%81%ae%e9%a4%a8%e3%80%8f%e3%83%af%e3%82%a4%e3%83%b3%e3%81%a8%e7%be%8e%e9%a3%9f%e3%82%92%e6%a5%bd%e3%81%97%e3%82%80%e4%bc%9a%e3%81%ae/",
-          "artist": "第284回『ぶどうの館』ワインと美食を楽しむ会のご案内      2026年10月16日(金)",
-          "date": "2026.09.26",
-          "title": "第284回『ぶどうの館』ワインと美食を楽しむ会のご案内      2026年10月16日(金)"
-        },
-        {
-          "url": "https://www.yokohama-jyubankan.co.jp/news/%e4%be%a1%e6%a0%bc%e6%94%b9%e5%ae%9a%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b-2/",
-          "artist": "価格改定のお知らせ  2026年10月〜",
-          "date": "2026.09.26",
-          "title": "価格改定のお知らせ  2026年10月〜"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-08T02:35:32",
+      "new_shows": [],
       "urls": [
         "https://www.yokohama-jyubankan.co.jp/news/%e7%ac%ac284%e5%9b%9e%e3%80%8e%e3%81%b6%e3%81%a9%e3%81%86%e3%81%ae%e9%a4%a8%e3%80%8f%e3%83%af%e3%82%a4%e3%83%b3%e3%81%a8%e7%be%8e%e9%a3%9f%e3%82%92%e6%a5%bd%e3%81%97%e3%82%80%e4%bc%9a%e3%81%ae/",
         "https://www.yokohama-jyubankan.co.jp/news/%e4%be%a1%e6%a0%bc%e6%94%b9%e5%ae%9a%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b-2/",
@@ -181,72 +165,160 @@
       "url": "https://www.billboard-live.com/yokohama/whats-new",
       "extract": "venue_news",
       "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
+      "checked_at": "2026-10-08T02:35:32",
       "new_events": [
         {
-          "item_id": "48643",
-          "event_id": "ev-21723",
-          "tag": "",
-          "content": "東山義久 『Christmas Ying 2026』 ～ダンサー、ミュージカル・舞台俳優と様々な顔を持つ東山義久のホリデー公演～",
-          "show_date": "2026.12.23(Wed)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21723"
-        },
-        {
-          "item_id": "48558",
-          "event_id": "ev-21708",
-          "tag": "新規公演決定",
-          "content": "Chris Dave, MonoNeon and Justus West ～Chris Dave、MonoNeon、そしてJustus West 現代音楽を牽引",
-          "show_date": "2026.11.17(Tue)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21708"
-        },
-        {
-          "item_id": "48538",
+          "item_id": "48811",
           "event_id": null,
           "tag": "Special",
-          "content": "いよいよ10/10に公演を控えるMALIYA×SIRUPの対談ロングインタビュー(前編)がBillboard JAPANに掲載。",
+          "content": "いよいよ今週10/10に公演を控えるMALIYA×SIRUPの対談ロングインタビュー(後編)がBillboard JAPANに掲載。",
           "show_date": "2026.10.10(Sat)",
-          "url": "https://www.billboard-japan.com/special/detail/5459"
+          "url": "https://www.billboard-japan.com/special/detail/5465"
         },
         {
-          "item_id": "48446",
+          "item_id": "48764",
+          "event_id": "ev-21735",
+          "tag": "新規公演決定",
+          "content": "小関裕太 “ULTERIUS”-Billboard Live ～俳優・小関裕太がビルボードライブ初登場、自身初の音楽イベント『ULTERIUS』を開催～",
+          "show_date": "2027.1.30(Sat)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21735"
+        },
+        {
+          "item_id": "48731",
+          "event_id": "ev-21714",
+          "tag": "新規公演決定",
+          "content": "marasy, Shota Horie, Yumao at Billboard Live ～様々なフィールドで活躍するピアニスト・まらしぃが、10年来の友人であ",
+          "show_date": "2027.2.3(Wed)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21714"
+        },
+        {
+          "item_id": "48753",
+          "event_id": "ev-21733",
+          "tag": "新規公演決定",
+          "content": "CHAMBRE Billboard Live YOKOHAMA ～マルチな才能を持つ次世代SSW、 春野がビルボードライブ初登場～",
+          "show_date": "2027.1.29(Fri)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21733"
+        },
+        {
+          "item_id": "48743",
+          "event_id": "ev-21729",
+          "tag": "新規公演決定",
+          "content": "ISSA Premium Live at Billboard Live 2026 ～来年デビュー30周年を迎えるDA PUMPのリーダー、ISSAが3都市を巡る",
+          "show_date": "2026.12.18(Fri)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21729"
+        },
+        {
+          "item_id": "48706",
+          "event_id": null,
+          "tag": "",
+          "content": "ビルボードライブの月刊フリーペーパー『bbl MAGAZINE Vol.223』が発行されました。",
+          "show_date": "",
+          "url": "https://library.hhcross.hankyu-hanshin.jp/library/books/vol223_billboard_opn/book/#target/page_no=1"
+        },
+        {
+          "item_id": "48670",
           "event_id": null,
           "tag": "Special",
-          "content": "世界や日本の音楽シーンを渡り歩いてきた4人の名手、海野雅威、小沼ようすけ、松原秀樹、沼澤尚によるカルテット、Cozinha（コズィーニャ）の魅力を大滝裕子さん、",
-          "show_date": "2026.11.4(Wed)",
-          "url": "https://youtube.com/shorts/mKjqZMp5tKk?feature=share"
+          "content": "いよいよ今月10日に横浜公演を開催するMALIYAとSIRUPから、ビデオメッセージが到着。",
+          "show_date": "",
+          "url": "https://x.com/billboardlive_y/status/2105568403691905349?s=20"
         },
         {
-          "item_id": "48438",
-          "event_id": "ev-21696",
+          "item_id": "48661",
+          "event_id": "ev-21718",
           "tag": "新規公演決定",
-          "content": "LOSALIOS with 田中邦和、タブゾンビ、LEO ～中村達也率いるバンド、LOSALIOSがビルボードライブに初登場、3都市を巡るツアーを開催～",
-          "show_date": "2027.1.22(Fri)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21696"
+          "content": "岸谷香 KAORI PARADISE 2027 新春スペシャル ～岸谷香がDiamond Swing Orchestraとともに2027年の幕開けを賑々しく彩る",
+          "show_date": "2027.1.15(Fri)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21718"
         }
       ],
       "ticket_updates": [],
       "item_ids": [
+        "48811",
+        "48764",
+        "48731",
+        "48753",
+        "48743",
+        "48706",
+        "48670",
+        "48661",
         "48643",
-        "48558",
-        "48538",
-        "48446",
-        "48438",
-        "48292",
-        "48268",
-        "48194",
-        "48146",
-        "48103"
+        "48558"
       ],
       "event_ids": [
-        "ev-21705",
-        "ev-21690",
-        "ev-21704",
-        "ev-21708",
-        "ev-21696",
+        "ev-21729",
+        "ev-21735",
+        "ev-21714",
         "ev-21723",
-        "ev-21701"
+        "ev-21718",
+        "ev-21733",
+        "ev-21708"
       ],
       "all_items": [
+        {
+          "item_id": "48811",
+          "event_id": null,
+          "tag": "Special",
+          "content": "いよいよ今週10/10に公演を控えるMALIYA×SIRUPの対談ロングインタビュー(後編)がBillboard JAPANに掲載。",
+          "show_date": "2026.10.10(Sat)",
+          "url": "https://www.billboard-japan.com/special/detail/5465"
+        },
+        {
+          "item_id": "48764",
+          "event_id": "ev-21735",
+          "tag": "新規公演決定",
+          "content": "小関裕太 “ULTERIUS”-Billboard Live ～俳優・小関裕太がビルボードライブ初登場、自身初の音楽イベント『ULTERIUS』を開催～",
+          "show_date": "2027.1.30(Sat)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21735"
+        },
+        {
+          "item_id": "48731",
+          "event_id": "ev-21714",
+          "tag": "新規公演決定",
+          "content": "marasy, Shota Horie, Yumao at Billboard Live ～様々なフィールドで活躍するピアニスト・まらしぃが、10年来の友人であ",
+          "show_date": "2027.2.3(Wed)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21714"
+        },
+        {
+          "item_id": "48753",
+          "event_id": "ev-21733",
+          "tag": "新規公演決定",
+          "content": "CHAMBRE Billboard Live YOKOHAMA ～マルチな才能を持つ次世代SSW、 春野がビルボードライブ初登場～",
+          "show_date": "2027.1.29(Fri)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21733"
+        },
+        {
+          "item_id": "48743",
+          "event_id": "ev-21729",
+          "tag": "新規公演決定",
+          "content": "ISSA Premium Live at Billboard Live 2026 ～来年デビュー30周年を迎えるDA PUMPのリーダー、ISSAが3都市を巡る",
+          "show_date": "2026.12.18(Fri)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21729"
+        },
+        {
+          "item_id": "48706",
+          "event_id": null,
+          "tag": "",
+          "content": "ビルボードライブの月刊フリーペーパー『bbl MAGAZINE Vol.223』が発行されました。",
+          "show_date": "",
+          "url": "https://library.hhcross.hankyu-hanshin.jp/library/books/vol223_billboard_opn/book/#target/page_no=1"
+        },
+        {
+          "item_id": "48670",
+          "event_id": null,
+          "tag": "Special",
+          "content": "いよいよ今月10日に横浜公演を開催するMALIYAとSIRUPから、ビデオメッセージが到着。",
+          "show_date": "",
+          "url": "https://x.com/billboardlive_y/status/2105568403691905349?s=20"
+        },
+        {
+          "item_id": "48661",
+          "event_id": "ev-21718",
+          "tag": "新規公演決定",
+          "content": "岸谷香 KAORI PARADISE 2027 新春スペシャル ～岸谷香がDiamond Swing Orchestraとともに2027年の幕開けを賑々しく彩る",
+          "show_date": "2027.1.15(Fri)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21718"
+        },
         {
           "item_id": "48643",
           "event_id": "ev-21723",
@@ -262,70 +334,6 @@
           "content": "Chris Dave, MonoNeon and Justus West ～Chris Dave、MonoNeon、そしてJustus West 現代音楽を牽引",
           "show_date": "2026.11.17(Tue)",
           "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21708"
-        },
-        {
-          "item_id": "48538",
-          "event_id": null,
-          "tag": "Special",
-          "content": "いよいよ10/10に公演を控えるMALIYA×SIRUPの対談ロングインタビュー(前編)がBillboard JAPANに掲載。",
-          "show_date": "2026.10.10(Sat)",
-          "url": "https://www.billboard-japan.com/special/detail/5459"
-        },
-        {
-          "item_id": "48446",
-          "event_id": null,
-          "tag": "Special",
-          "content": "世界や日本の音楽シーンを渡り歩いてきた4人の名手、海野雅威、小沼ようすけ、松原秀樹、沼澤尚によるカルテット、Cozinha（コズィーニャ）の魅力を大滝裕子さん、",
-          "show_date": "2026.11.4(Wed)",
-          "url": "https://youtube.com/shorts/mKjqZMp5tKk?feature=share"
-        },
-        {
-          "item_id": "48438",
-          "event_id": "ev-21696",
-          "tag": "新規公演決定",
-          "content": "LOSALIOS with 田中邦和、タブゾンビ、LEO ～中村達也率いるバンド、LOSALIOSがビルボードライブに初登場、3都市を巡るツアーを開催～",
-          "show_date": "2027.1.22(Fri)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21696"
-        },
-        {
-          "item_id": "48292",
-          "event_id": "ev-21705",
-          "tag": "新規公演決定",
-          "content": "土岐隼一 Shunichi Toki Lunch & Dinner Show ～ Spécialité la suite ～ ～アーティスト活動7周年の声優・土",
-          "show_date": "2026.12.26(Sat)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21705"
-        },
-        {
-          "item_id": "48268",
-          "event_id": null,
-          "tag": "お知らせ",
-          "content": "台風25号の接近に伴うご案内",
-          "show_date": "2026.9.21(Mon)",
-          "url": "https://www.billboard-live.com/yokohama/whats-new/48268"
-        },
-        {
-          "item_id": "48194",
-          "event_id": "ev-21701",
-          "tag": "新規公演決定",
-          "content": "大塚 愛 AIO BRASSIC vol.2 ～3都市ビルボードライブで 待望の【AIO BRASSIC vol.2】開催決定",
-          "show_date": "2027.2.27(Sat)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21701"
-        },
-        {
-          "item_id": "48146",
-          "event_id": "ev-21704",
-          "tag": "新規公演決定",
-          "content": "未唯mie 仙波清彦 Produce 未唯mie Sings 新春 “Pink Lady Night” 2027 ～毎年恒例“Pink Lady Night”が",
-          "show_date": "2027.1.11(Mon)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21704"
-        },
-        {
-          "item_id": "48103",
-          "event_id": "ev-21690",
-          "tag": "新規公演決定",
-          "content": "今井美樹 Billboard Live 2026 ～歌手デビュー40周年の節目を迎えた今井美樹が約4年ぶりとなる、ビルボードライブ・ツアー開催決定～",
-          "show_date": "2026.12.1(Tue)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21690"
         }
       ]
     },
@@ -335,24 +343,162 @@
       "url": "https://k-arena.com/schedule/",
       "extract": "wp_schedule_api",
       "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
+      "checked_at": "2026-10-08T02:35:32",
       "new_shows": [
         {
-          "id": 7227,
-          "url": "https://k-arena.com/schedule/20261129-1/",
-          "artist": "THE IDOLM＠STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ~ for your ONE ~",
-          "date": "2026.11.29",
-          "title": "THE IDOLM＠STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ~ for your ONE ~"
+          "id": 7264,
+          "url": "https://k-arena.com/schedule/20270602-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.06.02",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
         },
         {
-          "id": 7225,
-          "url": "https://k-arena.com/schedule/20261128-1/",
-          "artist": "THE IDOLM＠STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ~ for your ONE ~",
-          "date": "2026.11.28",
-          "title": "THE IDOLM＠STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ~ for your ONE ~"
+          "id": 7263,
+          "url": "https://k-arena.com/schedule/20270601-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.06.01",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7262,
+          "url": "https://k-arena.com/schedule/20270519-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.19",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7261,
+          "url": "https://k-arena.com/schedule/20270518-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.18",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7260,
+          "url": "https://k-arena.com/schedule/20270513-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.13",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7259,
+          "url": "https://k-arena.com/schedule/20270512-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.12",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7258,
+          "url": "https://k-arena.com/schedule/20270509-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.09",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7257,
+          "url": "https://k-arena.com/schedule/20270508-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.08",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7256,
+          "url": "https://k-arena.com/schedule/20270422-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.04.22",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7255,
+          "url": "https://k-arena.com/schedule/20270421-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.04.21",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7254,
+          "url": "https://k-arena.com/schedule/20270316-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.16",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7253,
+          "url": "https://k-arena.com/schedule/20270311-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.11",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7252,
+          "url": "https://k-arena.com/schedule/20270310-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.10",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7251,
+          "url": "https://k-arena.com/schedule/20270307-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.07",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7250,
+          "url": "https://k-arena.com/schedule/20270306-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.06",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7249,
+          "url": "https://k-arena.com/schedule/20270228-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.28",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7248,
+          "url": "https://k-arena.com/schedule/20270227-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.27",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7247,
+          "url": "https://k-arena.com/schedule/20270221-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.21",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7245,
+          "url": "https://k-arena.com/schedule/20270220-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.20",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
         }
       ],
       "ids": [
+        7264,
+        7263,
+        7262,
+        7261,
+        7260,
+        7259,
+        7258,
+        7257,
+        7256,
+        7255,
+        7254,
+        7253,
+        7252,
+        7251,
+        7250,
+        7249,
+        7248,
+        7247,
+        7245,
         7227,
         7225,
         7210,
@@ -399,11 +545,142 @@
         6447,
         6435,
         6291,
-        6288,
-        6189,
-        5958
+        6288
       ],
       "shows": [
+        {
+          "id": 7264,
+          "url": "https://k-arena.com/schedule/20270602-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.06.02",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7263,
+          "url": "https://k-arena.com/schedule/20270601-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.06.01",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7262,
+          "url": "https://k-arena.com/schedule/20270519-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.19",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7261,
+          "url": "https://k-arena.com/schedule/20270518-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.18",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7260,
+          "url": "https://k-arena.com/schedule/20270513-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.13",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7259,
+          "url": "https://k-arena.com/schedule/20270512-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.12",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7258,
+          "url": "https://k-arena.com/schedule/20270509-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.09",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7257,
+          "url": "https://k-arena.com/schedule/20270508-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.05.08",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7256,
+          "url": "https://k-arena.com/schedule/20270422-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.04.22",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7255,
+          "url": "https://k-arena.com/schedule/20270421-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.04.21",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7254,
+          "url": "https://k-arena.com/schedule/20270316-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.16",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7253,
+          "url": "https://k-arena.com/schedule/20270311-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.11",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7252,
+          "url": "https://k-arena.com/schedule/20270310-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.10",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7251,
+          "url": "https://k-arena.com/schedule/20270307-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.07",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7250,
+          "url": "https://k-arena.com/schedule/20270306-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.03.06",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7249,
+          "url": "https://k-arena.com/schedule/20270228-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.28",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7248,
+          "url": "https://k-arena.com/schedule/20270227-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.27",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7247,
+          "url": "https://k-arena.com/schedule/20270221-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.21",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
+        {
+          "id": 7245,
+          "url": "https://k-arena.com/schedule/20270220-1/",
+          "artist": "Mrs. GREEN APPLE on ”Harmony2”",
+          "date": "2027.02.20",
+          "title": "Mrs. GREEN APPLE on ”Harmony2”"
+        },
         {
           "id": 7227,
           "url": "https://k-arena.com/schedule/20261129-1/",
@@ -732,20 +1009,6 @@
           "artist": "Suchmos BAY SIDE TOUR 2027",
           "date": "2027.04.24",
           "title": "Suchmos BAY SIDE TOUR 2027"
-        },
-        {
-          "id": 6189,
-          "url": "https://k-arena.com/schedule/20261004-1/",
-          "artist": "からぴちパラダイス ARENA TOUR 2026 ～シンフォニーエクスプレス～",
-          "date": "2026.10.04",
-          "title": "からぴちパラダイス ARENA TOUR 2026 ～シンフォニーエクスプレス～"
-        },
-        {
-          "id": 5958,
-          "url": "https://k-arena.com/schedule/20261006-1/",
-          "artist": "Post Malone Presents The BIG ASS Stadium World Tour（公演延期となりました）",
-          "date": "2026.10.06",
-          "title": "Post Malone Presents The BIG ASS Stadium World Tour（公演延期となりました）"
         }
       ]
     },
@@ -755,135 +1018,38 @@
       "url": "https://www.zepp.co.jp/hall/yokohama/schedule/",
       "extract": "show_schedule",
       "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
+      "checked_at": "2026-10-08T02:35:32",
       "new_shows": [
         {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=163918",
-          "artist": "植草克秀・井上ヨシマサ",
-          "date": "2026.10.1",
-          "title": "植草ヨシマサ 着地点は御座いません"
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158441",
+          "artist": "sumika",
+          "date": "2026.10.8",
+          "title": "sumika Live Tour 2026 『Flügel Letter』"
         },
         {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158383",
-          "artist": "04 Limited Sazabys",
-          "date": "2026.10.2",
-          "title": "04 Limited Sazabys ONE MAN TOUR 2026"
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168300",
+          "artist": "BONBON.",
+          "date": "2026.10.10",
+          "title": "BONBON. 1st Live tour 「あなたになりたいだけじゃなく。」"
         },
         {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158988",
-          "artist": "甲斐よしひろ",
-          "date": "2026.10.3",
-          "title": "甲斐よしひろ　ホームカミングツアー2026"
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168034",
+          "artist": "Appare！",
+          "date": "2026.10.12",
+          "title": "VS横アリ　其の一"
         },
         {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=164128",
-          "artist": "MODYSSEY",
-          "date": "2026.10.4",
-          "title": "2026 MODYSSEY FAN CONCERT TOUR  IN OSAKA, YOKOHAMA"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=156991",
-          "artist": "日食なつこ",
-          "date": "2026.10.9",
-          "title": "日食なつこ 未発表曲ツアー「エリア未来2 “ブラックホール”」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160300",
-          "artist": "レトロリロン",
-          "date": "2026.10.15",
-          "title": "レトロリロン Zepp Tour 2026「アブノーマルライフハック」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159726",
-          "artist": "今井翼",
-          "date": "2026.10.16",
-          "title": "TSUBASA IMAI Live 2026 「Treasure」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159725",
-          "artist": "今井翼",
-          "date": "2026.10.17",
-          "title": "TSUBASA IMAI 2026　Happy 45th Anniversary! ーSpecial Talk Show"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=157045",
-          "artist": "ねぐせ。",
-          "date": "2026.10.18",
-          "title": "ねぐせ。ワンマンツアー2026　「君を強く抱きしめたいんだ！」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168193",
-          "artist": "AVAM／君に、胸キュン。／CURE’T／JamsCollection／Sweet Alley／ドレスコード／NANIMONO／NEVER END ROLL／VVSiS／Pretty Chuu／MEGAFON／REIRIE／Onephony",
-          "date": "2026.10.19",
-          "title": "AVAM presents『Débutante vol.10 Halloween SP』"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162488",
-          "artist": "ralph",
-          "date": "2026.10.20",
-          "title": "ralph ONE MAN LIVE 2026 \"Coast 2 Coast\" at ZEPP横浜"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159571",
-          "artist": "go!go!vanillas",
-          "date": "2026.10.21",
-          "title": "go!go!vanillas presents「ぼくらのタイマン上等ツアー」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159572",
-          "artist": "go!go!vanillas",
-          "date": "2026.10.22",
-          "title": "go!go!vanillas presents「ぼくらのタイマン上等ツアー」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=161402",
-          "artist": "LINDBERG",
-          "date": "2026.10.23",
-          "title": "LINDBERG LIVE TOUR 2026 「Zepp STEP JUMP」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=155662",
-          "artist": "演奏：「あぶデカ」スペシャルバンドナビゲーター：長谷部香苗ゲストシンガー：ロザリーナ(帰ってきたあぶない刑事　挿入歌担当）※あぶない刑事　2人の登壇予定はありません。",
-          "date": "2026.10.24",
-          "title": "「あぶない刑事」40周年記念　ABUDEKA　SPECIAL FILM CONCERT　FINAL　これでホントにさらば"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=166001",
-          "artist": "遠藤綾（『マクロスF』シェリル・ノーム役）May'n（『マクロスF』シェリル・ノーム歌担当）⼩清⽔亜美（『マクロスΔ』美雲・ギンヌメール役）Junna（『マクロスΔ』美雲・ギンヌメール歌担当）",
-          "date": "2026.10.25",
-          "title": "ROAD TO MACROSS CROSSOVER 2026 powered by 超時空ファンクラブ マクロス魂"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162351",
-          "artist": "乃⽊坂46 6期⽣愛宕⼼響／⼤越ひなの／⼩津玲奈／海邉朱莉／川端晃菜／鈴⽊佑捺／瀬⼾⼝⼼⽉／⻑嶋凛桜／増⽥三莉⾳／森平麗⼼／⽮⽥萌華",
-          "date": "2026.10.26",
-          "title": "乃⽊坂46 6期⽣全国ツアー2026"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162352",
-          "artist": "乃⽊坂46 6期⽣愛宕⼼響／⼤越ひなの／⼩津玲奈／海邉朱莉／川端晃菜／鈴⽊佑捺／瀬⼾⼝⼼⽉／⻑嶋凛桜／増⽥三莉⾳／森平麗⼼／⽮⽥萌華",
-          "date": "2026.10.27",
-          "title": "乃⽊坂46 6期⽣全国ツアー2026"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160164",
-          "artist": "ACIDMAN",
-          "date": "2026.10.30",
-          "title": "ACIDMAN ONEMAN LIVE \"This is ACIDMAN 2026\""
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=153004",
-          "artist": "宇都宮隆 / 野村義男 / 松尾和博 / nishi-ken",
-          "date": "2026.10.31",
-          "title": "LIVE UTSU BAR TOUR 2026 〜それゆけ歌酔曲!!〜 ギア-レイワ8『オータムこい』"
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=163606",
+          "artist": "",
+          "date": "2026.10.28",
+          "title": "Private"
         }
       ],
       "urls": [
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=163918",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158383",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158988",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=164128",
+        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158441",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=156991",
+        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168300",
+        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168034",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160300",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159726",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159725",
@@ -897,39 +1063,34 @@
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=166001",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162351",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162352",
+        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=163606",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160164",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=153004"
       ],
       "shows": [
         {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=163918",
-          "artist": "植草克秀・井上ヨシマサ",
-          "date": "2026.10.1",
-          "title": "植草ヨシマサ 着地点は御座いません"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158383",
-          "artist": "04 Limited Sazabys",
-          "date": "2026.10.2",
-          "title": "04 Limited Sazabys ONE MAN TOUR 2026"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158988",
-          "artist": "甲斐よしひろ",
-          "date": "2026.10.3",
-          "title": "甲斐よしひろ　ホームカミングツアー2026"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=164128",
-          "artist": "MODYSSEY",
-          "date": "2026.10.4",
-          "title": "2026 MODYSSEY FAN CONCERT TOUR  IN OSAKA, YOKOHAMA"
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=158441",
+          "artist": "sumika",
+          "date": "2026.10.8",
+          "title": "sumika Live Tour 2026 『Flügel Letter』"
         },
         {
           "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=156991",
           "artist": "日食なつこ",
           "date": "2026.10.9",
           "title": "日食なつこ 未発表曲ツアー「エリア未来2 “ブラックホール”」"
+        },
+        {
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168300",
+          "artist": "BONBON.",
+          "date": "2026.10.10",
+          "title": "BONBON. 1st Live tour 「あなたになりたいだけじゃなく。」"
+        },
+        {
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168034",
+          "artist": "Appare！",
+          "date": "2026.10.12",
+          "title": "VS横アリ　其の一"
         },
         {
           "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160300",
@@ -975,7 +1136,7 @@
         },
         {
           "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159572",
-          "artist": "go!go!vanillas",
+          "artist": "go!go!vanillas w/MONO NO AWARE",
           "date": "2026.10.22",
           "title": "go!go!vanillas presents「ぼくらのタイマン上等ツアー」"
         },
@@ -1008,6 +1169,12 @@
           "artist": "乃⽊坂46 6期⽣愛宕⼼響／⼤越ひなの／⼩津玲奈／海邉朱莉／川端晃菜／鈴⽊佑捺／瀬⼾⼝⼼⽉／⻑嶋凛桜／増⽥三莉⾳／森平麗⼼／⽮⽥萌華",
           "date": "2026.10.27",
           "title": "乃⽊坂46 6期⽣全国ツアー2026"
+        },
+        {
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=163606",
+          "artist": "",
+          "date": "2026.10.28",
+          "title": "Private"
         },
         {
           "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160164",
@@ -1028,52 +1195,10 @@
       "description": "新着公演情報",
       "url": "https://pia-arena-mm.jp/event@p1=2026&p2=06.html",
       "extract": "show_schedule",
-      "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
-      "new_shows": [
-        {
-          "url": "https://pia-arena-mm.jp/event/7281.html",
-          "artist": "MONSTA X",
-          "date": "2026.12.08",
-          "title": "MONSTA X"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7283.html",
-          "artist": "MONSTA X",
-          "date": "2026.12.09",
-          "title": "MONSTA X"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7056.html",
-          "artist": "キタニタツヤ",
-          "date": "2027.01.16",
-          "title": "キタニタツヤ"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7059.html",
-          "artist": "キタニタツヤ",
-          "date": "2027.01.17",
-          "title": "キタニタツヤ"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7266.html",
-          "artist": "劇場版 七次元生徒会！ ～ずっと一緒大作戦！～",
-          "date": "2027.01.23",
-          "title": "劇場版 七次元生徒会！ ～ずっと一緒大作戦！～"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7085.html",
-          "artist": "VOLTACTION 2nd LIVE \"EVOLVE\"",
-          "date": "2027.01.24",
-          "title": "VOLTACTION 2nd LIVE \"EVOLVE\""
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-08T02:35:32",
+      "new_shows": [],
       "urls": [
-        "https://pia-arena-mm.jp/event/7043.html",
-        "https://pia-arena-mm.jp/event/7039.html",
-        "https://pia-arena-mm.jp/event/7151.html",
-        "https://pia-arena-mm.jp/event/7154.html",
-        "https://pia-arena-mm.jp/event/6936.html",
         "https://pia-arena-mm.jp/event/6939.html",
         "https://pia-arena-mm.jp/event/7173.html",
         "https://pia-arena-mm.jp/event/7175.html",
@@ -1115,36 +1240,6 @@
         "https://pia-arena-mm.jp/event/7085.html"
       ],
       "shows": [
-        {
-          "url": "https://pia-arena-mm.jp/event/7043.html",
-          "artist": "“ヒプ・カリ”ステコラボLIVE「STYLE WARS 2026」",
-          "date": "2026.10.01",
-          "title": "“ヒプ・カリ”ステコラボLIVE「STYLE WARS 2026」"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7039.html",
-          "artist": "『ヒプノシスマイク -Division Rap Battle-』Rule the Stage -Battle of Pride 2026-",
-          "date": "2026.10.02",
-          "title": "『ヒプノシスマイク -Division Rap Battle-』Rule the Stage -Battle of Pr"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7151.html",
-          "artist": "ヒプノシスマイク -Division Rap Battle- 12th LIVE《MIC AS ONE》",
-          "date": "2026.10.03",
-          "title": "ヒプノシスマイク -Division Rap Battle- 12th LIVE《MIC AS ONE》"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7154.html",
-          "artist": "ヒプノシスマイク -Division Rap Battle- 12th LIVE《MIC AS ONE》",
-          "date": "2026.10.04",
-          "title": "ヒプノシスマイク -Division Rap Battle- 12th LIVE《MIC AS ONE》"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/6936.html",
-          "artist": "Novelbright",
-          "date": "2026.10.07",
-          "title": "Novelbright"
-        },
         {
           "url": "https://pia-arena-mm.jp/event/6939.html",
           "artist": "Novelbright",
@@ -1386,25 +1481,10 @@
       "description": "新着公演情報",
       "url": "https://landmarkhall.jp/schedule/",
       "extract": "show_schedule",
-      "status": "changed",
-      "checked_at": "2026-10-01T01:52:04",
-      "new_shows": [
-        {
-          "url": "https://landmarkhall.jp/schedule/2026/10/10807/",
-          "artist": "スターアイドルサミット vol.24",
-          "date": "2026.10.10",
-          "title": ""
-        },
-        {
-          "url": "https://landmarkhall.jp/schedule/2026/10/10808/",
-          "artist": "スターアイドルサミット vol.25",
-          "date": "2026.10.18",
-          "title": ""
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-08T02:35:32",
+      "new_shows": [],
       "urls": [
-        "https://landmarkhall.jp/schedule/2026/10/10779/",
-        "https://landmarkhall.jp/schedule/2026/10/10781/",
         "https://landmarkhall.jp/schedule/2026/10/10807/",
         "https://landmarkhall.jp/schedule/2026/10/10645/",
         "https://landmarkhall.jp/schedule/2026/10/10808/",
@@ -1421,18 +1501,6 @@
         "https://landmarkhall.jp/schedule/2027/02/10619/"
       ],
       "shows": [
-        {
-          "url": "https://landmarkhall.jp/schedule/2026/10/10779/",
-          "artist": "アイドルアラモードプチVol.141",
-          "date": "2026.10.3",
-          "title": ""
-        },
-        {
-          "url": "https://landmarkhall.jp/schedule/2026/10/10781/",
-          "artist": "スパドキフェスティバルVol.118",
-          "date": "2026.10.4",
-          "title": ""
-        },
         {
           "url": "https://landmarkhall.jp/schedule/2026/10/10807/",
           "artist": "スターアイドルサミット vol.24",
@@ -1525,7 +1593,7 @@
       "url": "https://yokohama-minatomiraihall.jp/concert/calendar.html",
       "extract": "js_pending",
       "status": "unchanged",
-      "checked_at": "2026-10-01T01:52:04"
+      "checked_at": "2026-10-08T02:35:32"
     },
     {
       "name": "パシフィコ横浜 国立大ホール",
@@ -1533,7 +1601,7 @@
       "url": "https://www.pacifico.co.jp/event/",
       "extract": "js_pending",
       "status": "unchanged",
-      "checked_at": "2026-10-01T01:52:04"
+      "checked_at": "2026-10-08T02:35:32"
     }
   ]
 }
