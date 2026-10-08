@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-07T12:24:29",
+  "generated_at": "2026-10-08T12:39:16",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "unchanged",
-      "checked_at": "2026-10-07T12:24:29",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-10-08T12:39:16",
+      "new_listings": [
+        {
+          "id": "5522",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5522",
+          "name": "ロワール横浜西",
+          "price": "7,280万円",
+          "area": "69.11㎡",
+          "madori": "3LDK",
+          "traffic": "相鉄本線『天王町』駅徒歩8分",
+          "location": "神奈川県横浜市西区南浅間町18-6"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "5522",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5522",
+          "name": "ロワール横浜西",
+          "price": "7,280万円",
+          "area": "69.11㎡",
+          "madori": "3LDK",
+          "traffic": "相鉄本線『天王町』駅徒歩8分",
+          "location": "神奈川県横浜市西区南浅間町18-6"
+        },
         {
           "id": "5518",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5518",
@@ -142,6 +163,7 @@
         }
       ],
       "ids": [
+        "5522",
         "5518",
         "5465",
         "5566",
@@ -164,37 +186,16 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-10-07T12:24:29"
+      "checked_at": "2026-10-08T12:39:16"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-10-07T12:24:29",
-      "new_listings": [
-        {
-          "id": "afS2vsFLNB4",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA/%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C%E6%AC%B2%E5%BC%B5%E3%82%8A%E3%83%A9%E3%82%A4%E3%83%95",
-          "name": "あれこれ欲張りライフ",
-          "price": "8,580万円",
-          "area": "124.22㎡",
-          "madori": "3LDK",
-          "traffic": "大倉山駅徒歩10分",
-          "location": "横浜市港北区大倉山"
-        },
-        {
-          "id": "AJE4dVnKqK4",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%81%94%E7%B8%81%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%97%E3%81%A6",
-          "name": "ご縁がありまして",
-          "price": "7,490万円",
-          "area": "56.70㎡",
-          "madori": "1SLDK",
-          "traffic": "目黒駅徒歩15分",
-          "location": "目黒区下目黒"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-08T12:39:16",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "afS2vsFLNB4",
@@ -370,10 +371,31 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-10-07T12:24:29",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-10-08T12:39:16",
+      "new_listings": [
+        {
+          "id": "27752",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27752",
+          "name": "色めくリビング",
+          "price": "5,490万円（税込）",
+          "area": "72㎡",
+          "madori": "",
+          "traffic": "東急田園都市線・東急大井町線「溝の口」駅 徒歩15分",
+          "location": "川崎市高津区坂戸"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "27752",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27752",
+          "name": "色めくリビング",
+          "price": "5,490万円（税込）",
+          "area": "72㎡",
+          "madori": "",
+          "traffic": "東急田園都市線・東急大井町線「溝の口」駅 徒歩15分",
+          "location": "川崎市高津区坂戸"
+        },
         {
           "id": "26866",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=26866",
@@ -486,6 +508,7 @@
         }
       ],
       "ids": [
+        "27752",
         "26866",
         "27674",
         "27558",
@@ -505,7 +528,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-07T12:24:29",
+      "checked_at": "2026-10-08T12:39:16",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -516,7 +539,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-07T12:24:29",
+      "checked_at": "2026-10-08T12:39:16",
       "new_listings": [],
       "all_listings": [
         {
