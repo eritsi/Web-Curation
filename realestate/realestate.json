@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-10-10T12:27:14",
+  "generated_at": "2026-10-11T12:00:24",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-10-10T12:27:14",
-      "new_listings": [
-        {
-          "id": "5499",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5499",
-          "name": "美しが丘ハイム",
-          "price": "8,180万円",
-          "area": "61.58㎡",
-          "madori": "2LDK",
-          "traffic": "東急田園都市線『たまプラーザ』駅徒歩8分",
-          "location": "神奈川県横浜市青葉区美しが丘2-10-3"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-11T12:00:24",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5499",
@@ -175,37 +164,16 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-10-10T12:27:14"
+      "checked_at": "2026-10-11T12:00:24"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-10-10T12:27:14",
-      "new_listings": [
-        {
-          "id": "tkno9ibWRac",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%83%9F%E3%83%AB%E3%83%95%E3%82%A3%E3%83%BC%E3%83%A6%E3%83%96%E3%83%AB%E3%83%BC",
-          "name": "ミルフィーユ・ブルー",
-          "price": "5,580万円",
-          "area": "61.60㎡",
-          "madori": "2LDK+S",
-          "traffic": "豊洲駅徒歩14分",
-          "location": "江東区塩浜"
-        },
-        {
-          "id": "WbTX8p4ZUW8",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%81%BC%E3%81%8F%E3%82%89%E3%81%AE%E7%89%A9%E8%AA%9E",
-          "name": "ぼくらの物語",
-          "price": "4,980万円",
-          "area": "50.96㎡",
-          "madori": "1LDK",
-          "traffic": "若林駅徒歩1分",
-          "location": "世田谷区若林"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-11T12:00:24",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "tkno9ibWRac",
@@ -371,7 +339,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-10-10T12:27:14",
+      "checked_at": "2026-10-11T12:00:24",
       "new_listings": [],
       "all_listings": [
         {
@@ -516,7 +484,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-10T12:27:14",
+      "checked_at": "2026-10-11T12:00:24",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -527,7 +495,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-10T12:27:14",
+      "checked_at": "2026-10-11T12:00:24",
       "new_listings": [],
       "all_listings": [
         {
