@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-10-18T11:13:01",
+  "generated_at": "2026-10-19T11:29:02",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-10-18T11:13:01",
-      "new_listings": [
-        {
-          "id": "5572",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5572",
-          "name": "成増グリーンハイツ",
-          "price": "5,980万円",
-          "area": "64.72㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "東京メトロ有楽町線・東京メトロ副都心線『地下鉄成増』駅徒歩1分",
-          "location": "東京都板橋区成増1-14-9"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-19T11:29:02",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5572",
@@ -32,16 +21,6 @@
           "location": "東京都板橋区成増1-14-9"
         },
         {
-          "id": "5518",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5518",
-          "name": "クリオ吉祥寺弐番館",
-          "price": "7,590万円価格改定",
-          "area": "66.27㎡",
-          "madori": "3LDK+WIC",
-          "traffic": "JR中央線・JR中央総武線・京王井の頭『吉祥寺』駅徒歩19分",
-          "location": "東京都練馬区立野町7-12"
-        },
-        {
           "id": "5544",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5544",
           "name": "東戸塚ガーデンハウス壱番館",
@@ -50,6 +29,26 @@
           "madori": "3LDK",
           "traffic": "JR横須賀線・JR湘南新宿ライン『東戸塚』駅徒歩9分",
           "location": "神奈川県横浜市戸塚区川上町411‐6"
+        },
+        {
+          "id": "5574",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5574",
+          "name": "エンゼルハイム竹の塚駅前",
+          "price": "4,780万円",
+          "area": "56.22㎡",
+          "madori": "3LDK+SIC",
+          "traffic": "東京スカイツリーライン『竹ノ塚』駅徒歩5分",
+          "location": "東京都足立区竹の塚1-36-7"
+        },
+        {
+          "id": "5518",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5518",
+          "name": "クリオ吉祥寺弐番館",
+          "price": "7,590万円",
+          "area": "66.27㎡",
+          "madori": "3LDK+WIC",
+          "traffic": "JR中央線・JR中央総武線・京王井の頭『吉祥寺』駅徒歩19分",
+          "location": "東京都練馬区立野町7-12"
         },
         {
           "id": "5522",
@@ -75,7 +74,7 @@
           "id": "5502",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
           "name": "プラウド海老名",
-          "price": "6,790万円価格改定",
+          "price": "6,790万円",
           "area": "71.80㎡",
           "madori": "3LDK+2WIC",
           "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
@@ -122,26 +121,6 @@
           "location": "東京都江東区亀戸3-47-17"
         },
         {
-          "id": "5574",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5574",
-          "name": "エンゼルハイム竹の塚駅前",
-          "price": "4,780万円",
-          "area": "56.22㎡",
-          "madori": "3LDK+SIC",
-          "traffic": "東京スカイツリーライン『竹ノ塚』駅徒歩5分",
-          "location": "東京都足立区竹の塚1-36-7"
-        },
-        {
-          "id": "5465",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5465",
-          "name": "クリオ中村橋壱番館",
-          "price": "7,990万円",
-          "area": "69.13㎡",
-          "madori": "2SLDK+SIC",
-          "traffic": " 西武池袋線『中村橋』駅徒歩3分",
-          "location": "東京都練馬区中村北3-11-14"
-        },
-        {
           "id": "5439",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
           "name": "パークハイム桜新町",
@@ -184,8 +163,9 @@
       ],
       "ids": [
         "5572",
-        "5518",
         "5544",
+        "5574",
+        "5518",
         "5522",
         "5499",
         "5502",
@@ -193,8 +173,6 @@
         "5553",
         "5426",
         "5576",
-        "5574",
-        "5465",
         "5439",
         "5408",
         "5497",
@@ -208,7 +186,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-10-18T11:13:01"
+      "checked_at": "2026-10-19T11:29:02"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -216,7 +194,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-10-18T11:13:01",
+      "checked_at": "2026-10-19T11:29:02",
       "new_listings": [],
       "all_listings": [
         {
@@ -348,26 +326,6 @@
           "madori": "3LDK",
           "traffic": "妙蓮寺駅徒歩5分",
           "location": "横浜市港北区仲手原"
-        },
-        {
-          "id": "tkno9ibWRac",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%83%9F%E3%83%AB%E3%83%95%E3%82%A3%E3%83%BC%E3%83%A6%E3%83%96%E3%83%AB%E3%83%BC",
-          "name": "ミルフィーユ・ブルー",
-          "price": "5,580万円",
-          "area": "61.60㎡",
-          "madori": "2LDK+S",
-          "traffic": "豊洲駅徒歩14分",
-          "location": "江東区塩浜"
-        },
-        {
-          "id": "WbTX8p4ZUW8",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%81%BC%E3%81%8F%E3%82%89%E3%81%AE%E7%89%A9%E8%AA%9E",
-          "name": "ぼくらの物語",
-          "price": "4,980万円",
-          "area": "50.96㎡",
-          "madori": "1LDK",
-          "traffic": "若林駅徒歩1分",
-          "location": "世田谷区若林"
         }
       ],
       "ids": [
@@ -383,9 +341,7 @@
         "zzKZDTqi0JA",
         "GHe8LwyXY4w",
         "1w80yvy40wE",
-        "9kWJhRsJmd4",
-        "tkno9ibWRac",
-        "WbTX8p4ZUW8"
+        "9kWJhRsJmd4"
       ]
     },
     {
@@ -393,9 +349,20 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-10-18T11:13:01",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-10-19T11:29:02",
+      "new_listings": [
+        {
+          "id": "26998",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26998",
+          "name": "景色と彩りに目覚める",
+          "price": "5,480万円",
+          "area": "55.62㎡",
+          "madori": "",
+          "traffic": "東西線「落合」駅 徒歩9分",
+          "location": "新宿区北新宿"
+        }
+      ],
       "all_listings": [
         {
           "id": "26277",
@@ -448,16 +415,6 @@
           "location": "調布市富士見町"
         },
         {
-          "id": "27218",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27218",
-          "name": "僕のキッチンと君の庭",
-          "price": "8,980万円（税込）",
-          "area": "75.24㎡",
-          "madori": "",
-          "traffic": "東急目黒線「武蔵小山」駅 徒歩14分",
-          "location": "目黒区目黒本町"
-        },
-        {
           "id": "27537",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=27537",
           "name": "絵になる古材",
@@ -496,6 +453,16 @@
           "madori": "",
           "traffic": "西武池袋線「清瀬」駅 徒歩14分",
           "location": "東久留米市小山"
+        },
+        {
+          "id": "26998",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26998",
+          "name": "景色と彩りに目覚める",
+          "price": "5,480万円",
+          "area": "55.62㎡",
+          "madori": "",
+          "traffic": "東西線「落合」駅 徒歩9分",
+          "location": "新宿区北新宿"
         }
       ],
       "ids": [
@@ -504,11 +471,11 @@
         "26866",
         "27674",
         "27558",
-        "27218",
         "27537",
         "25096",
         "27308",
-        "26017"
+        "26017",
+        "26998"
       ]
     },
     {
@@ -517,7 +484,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-18T11:13:01",
+      "checked_at": "2026-10-19T11:29:02",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -528,7 +495,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-18T11:13:01",
+      "checked_at": "2026-10-19T11:29:02",
       "new_listings": [],
       "all_listings": [
         {
