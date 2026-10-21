@@ -1,0 +1,1287 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>序盤30手道場</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700;800&display=swap">
+<style>
+/* 盤が主役の一画面アプリ：縦は「相手駒台→盤→自分駒台→解説」、iPad横は盤＋解説の2列 */
+:root {
+  --bg: #e9ece6; --surface: #f6f7f3; --ink: #1c221f; --muted: #5a645e; --line: #cdd3cb;
+  --kaya: #e3c07c; --kaya2: #d6ad62; --grid: #4f3614; --komaA: #f6e3b8; --komaB: #e7c98b; --komaInk: #1b1309; --komaPro: #b0321f;
+  --ai: #2b4a7c; --aiSoft: #dde5f2; --good: #2c7a4d; --goodSoft: #dcefe2; --warn: #9a6a0c; --warnSoft: #f5ead0; --bad: #b3372a; --badSoft: #f6dfda;
+  --f-koma: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --f-body: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  --board: min(calc(100vw - 32px - 20px), 58vh, 600px);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121715; --surface: #1b221f; --ink: #e6ebe7; --muted: #9ba59f; --line: #2f3a35;
+  --kaya: #c9a35f; --kaya2: #b48d48; --grid: #3a260c;
+  --ai: #94b3e8; --aiSoft: #22304a; --good: #6cc48f; --goodSoft: #1d3428; --warn: #e2b44f; --warnSoft: #3a3019; --bad: #ef7d6d; --badSoft: #3e2420; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121715; --surface: #1b221f; --ink: #e6ebe7; --muted: #9ba59f; --line: #2f3a35;
+  --kaya: #c9a35f; --kaya2: #b48d48; --grid: #3a260c;
+  --ai: #94b3e8; --aiSoft: #22304a; --good: #6cc48f; --goodSoft: #1d3428; --warn: #e2b44f; --warnSoft: #3a3019; --bad: #ef7d6d; --badSoft: #3e2420; color-scheme: dark }
+html, body { background: var(--bg); color: var(--ink); }
+body { font-family: var(--f-body); font-size: 15px; line-height: 1.6; -webkit-tap-highlight-color: transparent;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 12px 32px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--ai); outline-offset: 2px; }
+h1, h2 { font-family: var(--f-koma); text-wrap: balance; margin: 0; }
+.wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+
+/* ---------- ホーム ---------- */
+.hero { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 6px; }
+.hero h1 { font-size: 30px; font-weight: 800; letter-spacing: .04em; line-height: 1.2; }
+.hero h1 small { display: block; font-family: var(--f-body); font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: 0; margin-top: 4px; }
+.dueBox { text-align: right; font-size: 12px; color: var(--muted); }
+.dueBox b { display: block; font-family: var(--f-koma); font-size: 28px; color: var(--bad); line-height: 1; font-variant-numeric: tabular-nums; }
+.auto { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; width: 100%; text-align: left;
+  background: var(--ai); color: var(--surface); border: 0; border-radius: 14px; padding: 16px 18px; cursor: pointer; }
+.auto .k { font-family: var(--f-koma); font-size: 30px; width: 46px; height: 50px; display: grid; place-items: center; color: var(--komaInk);
+  background: linear-gradient(170deg, var(--komaA), var(--komaB)); clip-path: polygon(50% 0, 88% 14%, 100% 100%, 0 100%, 12% 14%); }
+.auto b { font-size: 18px; display: block; }
+.auto span.s { font-size: 13px; opacity: .85; }
+.auto .arrow { font-size: 22px; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 14px; font-size: 14px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+#courses { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+.course { display: flex; flex-direction: column; gap: 6px; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; cursor: pointer; min-width: 0; }
+.course:active { transform: scale(.99); }
+.cTop { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 12px; }
+.cTitle { font-family: var(--f-koma); font-size: 19px; font-weight: 700; line-height: 1.35; }
+.cSub { font-size: 13px; color: var(--muted); }
+.cFoot { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.side { font-weight: 700; font-size: 12px; padding: 1px 7px; border-radius: 4px; }
+.side.b { background: var(--ink); color: var(--bg); }
+.side.w { background: var(--bg); color: var(--ink); border: 1px solid var(--ink); }
+.tag { color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; }
+.tag.hi { color: var(--bad); border-color: var(--bad); }
+.pill { margin-left: auto; border-radius: 999px; padding: 1px 9px; background: var(--aiSoft); color: var(--ai); font-weight: 700; }
+.pill.bad { background: var(--badSoft); color: var(--bad); }
+.pill.warn { background: var(--warnSoft); color: var(--warn); }
+.pill.good { background: var(--goodSoft); color: var(--good); }
+.meter { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.meter span { display: block; height: 100%; background: var(--good); }
+.soon { font-size: 13px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 10px; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
+details summary { cursor: pointer; font-weight: 700; }
+.set { display: flex; flex-direction: column; gap: 14px; margin-top: 12px; }
+.set label { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.set select { font: inherit; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+.set textarea { width: 100%; box-sizing: border-box; min-height: 70px; font: 12px/1.4 ui-monospace, Menlo, monospace; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 8px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.hint { font-size: 13px; color: var(--muted); margin: 0; }
+
+/* ---------- 対局 ---------- */
+.playGrid { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.bar { width: 100%; display: flex; align-items: center; gap: 10px; }
+.iconBtn { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 6px 12px; cursor: pointer; font-size: 14px; white-space: nowrap; }
+#matchup { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; font-size: 13px; }
+#matchup b { font-weight: 700; }
+#matchup .vs { color: var(--muted); font-size: 12px; margin: 0 2px; }
+.prog { width: 100%; display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.prog .track { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+#plyBar { display: block; height: 100%; width: 0; background: var(--ai); transition: width .3s; }
+.prog b { color: var(--ink); font-size: 16px; }
+#turnNote { font-weight: 700; min-width: 5em; text-align: right; }
+#turnNote.mine { color: var(--good); }
+
+.boardWrap { display: grid; grid-template-columns: var(--board) 20px; grid-template-rows: 18px var(--board); }
+#fileLabels { grid-column: 1; display: grid; grid-template-columns: repeat(9, 1fr); text-align: center; font-size: 11px; color: var(--muted); }
+#rankLabels { grid-column: 2; grid-row: 2; display: grid; grid-template-rows: repeat(9, 1fr); align-items: center; justify-items: center; font-size: 11px; color: var(--muted); }
+#board { grid-column: 1; grid-row: 2; display: grid; grid-template-columns: repeat(9, 1fr); grid-template-rows: repeat(9, 1fr);
+  border: 2px solid var(--grid); border-radius: 3px; position: relative;
+  background:
+    radial-gradient(circle at 33.333% 33.333%, var(--grid) 0 3px, transparent 3.5px),
+    radial-gradient(circle at 66.666% 33.333%, var(--grid) 0 3px, transparent 3.5px),
+    radial-gradient(circle at 33.333% 66.666%, var(--grid) 0 3px, transparent 3.5px),
+    radial-gradient(circle at 66.666% 66.666%, var(--grid) 0 3px, transparent 3.5px),
+    repeating-linear-gradient(97deg, transparent 0 7px, rgba(120, 80, 20, .06) 7px 9px),
+    linear-gradient(160deg, var(--kaya), var(--kaya2));
+  box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 8px 24px -14px rgba(60,40,10,.6); }
+.cell { position: relative; border: 0; border-right: 1px solid var(--grid); border-bottom: 1px solid var(--grid); background: transparent; padding: 0; cursor: pointer; display: grid; place-items: center; min-width: 0; touch-action: manipulation; }
+.cell:nth-child(9n) { border-right: 0; }
+.cell:nth-child(n+73) { border-bottom: 0; }
+.cell.last { background: rgba(43, 74, 124, .18); }
+.cell.lastFrom { background: rgba(43, 74, 124, .08); }
+.cell.sel { background: rgba(44, 122, 77, .35); }
+.cell.dot::after { content: ""; width: 26%; height: 26%; border-radius: 50%; background: rgba(44, 122, 77, .75); }
+.cell.cap { box-shadow: inset 0 0 0 3px rgba(44, 122, 77, .8); }
+.cell.ansTo, .cell.ansFrom { box-shadow: inset 0 0 0 3px var(--bad); }
+.cell.ansTo { background: rgba(179, 55, 42, .22); animation: pulse 1.1s ease-in-out infinite; }
+@keyframes pulse { 50% { background: rgba(179, 55, 42, .05); } }
+.koma { width: 84%; height: 92%; display: grid; place-items: center; padding-top: 10%; box-sizing: border-box;
+  font-family: var(--f-koma); font-weight: 800; color: var(--komaInk); font-size: calc(var(--board) / 9 * .56); line-height: 1;
+  background: linear-gradient(170deg, var(--komaA), var(--komaB)); clip-path: polygon(50% 0, 86% 13%, 100% 100%, 0 100%, 14% 13%);
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.25)); pointer-events: none; }
+.koma.rot { transform: rotate(180deg); padding-top: 0; padding-bottom: 10%; }
+.koma.pro { color: var(--komaPro); }
+.koma.small { font-size: calc(var(--board) / 9 * .4); }
+
+.hand { width: calc(var(--board) + 20px); box-sizing: border-box; min-height: calc(var(--board) / 9 + 10px); display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 4px 10px; }
+.handWho { font-size: 12px; color: var(--muted); margin-right: 6px; }
+.handNone { font-size: 12px; color: var(--muted); }
+.handPc { position: relative; width: calc(var(--board) / 9); height: calc(var(--board) / 9); display: grid; place-items: center; border: 0; background: transparent; padding: 0; border-radius: 8px; cursor: pointer; }
+button.handPc.sel { background: rgba(44, 122, 77, .3); }
+.handPc.ansTo { box-shadow: inset 0 0 0 3px var(--bad); }
+.handPc i { position: absolute; right: -2px; bottom: -2px; font-style: normal; font-size: 12px; font-weight: 700; background: var(--ink); color: var(--bg); border-radius: 8px; padding: 0 5px; }
+
+.side2 { width: calc(var(--board) + 20px); display: flex; flex-direction: column; gap: 10px; }
+#msg { border-radius: 12px; padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-left-width: 5px; min-height: 84px; box-sizing: border-box; }
+#msg[data-tone="good"] { border-left-color: var(--good); }
+#msg[data-tone="ok"] { border-left-color: var(--warn); background: var(--warnSoft); }
+#msg[data-tone="opp"] { border-left-color: var(--ink); }
+#msg[data-tone="info"] { border-left-color: var(--ai); }
+#msgHead { font-family: var(--f-koma); font-weight: 800; font-size: 17px; margin: 0; }
+#msg[data-tone="good"] #msgHead { color: var(--good); }
+#msg[data-tone="ok"] #msgHead { color: var(--warn); }
+#msgText { margin: 2px 0 0; font-size: 14px; }
+.kifuWrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+#kifu { list-style: none; margin: 0; padding: 2px 0 6px; display: flex; gap: 6px; font-size: 13px; white-space: nowrap; }
+#kifu li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; }
+#kifu li.cur { border-color: var(--ai); color: var(--ai); font-weight: 700; }
+#kifu .n { color: var(--muted); font-size: 11px; margin-right: 4px; font-variant-numeric: tabular-nums; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 11px 16px; font-size: 15px; font-weight: 700; cursor: pointer; }
+.btn.primary { background: var(--ai); color: var(--surface); border-color: var(--ai); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn.danger { color: var(--bad); }
+
+@media (min-width: 900px) and (orientation: landscape) {
+  :root { --board: min(calc(100vh - 170px), 640px); }
+  .wrap.wide { max-width: 1180px; }
+  .playGrid { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "bar bar" "prog prog" "hopp side" "board side" "hme side"; align-items: start; column-gap: 28px; row-gap: 10px; justify-content: center; }
+  .bar { grid-area: bar; } .prog { grid-area: prog; } #handOpp { grid-area: hopp; } .boardWrap { grid-area: board; } #handMe { grid-area: hme; }
+  .side2 { grid-area: side; width: auto; max-width: 420px; }
+  #msg { min-height: 160px; }
+}
+
+/* ---------- シート ---------- */
+#scrim { position: fixed; inset: 0; background: rgba(10, 14, 12, .35); z-index: 20; }
+#sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 21; background: var(--surface); border-radius: 18px 18px 0 0; border-top: 5px solid var(--ai);
+  padding: 18px max(20px, env(safe-area-inset-right, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px));
+  max-height: 62vh; overflow-y: auto; box-shadow: 0 -10px 30px -10px rgba(0,0,0,.35); animation: up .22s ease-out; }
+@media (min-width: 700px) { #sheet { left: 50%; right: auto; width: 560px; transform: translateX(-50%); bottom: 20px; border-radius: 18px; } }
+@keyframes up { from { translate: 0 30px; opacity: 0; } }
+#sheet[data-tone="bad"] { border-top-color: var(--bad); }
+#sheet[data-tone="good"] { border-top-color: var(--good); }
+#sheetTitle { font-size: 22px; }
+#sheet[data-tone="bad"] #sheetTitle { color: var(--bad); }
+#sheet[data-tone="good"] #sheetTitle { color: var(--good); }
+#sheetLead { font-family: var(--f-koma); font-weight: 700; font-size: 18px; margin: 6px 0 0; }
+#sheetBody { margin: 8px 0 0; font-size: 15px; }
+#sheetFoot { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+#sheetBtns { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<div class="wrap" id="home">
+  <header class="hero">
+    <h1>序盤30手道場<small>「こう来たらこう」を30手目まで体に入れる</small></h1>
+    <div class="dueBox"><b id="dueCount">0</b>復習待ちの局面</div>
+  </header>
+  <button class="auto" id="btnAuto">
+    <span class="k">歩</span>
+    <span><b>おまかせで始める</b><span class="s" id="autoSub"></span></span>
+    <span class="arrow" aria-hidden="true">›</span>
+  </button>
+  <div class="chips" role="group" aria-label="分類">
+    <button class="chip" data-f="all">すべて</button>
+    <button class="chip" data-f="furi">振り飛車</button>
+    <button class="chip" data-f="ibisha">居飛車</button>
+    <button class="chip" data-f="hame">ハメ手対策</button>
+    <button class="chip" data-f="yose">寄せの型</button>
+  </div>
+  <div id="courses"></div>
+  <p class="soon">追加予定：藤井システム、早石田、中飛車。手順を確認しながら増やしていきます。</p>
+  <details>
+    <summary>設定と記録のバックアップ</summary>
+    <div class="set">
+      <label for="optRestart">間違えたら
+        <select id="optRestart">
+          <option value="start">最初からやり直す</option>
+          <option value="near">間違えた4手前から</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="optSay"> 相手の手の解説を表示する</label>
+      <p class="hint">記録はこの端末のブラウザに保存されます。iPhoneとiPadで続きをやるときは、書き出した文字をもう一方で読み込んでください。</p>
+      <div class="row"><button class="btn" id="btnExport">記録を書き出す（コピー）</button></div>
+      <textarea id="exportBox" readonly hidden aria-label="書き出した記録"></textarea>
+      <textarea id="importBox" placeholder="書き出した記録をここに貼り付け" aria-label="読み込む記録"></textarea>
+      <div class="row"><button class="btn" id="btnImport">記録を読み込む</button><button class="btn danger" id="btnReset">記録を消去</button></div>
+      <div class="row" id="resetConfirm" hidden><span>すべての記録を消します。よろしいですか？</span><button class="btn danger" id="btnResetYes">消去する</button><button class="btn" id="btnResetNo">やめる</button></div>
+      <p class="hint" id="backupNote" aria-live="polite"></p>
+    </div>
+  </details>
+</div>
+
+<div class="wrap wide" id="play" hidden>
+  <div class="playGrid">
+    <div class="bar"><button class="iconBtn" id="btnHome">‹ ホーム</button><div id="matchup"></div></div>
+    <div class="prog"><span><b id="plyNum">0</b> / <span id="plyMax">30</span>手</span><span class="track"><span id="plyBar"></span></span><span id="turnNote"></span></div>
+    <div class="hand" id="handOpp"></div>
+    <div class="boardWrap"><div id="fileLabels"></div><div id="board" role="grid" aria-label="将棋盤"></div><div id="rankLabels"></div></div>
+    <div class="hand" id="handMe"></div>
+    <div class="side2">
+      <div id="msg" data-tone="info" aria-live="polite"><p id="msgHead"></p><p id="msgText"></p></div>
+      <div class="actions"><button class="btn" id="btnAnswer">わからない（答えを見る）</button><button class="btn" id="btnRestart">最初から</button></div>
+      <div class="kifuWrap"><ol id="kifu"></ol></div>
+    </div>
+  </div>
+</div>
+
+<div id="scrim" hidden></div>
+<div id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <h2 id="sheetTitle"></h2>
+  <p id="sheetLead"></p>
+  <p id="sheetBody"></p>
+  <p id="sheetFoot"></p>
+  <div id="sheetBtns"></div>
+</div>
+
+<script>
+// ===== 将棋エンジン（合法手生成は「疑似合法手」：王手放置チェックは省略） =====
+const Shogi = (() => {
+  const FILES = '123456789';
+  const RANKS = 'abcdefghi';
+  const KANJI_RANK = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  const ZEN = ['', '１', '２', '３', '４', '５', '６', '７', '８', '９'];
+  const NAME = { P: '歩', L: '香', N: '桂', S: '銀', G: '金', B: '角', R: '飛', K: '玉' };
+  const PNAME = { P: 'と', L: '成香', N: '成桂', S: '成銀', B: '馬', R: '龍' };
+  const GLYPH = { P: '歩', L: '香', N: '桂', S: '銀', G: '金', B: '角', R: '飛', K: '玉' };
+  const PGLYPH = { P: 'と', L: '杏', N: '圭', S: '全', B: '馬', R: '龍' };
+  const HAND_ORDER = ['R', 'B', 'G', 'S', 'N', 'L', 'P'];
+
+  const sq = (f, r) => f * 10 + r; // f,r: 1..9
+  const sqF = s => Math.floor(s / 10);
+  const sqR = s => s % 10;
+
+  function initial() {
+    const b = {};
+    const back = ['L', 'N', 'S', 'G', 'K', 'G', 'S', 'N', 'L'];
+    for (let f = 1; f <= 9; f++) {
+      b[sq(f, 1)] = { t: back[9 - f], o: 'w', p: false };
+      b[sq(f, 9)] = { t: back[9 - f], o: 'b', p: false };
+      b[sq(f, 3)] = { t: 'P', o: 'w', p: false };
+      b[sq(f, 7)] = { t: 'P', o: 'b', p: false };
+    }
+    b[sq(8, 2)] = { t: 'R', o: 'w', p: false };
+    b[sq(2, 2)] = { t: 'B', o: 'w', p: false };
+    b[sq(2, 8)] = { t: 'R', o: 'b', p: false };
+    b[sq(8, 8)] = { t: 'B', o: 'b', p: false };
+    const emptyHand = () => ({ R: 0, B: 0, G: 0, S: 0, N: 0, L: 0, P: 0 });
+    return { board: b, hand: { b: emptyHand(), w: emptyHand() }, turn: 'b' };
+  }
+
+  function clone(pos) {
+    const board = {};
+    for (const k in pos.board) board[k] = { ...pos.board[k] };
+    return { board, hand: { b: { ...pos.hand.b }, w: { ...pos.hand.w } }, turn: pos.turn };
+  }
+
+  const GOLD = [[0, -1], [1, -1], [-1, -1], [1, 0], [-1, 0], [0, 1]];
+  const SILVER = [[0, -1], [1, -1], [-1, -1], [1, 1], [-1, 1]];
+  const KING = [[0, -1], [1, -1], [-1, -1], [1, 0], [-1, 0], [0, 1], [1, 1], [-1, 1]];
+  const DIAG = [[1, 1], [1, -1], [-1, 1], [-1, -1]];
+  const ORTH = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+
+  function pieceRules(pc) {
+    // returns {steps:[[df,dr]], slides:[[df,dr]]} from 先手 perspective
+    if (pc.p) {
+      if (pc.t === 'B') return { steps: ORTH, slides: DIAG };
+      if (pc.t === 'R') return { steps: DIAG, slides: ORTH };
+      return { steps: GOLD, slides: [] };
+    }
+    switch (pc.t) {
+      case 'P': return { steps: [[0, -1]], slides: [] };
+      case 'L': return { steps: [], slides: [[0, -1]] };
+      case 'N': return { steps: [[1, -2], [-1, -2]], slides: [] };
+      case 'S': return { steps: SILVER, slides: [] };
+      case 'G': return { steps: GOLD, slides: [] };
+      case 'K': return { steps: KING, slides: [] };
+      case 'B': return { steps: [], slides: DIAG };
+      case 'R': return { steps: [], slides: ORTH };
+    }
+  }
+
+  const inZone = (side, r) => side === 'b' ? r <= 3 : r >= 7;
+  function mustPromote(pc, side, r) {
+    if (pc.t === 'P' || pc.t === 'L') return side === 'b' ? r === 1 : r === 9;
+    if (pc.t === 'N') return side === 'b' ? r <= 2 : r >= 8;
+    return false;
+  }
+  const promotable = pc => !pc.p && pc.t !== 'G' && pc.t !== 'K';
+
+  // 駒の利き先（味方駒は除外）
+  function targets(pos, from) {
+    const pc = pos.board[from];
+    if (!pc) return [];
+    const dir = pc.o === 'b' ? 1 : -1;
+    const f0 = sqF(from), r0 = sqR(from);
+    const out = [];
+    const rules = pieceRules(pc);
+    for (const [df, dr] of rules.steps) {
+      const f = f0 + df * dir, r = r0 + dr * dir;
+      if (f < 1 || f > 9 || r < 1 || r > 9) continue;
+      const t = pos.board[sq(f, r)];
+      if (t && t.o === pc.o) continue;
+      out.push(sq(f, r));
+    }
+    for (const [df, dr] of rules.slides) {
+      let f = f0 + df * dir, r = r0 + dr * dir;
+      while (f >= 1 && f <= 9 && r >= 1 && r <= 9) {
+        const t = pos.board[sq(f, r)];
+        if (t && t.o === pc.o) break;
+        out.push(sq(f, r));
+        if (t) break;
+        f += df * dir; r += dr * dir;
+      }
+    }
+    return out;
+  }
+
+  // 盤上の駒の移動手 [{usi, from, to, promo}]
+  function movesFrom(pos, from) {
+    const pc = pos.board[from];
+    if (!pc || pc.o !== pos.turn) return [];
+    const res = [];
+    for (const to of targets(pos, from)) {
+      const r = sqR(to);
+      const canP = promotable(pc) && (inZone(pc.o, sqR(from)) || inZone(pc.o, r));
+      const base = toUsiSq(from) + toUsiSq(to);
+      if (!mustPromote(pc, pc.o, r)) res.push({ usi: base, from, to, promo: false });
+      if (canP) res.push({ usi: base + '+', from, to, promo: true });
+    }
+    return res;
+  }
+
+  function dropTargets(pos, t) {
+    const side = pos.turn;
+    if (!pos.hand[side][t]) return [];
+    const out = [];
+    for (let f = 1; f <= 9; f++) {
+      if (t === 'P') {
+        let nifu = false;
+        for (let r = 1; r <= 9; r++) {
+          const x = pos.board[sq(f, r)];
+          if (x && x.o === side && x.t === 'P' && !x.p) nifu = true;
+        }
+        if (nifu) continue;
+      }
+      for (let r = 1; r <= 9; r++) {
+        if (pos.board[sq(f, r)]) continue;
+        if (mustPromote({ t, p: false }, side, r)) continue;
+        out.push(sq(f, r));
+      }
+    }
+    return out;
+  }
+
+  function allMoves(pos) {
+    const res = [];
+    for (const k in pos.board) res.push(...movesFrom(pos, +k));
+    for (const t of HAND_ORDER) for (const to of dropTargets(pos, t)) res.push({ usi: t + '*' + toUsiSq(to), drop: t, to });
+    return res;
+  }
+
+  const toUsiSq = s => FILES[sqF(s) - 1] + RANKS[sqR(s) - 1];
+  const fromUsiSq = str => sq(+str[0], RANKS.indexOf(str[1]) + 1);
+
+  function parse(usi) {
+    if (usi[1] === '*') return { drop: usi[0], to: fromUsiSq(usi.slice(2, 4)) };
+    return { from: fromUsiSq(usi.slice(0, 2)), to: fromUsiSq(usi.slice(2, 4)), promo: usi[4] === '+' };
+  }
+
+  function isLegal(pos, usi) {
+    return allMoves(pos).some(m => m.usi === usi);
+  }
+
+  function apply(pos, usi) {
+    const n = clone(pos);
+    const m = parse(usi);
+    const side = pos.turn;
+    if (m.drop) {
+      n.hand[side][m.drop]--;
+      n.board[m.to] = { t: m.drop, o: side, p: false };
+    } else {
+      const pc = n.board[m.from];
+      const cap = n.board[m.to];
+      if (cap) n.hand[side][cap.t]++;
+      delete n.board[m.from];
+      n.board[m.to] = { t: pc.t, o: side, p: pc.p || m.promo };
+    }
+    n.turn = side === 'b' ? 'w' : 'b';
+    return n;
+  }
+
+
+  // ---- SFEN（途中局面） ----
+  function fromSfen(sfen) {
+    const [bd, turn, hand] = sfen.trim().split(/\s+/);
+    const pos = initial();
+    pos.board = {};
+    const rows = bd.split('/');
+    rows.forEach((row, ri) => {
+      let f = 9, promo = false;
+      for (const ch of row) {
+        if (ch === '+') { promo = true; continue; }
+        if (/\d/.test(ch)) { f -= +ch; continue; }
+        const up = ch.toUpperCase();
+        pos.board[sq(f, ri + 1)] = { t: up, o: ch === up ? 'b' : 'w', p: promo };
+        promo = false; f--;
+      }
+    });
+    pos.turn = turn === 'w' ? 'w' : 'b';
+    for (const side of ['b', 'w']) for (const t of HAND_ORDER) pos.hand[side][t] = 0;
+    if (hand && hand !== '-') {
+      let n = '';
+      for (const ch of hand) {
+        if (/\d/.test(ch)) { n += ch; continue; }
+        const up = ch.toUpperCase();
+        pos.hand[ch === up ? 'b' : 'w'][up] += n ? +n : 1; n = '';
+      }
+    }
+    return pos;
+  }
+  function kingSq(pos, side) { for (const k in pos.board) { const x = pos.board[k]; if (x.t === 'K' && x.o === side) return +k; } return null; }
+  function attacked(pos, s, by) {
+    for (const k in pos.board) { const x = pos.board[k]; if (x.o === by && targets(pos, +k).includes(s)) return true; }
+    return false;
+  }
+  function inCheck(pos, side) { const k = kingSq(pos, side); return k != null && attacked(pos, k, side === 'b' ? 'w' : 'b'); }
+  // 本当の合法手（王手放置・自殺手を除く。打ち歩詰めは isMate 側で判定）
+  function legalMoves(pos) {
+    const side = pos.turn;
+    return allMoves(pos).filter(m => !inCheck(apply(pos, m.usi), side));
+  }
+  function isMate(pos) { return inCheck(pos, pos.turn) && legalMoves(pos).length === 0; }
+
+  function pieceName(pc) { return pc.p ? PNAME[pc.t] : NAME[pc.t]; }
+  function glyph(pc) {
+    if (pc.p) return PGLYPH[pc.t];
+    if (pc.t === 'K') return pc.o === 'w' ? '王' : '玉';
+    return GLYPH[pc.t];
+  }
+
+  // 棋譜表記 ▲7六歩 など
+  function kifu(pos, usi, prevTo) {
+    const m = parse(usi);
+    const side = pos.turn;
+    const mark = side === 'b' ? '▲' : '△';
+    const dest = (prevTo === m.to) ? '同' : ZEN[sqF(m.to)] + KANJI_RANK[sqR(m.to)];
+    if (m.drop) {
+      // 盤上の同種駒がそこへ行けるなら「打」
+      let amb = false;
+      for (const k in pos.board) {
+        const x = pos.board[k];
+        if (x.o === side && x.t === m.drop && !x.p && targets(pos, +k).includes(m.to)) amb = true;
+      }
+      return mark + dest + NAME[m.drop] + (amb ? '打' : '');
+    }
+    const pc = pos.board[m.from];
+    let suffix = '';
+    const others = [];
+    for (const k in pos.board) {
+      const x = pos.board[k];
+      if (+k !== m.from && x.o === side && x.t === pc.t && x.p === pc.p && targets(pos, +k).includes(m.to)) others.push(+k);
+    }
+    if (others.length) {
+      const fwd = side === 'b' ? -1 : 1;
+      const vert = s => {
+        const dr = (sqR(m.to) - sqR(s)) * fwd;
+        return dr > 0 ? '上' : dr < 0 ? '引' : '寄';
+      };
+      const mine = vert(m.from);
+      if (others.every(o => vert(o) !== mine)) suffix = mine;
+      else {
+        // 右左：先手から見て右 = 筋の数字が小さい
+        const rightness = s => side === 'b' ? -sqF(s) : sqF(s);
+        const r0 = rightness(m.from);
+        suffix = others.every(o => rightness(o) < r0) ? '右' : others.every(o => rightness(o) > r0) ? '左' : '';
+        if (!suffix) suffix = mine;
+      }
+    }
+    let pr = '';
+    if (m.promo) pr = '成';
+    else if (promotable(pc) && (inZone(side, sqR(m.from)) || inZone(side, sqR(m.to)))) pr = '不成';
+    return mark + dest + (dest === '同' ? '' : '') + pieceName(pc) + suffix + pr;
+  }
+
+  return { fromSfen, inCheck, legalMoves, isMate, kingSq, attacked, targets, initial, clone, apply, isLegal, allMoves, movesFrom, dropTargets, parse, kifu, glyph, sq, sqF, sqR, toUsiSq, HAND_ORDER, NAME, mustPromote, promotable, inZone };
+})();
+if (typeof module !== 'undefined') module.exports = Shogi;
+
+const BOGIN_BASE = [
+          ['2g2f', { why: '▲2六歩。飛車先の歩を伸ばす。棒銀は飛車と銀の2枚で2筋を破る戦法なので、まず飛車先から。' }],
+          ['8c8d', { say: '△8四歩：後手も飛車先を伸ばしてきた。' }],
+          ['2f2e', { why: '▲2五歩。さらに伸ばして、次の▲2四歩を見せる。' }],
+          ['8d8e', { say: '△8五歩：後手も同じ狙い。次に△8六歩。' }],
+          ['6i7h', { why: '▲7八金。△8六歩からの飛車先交換に備えて、角の頭（8七）を守る。これを忘れると8筋を破られる。' }],
+          ['4a3b', { say: '△3二金：2三の地点を守った。' }],
+          ['2e2d', { why: '▲2四歩。飛車先の歩交換。歩を1枚持ち駒にして、飛車を使いやすくする。' }],
+          ['2c2d', { say: '△同歩' }],
+          ['2h2d', { why: '▲同飛。取り返して歩交換が完成。' }],
+          ['P*2c', { say: '△2三歩：飛車の侵入を止めた。' }],
+          ['2d2h', { why: '▲2八飛。飛車を元の位置に引く。2八の飛車が、これから上がっていく銀を後ろから支える。', ok: ['2d2f'], okWhy: '▲2六飛（浮き飛車）もよく指される形です。このコースは棒銀に合わせて▲2八飛で進めます。' }],
+          ['8e8f', { say: '△8六歩：後手も歩交換に来た。' }],
+          ['8g8f', { why: '▲同歩。取る一手。' }],
+          ['8b8f', { say: '△同飛' }],
+          ['P*8g', { why: '▲8七歩。歩を打って飛車の侵入を防ぐ。7八の金がこの歩を支えている。' }],
+          ['8f8b', { say: '△8二飛：飛車を引いた。' }],
+          ['3i3h', { why: '▲3八銀。棒銀のスタート。右の銀を3八→2七→2六→1五と、飛車の前へ繰り出していく。' }],
+          ['7a7b', { say: '△7二銀' }],
+          ['3h2g', { why: '▲2七銀。銀を飛車の真上へ。「棒」のように一直線に進むので棒銀と呼ばれる。' }],
+          ['3c3d', { say: '△3四歩：角道を開けた。' }],
+          ['2g2f', { why: '▲2六銀。さらに前進。次は▲1五銀から2筋を狙う。', ok: ['2g3f'], okWhy: '▲3六銀から攻める形もありますが、このコースは▲2六銀〜▲1五銀の基本形で練習します。' }],
+          ['3a4b', { say: '△4二銀' }],
+          ['2f1e', { why: '▲1五銀。銀が1五まで来れば、▲2四歩で2筋を攻める準備が完了。' }],
+          ['4b3c', { say: '△3三銀：2四の地点を守りに来た。' }],
+          ['P*2d', { why: '▲2四歩。持ち駒の歩で突っかける。取られても銀・飛車で取り返せるので、2四に「銀・飛車・歩」の3枚が集中している。' }],
+          ['2c2d', { say: '△同歩' }],
+          ['1e2d', { why: '▲同銀。銀で取り返す。' }],
+          ['3c2d', { say: '△同銀' }],
+          ['2h2d', { why: '▲同飛。銀と銀を交換して、飛車が2筋に出られた。これが「棒銀成功」の基本形。持ち駒の銀は、後で相手陣に打ち込んで攻めに使える。' }],
+          ['P*2c', { say: '△2三歩：飛車に当ててきた。' }],
+          ['2d2h', { why: '▲2八飛。飛車を引いて一段落。銀を持ち駒にした先手が攻めの主導権を握っている。ここからが中盤の攻め合い。', ok: ['2d2f'], okWhy: '▲2六飛も指せます。本線は安全な▲2八飛。' }],
+];
+// ===== 定跡データ =====
+// 各ライン: moves は USI 表記。あなたの手番の手は [usi, {why, ok:[許容手], okWhy}]、相手の手は [usi, {say}] または usi。
+// 同じコース内のラインは共通の手順で合流し、相手の手で分岐する（「こう来たらこう」）。
+const COURSES = [
+  {
+    id: 'shiken-anaguma',
+    me: 'b', myName: '四間飛車＋美濃', tags: ['furi'], level: '基本',
+    lines: [
+      {
+        opp: '居飛車穴熊',
+        moves: [
+          ['7g7f', { why: '▲7六歩。角道を開ける最初の一手。振り飛車でもまずはここから。' }],
+          ['3c3d', { say: '△3四歩：後手も角道を開けた。' }],
+          ['6g6f', { why: '▲6六歩で角道を止める。四間飛車は角交換させないのが基本形。開けたままだと角交換から角を打ち込まれる筋が生まれ、序盤から荒れる。' }],
+          ['8c8d', { say: '△8四歩：居飛車でいく意思表示。' }],
+          ['2h6h', { why: '▲6八飛で四間飛車。飛車は玉を囲う前に振っておく。後から振ろうとすると、右側へ動いた玉の通り道とぶつかる。' }],
+          ['7a6b', { say: '△6二銀：急戦にも持久戦にも行ける自然な一手。' }],
+          ['5i4h', { why: '▲4八玉。飛車がいなくなった右側へ玉を移動して、美濃囲いを目指す。', ok: ['3i3h'], okWhy: '▲3八銀を先にしても組めます。本線は玉から動かします。' }],
+          ['5a4b', { say: '△4二玉：後手も囲いへ。' }],
+          ['4h3h', { why: '▲3八玉。玉は2八を目指して一直線に進む。' }],
+          ['4b3b', { say: '△3二玉' }],
+          ['3h2h', { why: '▲2八玉。玉が美濃囲いの定位置に着いた。' }],
+          ['2b3c', { say: '△3三角：角を上げて2二を空けた。穴熊に潜る合図。' }],
+          ['3i3h', { why: '▲3八銀。美濃囲いの銀。玉の頭を守る大事な駒。' }],
+          ['3b2b', { say: '△2二玉' }],
+          ['6i5h', { why: '▲5八金左。左の金を玉に寄せて、基本の美濃囲いが完成。', ok: ['1g1f'], okWhy: '▲1六歩も指せますが、まず美濃囲いを完成させるのが本線です。' }],
+          ['1a1b', { say: '△1二香：香を上げて、玉が潜る穴を作った。穴熊確定。' }],
+          ['1g1f', { why: '▲1六歩。端を一つ伸ばしておき、将来の端攻めや玉の逃げ道に備える。', ok: ['4g4f'], okWhy: '▲4六歩から高美濃を急ぐのも自然です。本線は先に端歩。' }],
+          ['2b1a', { say: '△1一玉：穴熊に潜った。' }],
+          ['4g4f', { why: '▲4六歩。次の▲4七金で「高美濃」にする準備。穴熊相手は長い戦いになるので、囲いを固める手の価値が大きい。', ok: ['7i7h'], okWhy: '▲7八銀も自然です。本線は先に高美濃へ。' }],
+          ['3a2b', { say: '△2二銀：穴熊にフタをした。' }],
+          ['5h4g', { why: '▲4七金で高美濃。玉の上部が厚くなり、穴熊の遠くからの攻めにも耐えやすい。' }],
+          ['4a3a', { say: '△3一金：穴熊をさらに固める。' }],
+          ['7i7h', { why: '▲7八銀。遊んでいた左の銀を使い始める。次に▲6七銀で飛車の周りを補強。', ok: ['3g3f'], okWhy: '▲3六歩も指せます。本線は左銀の活用から。' }],
+          ['6a5b', { say: '△5二金' }],
+          ['7h6g', { why: '▲6七銀。飛車の上を守る四間飛車の好形。△6五歩などの攻めに備える。' }],
+          ['5c5d', { say: '△5四歩' }],
+          ['3g3f', { why: '▲3六歩。次の▲3七桂の通り道を開ける。', ok: ['9g9f'], okWhy: '▲9六歩の端歩も指せます。本線は桂を使う準備。' }],
+          ['6b5c', { say: '△5三銀：後手は銀を中央へ。' }],
+          ['2i3g', { why: '▲3七桂。桂を跳ねて攻めの準備が完了。いずれ▲4五歩や▲4五桂で仕掛けられる形。' }],
+          ['9c9d', { say: '△9四歩：ここで30手。お互いの陣形がほぼ完成。ここからが中盤の勝負です。' }],
+        ],
+      },
+      {
+        opp: '居飛車（△8四歩型）',
+        moves: [
+          ['7g7f', { why: '▲7六歩。角道を開ける最初の一手。' }],
+          ['8c8d', { say: '△8四歩：角道を開けずに飛車先を突いてきた。' }],
+          ['6g6f', { why: '▲6六歩。四間飛車に向けて角道を止めておく。', ok: ['2h6h'], okWhy: '先に▲6八飛でも構いません。本線は▲6六歩から。' }],
+          ['8d8e', { say: '△8五歩：飛車先を伸ばしてきた。次に△8六歩からの歩交換が狙い。' }],
+          ['8h7g', { why: '▲7七角。△8六歩▲同歩△同飛と飛車先を破られないよう、角で8筋を受ける必須の一手。他の手だと8筋を突破されてしまう。' }],
+          ['3c3d', { say: '△3四歩' }],
+          ['2h6h', { why: '▲6八飛で四間飛車。' }],
+          ['7a6b', { say: '△6二銀' }],
+          ['5i4h', { why: '▲4八玉。玉を右側へ。' }],
+          ['5a4b', { say: '△4二玉' }],
+          ['4h3h', { why: '▲3八玉' }],
+          ['4b3b', { say: '△3二玉' }],
+          ['3h2h', { why: '▲2八玉。ここからは本線と同じ要領で▲3八銀・▲5八金左と美濃囲いを完成させればOK。' }],
+        ],
+      },
+    ],
+  },
+  {
+    id: 'anaguma-vs-shiken',
+    me: 'b', myName: '居飛車穴熊', tags: ['ibisha'], level: '基本',
+    lines: [
+      {
+        opp: '四間飛車',
+        moves: [
+          ['7g7f', { why: '▲7六歩。角道を開ける。' }],
+          ['3c3d', { say: '△3四歩' }],
+          ['2g2f', { why: '▲2六歩。居飛車の意思表示。飛車先の歩を伸ばすのが居飛車の基本。' }],
+          ['4c4d', { say: '△4四歩：角道を止めた。振り飛車の可能性が高い。' }],
+          ['3i4h', { why: '▲4八銀。右の銀を上げておく。2筋の攻めにも、急戦にも、穴熊にも使える万能の一手。', ok: ['5i6h'], okWhy: '先に▲6八玉も指せます。本線は▲4八銀から。' }],
+          ['8b4b', { say: '△4二飛：四間飛車。' }],
+          ['5i6h', { why: '▲6八玉。振り飛車が相手なら、玉は飛車と反対の左側へ囲うのが鉄則。' }],
+          ['5a6b', { say: '△6二玉' }],
+          ['6h7h', { why: '▲7八玉' }],
+          ['6b7b', { say: '△7二玉' }],
+          ['5g5f', { why: '▲5六歩。中央を突いておくと玉の周りが広くなり、△5五歩からの反撃も防ぎやすい。', ok: ['2f2e'], okWhy: '▲2五歩も指せます。本線は先に▲5六歩。' }],
+          ['7b8b', { say: '△8二玉：美濃囲いへ。' }],
+          ['2f2e', { why: '▲2五歩。飛車先を伸ばして△3三角を強制し、後手の駒組みを制限する。', ok: ['8h7g'], okWhy: '先に▲7七角も指せます。本線は▲2五歩。' }],
+          ['2b3c', { say: '△3三角：2筋を受けた。' }],
+          ['8h7g', { why: '▲7七角。穴熊は角を動かしてから玉が8八に入る。角が8八にいるままでは穴熊に組めない。' }],
+          ['7a7b', { say: '△7二銀' }],
+          ['9i9h', { why: '▲9八香。いよいよ穴熊。香を上げて、玉が入る9九を空ける。' }],
+          ['9c9d', { say: '△9四歩' }],
+          ['7h8h', { why: '▲8八玉' }],
+          ['3a3b', { say: '△3二銀' }],
+          ['8h9i', { why: '▲9九玉。穴熊に潜った。' }],
+          ['6a5b', { say: '△5二金右' }],
+          ['7i8h', { why: '▲8八銀。穴熊のフタ。これで玉の真上が埋まる。' }],
+          ['5c5d', { say: '△5四歩' }],
+          ['6i7i', { why: '▲7九金。銀の横に金を寄せて穴熊を固める。' }],
+          ['3b4c', { say: '△4三銀' }],
+          ['4i5h', { why: '▲5八金。右の金も中央へ。後で▲6七金と連結させて穴熊を厚くする。', ok: ['1g1f'], okWhy: '▲1六歩も指せます。本線は▲5八金。' }],
+          ['1c1d', { say: '△1四歩' }],
+          ['6g6f', { why: '▲6六歩。次の▲6七金で、さらに固い穴熊を目指せる形。', ok: ['1g1f'], okWhy: '▲1六歩も指せます。本線は▲6六歩。' }],
+          ['6c6d', { say: '△6四歩：ここで30手。穴熊完成目前。ここからが中盤の勝負です。' }],
+        ],
+      },
+    ],
+  },
+  {
+    id: 'bogin',
+    me: 'b', myName: '原始棒銀', tags: ['ibisha'], level: '基本',
+    lines: [
+      {
+        opp: '居飛車（相掛かり）',
+        moves: BOGIN_BASE.concat([
+          ['5a6b', { say: '△6二玉：後手は玉を囲いに行った。2筋の守りは2三の歩1枚だけ。' }],
+          ['P*2d', { why: '▲2四歩。持ち駒の歩でもう一度突っかける。2筋の守りが歩1枚なら、何度でも歩交換できる。' }],
+          ['2c2d', { say: '△同歩' }],
+          ['2h2d', { why: '▲同飛。' }],
+          ['P*2c', { say: '△2三歩：また歩で受けた。' }],
+          ['2d3d', { why: '▲3四飛。横に動いて3四の歩をタダで取る（横歩取り）。次の▲3二飛成で金を取る狙いもある。', ok: ['2d2h'], okWhy: '▲2八飛も安全ですが、ここは歩を取れるチャンスです。' }],
+          ['2b3c', { say: '△3三角：3筋を受けた。' }],
+          ['3d3f', { why: '▲3六飛。飛車を安全な位置に引く。取った歩の分、先手が1歩得。攻めが一段落したら次は囲い。', ok: ['3d3e'], okWhy: '▲3五飛も指せます。本線は▲3六飛。' }],
+          ['6b7a', { say: '△7一玉' }],
+          ['5i6h', { why: '▲6八玉。攻めが一段落したら玉を囲う。居飛車同士なので玉は左側へ。', ok: ['1g1f', '4i5h'], okWhy: '囲いの手の順番は入れ替えても大丈夫です。本線は玉から。' }],
+          ['6a5b', { say: '△5二金' }],
+          ['7g7f', { why: '▲7六歩。角道を開けて、角を攻めに参加させる準備。', ok: ['4i5h', '1g1f'], okWhy: 'その手も自然です。本線は先に角道を開けます。' }],
+          ['4c4d', { say: '△4四歩：角道を止めた。' }],
+          ['4i5h', { why: '▲5八金。玉の周りを固める。1歩得で陣形もまとまり、先手が指しやすい中盤戦へ。' }],
+        ]),
+      },
+      {
+        opp: '居飛車（△3三銀打で受ける）',
+        moves: BOGIN_BASE.concat([
+          ['S*3c', { say: '△3三銀（打）：持ち駒の銀を打って2筋をがっちり受けた。こうなると2筋はすぐには破れない。' }],
+          ['7g7f', { why: '▲7六歩。2筋が固くなったら無理攻めせず、角道を開けて攻めに使える駒を増やす。攻めが止まったら駒組みに戻るのが大事。', ok: ['5i6h', '1g1f'], okWhy: 'その手も自然です。本線は先に角道を開けます。' }],
+          ['4c4d', { say: '△4四歩：角道を止めた。' }],
+          ['5i6h', { why: '▲6八玉。玉を囲いに向かわせる。', ok: ['4i5h', '1g1f'], okWhy: '囲いの手の順番は入れ替えても大丈夫です。本線は玉から。' }],
+          ['5a6b', { say: '△6二玉' }],
+          ['4i5h', { why: '▲5八金。玉の周りを固める。', ok: ['1g1f'], okWhy: '▲1六歩も指せます。本線は▲5八金。' }],
+          ['6b7a', { say: '△7一玉' }],
+          ['1g1f', { why: '▲1六歩。端の歩を伸ばして、将来の端攻めの足場を作る。' }],
+          ['6a5b', { say: '△5二金' }],
+          ['1f1e', { why: '▲1五歩。端の位を取る。ここから▲2四歩で2筋を再び攻めるか、端から攻めるかを組み合わせていく。ここからが中盤の勝負。' }],
+        ]),
+      },
+    ],
+  },
+  {
+    id: 'pacman-ignore',
+    me: 'b', myName: '居飛車', tags: ['hame'], level: '基本',
+    lines: [
+      {
+        opp: 'パックマン（乗らない）',
+        moves: [
+          ['7g7f', { why: '▲7六歩。角道を開ける。' }],
+          ['4c4d', { say: '△4四歩：パックマン！ 角でタダで取れるように見える歩。' }],
+          ['2g2f', { why: '▲2六歩。挑発に乗らず普通に指せば、後手は角道が止まっただけ。▲4四同角と取るのもプロ的には先手有利だが、△4二飛▲5三角成△3四歩…と激しい変化を正確に覚える必要がある。このコースでは「乗らない」を覚えます（取る変化は別コース）。', ok: ['4g4f'], okWhy: '▲4六歩も「乗らない」推奨手です。本線は▲2六歩で進めます。' }],
+          ['8b4b', { say: '△4二飛' }],
+          ['2f2e', { why: '▲2五歩。飛車先を伸ばして、後手に受けを強制する。' }],
+          ['3a3b', { say: '△3二銀：2筋を受けた。' }],
+          ['3i4h', { why: '▲4八銀。右の銀を上げて自陣を整える。' }],
+          ['5a6b', { say: '△6二玉' }],
+          ['5i6h', { why: '▲6八玉。相手は振り飛車の形なので、玉は左へ囲う。' }],
+          ['6b7b', { say: '△7二玉' }],
+          ['6h7h', { why: '▲7八玉' }],
+          ['7b8b', { say: '△8二玉' }],
+          ['5g5f', { why: '▲5六歩。ここからは「居飛車穴熊 vs 四間飛車」と同じ考え方で囲いを進めればOK。' }],
+        ],
+      },
+    ],
+  },
+  {
+    id: 'pacman-refute',
+    me: 'b', myName: '居飛車', tags: ['hame'], level: '上級',
+    lines: [
+      {
+        opp: 'パックマン（咎める）',
+        moves: [
+          ['7g7f', { why: '▲7六歩。角道を開ける。' }],
+          ['4c4d', { say: '△4四歩：パックマン！' }],
+          ['8h4d', { why: '▲4四同角。取るのが理論上の正解（プロ6人の見解も「取って先手有利」で一致）。ただし、この先の手順を正確に指すことが条件。' }],
+          ['8b4b', { say: '△4二飛：角に当ててきた。' }],
+          ['4d5c+', { why: '▲5三角成。ここは必然。逃げながら馬を作る。' }],
+          ['3c3d', { say: '△3四歩：角道を開けて△8八角成〜香取りを狙う。' }],
+          ['5c4b', { why: '▲4二馬。馬と飛車を交換して清算。飛車を手に入れ、2歩得をキープする。', ok: ['7i8h'], okWhy: '単に▲8八銀も有力ですが、△4七飛成からさらに難しくなります。本線は▲4二馬で清算。' }],
+          ['3a4b', { say: '△同銀' }],
+          ['7i8h', { why: '▲8八銀。8八への角成りを受ける。' }],
+          ['B*9e', { say: '△9五角：勝負手の王手！' }],
+          ['R*7g', { why: '▲7七飛（打）。最強の受け。▲6八金や▲4八玉だと飛車の横利きがなくなって△8八角成と銀を取られ、▲7七銀も△7七同角右成…で後手勝勢になる。' }],
+          ['2a3c', { say: '△3三桂：力をためる。次に△4五桂などで7七を狙う。' }],
+          ['5i6h', { why: '▲6八玉。ここで▲9六歩と角を追うのは△7七角成…で後手優勢。慌てず玉を整えるのが正解。2歩得で先手が指しやすい局面。' }],
+        ],
+      },
+    ],
+  },
+  {
+    id: 'onigoroshi',
+    me: 'w', myName: '居飛車（後手）', tags: ['hame'], level: '基本',
+    lines: [
+      {
+        opp: '鬼殺し',
+        moves: [
+          ['7g7f', { say: '▲7六歩' }],
+          ['3c3d', { why: '△3四歩。角道を開ける普通の手。' }],
+          ['8i7g', { say: '▲7七桂：鬼殺し！ いきなり桂を跳ねてきた。' }],
+          ['8c8d', { why: '△8四歩。慌てず自然な手。プロは△6二銀を推す声も多いが、このコースでは△8四歩からの定番の受けを覚える。', ok: ['7a6b'], okWhy: '△6二銀はプロ推奨の好手です。このコースは△8四歩の本線で練習します。' }],
+          ['7g6e', { say: '▲6五桂：7三と5三への桂成りを狙っている。' }],
+          ['6a6b', { why: '△6二金（金上がり）。ここが最大のポイント。△6二銀だと、▲7五歩△6四歩▲2二角成△同銀▲5五角で△3三銀と受けるしかなくなり、先手の攻めが決まってしまう。金なら後で△6三金と上がれて、2二の銀も飛車の横利きで守れる。' }],
+          ['7f7e', { say: '▲7五歩：▲7四歩からの攻めを狙う。' }],
+          ['6c6d', { why: '△6四歩。桂の頭を狙って追い返す準備。ここで手抜きすると▲7四歩△同歩▲2二角成△同銀▲5五角で、飛車と銀の両取りになる。' }],
+          ['8h2b+', { say: '▲2二角成：角交換してきた。' }],
+          ['3a2b', { why: '△同銀。取り返す一手。' }],
+          ['B*5e', { say: '▲5五角：狙いの角打ち。6四の歩と2二の銀に当たっている。' }],
+          ['6b6c', { why: '△6三金！ 6四の歩を支え、5三への桂成りにも金が利く。2二の銀は8二の飛車が横から守っているので取られない。先手に有効な攻めはなく、次の△6五歩で桂を取る狙いが残る。後手優勢。' }],
+        ],
+      },
+    ],
+  },
+
+  // ===== 寄せの型（途中局面から。手順は詰み探索プログラムで「詰む／相手の最善の受けでも詰む」を確認済み） =====
+  {
+    id: 'yose-mino-hara', kind: 'yose', start: 'ln3+R3/1ks1g4/ppp6/3pp4/9/9/PPP6/LSG6/KNG6 b GS',
+    me: 'b', myName: '寄せ', tags: ['yose'], level: '基本', castle: '美濃囲い',
+    lines: [{ opp: '美濃囲い（6一金がはがれた形）', moves: [
+      ['S*7a', { why: '▲7一銀（腹銀）。玉の横腹に銀を打つ、美濃崩しの代表的な手筋。6一の金がいなくなったら7一が急所になる。' }],
+      ['8b9b', { say: '△9二玉：逃げるしかない。' }],
+      ['G*8b', { why: '▲8二金。7一の銀が8二を支えているので取られない。9一の香と9三の歩、つまり自分の駒が逃げ道をふさいでいて詰み。' }],
+    ] }],
+  },
+  {
+    id: 'yose-mino-kaku', kind: 'yose', start: 'ln7/1ks+Rg4/ppp6/3pp4/9/9/PPP6/LSG6/KNG6 b B',
+    me: 'b', myName: '寄せ', tags: ['yose'], level: '基本', castle: '美濃囲い',
+    lines: [{ opp: '美濃囲い（龍が6二に入った形）', moves: [
+      ['B*7a', { why: '▲7一角。龍が6二まで入ったら、7一に角を打って王手。角は8二にも利いていて、玉は9二に逃げるしかない。' }],
+      ['8b9b', { say: '△9二玉' }],
+      ['6b7b', { why: '▲7二龍（銀を取る）。龍が2段目を横に利かせ、7一の角が8二を押さえているので詰み。' }],
+    ] }],
+  },
+  {
+    id: 'yose-mino-kei', kind: 'yose', start: 'ln1g5/1ks+Rg4/pp7/3pp4/9/9/PPP6/LSG6/KNG6 b GN',
+    me: 'b', myName: '寄せ', tags: ['yose'], level: '基本', castle: '美濃囲い',
+    lines: [{ opp: '美濃囲い（7三の歩がいない形）', moves: [
+      ['N*7d', { why: '▲7四桂。7三の歩がいなくなったら、7四に桂を打つと8二の玉に王手がかかる。桂の王手は間に駒を打って防げない。' }],
+      ['8b9b', { say: '△9二玉：逃げるしかない。' }],
+      ['G*8b', { why: '▲8二金。7四の桂が8二を支えているので取られない。玉は9二から動けず詰み。' }],
+    ] }],
+  },
+  {
+    id: 'yose-ana-tokin', kind: 'yose', start: '5+R1nk/6gsl/6Ppp/5pp2/9/9/PPP6/LSG6/KNG6 b G',
+    me: 'b', myName: '寄せ', tags: ['yose'], level: '基本', castle: '穴熊',
+    lines: [{ opp: '穴熊（3三に歩が入った形）', moves: [
+      ['3c3b+', { why: '▲3二歩成（金を取る）。王手ではないが、穴熊は「金をはがす」のが基本。と金は取られても元は歩なので損が少ない。これで後手はどう受けても詰む形（必至）。' }],
+      ['2b3a', { say: '△3一銀：銀を引いて受けようとした。' }],
+      ['G*2b', { why: '▲2二金。穴熊の急所2二に金を打つ。と金が金を支えている。' }],
+      ['3a2b', { say: '△同銀：取るしかない。' }],
+      ['4a2a', { why: '▲2一龍（桂を取る）。龍が一段目を横に走って詰み。穴熊は横から来る龍に弱い。' }],
+    ] }],
+  },
+  {
+    id: 'yose-ana-kin', kind: 'yose', start: '6gnk/5+R2l/7pp/5pp2/9/9/PPP6/LSG6/KNG6 b BG',
+    me: 'b', myName: '寄せ', tags: ['yose'], level: '基本', castle: '穴熊',
+    lines: [{ opp: '穴熊（銀と金が1枚はがれた形）', moves: [
+      ['4b3a', { why: '▲3一龍（金を取る）。王手ではないが、これで後手は受けがない（必至）。次に2二へ駒を打てば詰む。' }],
+      ['1c1d', { say: '△1四歩：後手には受ける手段がない。' }],
+      ['B*2b', { why: '▲2二角。龍が角を支えて詰み。2二は穴熊の玉の真横で、ここに駒が入ると逃げ場がない。', ok: ['G*2b', 'B*3c'], okWhy: 'それでも詰みです。2二に打つ形を覚えておきましょう。' }],
+    ] }],
+  },
+  {
+    id: 'yose-funa', kind: 'yose', start: '7nl/3+R1sk2/6ppp/4pp3/9/9/PPP6/LSG6/KNG6 b BG',
+    me: 'b', myName: '寄せ', tags: ['yose'], level: '基本', castle: '舟囲い',
+    lines: [
+      { opp: '舟囲い（玉が逃げる）', moves: [
+        ['G*5c', { why: '▲5三金。王手ではないが、次の▲4二龍（銀取り）と▲4一角を両方狙う。舟囲いは玉の横の4二が弱点。' }],
+        ['3b2b', { say: '△2二玉：玉が逃げようとした。' }],
+        ['6b4b', { why: '▲4二龍（銀を取る）。龍が2段目を横に利かせ、5三の金が龍を支えて詰み。' }],
+      ] },
+      { opp: '舟囲い（その場で粘る）', moves: [
+        ['G*5c', { why: '▲5三金。王手ではないが、次の▲4二龍（銀取り）と▲4一角を両方狙う。舟囲いは玉の横の4二が弱点。' }],
+        ['2c2d', { say: '△2四歩：玉の逃げ道を作ろうとした。' }],
+        ['B*4a', { why: '▲4一角。角を捨てて王手。取らなければ▲4二龍で詰む。' }],
+        ['3b4a', { say: '△同玉' }],
+        ['5c4b', { why: '▲4二金（銀を取る）。6二の龍が金を支えて詰み。' }],
+      ] },
+    ],
+  },
+];
+const COURSE_TITLES = {
+  'shiken-anaguma': '四間飛車で居飛車を迎え撃つ',
+  'anaguma-vs-shiken': '居飛車穴熊で四間飛車と戦う',
+  'pacman-ignore': 'パックマンに乗らない',
+  'pacman-refute': 'パックマンを咎める',
+  'onigoroshi': '鬼殺しを受け切る',
+  'bogin': '棒銀で銀交換を決める',
+  'yose-mino-hara': '美濃は腹銀',
+  'yose-mino-kaku': '美濃は7一角',
+  'yose-mino-kei': '美濃は7四桂',
+  'yose-ana-tokin': '穴熊はと金で金をはがす',
+  'yose-ana-kin': '穴熊は金を取って2二',
+  'yose-funa': '舟囲いは4二の銀を狙う',
+};
+if (typeof module !== 'undefined') module.exports = { COURSES, COURSE_TITLES };
+
+// ===== アプリ本体 =====
+(() => {
+  const S = Shogi;
+  const KEY = 'joseki30-v1';
+  const MIN = 60e3, DAY = 864e5;
+  const INTERVALS = [0, 10 * MIN, DAY, 3 * DAY, 7 * DAY, 21 * DAY];
+  const TAG_LABEL = { furi: '振り飛車', ibisha: '居飛車', hame: 'ハメ手対策', yose: '寄せの型' };
+  const $ = s => document.querySelector(s);
+
+  // ---------- 保存 ----------
+  function blank() { return { cards: {}, courses: {}, settings: { restart: 'start', showSay: true, filter: 'all' } }; }
+  function load() {
+    try {
+      const d = JSON.parse(localStorage.getItem(KEY));
+      if (d && d.cards) { d.settings = { ...blank().settings, ...(d.settings || {}) }; d.courses = d.courses || {}; return d; }
+    } catch (e) { }
+    return blank();
+  }
+  let DB = load();
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(DB)); } catch (e) { } }
+
+  // ---------- 定跡ツリー ----------
+  const TREES = {};
+  for (const c of COURSES) {
+    const startPos = () => c.start ? S.fromSfen(c.start) : S.initial();
+    const t0 = startPos().turn;
+    const root = { key: c.id + ':', depth: 0, turn: t0, next: {}, says: {}, lineName: c.lines[0].opp };
+    const userNodes = [];
+    let maxDepth = 0;
+    for (const l of c.lines) {
+      let node = root, turn = t0;
+      l.moves.forEach((m, i) => {
+        const [usi, meta = {}] = Array.isArray(m) ? m : [m];
+        if (turn === c.me) {
+          if (!node.best) { node.best = usi; node.why = meta.why; node.ok = meta.ok || []; node.okWhy = meta.okWhy || ''; userNodes.push(node); }
+        } else if (meta.say) node.says[usi] = meta.say;
+        if (!node.next[usi]) {
+          node.next[usi] = { key: node.key + usi + ' ', depth: i + 1, turn: turn === 'b' ? 'w' : 'b', next: {}, says: {}, lineName: l.opp };
+        }
+        node = node.next[usi];
+        turn = node.turn;
+        maxDepth = Math.max(maxDepth, i + 1);
+      });
+    }
+    TREES[c.id] = { course: c, root, userNodes, maxDepth, startPos };
+  }
+  const courseById = id => TREES[id].course;
+  const titleOf = c => COURSE_TITLES[c.id] || c.myName;
+
+  // ---------- 記憶カード（忘却曲線） ----------
+  const now = () => Date.now();
+  const card = n => DB.cards[n.key];
+  function cardState(n) {
+    const c = card(n);
+    if (!c) return 'new';
+    if (c.due <= now()) return c.box === 0 ? 'lapse' : 'due';
+    return c.box >= 2 ? 'learned' : 'learning';
+  }
+  function markCorrect(n) {
+    const c = card(n);
+    if (!c) DB.cards[n.key] = { box: 2, due: now() + INTERVALS[2], lapses: 0 };
+    else if (c.due <= now()) { c.box = Math.min(5, c.box + 1); c.due = now() + INTERVALS[c.box]; }
+    save();
+  }
+  function markWrong(n) {
+    const c = card(n) || { box: 0, lapses: 0 };
+    c.box = 0; c.due = now(); c.lapses = (c.lapses || 0) + 1;
+    DB.cards[n.key] = c; save();
+  }
+  const PRI = { lapse: 3, due: 2, new: 1, learning: 0, learned: 0 };
+  function subtreePri(node, me) {
+    let p = node.turn === me && node.best ? PRI[cardState(node)] : 0;
+    for (const k in node.next) p = Math.max(p, subtreePri(node.next[k], me));
+    return p;
+  }
+  function courseStats(id) {
+    const t = TREES[id];
+    const st = { new: 0, lapse: 0, due: 0, learning: 0, learned: 0, total: t.userNodes.length };
+    for (const n of t.userNodes) st[cardState(n)]++;
+    return st;
+  }
+  function pickCourse() {
+    const f = DB.settings.filter;
+    let best = null, bestScore = -1;
+    for (const c of COURSES) {
+      if (f !== 'all' && !c.tags.includes(f)) continue;
+      const s = courseStats(c.id);
+      const last = (DB.courses[c.id] || {}).last || 0;
+      const score = s.lapse * 1000 + s.due * 100 + s.new * 10 + (c.level === '上級' ? 0 : 1) + (1 - last / (now() + 1));
+      if (score > bestScore) { bestScore = score; best = c; }
+    }
+    return best || COURSES[0];
+  }
+
+  // ---------- 対局（暗記）ランナー ----------
+  let run = null;
+  function startRun(id, fromPly = 0, path = []) {
+    const t = TREES[id];
+    run = { id, t, me: t.course.me, node: t.root, pos: t.startPos(), hist: [], lastTo: null, lastFrom: null, oks: 0, waiting: false, sel: null, answer: null };
+    DB.courses[id] = { ...(DB.courses[id] || {}), last: now() };
+    save();
+    for (let i = 0; i < fromPly && i < path.length; i++) play(path[i], true);
+    showView('play');
+    hideSheet();
+    renderPlay();
+    const isYose = t.course.kind === 'yose';
+    setMsg('info', fromPly ? `${fromPly}手目から再開` : (isYose ? '寄せの問題' : '対局開始'), isYose ? `相手の${t.course.castle}を崩して詰ませてください。王手ではない「崩しの一手」が正解のこともあります。` : (run.me === 'b' ? 'あなたは先手（▲）です。' : 'あなたは後手（△）です。相手から指します。'));
+    setTimeout(step, 450);
+  }
+  function play(usi, silent) {
+    const k = S.kifu(run.pos, usi, run.lastTo);
+    const m = S.parse(usi);
+    run.lastFrom = m.from || null;
+    run.lastTo = m.to;
+    run.pos = S.apply(run.pos, usi);
+    run.hist.push({ usi, kifu: k });
+    run.node = run.node.next[usi];
+    if (!silent) renderPlay();
+    return k;
+  }
+  function step() {
+    if (!run) return;
+    const node = run.node;
+    if (!Object.keys(node.next).length) return finish();
+    if (node.turn === run.me) {
+      run.waiting = true;
+      renderPlay();
+      return;
+    }
+    run.waiting = false;
+    const keys = Object.keys(node.next);
+    let best = -1, cands = [];
+    for (const k of keys) {
+      const p = subtreePri(node.next[k], run.me);
+      if (p > best) { best = p; cands = [k]; } else if (p === best) cands.push(k);
+    }
+    const usi = cands[Math.floor(Math.random() * cands.length)];
+    setTimeout(() => {
+      if (!run || run.node !== node) return;
+      const say = node.says[usi];
+      const k = play(usi);
+      const expl = DB.settings.showSay && say && say.includes('：') ? say.split('：').slice(1).join('：') : '';
+      setMsg('opp', '相手 ' + k, expl || (Object.keys(run.node.next).length ? 'あなたの番です。' : ''));
+      step();
+    }, 520);
+  }
+  function judge(usi) {
+    const node = run.node;
+    run.waiting = false; run.sel = null;
+    if (usi === node.best) {
+      markCorrect(node);
+      const k = play(usi);
+      setMsg('good', '○ ' + k, node.why);
+      return setTimeout(step, 250);
+    }
+    if (node.ok.includes(usi)) {
+      run.oks++;
+      markCorrect(node);
+      const before = run.pos;
+      const k = S.kifu(before, usi, run.lastTo);
+      run.preview = S.apply(before, usi);
+      renderPlay();
+      setMsg('ok', '△ ' + k + ' も指せます', node.okWhy + ' 本線の' + S.kifu(before, node.best, run.lastTo) + 'に戻します。');
+      return setTimeout(() => {
+        run.preview = null;
+        play(node.best);
+        setTimeout(step, 900);
+      }, 1500);
+    }
+    wrong(usi);
+  }
+  function wrong(usi) {
+    const node = run.node;
+    markWrong(node);
+    const bestK = S.kifu(run.pos, node.best, run.lastTo);
+    const m = S.parse(node.best);
+    run.answer = { from: m.from || null, to: m.to, drop: m.drop || null };
+    renderPlay();
+    const mine = usi ? S.kifu(run.pos, usi, run.lastTo) : null;
+    openSheet({
+      tone: 'bad',
+      title: mine ? 'ここは別の手です' : '答え',
+      lead: (mine ? `あなた ${mine} → ` : '') + `正解 ${bestK}`,
+      body: node.why,
+      foot: `${node.depth + 1}手目。この局面は早めにもう一度出題します。`,
+      buttons: [
+        { label: DB.settings.restart === 'near' ? '少し前からやり直す' : '最初からやり直す', primary: true, fn: () => restart() },
+        { label: 'ホームへ', fn: () => goHome() },
+      ],
+    });
+  }
+  function restart() {
+    const depth = run.node.depth;
+    const path = run.hist.map(h => h.usi);
+    const from = DB.settings.restart === 'near' ? Math.max(0, depth - 4) : 0;
+    startRun(run.id, from, path);
+  }
+  function finish() {
+    const c = run.t.course;
+    const rec = DB.courses[c.id] = { ...(DB.courses[c.id] || {}), last: now() };
+    rec.clears = (rec.clears || 0) + 1;
+    save();
+    renderPlay();
+    const st = courseStats(c.id);
+    const mated = S.isMate(run.pos);
+    openSheet({
+      tone: 'good',
+      title: mated ? `詰み！（${run.hist.length}手）` : `${run.hist.length}手 到達`,
+      lead: mated ? `「${titleOf(c)}」の寄せを決めました。相手：${run.node.lineName}` : `${titleOf(c)}（相手：${run.node.lineName}）をノーミスで指し切りました。`,
+      body: (run.oks ? `許容手で進んだ局面が${run.oks}回ありました。本線も覚えておくと安定します。` : '本線どおりに指せました。') +
+        ` このコースの覚えた局面：${st.learned}/${st.total}。`,
+      foot: `通算クリア ${rec.clears}回`,
+      buttons: [
+        { label: 'おまかせで次へ', primary: true, fn: () => startRun(pickCourse().id) },
+        { label: 'もう一度', fn: () => startRun(c.id) },
+        { label: 'ホームへ', fn: () => goHome() },
+      ],
+    });
+  }
+
+  // ---------- 入力 ----------
+  function onCell(s) {
+    if (!run || !run.waiting) return;
+    const pos = run.pos;
+    const pc = pos.board[s];
+    if (run.sel) {
+      const sel = run.sel;
+      const cands = sel.drop
+        ? (S.dropTargets(pos, sel.drop).includes(s) ? [{ usi: sel.drop + '*' + S.toUsiSq(s) }] : [])
+        : S.movesFrom(pos, sel.from).filter(m => m.to === s);
+      if (cands.length === 1) return judge(cands[0].usi);
+      if (cands.length === 2) return askPromote(cands);
+    }
+    if (pc && pc.o === run.me) { run.sel = { from: s }; renderPlay(); return; }
+    run.sel = null; renderPlay();
+  }
+  function onHand(t) {
+    if (!run || !run.waiting) return;
+    run.sel = (run.sel && run.sel.drop === t) ? null : { drop: t };
+    renderPlay();
+  }
+  function askPromote(cands) {
+    const p = cands.find(m => m.promo), np = cands.find(m => !m.promo);
+    openSheet({
+      tone: 'info', title: '成りますか？', lead: '', body: '',
+      buttons: [
+        { label: '成る', primary: true, fn: () => { hideSheet(); judge(p.usi); } },
+        { label: '成らない', fn: () => { hideSheet(); judge(np.usi); } },
+      ],
+    });
+  }
+
+  // ---------- 描画 ----------
+  const ZEN = ['', '１', '２', '３', '４', '５', '６', '７', '８', '９'];
+  const KR = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  function renderPlay() {
+    if (!run) return;
+    const pos = run.preview || run.pos;
+    const flip = run.me === 'w';
+    const c = run.t.course;
+    $('#matchup').innerHTML =
+      `<span class="side ${c.me}">${c.me === 'b' ? '▲' : '△'} あなた</span><b>${c.myName}</b>` +
+      `<span class="vs">vs</span><span class="side ${c.me === 'b' ? 'w' : 'b'}">${c.me === 'b' ? '△' : '▲'} 相手</span><b>${run.node.lineName}</b>`;
+    const ply = run.hist.length;
+    $('#plyNum').textContent = ply;
+    $('#plyMax').textContent = run.t.maxDepth;
+    $('#plyBar').style.width = Math.min(100, ply / run.t.maxDepth * 100) + '%';
+
+    // 盤
+    const files = flip ? [1, 2, 3, 4, 5, 6, 7, 8, 9] : [9, 8, 7, 6, 5, 4, 3, 2, 1];
+    const ranks = flip ? [9, 8, 7, 6, 5, 4, 3, 2, 1] : [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    $('#fileLabels').innerHTML = files.map(f => `<span>${ZEN[f]}</span>`).join('');
+    $('#rankLabels').innerHTML = ranks.map(r => `<span>${KR[r]}</span>`).join('');
+    let targets = [];
+    if (run.sel && run.waiting) {
+      targets = run.sel.drop ? S.dropTargets(run.pos, run.sel.drop) : S.movesFrom(run.pos, run.sel.from).map(m => m.to);
+    }
+    const ans = run.answer;
+    let html = '';
+    for (const r of ranks) for (const f of files) {
+      const s = S.sq(f, r);
+      const pc = pos.board[s];
+      const cls = ['cell'];
+      if (s === run.lastTo && !run.preview) cls.push('last');
+      if (s === run.lastFrom && !run.preview) cls.push('lastFrom');
+      if (run.sel && run.sel.from === s) cls.push('sel');
+      if (targets.includes(s)) cls.push(pc ? 'cap' : 'dot');
+      if (ans && ans.to === s) cls.push('ansTo');
+      if (ans && ans.from === s) cls.push('ansFrom');
+      const label = `${ZEN[f]}${KR[r]}${pc ? (pc.o === 'b' ? '先手' : '後手') + S.glyph(pc) : ''}`;
+      html += `<button class="${cls.join(' ')}" data-s="${s}" aria-label="${label}">${pc ? koma(pc, pc.o !== run.me) : ''}</button>`;
+    }
+    $('#board').innerHTML = html;
+    $('#board').classList.toggle('active', run.waiting);
+
+    // 駒台
+    const opp = run.me === 'b' ? 'w' : 'b';
+    $('#handOpp').innerHTML = handHtml(pos, opp, false);
+    $('#handMe').innerHTML = handHtml(pos, run.me, true);
+
+    // 棋譜
+    const kf = $('#kifu');
+    kf.innerHTML = run.hist.map((h, i) => `<li class="${i === run.hist.length - 1 ? 'cur' : ''}"><span class="n">${i + 1}</span>${h.kifu}</li>`).join('');
+    kf.scrollLeft = kf.scrollWidth;
+    $('#btnAnswer').disabled = !run.waiting;
+    $('#turnNote').textContent = run.waiting ? 'あなたの番' : (Object.keys(run.node.next).length ? '相手の番' : '');
+    $('#turnNote').classList.toggle('mine', run.waiting);
+  }
+  function koma(pc, rot) {
+    return `<span class="koma${rot ? ' rot' : ''}${pc.p ? ' pro' : ''}${S.glyph(pc).length > 1 ? ' small' : ''}">${S.glyph(pc)}</span>`;
+  }
+  function handHtml(pos, side, mine) {
+    const h = pos.hand[side];
+    const items = S.HAND_ORDER.filter(t => h[t] > 0);
+    const who = `<span class="handWho">${side === 'b' ? '▲' : '△'}${mine ? 'あなた' : '相手'}の持ち駒</span>`;
+    if (!items.length) return who + '<span class="handNone">なし</span>';
+    return who + items.map(t => {
+      const sel = mine && run.sel && run.sel.drop === t ? ' sel' : '';
+      const ansCls = mine && run.answer && run.answer.drop === t ? ' ansTo' : '';
+      const tag = mine ? 'button' : 'span';
+      return `<${tag} class="handPc${sel}${ansCls}" data-t="${t}" aria-label="${S.NAME[t]} ${h[t]}枚">${koma({ t, p: false, o: side }, !mine)}${h[t] > 1 ? `<i>${h[t]}</i>` : ''}</${tag}>`;
+    }).join('');
+  }
+  function setMsg(tone, head, text) {
+    const m = $('#msg');
+    m.dataset.tone = tone;
+    $('#msgHead').textContent = head;
+    $('#msgText').textContent = text || '';
+  }
+
+  // ---------- シート（判定・ダイアログ） ----------
+  function openSheet(o) {
+    const sh = $('#sheet');
+    sh.dataset.tone = o.tone;
+    $('#sheetTitle').textContent = o.title;
+    $('#sheetLead').textContent = o.lead || '';
+    $('#sheetLead').hidden = !o.lead;
+    $('#sheetBody').textContent = o.body || '';
+    $('#sheetBody').hidden = !o.body;
+    $('#sheetFoot').textContent = o.foot || '';
+    $('#sheetFoot').hidden = !o.foot;
+    const bx = $('#sheetBtns');
+    bx.innerHTML = '';
+    o.buttons.forEach(b => {
+      const el = document.createElement('button');
+      el.className = 'btn' + (b.primary ? ' primary' : '');
+      el.textContent = b.label;
+      el.onclick = b.fn;
+      bx.appendChild(el);
+    });
+    sh.hidden = false;
+    $('#scrim').hidden = false;
+    setTimeout(() => bx.firstChild && bx.firstChild.focus(), 50);
+  }
+  function hideSheet() { $('#sheet').hidden = true; $('#scrim').hidden = true; }
+
+  // ---------- ホーム ----------
+  function goHome() { run = null; hideSheet(); showView('home'); renderHome(); }
+  function showView(v) {
+    $('#home').hidden = v !== 'home';
+    $('#play').hidden = v !== 'play';
+    window.scrollTo(0, 0);
+  }
+  function renderHome() {
+    let totalDue = 0;
+    const f = DB.settings.filter;
+    document.querySelectorAll('.chip[data-f]').forEach(ch => ch.setAttribute('aria-pressed', ch.dataset.f === f));
+    const list = COURSES.filter(c => f === 'all' || c.tags.includes(f)).map(c => {
+      const s = courseStats(c.id);
+      const t = TREES[c.id];
+      totalDue += s.lapse + s.due;
+      const rec = DB.courses[c.id] || {};
+      const pct = Math.round(s.learned / s.total * 100);
+      const opps = [...new Set(c.lines.map(l => l.opp))].join('／');
+      let state = '';
+      if (s.lapse) state = `<span class="pill bad">要復習 ${s.lapse}</span>`;
+      else if (s.due) state = `<span class="pill warn">復習 ${s.due}</span>`;
+      else if (s.new === s.total) state = `<span class="pill">未挑戦</span>`;
+      else if (s.new) state = `<span class="pill">新しい局面 ${s.new}</span>`;
+      else state = `<span class="pill good">定着中</span>`;
+      return `<button class="course" data-id="${c.id}">
+        <span class="cTop"><span class="side ${c.me}">${c.me === 'b' ? '▲先手' : '△後手'}</span>${c.tags.map(t => `<span class="tag">${TAG_LABEL[t]}</span>`).join('')}${c.level === '上級' ? '<span class="tag hi">上級</span>' : ''}${state}</span>
+        <span class="cTitle">${titleOf(c)}</span>
+        <span class="cSub">${c.kind === 'yose' ? `囲い：${c.castle}　${t.maxDepth}手まで` : `あなた：${c.myName}　相手：${opps}　最長${t.maxDepth}手`}</span>
+        <span class="meter" aria-label="覚えた局面 ${s.learned}/${s.total}"><span style="width:${pct}%"></span></span>
+        <span class="cFoot"><span>覚えた局面 ${s.learned}/${s.total}</span><span>${rec.clears ? 'クリア ' + rec.clears + '回' : ''}</span></span>
+      </button>`;
+    }).join('');
+    $('#courses').innerHTML = list || '<p class="empty">この分類のコースはまだありません。</p>';
+    let allDue = 0;
+    for (const c of COURSES) { const s = courseStats(c.id); allDue += s.lapse + s.due; }
+    $('#dueCount').textContent = allDue;
+    const pick = pickCourse();
+    $('#autoSub').textContent = `次は「${titleOf(pick)}」`;
+    $('#optRestart').value = DB.settings.restart;
+    $('#optSay').checked = DB.settings.showSay;
+  }
+
+  // ---------- イベント ----------
+  function bind() {
+    $('#board').addEventListener('click', e => { const b = e.target.closest('.cell'); if (b) onCell(+b.dataset.s); });
+    $('#handMe').addEventListener('click', e => { const b = e.target.closest('.handPc'); if (b) onHand(b.dataset.t); });
+    $('#btnAnswer').onclick = () => { if (run && run.waiting) { run.waiting = false; wrong(null); } };
+    $('#btnRestart').onclick = () => run && startRun(run.id);
+    $('#btnHome').onclick = goHome;
+    $('#btnAuto').onclick = () => startRun(pickCourse().id);
+    $('#courses').addEventListener('click', e => { const b = e.target.closest('.course'); if (b) startRun(b.dataset.id); });
+    document.querySelectorAll('.chip[data-f]').forEach(ch => ch.onclick = () => { DB.settings.filter = ch.dataset.f; save(); renderHome(); });
+    $('#optRestart').onchange = e => { DB.settings.restart = e.target.value; save(); };
+    $('#optSay').onchange = e => { DB.settings.showSay = e.target.checked; save(); };
+    $('#btnExport').onclick = async () => {
+      const ta = $('#exportBox');
+      ta.value = JSON.stringify(DB);
+      ta.hidden = false;
+      try { await navigator.clipboard.writeText(ta.value); $('#backupNote').textContent = 'コピーしました。メモアプリなどに貼り付けて保存してください。'; }
+      catch (e) { ta.select(); $('#backupNote').textContent = '下の文字をすべて選択してコピーしてください。'; }
+    };
+    $('#btnImport').onclick = () => {
+      try {
+        const d = JSON.parse($('#importBox').value);
+        if (!d || !d.cards) throw 0;
+        DB = { ...blank(), ...d, settings: { ...blank().settings, ...(d.settings || {}) } };
+        save(); renderHome();
+        $('#backupNote').textContent = '読み込みました。';
+      } catch (e) { $('#backupNote').textContent = '読み込めませんでした。書き出した文字をそのまま貼り付けてください。'; }
+    };
+    $('#btnReset').onclick = () => { $('#resetConfirm').hidden = false; };
+    $('#btnResetNo').onclick = () => { $('#resetConfirm').hidden = true; };
+    $('#btnResetYes').onclick = () => { DB = blank(); save(); $('#resetConfirm').hidden = true; renderHome(); $('#backupNote').textContent = '記録を消去しました。'; };
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#sheet').hidden && !run) hideSheet(); });
+  }
+  bind();
+  renderHome();
+  showView('home');
+})();
+
+</script>
+
+</body></html>

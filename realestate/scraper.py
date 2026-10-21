@@ -23,13 +23,15 @@ BASE_HEADERS = {
 os.makedirs(SNAPSHOT_DIR, exist_ok=True)
 
 
-def fetch(url, extra_headers=None, retries=2, backoff=5):
+def fetch(url, extra_headers=None, retries=2, backoff=5, session=None):
     import time
-    headers = dict(BASE_HEADERS)
+    # セッション（curl_cffi）利用時は UA 等を偽装プロファイル側に任せる
+    headers = {"Accept-Language": BASE_HEADERS["Accept-Language"]} if session else dict(BASE_HEADERS)
     if extra_headers:
         headers.update(extra_headers)
+    getter = session.get if session else requests.get
     for attempt in range(retries + 1):
-        r = requests.get(url, headers=headers, timeout=20)
+        r = getter(url, headers=headers, timeout=20)
         if r.status_code != 503 or attempt == retries:
             r.raise_for_status()
             return r.content
@@ -96,6 +98,12 @@ def extract_globalbase(site):
     return listings
 
 
+def _browser_session():
+    """TLS指紋までChromeに見せかけるセッション（WAFでrequestsが403になるサイト用）"""
+    from curl_cffi import requests as cffi_requests
+    return cffi_requests.Session(impersonate="chrome")
+
+
 def extract_meiwa(site):
     base_url_root = site.get("base_url", "https://www.meiwajisyo.co.jp/chukai/buy/sch/")
     pref_cds = site.get("pref_cds", [14])
@@ -105,9 +113,20 @@ def extract_meiwa(site):
     listings = []
     seen_ids = set()
 
+    # 2026-09 以降 requests だと 403 になるため、ブラウザ相当のセッションで
+    # トップページ → 一覧の順にアクセスして Cookie と Referer を揃える
+    session = _browser_session()
+    top_url = site.get("top_url", "https://www.meiwajisyo.co.jp/chukai/")
+    nav_headers = {"Sec-Fetch-Site": "none", "Sec-Fetch-Mode": "navigate", "Sec-Fetch-Dest": "document"}
+    try:
+        fetch(top_url, extra_headers=nav_headers, retries=0, session=session)
+    except Exception:
+        pass
+    list_headers = dict(nav_headers, **{"Sec-Fetch-Site": "same-origin", "Referer": top_url})
+
     for pref_cd in pref_cds:
         url = f"{site['url']}?pref_cd={pref_cd}"
-        soup = BeautifulSoup(fetch(url), "html.parser")
+        soup = BeautifulSoup(fetch(url, extra_headers=list_headers, session=session), "html.parser")
 
         for item in soup.select("div.sch-item"):
             a = item.select_one("a.pos-link")
