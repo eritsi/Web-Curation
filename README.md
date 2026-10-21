@@ -132,6 +132,10 @@ python generate_html.py
 
 履歴を更新するときは `youtube_history.csv` を差し替えて `git push` するだけ。ビルドスクリプト不要。
 
+## 将棋（shogi/）
+
+`shogi/index.html` は将棋の序盤練習ページ「序盤30手道場」（完全クライアントサイド・単一HTML）。GitHub Pages では `/shogi/` で公開される。学習記録はブラウザの localStorage に保存される。
+
 ---
 
 ## GitHub Actions
@@ -140,7 +144,7 @@ python generate_html.py
 
 YouTube API で動画一覧を取得し `index.html` を再生成してコミット。
 
-### `weekly_news.yml` — 毎週木曜 08:00 JST 自動実行
+### `weekly_news.yml` — 毎週木曜 20:00 JST 自動実行
 
 `news/sites.yaml` に登録した各サイトをスクレイプし、前回との差分を検知して `index.html` を再生成してコミット。
 

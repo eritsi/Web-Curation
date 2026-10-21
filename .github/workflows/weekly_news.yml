@@ -2,7 +2,7 @@ name: Weekly News Check
 
 on:
   schedule:
-    - cron: '0 23 * * 3'  # 毎週木曜 08:00 JST (= 水曜 23:00 UTC)
+    - cron: '0 11 * * 4'  # 毎週木曜 20:00 JST (= 木曜 11:00 UTC)
   workflow_dispatch:        # 手動実行も可能
 
 jobs:
