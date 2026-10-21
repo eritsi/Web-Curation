@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-10-20T11:41:56",
+  "generated_at": "2026-10-21T11:35:39",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-10-20T11:41:56",
-      "new_listings": [
-        {
-          "id": "5557",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5557",
-          "name": "クレアホームズ和光丸山台",
-          "price": "7,480万円",
-          "area": "66.40㎡",
-          "madori": "3LDK+WIC",
-          "traffic": "東京メトロ副都心線・東京メトロ有楽町線・東武東上線『和光市』駅徒歩10分",
-          "location": "埼玉県和光市丸山台2-11-20"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-10-21T11:35:39",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5557",
@@ -208,7 +197,7 @@
       "extract": "meiwa",
       "status": "error",
       "error": "403 Client Error: Forbidden for url: https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php?pref_cd=13",
-      "checked_at": "2026-10-20T11:41:56"
+      "checked_at": "2026-10-21T11:35:39"
     },
     {
       "name": "cowcamo 東京・神奈川 中古マンション",
@@ -216,7 +205,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-10-20T11:41:56",
+      "checked_at": "2026-10-21T11:35:39",
       "new_listings": [],
       "all_listings": [
         {
@@ -372,7 +361,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-10-20T11:41:56",
+      "checked_at": "2026-10-21T11:35:39",
       "new_listings": [],
       "all_listings": [
         {
@@ -495,7 +484,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-20T11:41:56",
+      "checked_at": "2026-10-21T11:35:39",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -506,7 +495,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-20T11:41:56",
+      "checked_at": "2026-10-21T11:35:39",
       "new_listings": [],
       "all_listings": [
         {
