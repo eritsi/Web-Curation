@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T01:17:08",
+  "generated_at": "2026-10-22T15:50:40",
   "sites": [
     {
       "name": "横浜市 プレミアム商品券",
@@ -7,8 +7,16 @@
       "url": "https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/eventinfo/r8/premium.html",
       "extract": "announcements",
       "status": "changed",
-      "checked_at": "2026-10-15T01:17:08",
+      "checked_at": "2026-10-22T15:50:40",
       "new_keys": [
+        "11月販売::上星川商店会",
+        "11月販売::江田駅周辺商店会",
+        "11月販売::ひらがな商店街ウエストアベニュー、ひらがな商店街、石川町裏通り会",
+        "11月販売::西谷商栄会",
+        "11月販売::中田中央商店会、（協）上飯田ショッピングセンター、なかだ商店会、和泉商店会、立場中央商店会",
+        "10月販売::北山田商業振興会",
+        "10月販売::金沢区商店街連合会",
+        "10月販売::原宿商店街松栄会",
         "９月販売::【完売】馬車道商店街協同組合",
         "９月販売::【完売】大倉山エルム通り商店会、大倉山レモンロード商店会",
         "９月販売::【完売】長津田商店街協同組合",
@@ -62,38 +70,37 @@
           ]
         },
         {
-          "title": "10月販売",
+          "title": "11月販売",
           "announcements": [
             {
-              "store": "星川商店会",
-              "details": [],
-              "links": []
-            },
-            {
-              "store": "左近山ショッピングセンター",
-              "details": [],
-              "links": []
-            },
-            {
-              "store": "金沢文庫すずらん通り商店会、金沢文庫ふれあい商店街",
-              "details": [],
-              "links": []
-            },
-            {
-              "store": "あざみ野商店会協同組合",
-              "details": [],
-              "links": []
-            },
-            {
-              "store": "伊勢佐木町７丁目商栄会",
-              "details": [],
-              "links": []
-            },
-            {
-              "store": "【完売】藤棚商店会",
+              "store": "上星川商店会",
               "details": [
-                "10月1日(木曜日) 10時～12時、15時～16時30分10月2日(金曜日) 10時～12時、15時～16時30分10月3日(土曜日) 10時～13時※先着販売、完売次第販売終了"
+                "鮮魚ハリマ、バニヤンツリーベーカリー、ウッドハウス、Bar Riz、並美木モータース"
               ],
+              "links": []
+            },
+            {
+              "store": "江田駅周辺商店会",
+              "details": [],
+              "links": []
+            },
+            {
+              "store": "ひらがな商店街ウエストアベニュー、ひらがな商店街、石川町裏通り会",
+              "details": [
+                "11月15日（日曜日）11時～　※先着販売、完売次第販売終了",
+                "11月15日（日曜日）JR石川町駅南口（元町口）前　販売テントにて11月16日（月曜日）以降、完売まではマーケットテラスカフェ、ファミリーマート鈴木石川町店にて販売",
+                "ひらがな商店街ウエストアベニュー　045-264-8370（9:30-17:00）"
+              ],
+              "links": []
+            },
+            {
+              "store": "西谷商栄会",
+              "details": [],
+              "links": []
+            },
+            {
+              "store": "中田中央商店会、（協）上飯田ショッピングセンター、なかだ商店会、和泉商店会、立場中央商店会",
+              "details": [],
               "links": []
             }
           ]
@@ -105,17 +112,22 @@
       "description": "今週のランチメニュー（PDF直リンク）",
       "url": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/index.html",
       "extract": "links",
-      "status": "unchanged",
-      "checked_at": "2026-10-15T01:17:08",
-      "new_links": [],
-      "links": [
+      "status": "changed",
+      "checked_at": "2026-10-22T15:50:40",
+      "new_links": [
         {
-          "text": "日替わり・週替わりランチメニュー（10/5～10/11）",
-          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/09/29/LUNCH2026105.pdf"
-        },
+          "text": "日替わり・週替わりランチメニュー（10/19～10/25）",
+          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/10/15/LUNCH20261019.pdf"
+        }
+      ],
+      "links": [
         {
           "text": "日替わり・週替わりランチメニュー（10/12～10/18）",
           "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/10/07/LUNCH20261012.pdf"
+        },
+        {
+          "text": "日替わり・週替わりランチメニュー（10/19～10/25）",
+          "href": "https://www.jica.go.jp/domestic/yokohama/office/restaurant/__icsFiles/afieldfile/2026/10/15/LUNCH20261019.pdf"
         }
       ]
     },
@@ -125,26 +137,26 @@
       "url": "https://www.yokohama-jyubankan.co.jp/news/",
       "extract": "show_schedule",
       "status": "changed",
-      "checked_at": "2026-10-15T01:17:08",
+      "checked_at": "2026-10-22T15:50:40",
       "new_shows": [
         {
-          "url": "https://www.yokohama-jyubankan.co.jp/news/%e9%a6%ac%e8%bb%8a%e9%81%93%e5%8d%81%e7%95%aa%e9%a4%a8-%e9%96%8b%e9%a4%a856%e5%91%a8%e5%b9%b4%e8%a8%98%e5%bf%b5%e6%84%9f%e8%ac%9d%e7%a5%ad%e3%80%8010-18%e3%80%9c20/",
-          "artist": "馬車道十番館 開館56周年記念感謝祭　10/18〜20",
-          "date": "2026.10.13",
-          "title": "馬車道十番館 開館56周年記念感謝祭　10/18〜20"
+          "url": "https://www.yokohama-jyubankan.co.jp/news/%e9%a6%ac%e8%bb%8a%e9%81%93%e5%8d%81%e7%95%aa%e9%a4%a8%e7%89%b9%e8%a3%bd-%e6%b4%8b%e9%a2%a8%e3%81%8a%e3%81%9b%e3%81%a1-%e9%99%90%e5%ae%9a30%e3%82%bb%e3%83%83%e3%83%88%e5%9b%9b%e4%ba%ba%e5%89%8d-3/",
+          "artist": "馬車道十番館特製 洋風おせち 限定30セット(四人前) ご予約承り中",
+          "date": "2026.10.21",
+          "title": "馬車道十番館特製 洋風おせち 限定30セット(四人前) ご予約承り中"
         }
       ],
       "urls": [
-        "https://www.yokohama-jyubankan.co.jp/news/%e9%a6%ac%e8%bb%8a%e9%81%93%e5%8d%81%e7%95%aa%e9%a4%a8-%e9%96%8b%e9%a4%a856%e5%91%a8%e5%b9%b4%e8%a8%98%e5%bf%b5%e6%84%9f%e8%ac%9d%e7%a5%ad%e3%80%8010-18%e3%80%9c20/",
+        "https://www.yokohama-jyubankan.co.jp/news/%e9%a6%ac%e8%bb%8a%e9%81%93%e5%8d%81%e7%95%aa%e9%a4%a8%e7%89%b9%e8%a3%bd-%e6%b4%8b%e9%a2%a8%e3%81%8a%e3%81%9b%e3%81%a1-%e9%99%90%e5%ae%9a30%e3%82%bb%e3%83%83%e3%83%88%e5%9b%9b%e4%ba%ba%e5%89%8d-3/",
         "https://www.yokohama-jyubankan.co.jp/news/%e4%be%a1%e6%a0%bc%e6%94%b9%e5%ae%9a%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b-2/",
         "https://www.yokohama-jyubankan.co.jp/news/%f0%9f%8e%84%e9%a6%ac%e8%bb%8a%e9%81%93%e5%8d%81%e7%95%aa%e9%a4%a8%e3%83%8e%e3%82%a8%e3%83%ab%e3%83%87%e3%82%a3%e3%83%8a%e3%83%bc%e3%82%b3%e3%83%bc%e3%82%b9%f0%9f%8e%842026%e5%b9%b412%e6%9c%8819/"
       ],
       "shows": [
         {
-          "url": "https://www.yokohama-jyubankan.co.jp/news/%e9%a6%ac%e8%bb%8a%e9%81%93%e5%8d%81%e7%95%aa%e9%a4%a8-%e9%96%8b%e9%a4%a856%e5%91%a8%e5%b9%b4%e8%a8%98%e5%bf%b5%e6%84%9f%e8%ac%9d%e7%a5%ad%e3%80%8010-18%e3%80%9c20/",
-          "artist": "馬車道十番館 開館56周年記念感謝祭　10/18〜20",
-          "date": "2026.10.13",
-          "title": "馬車道十番館 開館56周年記念感謝祭　10/18〜20"
+          "url": "https://www.yokohama-jyubankan.co.jp/news/%e9%a6%ac%e8%bb%8a%e9%81%93%e5%8d%81%e7%95%aa%e9%a4%a8%e7%89%b9%e8%a3%bd-%e6%b4%8b%e9%a2%a8%e3%81%8a%e3%81%9b%e3%81%a1-%e9%99%90%e5%ae%9a30%e3%82%bb%e3%83%83%e3%83%88%e5%9b%9b%e4%ba%ba%e5%89%8d-3/",
+          "artist": "馬車道十番館特製 洋風おせち 限定30セット(四人前) ご予約承り中",
+          "date": "2026.10.21",
+          "title": "馬車道十番館特製 洋風おせち 限定30セット(四人前) ご予約承り中"
         },
         {
           "url": "https://www.yokohama-jyubankan.co.jp/news/%e4%be%a1%e6%a0%bc%e6%94%b9%e5%ae%9a%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b-2/",
@@ -166,88 +178,98 @@
       "url": "https://www.billboard-live.com/yokohama/whats-new",
       "extract": "venue_news",
       "status": "changed",
-      "checked_at": "2026-10-15T01:17:08",
+      "checked_at": "2026-10-22T15:50:40",
       "new_events": [
         {
-          "item_id": "49129",
-          "event_id": "ev-21754",
+          "item_id": "49256",
+          "event_id": "ev-21761",
           "tag": "新規公演決定",
-          "content": "生田絵梨花 Erika Ikuta Premium Billboard Live 2026 ～生田絵梨花、2年ぶりのビルボードライブ公演が決定～",
-          "show_date": "2026.12.23(Wed)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21754"
+          "content": "SHEN “Choose To Be Happy” Billboard Live YOKOHAMA Special Encore Performance～今年リ",
+          "show_date": "2026.12.9(Wed)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21761"
         },
         {
-          "item_id": "49117",
-          "event_id": "ev-21744",
+          "item_id": "49252",
+          "event_id": "ev-21684",
+          "tag": "ゲスト決定",
+          "content": "来月11/29(日)に開催が迫るROLWの公演に、楽曲「Career」で客演に迎えた、親交のあるラッパー・KIKUMARUの両ステージへのゲスト出演が決定",
+          "show_date": "2026.11.29(Sun)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21684"
+        },
+        {
+          "item_id": "49214",
+          "event_id": "ev-21756",
           "tag": "新規公演決定",
-          "content": "渡辺美里 Billboard Live スタジアムのその先へ ～日本のポップ・シーンを代表する渡辺美里が、 豊かな表現力と歌声で、数々の名曲を響かせる～",
-          "show_date": "2026.12.15(Tue)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21744"
+          "content": "BUONA STRADA presents 倉田 信雄 50th anniversary with JAYS Special Guest さだまさし ～倉田信雄",
+          "show_date": "2027.3.13(Sat)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21756"
         },
         {
-          "item_id": "48943",
-          "event_id": "ev-21740",
+          "item_id": "49186",
+          "event_id": "ev-21760",
           "tag": "新規公演決定",
-          "content": "PUSHIM YEAR END PREMIUM LIVE 2026 ～心に火を灯す歌声で、一年を締めくくる。PUSHIMが贈る年末恒例のプレミアム・ライブが開催",
-          "show_date": "2026.12.22(Tue)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21740"
-        },
-        {
-          "item_id": "49018",
-          "event_id": "ev-21750",
-          "tag": "新規公演決定",
-          "content": "CRAZY KEN BAND Billboard Live TOUR 2026 ビルボードライブ横浜のクレイジーケンバンド ～“東洋一のサウンド・マシーン”が ",
-          "show_date": "2026.12.29(Tue)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21750"
-        },
-        {
-          "item_id": "49080",
-          "event_id": "ev-21634",
-          "tag": "出演メンバー変更",
-          "content": "10月16日開催の『大比良瑞希』公演へ出演を予定しておりました和久井沙良氏は、体調不良のため出演を見合わせることとなりました。なお、公演はTakumadrops",
-          "show_date": "2026.10.16(Fri)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21634"
-        },
-        {
-          "item_id": "48952",
-          "event_id": "ev-21745",
-          "tag": "新規公演決定",
-          "content": "Chage Billboard Live 68 to 69 ～Chageが贈る恒例のバースデー公演。冬の夜をあたたかく包み込む、特別なひとときを～",
-          "show_date": "2026.12.25(Fri)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21745"
-        },
-        {
-          "item_id": "48268",
-          "event_id": null,
-          "tag": "お知らせ",
-          "content": "台風25号の接近に伴うご案内",
-          "show_date": "2026.9.21(Mon)",
-          "url": "https://www.billboard-live.com/yokohama/whats-new/48268"
+          "content": "吉田兄弟  -THE YOSHIDA BROTHERS- ～吉田兄弟がビルボードライブに登場。 津軽三味線×太鼓×尺八で魅せる格別なステージ～",
+          "show_date": "2027.1.9(Sat)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21760"
         }
       ],
       "ticket_updates": [],
       "item_ids": [
+        "49256",
+        "49252",
+        "49214",
+        "49186",
         "49129",
         "49117",
         "48943",
         "49018",
-        "49080",
         "48952",
-        "48811",
-        "48764",
-        "48706",
-        "48268"
+        "48706"
       ],
       "event_ids": [
-        "ev-21740",
-        "ev-21750",
-        "ev-21735",
+        "ev-21744",
+        "ev-21760",
         "ev-21754",
+        "ev-21750",
+        "ev-21684",
+        "ev-21761",
         "ev-21745",
-        "ev-21634",
-        "ev-21744"
+        "ev-21756",
+        "ev-21740"
       ],
       "all_items": [
+        {
+          "item_id": "49256",
+          "event_id": "ev-21761",
+          "tag": "新規公演決定",
+          "content": "SHEN “Choose To Be Happy” Billboard Live YOKOHAMA Special Encore Performance～今年リ",
+          "show_date": "2026.12.9(Wed)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21761"
+        },
+        {
+          "item_id": "49252",
+          "event_id": "ev-21684",
+          "tag": "ゲスト決定",
+          "content": "来月11/29(日)に開催が迫るROLWの公演に、楽曲「Career」で客演に迎えた、親交のあるラッパー・KIKUMARUの両ステージへのゲスト出演が決定",
+          "show_date": "2026.11.29(Sun)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21684"
+        },
+        {
+          "item_id": "49214",
+          "event_id": "ev-21756",
+          "tag": "新規公演決定",
+          "content": "BUONA STRADA presents 倉田 信雄 50th anniversary with JAYS Special Guest さだまさし ～倉田信雄",
+          "show_date": "2027.3.13(Sat)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21756"
+        },
+        {
+          "item_id": "49186",
+          "event_id": "ev-21760",
+          "tag": "新規公演決定",
+          "content": "吉田兄弟  -THE YOSHIDA BROTHERS- ～吉田兄弟がビルボードライブに登場。 津軽三味線×太鼓×尺八で魅せる格別なステージ～",
+          "show_date": "2027.1.9(Sat)",
+          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21760"
+        },
         {
           "item_id": "49129",
           "event_id": "ev-21754",
@@ -281,36 +303,12 @@
           "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21750"
         },
         {
-          "item_id": "49080",
-          "event_id": "ev-21634",
-          "tag": "出演メンバー変更",
-          "content": "10月16日開催の『大比良瑞希』公演へ出演を予定しておりました和久井沙良氏は、体調不良のため出演を見合わせることとなりました。なお、公演はTakumadrops",
-          "show_date": "2026.10.16(Fri)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21634"
-        },
-        {
           "item_id": "48952",
           "event_id": "ev-21745",
           "tag": "新規公演決定",
           "content": "Chage Billboard Live 68 to 69 ～Chageが贈る恒例のバースデー公演。冬の夜をあたたかく包み込む、特別なひとときを～",
           "show_date": "2026.12.25(Fri)",
           "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21745"
-        },
-        {
-          "item_id": "48811",
-          "event_id": null,
-          "tag": "Special",
-          "content": "いよいよ今週10/10に公演を控えるMALIYA×SIRUPの対談ロングインタビュー(後編)がBillboard JAPANに掲載。",
-          "show_date": "2026.10.10(Sat)",
-          "url": "https://www.billboard-japan.com/special/detail/5465"
-        },
-        {
-          "item_id": "48764",
-          "event_id": "ev-21735",
-          "tag": "新規公演決定",
-          "content": "小関裕太 “ULTERIUS”-Billboard Live ～俳優・小関裕太がビルボードライブ初登場、自身初の音楽イベント『ULTERIUS』を開催～",
-          "show_date": "2027.1.30(Sat)",
-          "url": "https://www.billboard-live.com/yokohama/show?event_id=ev-21735"
         },
         {
           "item_id": "48706",
@@ -319,14 +317,6 @@
           "content": "ビルボードライブの月刊フリーペーパー『bbl MAGAZINE Vol.223』が発行されました。",
           "show_date": "",
           "url": "https://library.hhcross.hankyu-hanshin.jp/library/books/vol223_billboard_opn/book/#target/page_no=1"
-        },
-        {
-          "item_id": "48268",
-          "event_id": null,
-          "tag": "お知らせ",
-          "content": "台風25号の接近に伴うご案内",
-          "show_date": "2026.9.21(Mon)",
-          "url": "https://www.billboard-live.com/yokohama/whats-new/48268"
         }
       ]
     },
@@ -336,66 +326,34 @@
       "url": "https://k-arena.com/schedule/",
       "extract": "wp_schedule_api",
       "status": "changed",
-      "checked_at": "2026-10-15T01:17:08",
+      "checked_at": "2026-10-22T15:50:40",
       "new_shows": [
         {
-          "id": 7284,
-          "url": "https://k-arena.com/schedule/20270214-1/",
-          "artist": "KAWAII LAB. 5th ANNIVERSARY TOUR",
-          "date": "2027.02.14",
-          "title": "KAWAII LAB. 5th ANNIVERSARY TOUR"
+          "id": 7324,
+          "url": "https://k-arena.com/schedule/20261212-1/",
+          "artist": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama",
+          "date": "2026.12.12",
+          "title": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama"
         },
         {
-          "id": 7283,
-          "url": "https://k-arena.com/schedule/20270213-1/",
-          "artist": "KAWAII LAB. 5th ANNIVERSARY TOUR",
-          "date": "2027.02.13",
-          "title": "KAWAII LAB. 5th ANNIVERSARY TOUR"
+          "id": 7322,
+          "url": "https://k-arena.com/schedule/20261211-1/",
+          "artist": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama",
+          "date": "2026.12.11",
+          "title": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama"
         },
         {
-          "id": 7280,
-          "url": "https://k-arena.com/schedule/20261213-1/",
-          "artist": "2026年 最後の単独公演！の1週間前に追加公演",
-          "date": "2026.12.13",
-          "title": "2026年 最後の単独公演！の1週間前に追加公演"
-        },
-        {
-          "id": 7278,
-          "url": "https://k-arena.com/schedule/20270317-1/",
-          "artist": "Mrs. GREEN APPLE on “Harmony2”",
-          "date": "2027.03.17",
-          "title": "Mrs. GREEN APPLE on “Harmony2”"
-        },
-        {
-          "id": 7277,
-          "url": "https://k-arena.com/schedule/20271212-1/",
-          "artist": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜",
-          "date": "2027.12.12",
-          "title": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜"
-        },
-        {
-          "id": 7276,
-          "url": "https://k-arena.com/schedule/20271211-1/",
-          "artist": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜",
-          "date": "2027.12.11",
-          "title": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜"
-        },
-        {
-          "id": 7275,
-          "url": "https://k-arena.com/schedule/20271003-1/",
-          "artist": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜",
-          "date": "2027.10.03",
-          "title": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜"
-        },
-        {
-          "id": 7274,
-          "url": "https://k-arena.com/schedule/20271002-1/",
-          "artist": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜",
-          "date": "2027.10.02",
-          "title": "SUPER BEAVER 都会のラクダ TOUR 2027-2028 〜 ラクダムーンと、サンサンサンライズ 〜"
+          "id": 7311,
+          "url": "https://k-arena.com/schedule/20270923-1/",
+          "artist": "Chevon ONE MAN TOUR 2027",
+          "date": "2027.09.23",
+          "title": "Chevon ONE MAN TOUR 2027"
         }
       ],
       "ids": [
+        7324,
+        7322,
+        7311,
         7284,
         7283,
         7280,
@@ -469,6 +427,27 @@
         6288
       ],
       "shows": [
+        {
+          "id": 7324,
+          "url": "https://k-arena.com/schedule/20261212-1/",
+          "artist": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama",
+          "date": "2026.12.12",
+          "title": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama"
+        },
+        {
+          "id": 7322,
+          "url": "https://k-arena.com/schedule/20261211-1/",
+          "artist": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama",
+          "date": "2026.12.11",
+          "title": "2026 AND2BLE FAN-CON ＜W!nter inside＞ In Yokohama"
+        },
+        {
+          "id": 7311,
+          "url": "https://k-arena.com/schedule/20270923-1/",
+          "artist": "Chevon ONE MAN TOUR 2027",
+          "date": "2027.09.23",
+          "title": "Chevon ONE MAN TOUR 2027"
+        },
         {
           "id": 7284,
           "url": "https://k-arena.com/schedule/20270214-1/",
@@ -948,9 +927,9 @@
         {
           "id": 6447,
           "url": "https://k-arena.com/schedule/20270322-1/",
-          "artist": "Tele / Kアリーナ公演（タイトル未定）",
+          "artist": "Tele Tour 2027「風の脆さを知る友へ」",
           "date": "2027.03.22",
-          "title": "Tele / Kアリーナ公演（タイトル未定）"
+          "title": "Tele Tour 2027「風の脆さを知る友へ」"
         },
         {
           "id": 6291,
@@ -973,17 +952,17 @@
       "description": "新着公演情報",
       "url": "https://www.zepp.co.jp/hall/yokohama/schedule/",
       "extract": "show_schedule",
-      "status": "unchanged",
-      "checked_at": "2026-10-15T01:17:08",
-      "new_shows": [],
+      "status": "changed",
+      "checked_at": "2026-10-22T15:50:40",
+      "new_shows": [
+        {
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162087",
+          "artist": "森山直太朗",
+          "date": "2026.10.29",
+          "title": "NAOTARO MORIYAMA Zepp TOURS 2026 『Zepp de Rolling DOSA 〜すべから"
+        }
+      ],
       "urls": [
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160300",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159726",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159725",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=157045",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168193",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162488",
-        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159571",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159572",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=161402",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=155662",
@@ -991,52 +970,11 @@
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162351",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162352",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=163606",
+        "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162087",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160164",
         "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=153004"
       ],
       "shows": [
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160300",
-          "artist": "レトロリロン",
-          "date": "2026.10.15",
-          "title": "レトロリロン Zepp Tour 2026「アブノーマルライフハック」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159726",
-          "artist": "今井翼",
-          "date": "2026.10.16",
-          "title": "TSUBASA IMAI Live 2026 「Treasure」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159725",
-          "artist": "今井翼",
-          "date": "2026.10.17",
-          "title": "TSUBASA IMAI 2026　Happy 45th Anniversary! ーSpecial Talk Show"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=157045",
-          "artist": "ねぐせ。",
-          "date": "2026.10.18",
-          "title": "ねぐせ。ワンマンツアー2026　「君を強く抱きしめたいんだ！」"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=168193",
-          "artist": "AVAM／君に、胸キュン。／CURE’T／JamsCollection／Sweet Alley／ドレスコード／NANIMONO／NEVER END ROLL／VVSiS／Pretty Chuu／MEGAFON／REIRIE／Onephony",
-          "date": "2026.10.19",
-          "title": "AVAM presents『Débutante vol.10 Halloween SP』"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162488",
-          "artist": "ralph",
-          "date": "2026.10.20",
-          "title": "ralph ONE MAN LIVE 2026 \"Coast 2 Coast\" at ZEPP横浜"
-        },
-        {
-          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159571",
-          "artist": "go!go!vanillas",
-          "date": "2026.10.21",
-          "title": "go!go!vanillas presents「ぼくらのタイマン上等ツアー」"
-        },
         {
           "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=159572",
           "artist": "go!go!vanillas w/MONO NO AWARE",
@@ -1080,6 +1018,12 @@
           "title": "Private"
         },
         {
+          "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=162087",
+          "artist": "森山直太朗",
+          "date": "2026.10.29",
+          "title": "NAOTARO MORIYAMA Zepp TOURS 2026 『Zepp de Rolling DOSA 〜すべから"
+        },
+        {
           "url": "https://www.zepp.co.jp/hall/yokohama/schedule/single/?rid=160164",
           "artist": "ACIDMAN",
           "date": "2026.10.30",
@@ -1099,25 +1043,22 @@
       "url": "https://pia-arena-mm.jp/event@p1=2026&p2=06.html",
       "extract": "show_schedule",
       "status": "changed",
-      "checked_at": "2026-10-15T01:17:08",
+      "checked_at": "2026-10-22T15:50:40",
       "new_shows": [
         {
-          "url": "https://pia-arena-mm.jp/event/7320.html",
-          "artist": "SEKAI NO OWARI",
-          "date": "2026.12.22",
-          "title": "SEKAI NO OWARI"
+          "url": "https://pia-arena-mm.jp/event/7329.html",
+          "artist": "櫻坂46",
+          "date": "2026.12.15",
+          "title": "櫻坂46"
         },
         {
-          "url": "https://pia-arena-mm.jp/event/7322.html",
-          "artist": "SEKAI NO OWARI",
-          "date": "2026.12.23",
-          "title": "SEKAI NO OWARI"
+          "url": "https://pia-arena-mm.jp/event/7331.html",
+          "artist": "櫻坂46",
+          "date": "2026.12.16",
+          "title": "櫻坂46"
         }
       ],
       "urls": [
-        "https://pia-arena-mm.jp/event/6814.html",
-        "https://pia-arena-mm.jp/event/7219.html",
-        "https://pia-arena-mm.jp/event/7225.html",
         "https://pia-arena-mm.jp/event/6931.html",
         "https://pia-arena-mm.jp/event/6743.html",
         "https://pia-arena-mm.jp/event/6745.html",
@@ -1142,6 +1083,8 @@
         "https://pia-arena-mm.jp/event/7283.html",
         "https://pia-arena-mm.jp/event/7111.html",
         "https://pia-arena-mm.jp/event/7113.html",
+        "https://pia-arena-mm.jp/event/7329.html",
+        "https://pia-arena-mm.jp/event/7331.html",
         "https://pia-arena-mm.jp/event/7320.html",
         "https://pia-arena-mm.jp/event/7322.html",
         "https://pia-arena-mm.jp/event/7252.html",
@@ -1154,24 +1097,6 @@
         "https://pia-arena-mm.jp/event/7085.html"
       ],
       "shows": [
-        {
-          "url": "https://pia-arena-mm.jp/event/6814.html",
-          "artist": "Charlie Puth",
-          "date": "2026.10.16",
-          "title": "Charlie Puth"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7219.html",
-          "artist": "SIXFONIA",
-          "date": "2026.10.17",
-          "title": "SIXFONIA"
-        },
-        {
-          "url": "https://pia-arena-mm.jp/event/7225.html",
-          "artist": "SIXFONIA",
-          "date": "2026.10.18",
-          "title": "SIXFONIA"
-        },
         {
           "url": "https://pia-arena-mm.jp/event/6931.html",
           "artist": "iri",
@@ -1317,6 +1242,18 @@
           "title": "2026 FNC KINGDOM- THE FLOATING BAZAAR -"
         },
         {
+          "url": "https://pia-arena-mm.jp/event/7329.html",
+          "artist": "櫻坂46",
+          "date": "2026.12.15",
+          "title": "櫻坂46"
+        },
+        {
+          "url": "https://pia-arena-mm.jp/event/7331.html",
+          "artist": "櫻坂46",
+          "date": "2026.12.16",
+          "title": "櫻坂46"
+        },
+        {
           "url": "https://pia-arena-mm.jp/event/7320.html",
           "artist": "SEKAI NO OWARI",
           "date": "2026.12.22",
@@ -1383,13 +1320,17 @@
       "description": "新着公演情報",
       "url": "https://landmarkhall.jp/schedule/",
       "extract": "show_schedule",
-      "status": "unchanged",
-      "checked_at": "2026-10-15T01:17:08",
-      "new_shows": [],
+      "status": "changed",
+      "checked_at": "2026-10-22T15:50:40",
+      "new_shows": [
+        {
+          "url": "https://landmarkhall.jp/schedule/2027/01/10792/",
+          "artist": "放課後探偵、廃部につき",
+          "date": "2027.1.17",
+          "title": ""
+        }
+      ],
       "urls": [
-        "https://landmarkhall.jp/schedule/2026/10/10645/",
-        "https://landmarkhall.jp/schedule/2026/10/10808/",
-        "https://landmarkhall.jp/schedule/2026/10/10714/",
         "https://landmarkhall.jp/schedule/2026/10/10783/",
         "https://landmarkhall.jp/schedule/2026/11/10772/",
         "https://landmarkhall.jp/schedule/2026/11/10605/",
@@ -1399,27 +1340,10 @@
         "https://landmarkhall.jp/schedule/2026/12/10786/",
         "https://landmarkhall.jp/schedule/2026/12/10758/",
         "https://landmarkhall.jp/schedule/2026/12/10706/",
+        "https://landmarkhall.jp/schedule/2027/01/10792/",
         "https://landmarkhall.jp/schedule/2027/02/10619/"
       ],
       "shows": [
-        {
-          "url": "https://landmarkhall.jp/schedule/2026/10/10645/",
-          "artist": "鬼頭明里",
-          "date": "2026.10.17",
-          "title": ""
-        },
-        {
-          "url": "https://landmarkhall.jp/schedule/2026/10/10808/",
-          "artist": "スターアイドルサミット vol.25",
-          "date": "2026.10.18",
-          "title": ""
-        },
-        {
-          "url": "https://landmarkhall.jp/schedule/2026/10/10714/",
-          "artist": "オノマトペ2",
-          "date": "2026.10.19",
-          "title": ""
-        },
         {
           "url": "https://landmarkhall.jp/schedule/2026/10/10783/",
           "artist": "MeseMoa.",
@@ -1475,6 +1399,12 @@
           "title": ""
         },
         {
+          "url": "https://landmarkhall.jp/schedule/2027/01/10792/",
+          "artist": "放課後探偵、廃部につき",
+          "date": "2027.1.17",
+          "title": ""
+        },
+        {
           "url": "https://landmarkhall.jp/schedule/2027/02/10619/",
           "artist": "ラフ×ラフ",
           "date": "2027.2.11",
@@ -1488,7 +1418,7 @@
       "url": "https://yokohama-minatomiraihall.jp/concert/calendar.html",
       "extract": "js_pending",
       "status": "unchanged",
-      "checked_at": "2026-10-15T01:17:08"
+      "checked_at": "2026-10-22T15:50:40"
     },
     {
       "name": "パシフィコ横浜 国立大ホール",
@@ -1496,7 +1426,7 @@
       "url": "https://www.pacifico.co.jp/event/",
       "extract": "js_pending",
       "status": "unchanged",
-      "checked_at": "2026-10-15T01:17:08"
+      "checked_at": "2026-10-22T15:50:40"
     }
   ]
 }
