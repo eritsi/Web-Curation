@@ -1,24 +1,35 @@
 {
-  "generated_at": "2026-10-25T11:23:42",
+  "generated_at": "2026-10-26T11:23:28",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "unchanged",
-      "checked_at": "2026-10-25T11:23:42",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-10-26T11:23:28",
+      "new_listings": [
+        {
+          "id": "5606",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5606",
+          "name": "エヴァーグリーン立石",
+          "price": "4,580万円",
+          "area": "55.78㎡",
+          "madori": "3LDK",
+          "traffic": "京成押上線『京成立石』駅徒歩6分",
+          "location": "東京都葛飾区東立石3-29-12"
+        }
+      ],
       "all_listings": [
         {
-          "id": "5557",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5557",
-          "name": "クレアホームズ和光丸山台",
-          "price": "7,480万円",
-          "area": "66.40㎡",
-          "madori": "3LDK+WIC",
-          "traffic": "東京メトロ副都心線・東京メトロ有楽町線・東武東上線『和光市』駅徒歩10分",
-          "location": "埼玉県和光市丸山台2-11-20"
+          "id": "5606",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5606",
+          "name": "エヴァーグリーン立石",
+          "price": "4,580万円",
+          "area": "55.78㎡",
+          "madori": "3LDK",
+          "traffic": "京成押上線『京成立石』駅徒歩6分",
+          "location": "東京都葛飾区東立石3-29-12"
         },
         {
           "id": "5592",
@@ -29,6 +40,16 @@
           "madori": "3LDK+WIC",
           "traffic": "東武東上線『志木』駅徒歩2分",
           "location": "埼玉県志木市本町5-17-5"
+        },
+        {
+          "id": "5557",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5557",
+          "name": "クレアホームズ和光丸山台",
+          "price": "7,480万円",
+          "area": "66.40㎡",
+          "madori": "3LDK+WIC",
+          "traffic": "東京メトロ副都心線・東京メトロ有楽町線・東武東上線『和光市』駅徒歩10分",
+          "location": "埼玉県和光市丸山台2-11-20"
         },
         {
           "id": "5544",
@@ -114,7 +135,7 @@
           "id": "5522",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5522",
           "name": "ロワール横浜西",
-          "price": "6,990万円価格改定",
+          "price": "6,990万円",
           "area": "69.11㎡",
           "madori": "3LDK",
           "traffic": "相鉄本線『天王町』駅徒歩8分",
@@ -124,7 +145,7 @@
           "id": "5439",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
           "name": "パークハイム桜新町",
-          "price": "6,490万円価格改定",
+          "price": "6,490万円",
           "area": "54.08㎡",
           "madori": "2LDK+WIC",
           "traffic": "東急田園都市線『桜新町』駅徒歩12分",
@@ -134,7 +155,7 @@
           "id": "5426",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
           "name": "シャンノール金町",
-          "price": "5,690万円価格改定",
+          "price": "5,690万円",
           "area": "60.37㎡",
           "madori": "2SLDK",
           "traffic": "JR常磐緩行線『金町』駅徒歩4分",
@@ -144,7 +165,7 @@
           "id": "5499",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5499",
           "name": "美しが丘ハイム",
-          "price": "7,890万円価格改定",
+          "price": "7,890万円",
           "area": "61.58㎡",
           "madori": "2LDK",
           "traffic": "東急田園都市線『たまプラーザ』駅徒歩8分",
@@ -182,8 +203,9 @@
         }
       ],
       "ids": [
-        "5557",
+        "5606",
         "5592",
+        "5557",
         "5544",
         "5572",
         "5576",
@@ -207,7 +229,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-10-25T11:23:42",
+      "checked_at": "2026-10-26T11:23:28",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -218,7 +240,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-10-25T11:23:42",
+      "checked_at": "2026-10-26T11:23:28",
       "new_listings": [],
       "all_listings": [
         {
@@ -320,56 +342,6 @@
           "madori": "2LDK",
           "traffic": "水天宮前駅徒歩6分",
           "location": "中央区日本橋中洲"
-        },
-        {
-          "id": "wtA2eJJJw5I",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E3%83%86%E3%83%A9%E3%82%B9%E3%81%A7%E4%B9%BE%E6%9D%AF",
-          "name": "テラスで乾杯！",
-          "price": "8,280万円",
-          "area": "60.32㎡",
-          "madori": "1LDK",
-          "traffic": "成城学園前駅徒歩13分",
-          "location": "世田谷区成城"
-        },
-        {
-          "id": "QteRDxj84Mg",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%A4%A7%E7%94%B0%E5%8C%BA/%E4%BB%8A%E5%A4%9C%E3%81%AF%E3%80%81%E3%83%AB%E3%83%BC%E3%83%95%E3%83%90%E3%83%AB%E3%82%B3%E3%83%8B%E3%83%BC%E3%81%A7%E3%80%82",
-          "name": "今夜は、ルーフバルコニーで。",
-          "price": "6,198万円",
-          "area": "50.42㎡",
-          "madori": "1LDK＋Roof",
-          "traffic": "池上駅徒歩6分",
-          "location": "大田区池上"
-        },
-        {
-          "id": "mh1howfBKW4",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%81%84%E3%81%84%E8%A1%97%E3%80%81%E3%81%84%E3%81%84%E5%BA%83%E3%81%95",
-          "name": "いい街、いい広さ",
-          "price": "8,490万円",
-          "area": "79.18㎡",
-          "madori": "1SSLDK",
-          "traffic": "門前仲町駅徒歩5分",
-          "location": "江東区富岡"
-        },
-        {
-          "id": "jek827B1ZTY",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E7%B7%91%E6%9C%9B%E7%A9%BA%E6%9C%9B%E3%80%81%E6%B7%B1%E5%91%BC%E5%90%B8",
-          "name": "緑望空望、深呼吸",
-          "price": "3,980万円",
-          "area": "76.43㎡",
-          "madori": "2SLDK",
-          "traffic": "あざみ野駅徒歩15分",
-          "location": "横浜市青葉区荏田町"
-        },
-        {
-          "id": "mULBB3HWKg0",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%96%B0%E5%AE%BF%E5%8C%BA/%E8%AA%87%E3%82%8A%E9%AB%98%E3%81%8D%E6%8C%91%E6%88%A6%E8%80%85%E3%81%B8",
-          "name": "誇り高き挑戦者へ",
-          "price": "5,980万円",
-          "area": "52.17㎡",
-          "madori": "ワンルーム",
-          "traffic": "西早稲田駅徒歩4分",
-          "location": "新宿区西早稲田"
         }
       ],
       "ids": [
@@ -382,12 +354,7 @@
         "ZxRv1bbHCns",
         "sTYcXK7CFfY",
         "vsCK0Csunwo",
-        "yFChGSPWosU",
-        "wtA2eJJJw5I",
-        "QteRDxj84Mg",
-        "mh1howfBKW4",
-        "jek827B1ZTY",
-        "mULBB3HWKg0"
+        "yFChGSPWosU"
       ]
     },
     {
@@ -396,7 +363,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-10-25T11:23:42",
+      "checked_at": "2026-10-26T11:23:28",
       "new_listings": [],
       "all_listings": [
         {
@@ -508,7 +475,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-25T11:23:42",
+      "checked_at": "2026-10-26T11:23:28",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -519,7 +486,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-25T11:23:42",
+      "checked_at": "2026-10-26T11:23:28",
       "new_listings": [],
       "all_listings": [
         {
