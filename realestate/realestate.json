@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T11:58:45",
+  "generated_at": "2026-10-28T12:08:51",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-10-27T11:58:45",
+      "checked_at": "2026-10-28T12:08:51",
       "new_listings": [],
       "all_listings": [
         {
@@ -218,7 +218,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-10-27T11:58:45",
+      "checked_at": "2026-10-28T12:08:51",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -228,10 +228,31 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-10-27T11:58:45",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-10-28T12:08:51",
+      "new_listings": [
+        {
+          "id": "IkWsHm3Ol6k",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%82%B9%E3%82%B1%E3%83%AB%E3%83%88%E3%83%B3%E8%B2%A9%E5%A3%B2in%E6%B8%85%E6%BE%84%E7%99%BD%E6%B2%B3",
+          "name": "スケルトン販売 in 清澄白河",
+          "price": "5,880万円(改装前価格)",
+          "area": "56.16㎡",
+          "madori": "スケルトン",
+          "traffic": "門前仲町駅徒歩10分",
+          "location": "江東区福住"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "IkWsHm3Ol6k",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%82%B9%E3%82%B1%E3%83%AB%E3%83%88%E3%83%B3%E8%B2%A9%E5%A3%B2in%E6%B8%85%E6%BE%84%E7%99%BD%E6%B2%B3",
+          "name": "スケルトン販売 in 清澄白河",
+          "price": "5,880万円(改装前価格)",
+          "area": "56.16㎡",
+          "madori": "スケルトン",
+          "traffic": "門前仲町駅徒歩10分",
+          "location": "江東区福住"
+        },
         {
           "id": "eS9WTIPZpVo",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E7%AA%93%E6%9E%A0%E3%82%92%E9%A3%9B%E3%81%B3%E8%B6%8A%E3%81%88%E3%81%A6",
@@ -324,6 +345,7 @@
         }
       ],
       "ids": [
+        "IkWsHm3Ol6k",
         "eS9WTIPZpVo",
         "uuAJXZF7UDs",
         "zeXnLpqAxMk",
@@ -341,20 +363,30 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "changed",
-      "checked_at": "2026-10-27T11:58:45",
+      "checked_at": "2026-10-28T12:08:51",
       "new_listings": [
         {
-          "id": "27844",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27844",
-          "name": "飾らず豊かな日常を",
-          "price": "8,500万円",
-          "area": "142.53㎡",
+          "id": "27898",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27898",
+          "name": "おだやかに暮らす家",
+          "price": "6,480万円",
+          "area": "74.67㎡",
           "madori": "",
-          "traffic": "西武池袋線「大泉学園」駅 バス7分 「大泉風致地区」バス停 徒歩6分",
-          "location": "練馬区大泉学園町"
+          "traffic": "京王線「仙川」駅 徒歩9分",
+          "location": "調布市若葉町"
         }
       ],
       "all_listings": [
+        {
+          "id": "27898",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27898",
+          "name": "おだやかに暮らす家",
+          "price": "6,480万円",
+          "area": "74.67㎡",
+          "madori": "",
+          "traffic": "京王線「仙川」駅 徒歩9分",
+          "location": "調布市若葉町"
+        },
         {
           "id": "27844",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=27844",
@@ -434,19 +466,10 @@
           "madori": "",
           "traffic": "東西線「葛西」駅 徒歩12分",
           "location": "江戸川区東葛西"
-        },
-        {
-          "id": "26017",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26017",
-          "name": "プロダクトにこだわる",
-          "price": "5,830万円（税込）",
-          "area": "79.49㎡",
-          "madori": "",
-          "traffic": "西武池袋線「清瀬」駅 徒歩14分",
-          "location": "東久留米市小山"
         }
       ],
       "ids": [
+        "27898",
         "27844",
         "27558",
         "27752",
@@ -454,8 +477,7 @@
         "27674",
         "27537",
         "25096",
-        "27308",
-        "26017"
+        "27308"
       ]
     },
     {
@@ -464,7 +486,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-27T11:58:45",
+      "checked_at": "2026-10-28T12:08:51",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -475,7 +497,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-27T11:58:45",
+      "checked_at": "2026-10-28T12:08:51",
       "new_listings": [],
       "all_listings": [
         {
