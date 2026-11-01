@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-10-31T12:22:22",
+  "generated_at": "2026-11-01T12:21:53",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "changed",
-      "checked_at": "2026-10-31T12:22:22",
-      "new_listings": [
-        {
-          "id": "5571",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5571",
-          "name": "日商岩井府中マンション",
-          "price": "4,780万円",
-          "area": "61.60㎡",
-          "madori": "2SLDK+SIC",
-          "traffic": "京王線『府中』駅徒歩10分",
-          "location": "東京都府中市緑町2-6-1"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-11-01T12:21:53",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "5571",
@@ -70,16 +59,6 @@
           "madori": "3LDK+SIC",
           "traffic": "東京スカイツリーライン『竹ノ塚』駅徒歩5分",
           "location": "東京都足立区竹の塚1-36-7"
-        },
-        {
-          "id": "5408",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5408",
-          "name": "エクセレント港北センター南",
-          "price": "6,990万円価格改定",
-          "area": "75.44㎡",
-          "madori": "3LDK",
-          "traffic": "横浜ブルーライン・横浜グリーンライン『センター南』駅徒歩7分",
-          "location": "神奈川県横浜市都筑区荏田東4-1-14"
         },
         {
           "id": "5499",
@@ -218,7 +197,6 @@
         "5606",
         "5592",
         "5574",
-        "5408",
         "5499",
         "5572",
         "5544",
@@ -240,7 +218,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-10-31T12:22:22",
+      "checked_at": "2026-11-01T12:21:53",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -250,40 +228,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-10-31T12:22:22",
-      "new_listings": [
-        {
-          "id": "ZhpsJnCWXGY",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%AD%E9%87%8E%E5%8C%BA/%E7%B7%91%E3%81%AB%E6%B5%B8%E3%81%8B%E3%82%8B%E3%80%81136%E3%8E%A1",
-          "name": "緑に浸かる、136㎡",
-          "price": "7,980万円",
-          "area": "136.22㎡",
-          "madori": "3LDK",
-          "traffic": "鷺ノ宮駅徒歩11分",
-          "location": "中野区白鷺"
-        },
-        {
-          "id": "cG02XtWjrY0",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA/%E3%81%B2%E3%82%89%E3%81%91%E3%82%B4%E3%83%9E",
-          "name": "ひらけゴマ！",
-          "price": "6,498万円",
-          "area": "70.16㎡",
-          "madori": "3LDK",
-          "traffic": "菊名駅徒歩12分",
-          "location": "横浜市港北区大豆戸町"
-        },
-        {
-          "id": "WPAQ3g4K3Ug",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA/%E5%A5%BD%E3%81%8D%E3%81%AB%E5%BA%83%E3%81%92%E3%82%8B50%E3%8E%A1",
-          "name": "好きに広げる50㎡",
-          "price": "2,780万円",
-          "area": "50.92㎡",
-          "madori": "2LDK",
-          "traffic": "綱島駅徒歩18分",
-          "location": "横浜市港北区綱島西"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-11-01T12:21:53",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "ZhpsJnCWXGY",
@@ -438,7 +385,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-10-31T12:22:22",
+      "checked_at": "2026-11-01T12:21:53",
       "new_listings": [],
       "all_listings": [
         {
@@ -520,16 +467,6 @@
           "madori": "",
           "traffic": "東急東横線・横浜市営地下鉄グリーンライン「日吉」駅 バス11分 「さくらが丘」バス停 徒歩4分",
           "location": "川崎市高津区蟹ケ谷"
-        },
-        {
-          "id": "27308",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27308",
-          "name": "居心地の良さは細部に宿る",
-          "price": "5,980万円",
-          "area": "70.4㎡",
-          "madori": "",
-          "traffic": "東西線「葛西」駅 徒歩12分",
-          "location": "江戸川区東葛西"
         }
       ],
       "ids": [
@@ -540,8 +477,7 @@
         "26866",
         "27674",
         "27537",
-        "25096",
-        "27308"
+        "25096"
       ]
     },
     {
@@ -550,7 +486,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-31T12:22:22",
+      "checked_at": "2026-11-01T12:21:53",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -561,7 +497,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-10-31T12:22:22",
+      "checked_at": "2026-11-01T12:21:53",
       "new_listings": [],
       "all_listings": [
         {
