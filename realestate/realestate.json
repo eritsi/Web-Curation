@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T13:39:35",
+  "generated_at": "2026-11-04T12:59:04",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-03T13:39:35",
+      "checked_at": "2026-11-04T12:59:04",
       "new_listings": [],
       "all_listings": [
         {
@@ -229,7 +229,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-03T13:39:35",
+      "checked_at": "2026-11-04T12:59:04",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -240,7 +240,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-11-03T13:39:35",
+      "checked_at": "2026-11-04T12:59:04",
       "new_listings": [],
       "all_listings": [
         {
@@ -324,16 +324,6 @@
           "location": "新宿区西早稲田"
         },
         {
-          "id": "U09vlN1RCQU",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E7%B7%91%E3%81%AB%E8%85%B0%E6%8E%9B%E3%81%91%E3%81%A6",
-          "name": "緑に腰掛けて",
-          "price": "6,999万円",
-          "area": "72.00㎡",
-          "madori": "3LDK",
-          "traffic": "芦花公園駅徒歩4分",
-          "location": "世田谷区南烏山"
-        },
-        {
           "id": "IkWsHm3Ol6k",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%82%B9%E3%82%B1%E3%83%AB%E3%83%88%E3%83%B3%E8%B2%A9%E5%A3%B2in%E6%B8%85%E6%BE%84%E7%99%BD%E6%B2%B3",
           "name": "スケルトン販売 in 清澄白河",
@@ -353,7 +343,6 @@
         "jFZZjySL7J0",
         "G6Ec9Zv0HQc",
         "zYPjlH1Nw9A",
-        "U09vlN1RCQU",
         "IkWsHm3Ol6k"
       ]
     },
@@ -363,20 +352,30 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "changed",
-      "checked_at": "2026-11-03T13:39:35",
+      "checked_at": "2026-11-04T12:59:04",
       "new_listings": [
         {
-          "id": "26998",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26998",
-          "name": "景色と彩りに目覚める",
-          "price": "5,480万円",
-          "area": "55.62㎡",
+          "id": "27935",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27935",
+          "name": "変容する暮らし",
+          "price": "5,980万円",
+          "area": "55.89㎡",
           "madori": "",
-          "traffic": "東西線「落合」駅 徒歩9分",
-          "location": "新宿区北新宿"
+          "traffic": "東西線「早稲田」駅 徒歩3分",
+          "location": "新宿区喜久井町"
         }
       ],
       "all_listings": [
+        {
+          "id": "27935",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27935",
+          "name": "変容する暮らし",
+          "price": "5,980万円",
+          "area": "55.89㎡",
+          "madori": "",
+          "traffic": "東西線「早稲田」駅 徒歩3分",
+          "location": "新宿区喜久井町"
+        },
         {
           "id": "27898",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=27898",
@@ -451,24 +450,15 @@
           "id": "27308",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=27308",
           "name": "居心地の良さは細部に宿る",
-          "price": "5,980万円",
+          "price": "5,780万円",
           "area": "70.4㎡",
           "madori": "",
           "traffic": "東西線「葛西」駅 徒歩12分",
           "location": "江戸川区東葛西"
-        },
-        {
-          "id": "26998",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26998",
-          "name": "景色と彩りに目覚める",
-          "price": "5,480万円",
-          "area": "55.62㎡",
-          "madori": "",
-          "traffic": "東西線「落合」駅 徒歩9分",
-          "location": "新宿区北新宿"
         }
       ],
       "ids": [
+        "27935",
         "27898",
         "27558",
         "27752",
@@ -476,8 +466,7 @@
         "27674",
         "27537",
         "25096",
-        "27308",
-        "26998"
+        "27308"
       ]
     },
     {
@@ -486,7 +475,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-03T13:39:35",
+      "checked_at": "2026-11-04T12:59:04",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -496,9 +485,20 @@
       "description": "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）",
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
-      "status": "unchanged",
-      "checked_at": "2026-11-03T13:39:35",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-11-04T12:59:04",
+      "new_listings": [
+        {
+          "id": "20727433",
+          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_20727433/",
+          "name": "ライオンズマンション鶴巻温泉",
+          "price": "1180万円",
+          "area": "55.08m2",
+          "madori": "2DK",
+          "traffic": "小田急小田原線「鶴巻温泉」徒歩1分",
+          "location": "神奈川県秦野市鶴巻北２"
+        }
+      ],
       "all_listings": [
         {
           "id": "21321790",
@@ -508,6 +508,16 @@
           "area": "85.66m2",
           "madori": "3LDK",
           "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
+          "location": "神奈川県秦野市鶴巻北２"
+        },
+        {
+          "id": "20727433",
+          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_20727433/",
+          "name": "ライオンズマンション鶴巻温泉",
+          "price": "1180万円",
+          "area": "55.08m2",
+          "madori": "2DK",
+          "traffic": "小田急小田原線「鶴巻温泉」徒歩1分",
           "location": "神奈川県秦野市鶴巻北２"
         },
         {
@@ -543,6 +553,7 @@
       ],
       "ids": [
         "21321790",
+        "20727433",
         "21298949",
         "21279975",
         "21751654"
