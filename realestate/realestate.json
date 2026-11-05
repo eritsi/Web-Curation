@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:59:04",
+  "generated_at": "2026-11-05T13:20:20",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-04T12:59:04",
+      "checked_at": "2026-11-05T13:20:20",
       "new_listings": [],
       "all_listings": [
         {
@@ -229,7 +229,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-04T12:59:04",
+      "checked_at": "2026-11-05T13:20:20",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -240,7 +240,7 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "unchanged",
-      "checked_at": "2026-11-04T12:59:04",
+      "checked_at": "2026-11-05T13:20:20",
       "new_listings": [],
       "all_listings": [
         {
@@ -352,20 +352,30 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "changed",
-      "checked_at": "2026-11-04T12:59:04",
+      "checked_at": "2026-11-05T13:20:20",
       "new_listings": [
         {
-          "id": "27935",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27935",
-          "name": "変容する暮らし",
-          "price": "5,980万円",
-          "area": "55.89㎡",
+          "id": "26511",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26511",
+          "name": "小庭とつながる世界",
+          "price": "4,750万円",
+          "area": "65.63㎡",
           "madori": "",
-          "traffic": "東西線「早稲田」駅 徒歩3分",
-          "location": "新宿区喜久井町"
+          "traffic": "東急田園都市線「梶が谷」駅 徒歩6分",
+          "location": "川崎市高津区下作延"
         }
       ],
       "all_listings": [
+        {
+          "id": "26511",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26511",
+          "name": "小庭とつながる世界",
+          "price": "4,750万円",
+          "area": "65.63㎡",
+          "madori": "",
+          "traffic": "東急田園都市線「梶が谷」駅 徒歩6分",
+          "location": "川崎市高津区下作延"
+        },
         {
           "id": "27935",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=27935",
@@ -458,6 +468,7 @@
         }
       ],
       "ids": [
+        "26511",
         "27935",
         "27898",
         "27558",
@@ -475,7 +486,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-04T12:59:04",
+      "checked_at": "2026-11-05T13:20:20",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -485,20 +496,9 @@
       "description": "鶴巻温泉駅徒歩5分以内（〜9000万・50㎡以上）",
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
-      "status": "changed",
-      "checked_at": "2026-11-04T12:59:04",
-      "new_listings": [
-        {
-          "id": "20727433",
-          "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_20727433/",
-          "name": "ライオンズマンション鶴巻温泉",
-          "price": "1180万円",
-          "area": "55.08m2",
-          "madori": "2DK",
-          "traffic": "小田急小田原線「鶴巻温泉」徒歩1分",
-          "location": "神奈川県秦野市鶴巻北２"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-11-05T13:20:20",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "21321790",
