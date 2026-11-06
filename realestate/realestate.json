@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:20:20",
+  "generated_at": "2026-11-06T13:18:18",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-05T13:20:20",
+      "checked_at": "2026-11-06T13:18:18",
       "new_listings": [],
       "all_listings": [
         {
@@ -229,7 +229,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-05T13:20:20",
+      "checked_at": "2026-11-06T13:18:18",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -239,10 +239,111 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-11-05T13:20:20",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-11-06T13:18:18",
+      "new_listings": [
+        {
+          "id": "Q8FQAeEs7N0",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/DreaminRed",
+          "name": "Dream in Red",
+          "price": "3,980万円",
+          "area": "50.67㎡",
+          "madori": "1LDK",
+          "traffic": "武蔵関駅徒歩9分",
+          "location": "練馬区関町南"
+        },
+        {
+          "id": "Qubm0Kd4oyM",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%89%E9%B7%B9%E5%B8%82/%E5%85%89%E3%81%A8%E9%A2%A8%E3%81%8C%E5%B7%A1%E3%82%8B%E6%A9%9F%E8%83%BD%E7%BE%8E",
+          "name": "光と風が巡る機能美",
+          "price": "5,980万円",
+          "area": "64.22㎡",
+          "madori": "2LDK",
+          "traffic": "三鷹駅バス15分徒歩1分",
+          "location": "三鷹市下連雀"
+        },
+        {
+          "id": "GPAArkIXWSg",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E6%B7%B1%E7%B7%91%E3%81%AE%E4%BD%99%E9%9F%BB%E3%81%AB%E3%81%BB%E3%81%A9%E3%81%91%E3%82%8B",
+          "name": "深緑の余韻にほどける",
+          "price": "8,990万円",
+          "area": "66.12㎡",
+          "madori": "2LDK",
+          "traffic": "五反田駅徒歩9分",
+          "location": "品川区東五反田"
+        },
+        {
+          "id": "SNqNQjtEwJs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E6%98%9F%E5%A4%A9%E3%82%A2%E3%83%A9%E3%83%99%E3%82%B9%E3%82%AF",
+          "name": "星天アラベスク",
+          "price": "6,780万円",
+          "area": "67.78㎡",
+          "madori": "3LDK",
+          "traffic": "二子玉川駅徒歩17分",
+          "location": "世田谷区鎌田"
+        },
+        {
+          "id": "IT1yzaOTUDI",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E5%B7%A1%E3%82%8B%E5%AD%A3%E7%AF%80%E3%82%92%E6%8F%8F%E3%81%8D%E3%81%A8%E3%82%81%E3%82%88%E3%81%86",
+          "name": "巡る季節を描きとめよう",
+          "price": "6,480万円",
+          "area": "61.18㎡",
+          "madori": "2LDK",
+          "traffic": "駒沢大学駅徒歩12分",
+          "location": "世田谷区弦巻"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "Q8FQAeEs7N0",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/DreaminRed",
+          "name": "Dream in Red",
+          "price": "3,980万円",
+          "area": "50.67㎡",
+          "madori": "1LDK",
+          "traffic": "武蔵関駅徒歩9分",
+          "location": "練馬区関町南"
+        },
+        {
+          "id": "Qubm0Kd4oyM",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%89%E9%B7%B9%E5%B8%82/%E5%85%89%E3%81%A8%E9%A2%A8%E3%81%8C%E5%B7%A1%E3%82%8B%E6%A9%9F%E8%83%BD%E7%BE%8E",
+          "name": "光と風が巡る機能美",
+          "price": "5,980万円",
+          "area": "64.22㎡",
+          "madori": "2LDK",
+          "traffic": "三鷹駅バス15分徒歩1分",
+          "location": "三鷹市下連雀"
+        },
+        {
+          "id": "GPAArkIXWSg",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E6%B7%B1%E7%B7%91%E3%81%AE%E4%BD%99%E9%9F%BB%E3%81%AB%E3%81%BB%E3%81%A9%E3%81%91%E3%82%8B",
+          "name": "深緑の余韻にほどける",
+          "price": "8,990万円",
+          "area": "66.12㎡",
+          "madori": "2LDK",
+          "traffic": "五反田駅徒歩9分",
+          "location": "品川区東五反田"
+        },
+        {
+          "id": "SNqNQjtEwJs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E6%98%9F%E5%A4%A9%E3%82%A2%E3%83%A9%E3%83%99%E3%82%B9%E3%82%AF",
+          "name": "星天アラベスク",
+          "price": "6,780万円",
+          "area": "67.78㎡",
+          "madori": "3LDK",
+          "traffic": "二子玉川駅徒歩17分",
+          "location": "世田谷区鎌田"
+        },
+        {
+          "id": "IT1yzaOTUDI",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E5%B7%A1%E3%82%8B%E5%AD%A3%E7%AF%80%E3%82%92%E6%8F%8F%E3%81%8D%E3%81%A8%E3%82%81%E3%82%88%E3%81%86",
+          "name": "巡る季節を描きとめよう",
+          "price": "6,480万円",
+          "area": "61.18㎡",
+          "madori": "2LDK",
+          "traffic": "駒沢大学駅徒歩12分",
+          "location": "世田谷区弦巻"
+        },
         {
           "id": "ZhpsJnCWXGY",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%AD%E9%87%8E%E5%8C%BA/%E7%B7%91%E3%81%AB%E6%B5%B8%E3%81%8B%E3%82%8B%E3%80%81136%E3%8E%A1",
@@ -335,6 +436,11 @@
         }
       ],
       "ids": [
+        "Q8FQAeEs7N0",
+        "Qubm0Kd4oyM",
+        "GPAArkIXWSg",
+        "SNqNQjtEwJs",
+        "IT1yzaOTUDI",
         "ZhpsJnCWXGY",
         "ReIqEatIoEU",
         "cG02XtWjrY0",
@@ -351,20 +457,9 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "changed",
-      "checked_at": "2026-11-05T13:20:20",
-      "new_listings": [
-        {
-          "id": "26511",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=26511",
-          "name": "小庭とつながる世界",
-          "price": "4,750万円",
-          "area": "65.63㎡",
-          "madori": "",
-          "traffic": "東急田園都市線「梶が谷」駅 徒歩6分",
-          "location": "川崎市高津区下作延"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-11-06T13:18:18",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "26511",
@@ -486,7 +581,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-05T13:20:20",
+      "checked_at": "2026-11-06T13:18:18",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -497,7 +592,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-05T13:20:20",
+      "checked_at": "2026-11-06T13:18:18",
       "new_listings": [],
       "all_listings": [
         {
