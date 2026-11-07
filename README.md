@@ -55,6 +55,7 @@ python generate_html.py
   keep_latest: 5                       # 保持件数の上限
   filter_past: true                    # 過去日付を除外
   exclude_artist_pattern: "^Private$"  # タイトル除外パターン（正規表現）
+  sort_by_period: true                 # links: 文字列中の期間（11/9～11/15）で新しい順に並べ、終了済みを除外
 ```
 
 変更後にローカルで確認：
@@ -135,6 +136,8 @@ python generate_html.py
 ## 将棋（shogi/）
 
 `shogi/index.html` は将棋の序盤練習ページ「序盤30手道場」（完全クライアントサイド・単一HTML）。GitHub Pages では `/shogi/` で公開される。学習記録はブラウザの localStorage に保存される。
+
+同様に `othello/index.html` は「オセロ30手道場」で、`/othello/` で公開される。
 
 ---
 

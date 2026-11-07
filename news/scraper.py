@@ -7,7 +7,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-from datetime import datetime
+from datetime import datetime, date, timezone, timedelta
 
 SNAPSHOT_DIR = "snapshots"
 NEWS_FILE = "news.json"
@@ -131,6 +131,37 @@ def extract_links(soup, base_url, link_filter):
             links.append({"text": text, "href": href})
             seen.add(href)
     return links
+
+
+def sort_links_by_period(links, today=None):
+    """リンク文字列中の期間（例: 11/9～11/15）で新しい順に並べ、終了済みの期間を除く。
+    サイト側が「今週→次週」の順で追記するため、そのままだと新しい週が下に埋もれる。"""
+    today = today or datetime.now(timezone(timedelta(hours=9))).date()
+    pattern = re.compile(r"(\d{1,2})/(\d{1,2})\s*[～〜~\-－–]\s*(?:(\d{1,2})/)?(\d{1,2})")
+
+    def to_date(m, d):
+        # 年は書かれていないので、今日に最も近い年を採用（年末年始の跨ぎ対策）
+        cands = [date(today.year + dy, m, d) for dy in (-1, 0, 1)]
+        return min(cands, key=lambda x: abs((x - today).days))
+
+    dated, undated = [], []
+    for link in links:
+        mt = pattern.search(link["text"])
+        if not mt:
+            undated.append(link)
+            continue
+        try:
+            start = to_date(int(mt.group(1)), int(mt.group(2)))
+            end = to_date(int(mt.group(3) or mt.group(1)), int(mt.group(4)))
+        except ValueError:
+            undated.append(link)
+            continue
+        if end < start:
+            end = date(end.year + 1, end.month, end.day)
+        if end >= today:
+            dated.append((start, link))
+    dated.sort(key=lambda x: x[0], reverse=True)
+    return [l for _, l in dated] + undated
 
 
 def load_snapshot(sid):
@@ -519,6 +550,8 @@ def main():
                 html = fetch(site["url"])
                 soup = get_soup(html, site.get("selector", ""))
                 current = extract_links(soup, site["url"], site.get("link_filter", ""))
+                if site.get("sort_by_period"):
+                    current = sort_links_by_period(current)
                 result_data = process_links(site, current, prev)
                 new_snapshot = {"links": current}
             elif extract == "announcements":
