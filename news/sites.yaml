@@ -12,6 +12,7 @@ sites:
     url: "https://www.jica.go.jp/domestic/yokohama/office/restaurant/index.html"
     extract: "links"
     link_filter: "日替わり|週替わり"   # このパターンにマッチするリンクを抽出
+    sort_by_period: true              # リンク文字列の期間で新しい週を上に並べ、終わった週は除外
     watch_for: "link_update"
     description: "今週のランチメニュー（PDF直リンク）"
     javascript: false
