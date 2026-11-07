@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T13:18:18",
+  "generated_at": "2026-11-07T12:48:51",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-06T13:18:18",
+      "checked_at": "2026-11-07T12:48:51",
       "new_listings": [],
       "all_listings": [
         {
@@ -39,6 +39,26 @@
           "madori": "3LDK+WIC",
           "traffic": "東京メトロ副都心線・東京メトロ有楽町線・東武東上線『和光市』駅徒歩10分",
           "location": "埼玉県和光市丸山台2-11-20"
+        },
+        {
+          "id": "5572",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5572",
+          "name": "成増グリーンハイツ",
+          "price": "5,980万円",
+          "area": "64.72㎡",
+          "madori": "2LDK+WIC",
+          "traffic": "東京メトロ有楽町線・東京メトロ副都心線『地下鉄成増』駅徒歩1分",
+          "location": "東京都板橋区成増1-14-9"
+        },
+        {
+          "id": "5576",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5576",
+          "name": "セントレー亀戸",
+          "price": "8,980万円",
+          "area": "60.02㎡",
+          "madori": "2SLDK",
+          "traffic": "JR総武線『亀戸』駅徒歩7分",
+          "location": "東京都江東区亀戸3-47-17"
         },
         {
           "id": "5592",
@@ -141,26 +161,6 @@
           "location": "東京都葛飾区東立石3-29-12"
         },
         {
-          "id": "5572",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5572",
-          "name": "成増グリーンハイツ",
-          "price": "5,980万円",
-          "area": "64.72㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "東京メトロ有楽町線・東京メトロ副都心線『地下鉄成増』駅徒歩1分",
-          "location": "東京都板橋区成増1-14-9"
-        },
-        {
-          "id": "5576",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5576",
-          "name": "セントレー亀戸",
-          "price": "8,980万円",
-          "area": "60.02㎡",
-          "madori": "2SLDK",
-          "traffic": "JR総武線『亀戸』駅徒歩7分",
-          "location": "東京都江東区亀戸3-47-17"
-        },
-        {
           "id": "5518",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5518",
           "name": "クリオ吉祥寺弐番館",
@@ -205,6 +205,8 @@
         "5565",
         "5571",
         "5557",
+        "5572",
+        "5576",
         "5592",
         "5553",
         "5574",
@@ -215,8 +217,6 @@
         "5439",
         "5400",
         "5606",
-        "5572",
-        "5576",
         "5518",
         "5522",
         "5426",
@@ -229,7 +229,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-06T13:18:18",
+      "checked_at": "2026-11-07T12:48:51",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -240,57 +240,47 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-11-06T13:18:18",
+      "checked_at": "2026-11-07T12:48:51",
       "new_listings": [
         {
-          "id": "Q8FQAeEs7N0",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/DreaminRed",
-          "name": "Dream in Red",
-          "price": "3,980万円",
-          "area": "50.67㎡",
-          "madori": "1LDK",
-          "traffic": "武蔵関駅徒歩9分",
-          "location": "練馬区関町南"
-        },
-        {
-          "id": "Qubm0Kd4oyM",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%89%E9%B7%B9%E5%B8%82/%E5%85%89%E3%81%A8%E9%A2%A8%E3%81%8C%E5%B7%A1%E3%82%8B%E6%A9%9F%E8%83%BD%E7%BE%8E",
-          "name": "光と風が巡る機能美",
-          "price": "5,980万円",
-          "area": "64.22㎡",
-          "madori": "2LDK",
-          "traffic": "三鷹駅バス15分徒歩1分",
-          "location": "三鷹市下連雀"
-        },
-        {
-          "id": "GPAArkIXWSg",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E6%B7%B1%E7%B7%91%E3%81%AE%E4%BD%99%E9%9F%BB%E3%81%AB%E3%81%BB%E3%81%A9%E3%81%91%E3%82%8B",
-          "name": "深緑の余韻にほどける",
-          "price": "8,990万円",
-          "area": "66.12㎡",
-          "madori": "2LDK",
-          "traffic": "五反田駅徒歩9分",
-          "location": "品川区東五反田"
-        },
-        {
-          "id": "SNqNQjtEwJs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E6%98%9F%E5%A4%A9%E3%82%A2%E3%83%A9%E3%83%99%E3%82%B9%E3%82%AF",
-          "name": "星天アラベスク",
-          "price": "6,780万円",
-          "area": "67.78㎡",
+          "id": "QeEI3InGzno",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E9%A7%85%E3%81%AB%E9%A0%BC%E3%82%89%E3%81%9A%E3%81%A8%E3%82%82",
+          "name": "駅に頼らずとも",
+          "price": "3,399万円",
+          "area": "66.08㎡",
           "madori": "3LDK",
-          "traffic": "二子玉川駅徒歩17分",
-          "location": "世田谷区鎌田"
+          "traffic": "布田駅徒歩15分",
+          "location": "調布市染地"
         },
         {
-          "id": "IT1yzaOTUDI",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E5%B7%A1%E3%82%8B%E5%AD%A3%E7%AF%80%E3%82%92%E6%8F%8F%E3%81%8D%E3%81%A8%E3%82%81%E3%82%88%E3%81%86",
-          "name": "巡る季節を描きとめよう",
-          "price": "6,480万円",
-          "area": "61.18㎡",
-          "madori": "2LDK",
-          "traffic": "駒沢大学駅徒歩12分",
-          "location": "世田谷区弦巻"
+          "id": "aV6hi42ZIeY",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E9%83%BD%E7%AB%8B%E5%A4%A7%E3%83%A9%E3%82%A4%E3%83%95%E3%81%AE%E6%96%B9%E7%A8%8B%E5%BC%8F",
+          "name": "都立大ライフの方程式",
+          "price": "6,780万円",
+          "area": "58.32㎡",
+          "madori": "2DK+S",
+          "traffic": "都立大学駅徒歩7分",
+          "location": "目黒区平町"
+        },
+        {
+          "id": "idYrbN4i9HU",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E9%AB%98%E5%86%86%E5%AF%BA%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%80%E3%82%A4%E3%83%90%E3%83%BC",
+          "name": "高円寺ディープダイバー",
+          "price": "8,480万円",
+          "area": "69.70㎡",
+          "madori": "1LDK",
+          "traffic": "高円寺駅徒歩2分",
+          "location": "杉並区高円寺南"
+        },
+        {
+          "id": "OHvwVLkq4Us",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/%E3%81%8A%E3%81%95%E3%81%8B%E3%81%AA%E3%81%AB%E3%81%AA%E3%82%8B%E5%AD%A3%E7%AF%80",
+          "name": "おさかなになる季節",
+          "price": "4,498万円",
+          "area": "82.88㎡",
+          "madori": "3LDK",
+          "traffic": "武蔵関駅徒歩8分",
+          "location": "練馬区関町北"
         }
       ],
       "all_listings": [
@@ -303,6 +293,46 @@
           "madori": "1LDK",
           "traffic": "武蔵関駅徒歩9分",
           "location": "練馬区関町南"
+        },
+        {
+          "id": "QeEI3InGzno",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E9%A7%85%E3%81%AB%E9%A0%BC%E3%82%89%E3%81%9A%E3%81%A8%E3%82%82",
+          "name": "駅に頼らずとも",
+          "price": "3,399万円",
+          "area": "66.08㎡",
+          "madori": "3LDK",
+          "traffic": "布田駅徒歩15分",
+          "location": "調布市染地"
+        },
+        {
+          "id": "aV6hi42ZIeY",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E9%83%BD%E7%AB%8B%E5%A4%A7%E3%83%A9%E3%82%A4%E3%83%95%E3%81%AE%E6%96%B9%E7%A8%8B%E5%BC%8F",
+          "name": "都立大ライフの方程式",
+          "price": "6,780万円",
+          "area": "58.32㎡",
+          "madori": "2DK+S",
+          "traffic": "都立大学駅徒歩7分",
+          "location": "目黒区平町"
+        },
+        {
+          "id": "idYrbN4i9HU",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E9%AB%98%E5%86%86%E5%AF%BA%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%80%E3%82%A4%E3%83%90%E3%83%BC",
+          "name": "高円寺ディープダイバー",
+          "price": "8,480万円",
+          "area": "69.70㎡",
+          "madori": "1LDK",
+          "traffic": "高円寺駅徒歩2分",
+          "location": "杉並区高円寺南"
+        },
+        {
+          "id": "OHvwVLkq4Us",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/%E3%81%8A%E3%81%95%E3%81%8B%E3%81%AA%E3%81%AB%E3%81%AA%E3%82%8B%E5%AD%A3%E7%AF%80",
+          "name": "おさかなになる季節",
+          "price": "4,498万円",
+          "area": "82.88㎡",
+          "madori": "3LDK",
+          "traffic": "武蔵関駅徒歩8分",
+          "location": "練馬区関町北"
         },
         {
           "id": "Qubm0Kd4oyM",
@@ -413,30 +443,14 @@
           "madori": "3LDK",
           "traffic": "国領駅徒歩4分",
           "location": "調布市国領町"
-        },
-        {
-          "id": "zYPjlH1Nw9A",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%96%B0%E5%AE%BF%E5%8C%BA/%E5%85%89%E3%82%92%E9%80%8F%E3%81%8B%E3%81%99%E5%A3%81",
-          "name": "光を透かす壁",
-          "price": "6,480万円",
-          "area": "60.63㎡",
-          "madori": "1LDK",
-          "traffic": "面影橋駅徒歩2分",
-          "location": "新宿区西早稲田"
-        },
-        {
-          "id": "IkWsHm3Ol6k",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%9D%B1%E5%8C%BA/%E3%82%B9%E3%82%B1%E3%83%AB%E3%83%88%E3%83%B3%E8%B2%A9%E5%A3%B2in%E6%B8%85%E6%BE%84%E7%99%BD%E6%B2%B3",
-          "name": "スケルトン販売 in 清澄白河",
-          "price": "5,880万円(改装前価格)",
-          "area": "56.16㎡",
-          "madori": "スケルトン",
-          "traffic": "門前仲町駅徒歩10分",
-          "location": "江東区福住"
         }
       ],
       "ids": [
         "Q8FQAeEs7N0",
+        "QeEI3InGzno",
+        "aV6hi42ZIeY",
+        "idYrbN4i9HU",
+        "OHvwVLkq4Us",
         "Qubm0Kd4oyM",
         "GPAArkIXWSg",
         "SNqNQjtEwJs",
@@ -447,9 +461,7 @@
         "WPAQ3g4K3Ug",
         "vy9MsRHeKMY",
         "jFZZjySL7J0",
-        "G6Ec9Zv0HQc",
-        "zYPjlH1Nw9A",
-        "IkWsHm3Ol6k"
+        "G6Ec9Zv0HQc"
       ]
     },
     {
@@ -458,7 +470,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-11-06T13:18:18",
+      "checked_at": "2026-11-07T12:48:51",
       "new_listings": [],
       "all_listings": [
         {
@@ -581,7 +593,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-06T13:18:18",
+      "checked_at": "2026-11-07T12:48:51",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -592,7 +604,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-06T13:18:18",
+      "checked_at": "2026-11-07T12:48:51",
       "new_listings": [],
       "all_listings": [
         {
