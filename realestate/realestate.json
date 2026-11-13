@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T13:58:20",
+  "generated_at": "2026-11-13T13:12:16",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-12T13:58:20",
+      "checked_at": "2026-11-13T13:12:16",
       "new_listings": [],
       "all_listings": [
         {
@@ -29,6 +29,26 @@
           "madori": "3LDK",
           "traffic": "西武新宿線『武蔵関』駅徒歩13分",
           "location": "東京都練馬区関町北5-16-32"
+        },
+        {
+          "id": "5592",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5592",
+          "name": "パークホームズ志木ステーションファースト",
+          "price": "7,780万円",
+          "area": "70.44㎡",
+          "madori": "3LDK+WIC",
+          "traffic": "東武東上線『志木』駅徒歩2分",
+          "location": "埼玉県志木市本町5-17-5"
+        },
+        {
+          "id": "5606",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5606",
+          "name": "エヴァーグリーン立石",
+          "price": "4,580万円",
+          "area": "55.78㎡",
+          "madori": "3LDK",
+          "traffic": "京成押上線『京成立石』駅徒歩6分",
+          "location": "東京都葛飾区東立石3-29-12"
         },
         {
           "id": "5426",
@@ -79,16 +99,6 @@
           "madori": "2LDK",
           "traffic": "東京メトロ丸ノ内線『南阿佐ヶ谷』駅徒歩14分",
           "location": "東京都杉並区成田東2-37-13"
-        },
-        {
-          "id": "5592",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5592",
-          "name": "パークホームズ志木ステーションファースト",
-          "price": "7,780万円",
-          "area": "70.44㎡",
-          "madori": "3LDK+WIC",
-          "traffic": "東武東上線『志木』駅徒歩2分",
-          "location": "埼玉県志木市本町5-17-5"
         },
         {
           "id": "5553",
@@ -191,16 +201,6 @@
           "location": "神奈川県横浜市戸塚区吉田町1380‐1"
         },
         {
-          "id": "5606",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5606",
-          "name": "エヴァーグリーン立石",
-          "price": "4,580万円",
-          "area": "55.78㎡",
-          "madori": "3LDK",
-          "traffic": "京成押上線『京成立石』駅徒歩6分",
-          "location": "東京都葛飾区東立石3-29-12"
-        },
-        {
           "id": "5502",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
           "name": "プラウド海老名",
@@ -214,12 +214,13 @@
       "ids": [
         "5610",
         "5565",
+        "5592",
+        "5606",
         "5426",
         "5571",
         "5574",
         "5518",
         "5582",
-        "5592",
         "5553",
         "5557",
         "5499",
@@ -230,7 +231,6 @@
         "5572",
         "5544",
         "5497",
-        "5606",
         "5502"
       ]
     },
@@ -240,7 +240,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-12T13:58:20",
+      "checked_at": "2026-11-13T13:12:16",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -251,37 +251,27 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-11-12T13:58:20",
+      "checked_at": "2026-11-13T13:12:16",
       "new_listings": [
         {
-          "id": "JNOWRBvoD4g",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/%E9%80%8F%E3%81%8D%E9%80%9A%E3%82%8B%E5%85%89%E3%81%AE%E8%BB%8C%E8%B7%A1",
-          "name": "透き通る光の軌跡",
-          "price": "6,380万円",
-          "area": "100.18㎡",
+          "id": "353DuwXxuVw",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82/%E6%9C%AA%E6%94%B9%E8%A3%85%E8%B2%A9%E5%A3%B2in%E4%B8%89%E9%B7%B9",
+          "name": "未改装販売 in 三鷹",
+          "price": "8,380万円(改装前価格)",
+          "area": "104.03㎡",
+          "madori": "4LDK",
+          "traffic": "三鷹駅徒歩15分",
+          "location": "武蔵野市関前"
+        },
+        {
+          "id": "FbArv2czSPQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/Sky-Gallery",
+          "name": "Sky Gallery",
+          "price": "6,990万円",
+          "area": "52.12㎡",
           "madori": "2LDK",
-          "traffic": "石神井公園駅徒歩7分",
-          "location": "練馬区石神井町"
-        },
-        {
-          "id": "FKSvs24BYk0",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%B6%B4%E8%A6%8B%E5%8C%BA/%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%88%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BC%E3%81%AF%E7%B6%9A%E3%81%8F",
-          "name": "グレートジャーニーは続く",
-          "price": "2,899万円",
-          "area": "89.88㎡",
-          "madori": "3LDK",
-          "traffic": "菊名駅徒歩19分",
-          "location": "横浜市鶴見区馬場"
-        },
-        {
-          "id": "Ueqw71i3RQQ",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%A4%A7%E7%94%B0%E5%8C%BA/%E8%A1%97%E3%81%AA%E3%81%8B%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%9F%E9%80%B8%E5%93%81",
-          "name": "街なかで見つけた逸品",
-          "price": "5,980万円",
-          "area": "53.46㎡",
-          "madori": "3LDK",
-          "traffic": "大森駅徒歩3分",
-          "location": "大田区大森北"
+          "traffic": "不動前駅徒歩5分",
+          "location": "品川区西五反田"
         }
       ],
       "all_listings": [
@@ -304,6 +294,26 @@
           "madori": "3LDK",
           "traffic": "菊名駅徒歩19分",
           "location": "横浜市鶴見区馬場"
+        },
+        {
+          "id": "353DuwXxuVw",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82/%E6%9C%AA%E6%94%B9%E8%A3%85%E8%B2%A9%E5%A3%B2in%E4%B8%89%E9%B7%B9",
+          "name": "未改装販売 in 三鷹",
+          "price": "8,380万円(改装前価格)",
+          "area": "104.03㎡",
+          "madori": "4LDK",
+          "traffic": "三鷹駅徒歩15分",
+          "location": "武蔵野市関前"
+        },
+        {
+          "id": "FbArv2czSPQ",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/Sky-Gallery",
+          "name": "Sky Gallery",
+          "price": "6,990万円",
+          "area": "52.12㎡",
+          "madori": "2LDK",
+          "traffic": "不動前駅徒歩5分",
+          "location": "品川区西五反田"
         },
         {
           "id": "Ueqw71i3RQQ",
@@ -399,6 +409,8 @@
       "ids": [
         "JNOWRBvoD4g",
         "FKSvs24BYk0",
+        "353DuwXxuVw",
+        "FbArv2czSPQ",
         "Ueqw71i3RQQ",
         "Q8FQAeEs7N0",
         "QeEI3InGzno",
@@ -416,7 +428,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-11-12T13:58:20",
+      "checked_at": "2026-11-13T13:12:16",
       "new_listings": [],
       "all_listings": [
         {
@@ -517,7 +529,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-12T13:58:20",
+      "checked_at": "2026-11-13T13:12:16",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -528,7 +540,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-12T13:58:20",
+      "checked_at": "2026-11-13T13:12:16",
       "new_listings": [],
       "all_listings": [
         {
