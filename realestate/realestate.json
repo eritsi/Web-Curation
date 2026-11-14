@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:12:16",
+  "generated_at": "2026-11-14T13:08:42",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-13T13:12:16",
+      "checked_at": "2026-11-14T13:08:42",
       "new_listings": [],
       "all_listings": [
         {
@@ -240,7 +240,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-13T13:12:16",
+      "checked_at": "2026-11-14T13:08:42",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -251,27 +251,37 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-11-13T13:12:16",
+      "checked_at": "2026-11-14T13:08:42",
       "new_listings": [
         {
-          "id": "353DuwXxuVw",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82/%E6%9C%AA%E6%94%B9%E8%A3%85%E8%B2%A9%E5%A3%B2in%E4%B8%89%E9%B7%B9",
-          "name": "未改装販売 in 三鷹",
-          "price": "8,380万円(改装前価格)",
-          "area": "104.03㎡",
-          "madori": "4LDK",
-          "traffic": "三鷹駅徒歩15分",
-          "location": "武蔵野市関前"
+          "id": "aNwq4sogvMY",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E6%9A%AE%E3%82%89%E3%81%97%E3%81%AE%E6%8F%B4%E8%BB%8D%E3%80%81%E3%81%93%E3%81%93%E3%81%AB%E5%8F%82%E4%B8%8A",
+          "name": "暮らしの援軍、ここに参上",
+          "price": "5,690万円",
+          "area": "75.35㎡",
+          "madori": "3LDK",
+          "traffic": "あざみ野駅徒歩14分",
+          "location": "横浜市青葉区荏田町"
         },
         {
-          "id": "FbArv2czSPQ",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/Sky-Gallery",
-          "name": "Sky Gallery",
-          "price": "6,990万円",
-          "area": "52.12㎡",
-          "madori": "2LDK",
-          "traffic": "不動前駅徒歩5分",
-          "location": "品川区西五反田"
+          "id": "nnK077otGHM",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E3%81%82%E3%81%AE%E3%83%9E%E3%83%81%E3%81%AE%E3%83%86%E3%83%83%E3%83%9A%E3%83%B3",
+          "name": "あのマチのテッペン",
+          "price": "5,990万円",
+          "area": "96.28㎡",
+          "madori": "4LDK+SIC+納戸",
+          "traffic": "志村三丁目駅徒歩13分",
+          "location": "板橋区中台"
+        },
+        {
+          "id": "tsxCcLSws2w",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/%E5%AF%8C%E5%A3%AB%E3%82%92%E4%BB%B0%E3%81%90%E7%89%B9%E7%AD%89%E5%B8%AD",
+          "name": "富士を仰ぐ特等席",
+          "price": "5,180万円",
+          "area": "91.45㎡",
+          "madori": "3LDK",
+          "traffic": "宮前平駅徒歩4分",
+          "location": "川崎市宮前区宮前平"
         }
       ],
       "all_listings": [
@@ -294,6 +304,36 @@
           "madori": "3LDK",
           "traffic": "菊名駅徒歩19分",
           "location": "横浜市鶴見区馬場"
+        },
+        {
+          "id": "aNwq4sogvMY",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA/%E6%9A%AE%E3%82%89%E3%81%97%E3%81%AE%E6%8F%B4%E8%BB%8D%E3%80%81%E3%81%93%E3%81%93%E3%81%AB%E5%8F%82%E4%B8%8A",
+          "name": "暮らしの援軍、ここに参上",
+          "price": "5,690万円",
+          "area": "75.35㎡",
+          "madori": "3LDK",
+          "traffic": "あざみ野駅徒歩14分",
+          "location": "横浜市青葉区荏田町"
+        },
+        {
+          "id": "nnK077otGHM",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%BF%E6%A9%8B%E5%8C%BA/%E3%81%82%E3%81%AE%E3%83%9E%E3%83%81%E3%81%AE%E3%83%86%E3%83%83%E3%83%9A%E3%83%B3",
+          "name": "あのマチのテッペン",
+          "price": "5,990万円",
+          "area": "96.28㎡",
+          "madori": "4LDK+SIC+納戸",
+          "traffic": "志村三丁目駅徒歩13分",
+          "location": "板橋区中台"
+        },
+        {
+          "id": "tsxCcLSws2w",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%AE%AE%E5%89%8D%E5%8C%BA/%E5%AF%8C%E5%A3%AB%E3%82%92%E4%BB%B0%E3%81%90%E7%89%B9%E7%AD%89%E5%B8%AD",
+          "name": "富士を仰ぐ特等席",
+          "price": "5,180万円",
+          "area": "91.45㎡",
+          "madori": "3LDK",
+          "traffic": "宮前平駅徒歩4分",
+          "location": "川崎市宮前区宮前平"
         },
         {
           "id": "353DuwXxuVw",
@@ -369,7 +409,7 @@
           "id": "OHvwVLkq4Us",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/%E3%81%8A%E3%81%95%E3%81%8B%E3%81%AA%E3%81%AB%E3%81%AA%E3%82%8B%E5%AD%A3%E7%AF%80",
           "name": "おさかなになる季節",
-          "price": "4,498万円",
+          "price": "4,398万円",
           "area": "82.88㎡",
           "madori": "3LDK",
           "traffic": "武蔵関駅徒歩8分",
@@ -384,31 +424,14 @@
           "madori": "2LDK",
           "traffic": "三鷹駅バス15分徒歩1分",
           "location": "三鷹市下連雀"
-        },
-        {
-          "id": "GPAArkIXWSg",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E6%B7%B1%E7%B7%91%E3%81%AE%E4%BD%99%E9%9F%BB%E3%81%AB%E3%81%BB%E3%81%A9%E3%81%91%E3%82%8B",
-          "name": "深緑の余韻にほどける",
-          "price": "8,990万円",
-          "area": "66.12㎡",
-          "madori": "2LDK",
-          "traffic": "五反田駅徒歩9分",
-          "location": "品川区東五反田"
-        },
-        {
-          "id": "SNqNQjtEwJs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA/%E6%98%9F%E5%A4%A9%E3%82%A2%E3%83%A9%E3%83%99%E3%82%B9%E3%82%AF",
-          "name": "星天アラベスク",
-          "price": "6,780万円",
-          "area": "67.78㎡",
-          "madori": "3LDK",
-          "traffic": "二子玉川駅徒歩17分",
-          "location": "世田谷区鎌田"
         }
       ],
       "ids": [
         "JNOWRBvoD4g",
         "FKSvs24BYk0",
+        "aNwq4sogvMY",
+        "nnK077otGHM",
+        "tsxCcLSws2w",
         "353DuwXxuVw",
         "FbArv2czSPQ",
         "Ueqw71i3RQQ",
@@ -417,9 +440,7 @@
         "aV6hi42ZIeY",
         "idYrbN4i9HU",
         "OHvwVLkq4Us",
-        "Qubm0Kd4oyM",
-        "GPAArkIXWSg",
-        "SNqNQjtEwJs"
+        "Qubm0Kd4oyM"
       ]
     },
     {
@@ -427,10 +448,31 @@
       "description": "東京・神奈川 売買物件（〜9000万・50㎡以上）",
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
-      "status": "unchanged",
-      "checked_at": "2026-11-13T13:12:16",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-11-14T13:08:42",
+      "new_listings": [
+        {
+          "id": "28006",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=28006",
+          "name": "緑と光と風に包まれる",
+          "price": "8,390万円",
+          "area": "101.25㎡",
+          "madori": "",
+          "traffic": "中央線「三鷹」駅 バス10分 「野崎」バス停 徒歩2分",
+          "location": "三鷹市野崎"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "28006",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=28006",
+          "name": "緑と光と風に包まれる",
+          "price": "8,390万円",
+          "area": "101.25㎡",
+          "madori": "",
+          "traffic": "中央線「三鷹」駅 バス10分 「野崎」バス停 徒歩2分",
+          "location": "三鷹市野崎"
+        },
         {
           "id": "26511",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=26511",
@@ -500,27 +542,17 @@
           "madori": "",
           "traffic": "小田急線「経堂」駅 徒歩2分",
           "location": "世田谷区宮坂"
-        },
-        {
-          "id": "27537",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27537",
-          "name": "絵になる古材",
-          "price": "8,480万円",
-          "area": "69.5㎡",
-          "madori": "",
-          "traffic": "山手線・南北線・都営三田線「目黒」駅 徒歩4分",
-          "location": "品川区上大崎"
         }
       ],
       "ids": [
+        "28006",
         "26511",
         "27935",
         "27898",
         "27558",
         "27752",
         "26866",
-        "27674",
-        "27537"
+        "27674"
       ]
     },
     {
@@ -529,7 +561,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-13T13:12:16",
+      "checked_at": "2026-11-14T13:08:42",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -540,7 +572,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-13T13:12:16",
+      "checked_at": "2026-11-14T13:08:42",
       "new_listings": [],
       "all_listings": [
         {
