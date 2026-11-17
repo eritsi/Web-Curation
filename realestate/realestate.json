@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T12:54:45",
+  "generated_at": "2026-11-17T14:47:02",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-16T12:54:45",
+      "checked_at": "2026-11-17T14:47:02",
       "new_listings": [],
       "all_listings": [
         {
@@ -21,14 +21,44 @@
           "location": "東京都大田区池上3-40-4"
         },
         {
-          "id": "5571",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5571",
-          "name": "日商岩井府中マンション",
-          "price": "4,780万円",
-          "area": "61.60㎡",
-          "madori": "2SLDK+SIC",
-          "traffic": "京王線『府中』駅徒歩10分",
-          "location": "東京都府中市緑町2-6-1"
+          "id": "5576",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5576",
+          "name": "セントレー亀戸",
+          "price": "8,490万円",
+          "area": "60.02㎡",
+          "madori": "2SLDK",
+          "traffic": "JR総武線『亀戸』駅徒歩7分",
+          "location": "東京都江東区亀戸3-47-17"
+        },
+        {
+          "id": "5606",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5606",
+          "name": "エヴァーグリーン立石",
+          "price": "4,390万円価格改定",
+          "area": "55.78㎡",
+          "madori": "3LDK",
+          "traffic": "京成押上線『京成立石』駅徒歩6分",
+          "location": "東京都葛飾区東立石3-29-12"
+        },
+        {
+          "id": "5572",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5572",
+          "name": "成増グリーンハイツ",
+          "price": "5,980万円",
+          "area": "64.72㎡",
+          "madori": "2LDK+WIC",
+          "traffic": "東京メトロ有楽町線・東京メトロ副都心線『地下鉄成増』駅徒歩1分",
+          "location": "東京都板橋区成増1-14-9"
+        },
+        {
+          "id": "5499",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5499",
+          "name": "美しが丘ハイム",
+          "price": "7,890万円",
+          "area": "61.58㎡",
+          "madori": "2LDK",
+          "traffic": "東急田園都市線『たまプラーザ』駅徒歩8分",
+          "location": "神奈川県横浜市青葉区美しが丘2-10-3"
         },
         {
           "id": "5565",
@@ -41,14 +71,14 @@
           "location": "東京都練馬区関町北5-16-32"
         },
         {
-          "id": "5606",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5606",
-          "name": "エヴァーグリーン立石",
-          "price": "4,580万円",
-          "area": "55.78㎡",
-          "madori": "3LDK",
-          "traffic": "京成押上線『京成立石』駅徒歩6分",
-          "location": "東京都葛飾区東立石3-29-12"
+          "id": "5574",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5574",
+          "name": "エンゼルハイム竹の塚駅前",
+          "price": "4,590万円",
+          "area": "56.22㎡",
+          "madori": "3LDK+SIC",
+          "traffic": "東京スカイツリーライン『竹ノ塚』駅徒歩5分",
+          "location": "東京都足立区竹の塚1-36-7"
         },
         {
           "id": "5592",
@@ -61,24 +91,14 @@
           "location": "埼玉県志木市本町5-17-5"
         },
         {
-          "id": "5426",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
-          "name": "シャンノール金町",
-          "price": "5,490万円",
-          "area": "60.37㎡",
-          "madori": "2SLDK",
-          "traffic": "JR常磐緩行線『金町』駅徒歩4分",
-          "location": "東京都葛飾区金町5丁目26-11"
-        },
-        {
-          "id": "5574",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5574",
-          "name": "エンゼルハイム竹の塚駅前",
-          "price": "4,590万円",
-          "area": "56.22㎡",
-          "madori": "3LDK+SIC",
-          "traffic": "東京スカイツリーライン『竹ノ塚』駅徒歩5分",
-          "location": "東京都足立区竹の塚1-36-7"
+          "id": "5477",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5477",
+          "name": "ヴェルビュ大崎百反通り",
+          "price": "8,990万円",
+          "area": "55.04㎡",
+          "madori": "2LDK+WIC",
+          "traffic": "JR山手線・JR埼京線・りんかい線『大崎』駅徒歩8分",
+          "location": "東京都品川区西品川3-3-1"
         },
         {
           "id": "5518",
@@ -89,6 +109,56 @@
           "madori": "3LDK+WIC",
           "traffic": "JR中央線・JR中央総武線・京王井の頭『吉祥寺』駅徒歩19分",
           "location": "東京都練馬区立野町7-12"
+        },
+        {
+          "id": "5439",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
+          "name": "パークハイム桜新町",
+          "price": "6,290万円",
+          "area": "54.08㎡",
+          "madori": "2LDK+WIC",
+          "traffic": "東急田園都市線『桜新町』駅徒歩12分",
+          "location": "東京都世田谷区弦巻2-23-15"
+        },
+        {
+          "id": "5426",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5426",
+          "name": "シャンノール金町",
+          "price": "5,490万円",
+          "area": "60.37㎡",
+          "madori": "2SLDK",
+          "traffic": "JR常磐緩行線『金町』駅徒歩4分",
+          "location": "東京都葛飾区金町5丁目26-11"
+        },
+        {
+          "id": "5400",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
+          "name": "ベルハイム西荻窪第3",
+          "price": "7,490万円",
+          "area": "67.51㎡",
+          "madori": "3LDK",
+          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
+          "location": "東京都杉並区西荻北4-8-2"
+        },
+        {
+          "id": "5502",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
+          "name": "プラウド海老名",
+          "price": "6,690万円価格改定",
+          "area": "71.80㎡",
+          "madori": "3LDK+2WIC",
+          "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
+          "location": "神奈川県海老名市中央1-19-13"
+        },
+        {
+          "id": "5571",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5571",
+          "name": "日商岩井府中マンション",
+          "price": "4,780万円",
+          "area": "61.60㎡",
+          "madori": "2SLDK+SIC",
+          "traffic": "京王線『府中』駅徒歩10分",
+          "location": "東京都府中市緑町2-6-1"
         },
         {
           "id": "5582",
@@ -121,66 +191,6 @@
           "location": "埼玉県和光市丸山台2-11-20"
         },
         {
-          "id": "5499",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5499",
-          "name": "美しが丘ハイム",
-          "price": "7,890万円",
-          "area": "61.58㎡",
-          "madori": "2LDK",
-          "traffic": "東急田園都市線『たまプラーザ』駅徒歩8分",
-          "location": "神奈川県横浜市青葉区美しが丘2-10-3"
-        },
-        {
-          "id": "5477",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5477",
-          "name": "ヴェルビュ大崎百反通り",
-          "price": "8,990万円",
-          "area": "55.04㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "JR山手線・JR埼京線・りんかい線『大崎』駅徒歩8分",
-          "location": "東京都品川区西品川3-3-1"
-        },
-        {
-          "id": "5439",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5439",
-          "name": "パークハイム桜新町",
-          "price": "6,290万円",
-          "area": "54.08㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "東急田園都市線『桜新町』駅徒歩12分",
-          "location": "東京都世田谷区弦巻2-23-15"
-        },
-        {
-          "id": "5400",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5400",
-          "name": "ベルハイム西荻窪第3",
-          "price": "7,490万円",
-          "area": "67.51㎡",
-          "madori": "3LDK",
-          "traffic": "JR中央・総武線『西荻窪』駅徒歩8分",
-          "location": "東京都杉並区西荻北4-8-2"
-        },
-        {
-          "id": "5576",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5576",
-          "name": "セントレー亀戸",
-          "price": "8,490万円",
-          "area": "60.02㎡",
-          "madori": "2SLDK",
-          "traffic": "JR総武線『亀戸』駅徒歩7分",
-          "location": "東京都江東区亀戸3-47-17"
-        },
-        {
-          "id": "5572",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5572",
-          "name": "成増グリーンハイツ",
-          "price": "5,980万円",
-          "area": "64.72㎡",
-          "madori": "2LDK+WIC",
-          "traffic": "東京メトロ有楽町線・東京メトロ副都心線『地下鉄成増』駅徒歩1分",
-          "location": "東京都板橋区成増1-14-9"
-        },
-        {
           "id": "5544",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5544",
           "name": "東戸塚ガーデンハウス壱番館",
@@ -199,39 +209,29 @@
           "madori": "3LDK",
           "traffic": "JR東海道本線・JR湘南新宿ライン",
           "location": "神奈川県横浜市戸塚区吉田町1380‐1"
-        },
-        {
-          "id": "5502",
-          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5502",
-          "name": "プラウド海老名",
-          "price": "6,790万円",
-          "area": "71.80㎡",
-          "madori": "3LDK+2WIC",
-          "traffic": "相鉄線・小田急線『海老名』駅徒歩8分",
-          "location": "神奈川県海老名市中央1-19-13"
         }
       ],
       "ids": [
         "5610",
-        "5571",
-        "5565",
+        "5576",
         "5606",
-        "5592",
-        "5426",
+        "5572",
+        "5499",
+        "5565",
         "5574",
+        "5592",
+        "5477",
         "5518",
+        "5439",
+        "5426",
+        "5400",
+        "5502",
+        "5571",
         "5582",
         "5553",
         "5557",
-        "5499",
-        "5477",
-        "5439",
-        "5400",
-        "5576",
-        "5572",
         "5544",
-        "5497",
-        "5502"
+        "5497"
       ]
     },
     {
@@ -240,7 +240,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-16T12:54:45",
+      "checked_at": "2026-11-17T14:47:02",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -250,20 +250,9 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "changed",
-      "checked_at": "2026-11-16T12:54:45",
-      "new_listings": [
-        {
-          "id": "yFtUiZmFRZI",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%9B%AE%E9%BB%92%E5%8C%BA/%E3%83%AC%E3%83%88%E3%83%AD%E3%81%A8%E3%83%A2%E3%83%80%E3%83%B3%E3%81%AE%E8%AA%BF%E5%BE%8B2",
-          "name": "レトロとモダンの調律",
-          "price": "7,690万円",
-          "area": "64.95㎡",
-          "madori": "3LDK",
-          "traffic": "祐天寺駅徒歩6分",
-          "location": "目黒区中町"
-        }
-      ],
+      "status": "unchanged",
+      "checked_at": "2026-11-17T14:47:02",
+      "new_listings": [],
       "all_listings": [
         {
           "id": "JNOWRBvoD4g",
@@ -374,7 +363,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-11-16T12:54:45",
+      "checked_at": "2026-11-17T14:47:02",
       "new_listings": [],
       "all_listings": [
         {
@@ -475,7 +464,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-16T12:54:45",
+      "checked_at": "2026-11-17T14:47:02",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -486,7 +475,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-16T12:54:45",
+      "checked_at": "2026-11-17T14:47:02",
       "new_listings": [],
       "all_listings": [
         {
