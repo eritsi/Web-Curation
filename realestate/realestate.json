@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T14:47:02",
+  "generated_at": "2026-11-18T14:13:17",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-17T14:47:02",
+      "checked_at": "2026-11-18T14:13:17",
       "new_listings": [],
       "all_listings": [
         {
@@ -240,7 +240,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-17T14:47:02",
+      "checked_at": "2026-11-18T14:13:17",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -250,10 +250,41 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-11-17T14:47:02",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-11-18T14:13:17",
+      "new_listings": [
+        {
+          "id": "TnjXCTwgkZs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E5%BC%95%E3%81%8D%E7%AE%97%E4%BB%95%E7%AB%8B%E3%81%A6%E3%81%AE%E7%B4%A0%E6%9D%90%E7%BE%8E",
+          "name": "引き算仕立ての素材美",
+          "price": "5,280万円",
+          "area": "56.10㎡",
+          "madori": "LDK+S",
+          "traffic": "西荻窪駅徒歩7分",
+          "location": "杉並区西荻北"
+        },
+        {
+          "id": "6fsmr7ZlNKg",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E4%B8%8A%E5%90%91%E3%81%8D%E3%81%AA%E5%BF%83%E6%8C%81%E3%81%A1",
+          "name": "上向きな心持ち",
+          "price": "8,780万円",
+          "area": "62.88㎡",
+          "madori": "2LDK",
+          "traffic": "戸越銀座駅徒歩2分",
+          "location": "品川区平塚"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "TnjXCTwgkZs",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E5%BC%95%E3%81%8D%E7%AE%97%E4%BB%95%E7%AB%8B%E3%81%A6%E3%81%AE%E7%B4%A0%E6%9D%90%E7%BE%8E",
+          "name": "引き算仕立ての素材美",
+          "price": "5,280万円",
+          "area": "56.10㎡",
+          "madori": "LDK+S",
+          "traffic": "西荻窪駅徒歩7分",
+          "location": "杉並区西荻北"
+        },
         {
           "id": "JNOWRBvoD4g",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/%E9%80%8F%E3%81%8D%E9%80%9A%E3%82%8B%E5%85%89%E3%81%AE%E8%BB%8C%E8%B7%A1",
@@ -343,9 +374,20 @@
           "madori": "3LDK",
           "traffic": "大森駅徒歩3分",
           "location": "大田区大森北"
+        },
+        {
+          "id": "6fsmr7ZlNKg",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E4%B8%8A%E5%90%91%E3%81%8D%E3%81%AA%E5%BF%83%E6%8C%81%E3%81%A1",
+          "name": "上向きな心持ち",
+          "price": "8,780万円",
+          "area": "62.88㎡",
+          "madori": "2LDK",
+          "traffic": "戸越銀座駅徒歩2分",
+          "location": "品川区平塚"
         }
       ],
       "ids": [
+        "TnjXCTwgkZs",
         "JNOWRBvoD4g",
         "FKSvs24BYk0",
         "aNwq4sogvMY",
@@ -354,7 +396,8 @@
         "yFtUiZmFRZI",
         "353DuwXxuVw",
         "FbArv2czSPQ",
-        "Ueqw71i3RQQ"
+        "Ueqw71i3RQQ",
+        "6fsmr7ZlNKg"
       ]
     },
     {
@@ -363,9 +406,19 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-11-17T14:47:02",
+      "checked_at": "2026-11-18T14:13:17",
       "new_listings": [],
       "all_listings": [
+        {
+          "id": "27674",
+          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27674",
+          "name": "あの街最前線",
+          "price": "3,980万円（税込）",
+          "area": "55.81㎡",
+          "madori": "",
+          "traffic": "小田急線「経堂」駅 徒歩2分",
+          "location": "世田谷区宮坂"
+        },
         {
           "id": "28006",
           "url": "https://www.realtokyoestate.co.jp/estate.php?n=28006",
@@ -435,27 +488,17 @@
           "madori": "",
           "traffic": "西武新宿線「上石神井」駅 徒歩20分",
           "location": "練馬区石神井台"
-        },
-        {
-          "id": "27674",
-          "url": "https://www.realtokyoestate.co.jp/estate.php?n=27674",
-          "name": "あの街最前線",
-          "price": "4,280万円（税込）",
-          "area": "55.81㎡",
-          "madori": "",
-          "traffic": "小田急線「経堂」駅 徒歩2分",
-          "location": "世田谷区宮坂"
         }
       ],
       "ids": [
+        "27674",
         "28006",
         "26511",
         "27935",
         "27898",
         "27558",
         "27752",
-        "26866",
-        "27674"
+        "26866"
       ]
     },
     {
@@ -464,7 +507,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-17T14:47:02",
+      "checked_at": "2026-11-18T14:13:17",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -475,7 +518,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-17T14:47:02",
+      "checked_at": "2026-11-18T14:13:17",
       "new_listings": [],
       "all_listings": [
         {
