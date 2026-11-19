@@ -1,15 +1,56 @@
 {
-  "generated_at": "2026-11-18T14:13:17",
+  "generated_at": "2026-11-19T14:07:23",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
       "description": "リノベーション済み中古マンション（〜9000万・50〜80㎡）",
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
-      "status": "unchanged",
-      "checked_at": "2026-11-18T14:13:17",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-11-19T14:07:23",
+      "new_listings": [
+        {
+          "id": "5560",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5560",
+          "name": "クレストフォルム横浜関内",
+          "price": "6,780万円",
+          "area": "65.97㎡",
+          "madori": "2SLDK+WIC",
+          "traffic": "JR京浜東北線・JR根岸線『関内』駅徒歩5分",
+          "location": "神奈川県横浜市中区扇町2-6-1"
+        },
+        {
+          "id": "5570",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5570",
+          "name": "コスモ新小岩サウスビューコート",
+          "price": "6,180万円",
+          "area": "70.74㎡",
+          "madori": "3LDK+2WIC",
+          "traffic": "JR総武線・JR総武快速線『新小岩』駅徒歩13分",
+          "location": "東京都江戸川区松島3-25-18"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "5560",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5560",
+          "name": "クレストフォルム横浜関内",
+          "price": "6,780万円",
+          "area": "65.97㎡",
+          "madori": "2SLDK+WIC",
+          "traffic": "JR京浜東北線・JR根岸線『関内』駅徒歩5分",
+          "location": "神奈川県横浜市中区扇町2-6-1"
+        },
+        {
+          "id": "5570",
+          "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5570",
+          "name": "コスモ新小岩サウスビューコート",
+          "price": "6,180万円",
+          "area": "70.74㎡",
+          "madori": "3LDK+2WIC",
+          "traffic": "JR総武線・JR総武快速線『新小岩』駅徒歩13分",
+          "location": "東京都江戸川区松島3-25-18"
+        },
         {
           "id": "5610",
           "url": "https://www.globalbase.jp/renocolle/obje/detail.php?pid=5610",
@@ -212,6 +253,8 @@
         }
       ],
       "ids": [
+        "5560",
+        "5570",
         "5610",
         "5576",
         "5606",
@@ -240,7 +283,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-18T14:13:17",
+      "checked_at": "2026-11-19T14:07:23",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -251,30 +294,30 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-11-18T14:13:17",
+      "checked_at": "2026-11-19T14:07:23",
       "new_listings": [
         {
-          "id": "TnjXCTwgkZs",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E5%BC%95%E3%81%8D%E7%AE%97%E4%BB%95%E7%AB%8B%E3%81%A6%E3%81%AE%E7%B4%A0%E6%9D%90%E7%BE%8E",
-          "name": "引き算仕立ての素材美",
-          "price": "5,280万円",
-          "area": "56.10㎡",
-          "madori": "LDK+S",
-          "traffic": "西荻窪駅徒歩7分",
-          "location": "杉並区西荻北"
-        },
-        {
-          "id": "6fsmr7ZlNKg",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%93%81%E5%B7%9D%E5%8C%BA/%E4%B8%8A%E5%90%91%E3%81%8D%E3%81%AA%E5%BF%83%E6%8C%81%E3%81%A1",
-          "name": "上向きな心持ち",
-          "price": "8,780万円",
-          "area": "62.88㎡",
+          "id": "EecR4CWpml8",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/%E5%84%AA%E7%BE%8E%E3%81%AA%E5%BC%A7%E3%81%AE%E8%AA%98%E6%83%91",
+          "name": "優美な弧の誘惑",
+          "price": "8,680万円",
+          "area": "86.48㎡",
           "madori": "2LDK",
-          "traffic": "戸越銀座駅徒歩2分",
-          "location": "品川区平塚"
+          "traffic": "石川町駅徒歩5分",
+          "location": "横浜市中区山手町"
         }
       ],
       "all_listings": [
+        {
+          "id": "EecR4CWpml8",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/%E5%84%AA%E7%BE%8E%E3%81%AA%E5%BC%A7%E3%81%AE%E8%AA%98%E6%83%91",
+          "name": "優美な弧の誘惑",
+          "price": "8,680万円",
+          "area": "86.48㎡",
+          "madori": "2LDK",
+          "traffic": "石川町駅徒歩5分",
+          "location": "横浜市中区山手町"
+        },
         {
           "id": "TnjXCTwgkZs",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%9D%89%E4%B8%A6%E5%8C%BA/%E5%BC%95%E3%81%8D%E7%AE%97%E4%BB%95%E7%AB%8B%E3%81%A6%E3%81%AE%E7%B4%A0%E6%9D%90%E7%BE%8E",
@@ -387,6 +430,7 @@
         }
       ],
       "ids": [
+        "EecR4CWpml8",
         "TnjXCTwgkZs",
         "JNOWRBvoD4g",
         "FKSvs24BYk0",
@@ -406,7 +450,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-11-18T14:13:17",
+      "checked_at": "2026-11-19T14:07:23",
       "new_listings": [],
       "all_listings": [
         {
@@ -507,7 +551,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-18T14:13:17",
+      "checked_at": "2026-11-19T14:07:23",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -518,7 +562,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-18T14:13:17",
+      "checked_at": "2026-11-19T14:07:23",
       "new_listings": [],
       "all_listings": [
         {
