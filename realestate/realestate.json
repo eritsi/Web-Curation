@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T16:40:14",
+  "generated_at": "2026-11-25T15:10:08",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-24T16:40:14",
+      "checked_at": "2026-11-25T15:10:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -229,7 +229,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-24T16:40:14",
+      "checked_at": "2026-11-25T15:10:08",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -239,10 +239,31 @@
       "description": "リノベ中古マンション（東京・神奈川・〜9000万・50㎡以上）",
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
-      "status": "unchanged",
-      "checked_at": "2026-11-24T16:40:14",
-      "new_listings": [],
+      "status": "changed",
+      "checked_at": "2026-11-25T15:10:08",
+      "new_listings": [
+        {
+          "id": "6A2IvM7znms",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%AB%98%E6%B4%A5%E5%8C%BA/%E5%B7%9D%E8%BE%BA%E3%81%AE%E4%BA%8C%E5%88%80%E6%B5%81%E9%81%B8%E6%89%8B",
+          "name": "川辺の二刀流選手",
+          "price": "5,798万円",
+          "area": "70.49㎡",
+          "madori": "3LDK",
+          "traffic": "二子新地駅徒歩17分",
+          "location": "川崎市高津区北見方"
+        }
+      ],
       "all_listings": [
+        {
+          "id": "6A2IvM7znms",
+          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%AB%98%E6%B4%A5%E5%8C%BA/%E5%B7%9D%E8%BE%BA%E3%81%AE%E4%BA%8C%E5%88%80%E6%B5%81%E9%81%B8%E6%89%8B",
+          "name": "川辺の二刀流選手",
+          "price": "5,798万円",
+          "area": "70.49㎡",
+          "madori": "3LDK",
+          "traffic": "二子新地駅徒歩17分",
+          "location": "川崎市高津区北見方"
+        },
         {
           "id": "D9mRlbFSzoE",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E8%AA%BF%E5%B8%83%E5%B8%82/%E8%82%B2%E3%82%81%E9%81%8A%E3%81%B3%E5%BF%83",
@@ -325,6 +346,7 @@
         }
       ],
       "ids": [
+        "6A2IvM7znms",
         "D9mRlbFSzoE",
         "cQFvVEytbPo",
         "T3Z6r7EeJdE",
@@ -341,7 +363,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-11-24T16:40:14",
+      "checked_at": "2026-11-25T15:10:08",
       "new_listings": [],
       "all_listings": [
         {
@@ -442,7 +464,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-24T16:40:14",
+      "checked_at": "2026-11-25T15:10:08",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -453,7 +475,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-24T16:40:14",
+      "checked_at": "2026-11-25T15:10:08",
       "new_listings": [],
       "all_listings": [
         {
