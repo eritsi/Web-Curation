@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T14:54:43",
+  "generated_at": "2026-11-28T14:35:24",
   "sites": [
     {
       "name": "Global Base (Renocolle)",
@@ -7,7 +7,7 @@
       "url": "https://www.globalbase.jp/renocolle/obje/tab.php?tg2=other&madori=&moyori=&price_low=&price_high=9000&senyu_area_low=50&senyu_area_high=80",
       "extract": "globalbase",
       "status": "unchanged",
-      "checked_at": "2026-11-27T14:54:43",
+      "checked_at": "2026-11-28T14:35:24",
       "new_listings": [],
       "all_listings": [
         {
@@ -251,7 +251,7 @@
       "url": "https://www.meiwajisyo.co.jp/chukai/buy/sch/renovation_list.php",
       "extract": "meiwa",
       "status": "unchanged",
-      "checked_at": "2026-11-27T14:54:43",
+      "checked_at": "2026-11-28T14:35:24",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -262,30 +262,30 @@
       "url": "https://cowcamo.jp/update",
       "extract": "cowcamo",
       "status": "changed",
-      "checked_at": "2026-11-27T14:54:43",
+      "checked_at": "2026-11-28T14:35:24",
       "new_listings": [
         {
-          "id": "tMUJi7EMb0M",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/Love-All",
-          "name": "Love All",
-          "price": "4,998万円",
-          "area": "90.59㎡",
-          "madori": "3LDK",
-          "traffic": "石川町駅徒歩11分",
-          "location": "横浜市中区麦田町"
-        },
-        {
-          "id": "sfrZnZVo38Q",
-          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/%E3%82%B5%E3%83%B3%E3%83%91%E3%83%81%E3%83%AA%E3%83%93%E3%83%B3%E3%82%B0",
-          "name": "サンパチリビング",
-          "price": "8,980万円",
-          "area": "154.86㎡",
-          "madori": "3LDK",
-          "traffic": "上石神井駅徒歩10分",
-          "location": "練馬区関町南"
+          "id": "mLsHow2Nkhc",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/4%E3%81%A4%E3%81%AE%E7%A8%AE%E3%81%8C%E8%8A%BD%E5%90%B9%E3%81%8F%E3%81%93%E3%82%8D",
+          "name": "4つの種が芽吹くころ",
+          "price": "7,980万円",
+          "area": "90.38㎡",
+          "madori": "4LDK",
+          "traffic": "光が丘駅徒歩7分",
+          "location": "練馬区光が丘"
         }
       ],
       "all_listings": [
+        {
+          "id": "mLsHow2Nkhc",
+          "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E7%B7%B4%E9%A6%AC%E5%8C%BA/4%E3%81%A4%E3%81%AE%E7%A8%AE%E3%81%8C%E8%8A%BD%E5%90%B9%E3%81%8F%E3%81%93%E3%82%8D",
+          "name": "4つの種が芽吹くころ",
+          "price": "7,980万円",
+          "area": "90.38㎡",
+          "madori": "4LDK",
+          "traffic": "光が丘駅徒歩7分",
+          "location": "練馬区光が丘"
+        },
         {
           "id": "tMUJi7EMb0M",
           "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/Love-All",
@@ -410,24 +410,15 @@
           "id": "hnovDLAbdsM",
           "url": "https://cowcamo.jp/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B8%8B%E8%B0%B7%E5%8C%BA/%E7%94%98%E3%81%84%E9%A6%99%E3%82%8A%E3%81%AE%E3%83%AC%E3%83%88%E3%83%AD%E3%83%9E%E3%83%B3",
           "name": "甘い香りのレトロマン",
-          "price": "8,480万円",
+          "price": "8,280万円",
           "area": "69.08㎡",
           "madori": "2LDK",
           "traffic": "参宮橋駅徒歩5分",
           "location": "渋谷区代々木"
-        },
-        {
-          "id": "EecR4CWpml8",
-          "url": "https://cowcamo.jp/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA/%E5%84%AA%E7%BE%8E%E3%81%AA%E5%BC%A7%E3%81%AE%E8%AA%98%E6%83%91",
-          "name": "優美な弧の誘惑",
-          "price": "8,680万円",
-          "area": "86.48㎡",
-          "madori": "2LDK",
-          "traffic": "石川町駅徒歩5分",
-          "location": "横浜市中区山手町"
         }
       ],
       "ids": [
+        "mLsHow2Nkhc",
         "tMUJi7EMb0M",
         "sfrZnZVo38Q",
         "VEJlFFWdsbs",
@@ -440,8 +431,7 @@
         "qOKLWfziYBg",
         "dBTRFI0MG7A",
         "n1aRWS96m9I",
-        "hnovDLAbdsM",
-        "EecR4CWpml8"
+        "hnovDLAbdsM"
       ]
     },
     {
@@ -450,7 +440,7 @@
       "url": "https://www.realtokyoestate.co.jp/estate_search.php?mode=key&type%5B%5D=2&building_area_from=50",
       "extract": "rte",
       "status": "unchanged",
-      "checked_at": "2026-11-27T14:54:43",
+      "checked_at": "2026-11-28T14:35:24",
       "new_listings": [],
       "all_listings": [
         {
@@ -540,7 +530,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sa_yokohama/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-27T14:54:43",
+      "checked_at": "2026-11-28T14:35:24",
       "new_listings": [],
       "all_listings": [],
       "ids": []
@@ -551,7 +541,7 @@
       "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/?et=5&cb=0.0&ct=9000.0&mb=50&mt=9999999&sort=8",
       "extract": "suumo",
       "status": "unchanged",
-      "checked_at": "2026-11-27T14:54:43",
+      "checked_at": "2026-11-28T14:35:24",
       "new_listings": [],
       "all_listings": [
         {
@@ -588,7 +578,7 @@
           "id": "21279975",
           "url": "https://suumo.jp/ms/chuko/kanagawa/sc_hadano/nc_21279975/",
           "name": "ベルヴィル鶴巻",
-          "price": "1780万円",
+          "price": "1680万円",
           "area": "73.17m2",
           "madori": "3LDK",
           "traffic": "小田急小田原線「鶴巻温泉」徒歩5分",
